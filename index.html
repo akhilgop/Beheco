@@ -17,14 +17,64 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/images/favicon/site.webmanifest">
-    <title>Hello, world!</title>
+    <title>Beheco | Home</title>
 </head>
 
 <body>
     <!-- -----------------------------------------------------------------Navbar------------------------------------------------------------->
     <nav class="navbar navbar-expand-lg navbar-light bg-light nb fixed-top">
+        <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5">
+                        <div class="left-portion">
+                            <div class="phone">
+                                <div class="icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <a href="">+91 1800 234 567</a>
+                            </div>
+                            <div class="email">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <a href="">mail@beheco.in</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <div class="right-portion ml-auto">
+                            <div class="common-links">
+                                <a href="">Careers</a>
+                                <div class="separator"></div>
+                                <a href="">Help</a>
+                                <div class="separator"></div>
+                                <a href="">Download App</a>
+                                <div class="separator"></div>
+                            </div>
+                            <div class="social-links">
+                                <a href="" class="icon fb">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="" class="icon tw">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="" class="icon insta">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="" class="icon tw">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/svg/logo.svg" alt="logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -32,46 +82,133 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
+
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <div class="mega-menu">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <div class="dropdown-content">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-xl-4">
+                                            <div class="column">
+                                                <a href="#">Emergency
+                                                    Services</a>
+                                                <a href="#">Food &
+                                                    Beverages</a>
+                                                <a href="#">Rooms &
+                                                    Rentals</a>
+                                                <a href="#">Professionals</a>
+                                                <a href="#">Experts</a>
+                                                <a href="#">Healthcare</a>
+                                                <a href="#">Public
+                                                    Places</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <div class="column">
+                                                <a href="#">Home &
+                                                    Office</a>
+                                                <a href="#">Automobile</a>
+                                                <a href="#">Educational
+                                                    Institutions</a>
+                                                <a href="#">Financial
+                                                    institutions</a>
+                                                <a href="#">Dress &
+                                                    Accessories</a>
+                                                <a href="#">Travel &
+                                                    Tourism</a>
+                                                <a href="#">Wedding &
+                                                    Events</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <div class="column">
+                                                <a href="#">Electronics</a>
+                                                <a href="#">Retail &
+                                                    Wholesale</a>
+                                                <a href="#">Media &
+                                                    Entertainment</a>
+                                                <a href="#">Telecom</a>
+                                                <a href="#">Construction</a>
+                                                <a href="#">Sports</a>
+                                                <a href="#">Health &
+                                                    Fitness</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" aria-current="page" href="#">Featured</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <div class="d-flex">
+                    <div class="signin-box">
+                        <div class="dropdown">
+                            <button class="btn btn-user dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/images/svg/user.svg" alt="user-icon">
+                                <span>Signin / Register</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="btn btn-black"><img src="assets/images/svg/plus-icon.svg" alt="plus-icon"><span>Add
+                            Free Listing</span></button>
+                </div>
             </div>
         </div>
     </nav>
     <!-- -----------------------------------------------------------------Banner------------------------------------------------------------------>
     <section class="banner flx-v-cntr">
         <div class="container">
-            <h1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+            <div class="search-bar-container">
+                <div class="content">
+                    <h2>Discover your</h2>
+                    <h1>
+                        Amazing <span>City</span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                    <div class="search-bar">
+                        <div class="row">
+                            <div class="col-xl-5">
+                                <select class="form-selectdrpdown select2 js" aria-label="Default select example"
+                                    data-live-search="true">
+                                    <option selected>Select City</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-7">
+                                <div class="mb-3">
+                                    <div class="search-bar-section">
+                                        <input type="text" class="form-control" placeholder="Search Something">
+                                        <button type="button" class="btn btn-primary"><i
+                                                class="fas fa-search"></i></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- -----------------------------------------------------------------Move to Top------------------------------------------------------------->

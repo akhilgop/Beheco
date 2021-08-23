@@ -86,6 +86,22 @@ button {
 .btn-secondary-outline {
     @include buttn-outline($white, $tertiary, $tertiary);
 }
+.btn-black {
+    @include buttn($black, $white, $black);
+    height: 50px;
+    @include flex-cntr;
+    padding: 0 26px;
+    border-radius: 10px;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: $primary;
+        color: $white;
+        border-color: $primary;
+    }
+}
 // ----------------------------------------------------Form Control-----------------------------------------------------//
 
 .form-check-input:checked {
@@ -96,17 +112,24 @@ button {
 .form-check-inline {
     margin-right: 30px;
 }
+.form-control {
+    border-radius: 10px;
+    height: 50px;
+    &:focus {
+        border: 1px solid $primary;
+    }
+}
 // ----------------------------------------------------Placeholder-----------------------------------------------------//
 ::-webkit-input-placeholder {
     /* Edge */
-    color: rgba($color: $body-color, $alpha: 0.5);
+    color: rgba($color: $body-color, $alpha: 0.2);
 }
 
 :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: rgba($color: $body-color, $alpha: 0.5);
+    color: rgba($color: $body-color, $alpha: 0.2);
 }
 
 ::placeholder {
-    color: rgba($color: $body-color, $alpha: 0.5);
+    color: rgba($color: $body-color, $alpha: 0.2);
 }

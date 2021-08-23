@@ -1,30 +1,30 @@
-// ----------------------------------------------------------------Navbar On Scroll-------------------------------------------------------------------
+// ----------------------------------------------------------------nbbar On Scroll-------------------------------------------------------------------
 
-var nav = document.querySelector('nav'); // Identify target
+var nav = document.querySelector('nb'); // Identify target
 window.addEventListener('scroll', function (event) { // To listen for event
     event.preventDefault();
 
     if (window.scrollY <= 150) {
         nb.style.padding = '30px 0';
-        nav.style.backgroundColor = 'transparent';
+        nb.style.backgroundColor = 'transparent';
     } else {
-        nav.style.backgroundColor = '#fff';
-        nav.style.boxShadow = '0 0 4px grey';
-        nav.style.height = '80px';
-        nav.style.padding = '0'
+        nb.style.backgroundColor = '#fff';
+        nb.style.boxShadow = '0px 1px 6px rgba(0, 0, 0, 0.1)';
+        nb.style.height = '80px';
+        nb.style.padding = '0'
     }
 });
 
 
 
-var nav = document.querySelector('nav'); // Identify target
+var nav = document.querySelector('nb'); // Identify target
 window.addEventListener('scroll', function (event) { // To listen for event
     event.preventDefault();
 
     if (window.scrollY == 0) {
-        nav.style.boxShadow = 'none';
-        nav.style.height = '100px';
-        nav.style.backgroundColor = 'transparent';
+        nb.style.boxShadow = 'none';
+        nb.style.height = '100px';
+        nb.style.backgroundColor = 'transparent';
     }
 });
 

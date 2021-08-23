@@ -86,13 +86,16 @@
 }
 .select2-container--open .select2-dropdown--above {
     border-bottom: none;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .select2-container--open .select2-dropdown--below {
     border-top: none;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
 }
 .select2-search--dropdown {
     display: block;
@@ -139,7 +142,7 @@
 .select2-container--default .select2-selection--single {
     background-color: #fff;
     border: 1px solid $bdr;
-    border-radius: 7px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     padding: 0.375rem 2.25rem 0.375rem 0.75rem;

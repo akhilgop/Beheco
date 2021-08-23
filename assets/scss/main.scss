@@ -14,5 +14,51 @@ html {
 
 body {
     @include body;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: "Circular", sans-serif;
+}
+p,
+a,
+span,
+label {
+    font-family: "Circular", sans-serif;
+    font-weight: 400;
+    
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Circular";
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Circular";
+    font-weight: 400;
+    src: url("../fonts/circular_book.otf");
+}
+
+@font-face {
+    font-family: "Circular";
+    font-weight: 600;
+    src: url("../fonts/circular_medium.otf");
+}
+
+@font-face {
+    font-family: "Circular";
+    font-weight: 700;
+    src: url("../fonts/circular_bold.otf");
+}
+@mixin bold {
+    font-family: "Circular";
+    font-weight: 700;
+}
+@mixin semi-bold {
+    font-family: "Circular";
+    font-weight: 600;
+}
+@mixin regular {
+    font-family: "Circular";
+    font-weight: 400;
 }
