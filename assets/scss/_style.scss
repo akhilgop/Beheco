@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------Navbar-------------------------------------------------------------
+.nb {
+    background: $white !important;
+    padding: 25px 0;
+}
+
+// -----------------------------------------------------------------Banner-------------------------------------------------------------
+.banner {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    background: $white3;
+    background-repeat: no-repeat;
+    position: relative;
+    @include flex-cntr;
+    h1,
+    p {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+section {
+    padding: 100px 0;
+}

@@ -1,0 +1,18 @@
+@import "components";
+@import "custom";
+@import "mixins";
+@import "responsive";
+@import "variables";
+@import "select2";
+@import "innerpages";
+@import "style";
+@import "alignment";
+// ----------------------------------------------------Common Classes-----------------------------------------------------//
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @include body;
+    font-family: "IBM Plex Sans", sans-serif;
+}
