@@ -48,13 +48,23 @@ a {
         outline: 0;
     }
 }
-
+.common-h2 {
+    font-weight: 600 !important;
+    span {
+        color: $primary;
+        font-weight: 600 !important;
+    }
+}
+.media-show {
+    display: none;
+}
 // ----------------------------------------------------Button-----------------------------------------------------//
 button {
     text-align: center;
     cursor: pointer;
     text-decoration: none;
     transition: all 0.5s ease-out;
+    border-radius: 10px;
     &:hover,
     &:active,
     &:focus {
@@ -83,8 +93,22 @@ button {
     @include buttn-outline($white, $secondary, $secondary);
 }
 
+.btn-white-outline {
+    @include buttn-outline(transparent, $white, $white);
+    font-family: "Circular", sans-serif;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        transition: all 0.5s ease-out;
+        outline: 0;
+        background-color: $white;
+        color: $primary;
+        border-color: $white;
+    }
+}
 .btn-secondary-outline {
-    @include buttn-outline($white, $tertiary, $tertiary);
+    @include buttn-outline($primary, $secondary, $secondary);
 }
 .btn-black {
     @include buttn($black, $white, $black);
@@ -96,10 +120,45 @@ button {
     &:active,
     &:focus {
         box-shadow: none;
+        transition: all 0.5s ease-out;
         outline: 0;
         background-color: $primary;
         color: $white;
         border-color: $primary;
+    }
+}
+.btn-view-more {
+    padding: 0 22px;
+    font-size: 20px;
+    height: 50px;
+    background-color: rgba($color: $primary, $alpha: 0.2);
+    border-radius: 10px;
+    color: $primary;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: $primary;
+        color: $white;
+        border-color: $primary;
+    }
+}
+.btn-view-all {
+    padding: 0 50px;
+    font-size: 20px;
+    height: 50px;
+    background-color: $primary;
+    border-radius: 10px;
+    color: $white;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: $tertiary;
+        color: $white;
+        border-color: $tertiary;
     }
 }
 // ----------------------------------------------------Form Control-----------------------------------------------------//

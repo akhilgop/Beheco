@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.257" height="42.496" viewBox="0 0 25.257 42.496">
+  <g id="electricals" transform="translate(-0.972 -0.924)">
+    <rect id="Rectangle_710" data-name="Rectangle 710" width="25.257" height="42.496" rx="4" transform="translate(0.972 0.924)" fill="#8fd03d"/>
+    <rect id="Rectangle_711" data-name="Rectangle 711" width="25.257" height="29.562" transform="translate(0.972 7.363)" fill="#059762"/>
+    <path id="Path_1633" data-name="Path 1633" d="M74.676,44.513H68.848a.924.924,0,1,1,0-1.847h5.829a.984.984,0,0,1,.866.453.885.885,0,0,1,0,.94A.984.984,0,0,1,74.676,44.513Zm-9.714-1.847a.925.925,0,1,0,.971.923A.949.949,0,0,0,64.963,42.665Z" transform="translate(-58.162 -38.97)" fill="#059762"/>
+    <path id="Path_1634" data-name="Path 1634" d="M278.3,170.67a.925.925,0,1,0,.972.923A.949.949,0,0,0,278.3,170.67Z" transform="translate(-258.073 -166.975)" fill="#059762"/>
+    <ellipse id="Ellipse_241" data-name="Ellipse 241" cx="1.943" cy="1.847" rx="1.943" ry="1.847" transform="translate(11.657 36.491)" fill="#0e5c68"/>
+    <path id="Path_1635" data-name="Path 1635" d="M120.244,412.517a.925.925,0,1,1-.971.924.949.949,0,0,1,.971-.924m0-1.847a2.775,2.775,0,1,0,2.914,2.771A2.846,2.846,0,0,0,120.244,410.67Z" transform="translate(-106.645 -375.103)" fill="#3a5"/>
+    <ellipse id="Ellipse_247" data-name="Ellipse 247" cx="0.972" cy="0.924" rx="0.972" ry="0.924" transform="translate(12.628 37.414)" fill="#fff"/>
+  </g>
+</svg>

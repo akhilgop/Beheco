@@ -7,6 +7,7 @@
 @import "innerpages";
 @import "style";
 @import "alignment";
+@import "bg_image";
 // ----------------------------------------------------Common Classes-----------------------------------------------------//
 html {
     scroll-behavior: smooth;
@@ -19,10 +20,13 @@ body {
 p,
 a,
 span,
-label {
+label,
+button {
     font-family: "Circular", sans-serif;
     font-weight: 400;
-    
+}
+.btn {
+    font-family: "Circular", sans-serif;
 }
 h1,
 h2,

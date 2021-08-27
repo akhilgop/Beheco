@@ -1,0 +1,208 @@
+// ----------------------------------------------------Ad-----------------------------------------------------//
+.ad1 {
+    background: url("../images/fullscreen-ad.jpg");
+    background-repeat: no-repeat;
+}
+.ad-bg-2 {
+    background: url("../images/fullscreen-ad.jpg");
+    background-repeat: no-repeat;
+}
+// ----------------------------------------------------Top Picks-----------------------------------------------------//
+// -----------------------------------------------------tpc1---------------------------------------------------------//
+.tpc1 {
+    position: relative;
+    border-radius: 0px;
+    -khtml-border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.tpc1::before {
+    background: url("../images/wed.jpg") no-repeat #000;
+    background-position: center;
+    background-size: cover;
+}
+.tc1 {
+    background: url("../images/wed.jpg") no-repeat #000;
+    background-position: center;
+    background-size: cover;
+}
+.tpc1::before {
+    content: "";
+    display: block;
+    z-index: -1;
+    -moz-filter: url("#svgfilter");
+    -o-filter: url("#svgfilter");
+    -ms-filter: url("#svgfilter");
+    filter: url("#svgfilter");
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    margin: 0;
+    padding: 0;
+}
+// -----------------------------------------------------tpc2---------------------------------------------------------//
+.tpc2 {
+    position: relative;
+    border-radius: 0px;
+    -khtml-border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.tpc2::before {
+    background: url("../images/health.jpg") no-repeat #000;
+    background-position: center;
+    background-size: cover;
+}
+.tc2 {
+    background: url("../images/health.jpg") no-repeat #000;
+    background-position: center;
+    background-size: cover;
+}
+.tpc2::before {
+    content: "";
+    display: block;
+    z-index: -1;
+    -moz-filter: url("#svgfilter");
+    -o-filter: url("#svgfilter");
+    -ms-filter: url("#svgfilter");
+    filter: url("#svgfilter");
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    margin: 0;
+    padding: 0;
+}
+// -----------------------------------------------------tpc3---------------------------------------------------------//
+.tpc3 {
+    position: relative;
+    border-radius: 0px;
+    -khtml-border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.tpc3::before {
+    background: url("../images/travel.jpg") no-repeat #000;
+    background-position: center;
+    background-size: cover;
+}
+.tc3 {
+    background: url("../images/travel.jpg") no-repeat #000;
+    background-position: center;
+    background-size: cover;
+}
+.tpc3::before {
+    content: "";
+    display: block;
+    z-index: -1;
+    -moz-filter: url("#svgfilter");
+    -o-filter: url("#svgfilter");
+    -ms-filter: url("#svgfilter");
+    filter: url("#svgfilter");
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    margin: 0;
+    padding: 0;
+}
+// -----------------------------------------------------tpc4---------------------------------------------------------//
+.tpc4 {
+    position: relative;
+    border-radius: 0px;
+    -khtml-border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.tpc4::before {
+    background: url("../images/food.jpg") no-repeat #000;
+    background-position: center;
+    background-size: cover;
+}
+.tc4 {
+    background: url("../images/food.jpg") no-repeat #000;
+    background-position: center;
+    background-size: cover;
+}
+.tpc4::before {
+    content: "";
+    display: block;
+    z-index: -1;
+    -moz-filter: url("#svgfilter");
+    -o-filter: url("#svgfilter");
+    -ms-filter: url("#svgfilter");
+    filter: url("#svgfilter");
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    margin: 0;
+    padding: 0;
+}
+// -----------------------------------------------------tpc5---------------------------------------------------------//
+.tpc5 {
+    position: relative;
+    border-radius: 0px;
+    -khtml-border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.tpc5::before {
+    background: url("../images/room.jpg") no-repeat #000;
+    background-position: center;
+    background-size: cover;
+}
+.tc5 {
+    background: url("../images/room.jpg") no-repeat #000;
+    background-position: center;
+    background-size: cover;
+}
+.tpc5::before {
+    content: "";
+    display: block;
+    z-index: -1;
+    -moz-filter: url("#svgfilter");
+    -o-filter: url("#svgfilter");
+    -ms-filter: url("#svgfilter");
+    filter: url("#svgfilter");
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    margin: 0;
+    padding: 0;
+}
+// -----------------------------------------------------tpc6---------------------------------------------------------//
+.tpc6 {
+    position: relative;
+    border-radius: 0px;
+    -khtml-border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.tpc6::before {
+    background: url("../images/helathcare.jpg") no-repeat #000;
+    background-position: center;
+    background-size: cover;
+}
+.tc6 {
+    background: url("../images/helathcare.jpg") no-repeat #000;
+    background-position: center;
+    background-size: cover;
+}
+.tpc6::before {
+    content: "";
+    display: block;
+    z-index: -1;
+    -moz-filter: url("#svgfilter");
+    -o-filter: url("#svgfilter");
+    -ms-filter: url("#svgfilter");
+    filter: url("#svgfilter");
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    margin: 0;
+    padding: 0;
+}
