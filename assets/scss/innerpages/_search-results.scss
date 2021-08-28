@@ -1,0 +1,113 @@
+// --------------------------------------------------------------Navbar-------------------------------------------------------------//
+.inner-nb {
+    .search-bar {
+        display: flex;
+        flex-wrap: nowrap;
+        .content {
+            display: flex;
+
+            .form-control {
+                border-radius: 0;
+            }
+            .select2-selection {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                margin-right: 0px;
+                border-right-color: transparent;
+            }
+        }
+        .select2 {
+            margin: 0 !important;
+            width: 250px !important;
+        }
+        .btn {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 0 20px;
+        }
+    }
+}
+// --------------------------------------------------------------Results Content-------------------------------------------------------------//
+.results-content {
+    padding-top: 161px;
+    .breadcrumb-wrapper {
+        padding: 20px;
+        background-color: rgba($color: $primary, $alpha: 0.2);
+        border-radius: 10px;
+        margin: 30px 0;
+        .breadcrumb {
+            margin: 0;
+            a,
+            li {
+                @include text(14px, 14px, 400, $body-color);
+            }
+            a {
+                &:hover,
+                &:active,
+                &:focus {
+                    text-decoration: none;
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+.listing-card {
+    background-color: $white;
+    padding: 20px;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    .txt-section {
+        padding-top: 20px;
+        h5 {
+            width: 80%;
+        }
+        .right-align {
+            width: 20%;
+            align-items: flex-start;
+            i {
+                color: $bdr;
+                font-size: 23px;
+            }
+        }
+        .btn-warpper {
+            width: 60%;
+        }
+
+        .bottom-section {
+            flex-wrap: nowrap !important;
+        }
+    }
+    .overall-rating {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 40%;
+        p {
+            margin: 0 0 0 10px;
+            @include text(18px, 18px, 400, $body-color);
+        }
+        i {
+            color: $primary;
+        }
+    }
+    p {
+        @include text(16px, 16px, 400, rgba($color: $body-color, $alpha: 0.5));
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 10px 0 20px 0;
+    }
+    h5 {
+        @include text(25px, 35px, 600, $body-color);
+    }
+    .image-wrapper {
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+}

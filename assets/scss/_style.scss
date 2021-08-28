@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     .navbar-brand {
         img {
-            width: 70%;
+            width: 90%;
         }
     }
     a {
@@ -214,6 +214,13 @@ h2 {
 .featured {
     background-color: rgba($color: $secondary, $alpha: 0.04);
 }
+// -----------------------------------------------------------------Near You-------------------------------------------------------------
+.slider-wrapper {
+    .image-wrapper {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
 // -----------------------------------------------------------------Counter Statistics-------------------------------------------------------------
 .bg-pad {
     width: 100%;
@@ -289,6 +296,12 @@ h2 {
 }
 // ------------------------------------------------------------------Freelancers-----------------------------------------------------------------
 .freelancers {
+    .hs__item {
+        flex-basis: inherit;
+    }
+    .hs__item:first-child {
+        margin-left: 10px !important;
+    }
     .content-box {
         width: 314px;
         .cover-image {
@@ -334,6 +347,284 @@ h2 {
                 }
                 i {
                     color: $primary;
+                }
+            }
+        }
+    }
+}
+// ------------------------------------------------------------------Upcoming Events-----------------------------------------------------------------
+// .upcoming-events{
+
+// }
+.event-container {
+    margin-top: 50px;
+}
+.event-card {
+    padding: 20px;
+    background-color: $white9;
+    border-radius: 20px;
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+    .img-section {
+        border-radius: 10px;
+        overflow: hidden;
+        width: 30%;
+        img {
+            width: 100%;
+        }
+    }
+    .text-section {
+        width: 70%;
+        padding-left: 20px;
+        h5 {
+            @include text(25px, 30px, 600, $body-color);
+        }
+        p {
+            @include text(16px, 30px, 400, $black6);
+        }
+        .icon-text-container {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin-bottom: 10px;
+            p {
+                margin-left: 10px;
+                margin-bottom: 0;
+            }
+        }
+        .description-content {
+            height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+// ------------------------------------------------------------------Coming Soon-----------------------------------------------------------------
+.coming-soon {
+    padding: 0 !important;
+}
+.coming-soon-card {
+    background-color: rgba($color: $color3, $alpha: 0.5);
+    background-image: url("../images/svg/coming-soon.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    width: 100%;
+    border-radius: 20px;
+    padding: 50px 50px 0 50px;
+    .content {
+        padding-bottom: 50px;
+    }
+    h3 {
+        @include text(62px, 62px, 700, $primary);
+        margin-bottom: 50px;
+    }
+    p {
+        @include text(18px, 18px, 400, $black6);
+        span {
+            @include text(22px, 22px, 400, $primary);
+        }
+    }
+    h6 {
+        @include text(22px, 22px, 400, $secondary);
+    }
+    .dload-app {
+        @include text(18px, 18px, 400, $black1);
+        margin: 50px 0 20px 0;
+        span {
+            @include text(18px, 18px, 400, $primary);
+        }
+    }
+}
+// ------------------------------------------------------------------FAQ-----------------------------------------------------------------
+.faq {
+    background-color: rgba($color: $tertiary, $alpha: 0.2);
+    width: 100%;
+    border-radius: 20px;
+    padding: 50px;
+    height: 100%;
+    .content {
+        position: relative;
+        height: 100%;
+        background-image: url("../images/svg/qa.svg");
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: bottom;
+        h5 {
+            @include text(36px, 36px, 600, $body-color);
+        }
+        p {
+            @include text(18px, 36px, 400, $black6);
+            margin: 20px 0 40px 0;
+        }
+    }
+}
+// ------------------------------------------------------------------Testimonials-----------------------------------------------------------------
+.testimonials {
+    margin-top: 100px;
+    background-color: rgba($color: $primary, $alpha: 0.05);
+    .testimonial-card {
+        padding: 40px;
+        background: $white;
+        border: 1px solid $bdr;
+        border-radius: 20px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 500px;
+        .quote-icon {
+            position: absolute;
+            top: -27px;
+            left: 10px;
+        }
+        .auther-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid $bdr;
+            img {
+                width: 100%;
+            }
+        }
+        .txt-section {
+            .quote {
+                display: block;
+                text-align: center;
+                width: 100%;
+                white-space: normal;
+                @include text(18px, 25px, 400, $black6);
+            }
+            .right-align {
+                flex-wrap: wrap;
+                h5 {
+                    @include text(16px, 16px, 600, $primary);
+                    text-align: right;
+                    width: 100%;
+                }
+                p {
+                    @include text(14px, 16px, 400, $black6);
+                    text-align: right;
+                }
+            }
+        }
+    }
+    .hs {
+        padding: 40px 0;
+    }
+    .hs__item:first-child {
+        margin-left: 0;
+    }
+    .hs__item {
+        flex-basis: calc(100% / 3.5 - (10px * 2) - (20px / 4));
+    }
+}
+// ------------------------------------------------------------------Contact Form-----------------------------------------------------------------
+.contact-form {
+    .form-section {
+        padding-top: 50px;
+        margin-right: 40px;
+    }
+}
+// ------------------------------------------------------------------Subscribe Newsletter---------------------------------------------------------
+.subscribe {
+    background-color: rgba($color: $secondary, $alpha: 0.1);
+    padding: 66px 0 0 0;
+    .img-container {
+        img {
+            margin-top: -113px;
+            width: 50%;
+        }
+    }
+    h5 {
+        @include text(36px, 36px, 600, $body-color);
+        margin-bottom: 30px;
+        span {
+            @include text(36px, 36px, 600, $primary);
+        }
+    }
+    .newletter-input {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        padding-bottom: 60px;
+        input {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            height: 70px;
+            padding-left: 20px;
+            font-size: 20px;
+            border-color: transparent;
+        }
+        .btn {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 0 69px;
+            height: 70px;
+            font-size: 20px;
+        }
+    }
+}
+// ------------------------------------------------------------------Popular Content---------------------------------------------------------
+.popular-content {
+    background-color: rgba($color: $primary, $alpha: 0.1);
+    h5 {
+        @include text(25px, 25px, 600, $black6);
+        margin-bottom: 30px;
+    }
+    p {
+        @include text(16px, 32px, 400, $black6);
+        margin-bottom: 50px;
+    }
+}
+// ------------------------------------------------------------------Footer---------------------------------------------------------
+.footer {
+    padding: 100px 0 0 0;
+    background-color: $primary;
+    color: $white;
+    ul {
+        list-style: none;
+    }
+    a {
+        @include text(18px, 40px, 400, $white);
+        &:hover,
+        &:active,
+        &:focus {
+            box-shadow: none;
+            outline: 0;
+            color: $secondary;
+            text-decoration: none;
+        }
+    }
+    .contact-details {
+        a {
+            display: block;
+            line-height: 28px;
+        }
+    }
+    .copyright-section {
+        padding: 45px 0;
+        margin-top: 50px;
+        border-top: 1px solid $bdr;
+        p {
+            margin: 0;
+        }
+        .social-links {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            .icon {
+                @include circle(30px, $secondary);
+                margin-right: 15px;
+                &:last-child {
+                    margin-right: 0;
                 }
             }
         }

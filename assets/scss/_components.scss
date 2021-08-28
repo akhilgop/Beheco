@@ -92,7 +92,9 @@ button {
 .btn-secondary-outline {
     @include buttn-outline($white, $secondary, $secondary);
 }
-
+.btn-danger-outline {
+    @include buttn-outline($white, $red, $red);
+}
 .btn-white-outline {
     @include buttn-outline(transparent, $white, $white);
     font-family: "Circular", sans-serif;
@@ -161,6 +163,49 @@ button {
         border-color: $tertiary;
     }
 }
+.btn-google {
+    @include buttn($google, $white, $google);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    .icon {
+        text-align: left;
+        position: absolute;
+        left: 15px;
+        top: 13px;
+    }
+    span {
+        text-align: center;
+    }
+    margin-bottom: 20px;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: darken($color: $google, $amount: 10%);
+        color: $white;
+        border-color: darken($color: $google, $amount: 10%);
+    }
+}
+.btn-facebook {
+    @extend .btn-google;
+    @include buttn($facebook, $white, $facebook);
+    margin: 0;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: darken($color: $facebook, $amount: 10%);
+        color: $white;
+        border-color: darken($color: $facebook, $amount: 10%);
+    }
+}
 // ----------------------------------------------------Form Control-----------------------------------------------------//
 
 .form-check-input:checked {
@@ -175,8 +220,19 @@ button {
     border-radius: 10px;
     height: 50px;
     &:focus {
+        box-shadow: none;
         border: 1px solid $primary;
     }
+}
+textarea {
+    height: inherit !important;
+    resize: none;
+}
+.form-label {
+    color: $black9;
+}
+.mb-3 {
+    margin-bottom: 20px !important;
 }
 // ----------------------------------------------------Placeholder-----------------------------------------------------//
 ::-webkit-input-placeholder {
