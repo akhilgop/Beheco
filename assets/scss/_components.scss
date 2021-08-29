@@ -508,7 +508,7 @@ textarea {
             @include text(16px, 30px, 400, $black9);
         }
         ul {
-            list-style-image: url("../../images/svg/check_list-image.svg");
+            list-style-image: url("../../assets/images/svg/check_list-image.svg");
             li {
                 p {
                     @include text(16px, 16px, 400, $black9);

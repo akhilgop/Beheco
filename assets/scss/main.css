@@ -750,7 +750,7 @@ textarea {
 }
 
 .accordion-section .accordion-body ul {
-  list-style-image: url("../../images/svg/check_list-image.svg");
+  list-style-image: url("../../assets/images/svg/check_list-image.svg");
 }
 
 .accordion-section .accordion-body ul li p {
