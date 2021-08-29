@@ -23,7 +23,7 @@
     <!-- -----------------------------------------------------------------Navbar------------------------------------------------------------->
     <nav class="navbar navbar-expand-lg inner-nb nb fixed-top">
         <div class="top-menu">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-5">
                         <div class="left-portion">
@@ -70,7 +70,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="assets/images/logo.png" alt="logo">
             </a>
@@ -132,51 +132,398 @@
     </section> -->
     <!------------------------------------------------------------------Inner-Page Banner------------------------------------------------------->
     <section class="results-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="list-items">
-                        <div class="breadcrumb-wrapper">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="#">Category</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Data</li>
-                                </ol>
-                            </nav>
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3 class="media-show">Filters</h3>
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    Select City
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <div class="search-bar">
+                                        <input type="text" class="form-control" placeholder="Search City">
+                                        <button type="button" class="btn btn-primary"><i
+                                                class="fas fa-search"></i></button>
+                                    </div>
+                                    <div class="option-wrapper">
+                                        <div class="clearfix">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Kochi
+                                                </label>
+                                            </div>
+                                            <div class="count">
+                                                <p>(15559)</p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault1">
+                                                <label class="form-check-label" for="flexCheckDefault1">
+                                                    Vytila
+                                                </label>
+                                            </div>
+                                            <div class="count">
+                                                <p>(123)</p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault2">
+                                                <label class="form-check-label" for="flexCheckDefault2">
+                                                    Thripunithura
+                                                </label>
+                                            </div>
+                                            <div class="count">
+                                                <p>(1234)</p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault3">
+                                                <label class="form-check-label" for="flexCheckDefault3">
+                                                    Kaloor
+                                                </label>
+                                            </div>
+                                            <div class="count">
+                                                <p>(15559)</p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault4">
+                                                <label class="form-check-label" for="flexCheckDefault4">
+                                                    Edappally
+                                                </label>
+                                            </div>
+                                            <div class="count">
+                                                <p>(15559)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="list-wrapper">
-                            <div class="row">
-                                <div class="col-xl-3">
-                                    <a href="">
-                                        <div class="listing-card">
-                                            <div class="content">
-                                                <div class="image-wrapper">
-                                                    <img src="assets/images/mun.jpg" alt="image">
-                                                </div>
-                                                <div class="txt-section">
-                                                    <div class="flex-container top-section">
-                                                        <h5>This is a heading This is a heading</h5>
-                                                        <div class="right-align">
-                                                            <a href=""><i class="fas fa-heart"></i></a>
-                                                        </div>
-                                                    </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    Categories
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    <div class="search-bar">
+                                        <input type="text" class="form-control" placeholder="Search Category">
+                                        <button type="button" class="btn btn-primary"><i
+                                                class="fas fa-search"></i></button>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Category 1
+                                            </label>
+                                        </div>
+                                        <div class="count">
+                                            <p>(15559)</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Category 2
+                                            </label>
+                                        </div>
+                                        <div class="count">
+                                            <p>(15559)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    Sub Categories
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    <div class="search-bar">
+                                        <input type="text" class="form-control" placeholder="Search Sub Category">
+                                        <button type="button" class="btn btn-primary"><i
+                                                class="fas fa-search"></i></button>
+                                    </div>
+                                    <div class="option-wrapper">
+                                        <div class="clearfix">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault11">
+                                                <label class="form-check-label" for="flexCheckDefault11">
+                                                    Kochi
+                                                </label>
+                                            </div>
+                                            <div class="count">
+                                                <p>(15559)</p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault12">
+                                                <label class="form-check-label" for="flexCheckDefault12">
+                                                    Vytila
+                                                </label>
+                                            </div>
+                                            <div class="count">
+                                                <p>(123)</p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault13">
+                                                <label class="form-check-label" for="flexCheckDefault13">
+                                                    Thripunithura
+                                                </label>
+                                            </div>
+                                            <div class="count">
+                                                <p>(1234)</p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault14">
+                                                <label class="form-check-label" for="flexCheckDefault14">
+                                                    Kaloor
+                                                </label>
+                                            </div>
+                                            <div class="count">
+                                                <p>(15559)</p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault15">
+                                                <label class="form-check-label" for="flexCheckDefault15">
+                                                    Edappally
+                                                </label>
+                                            </div>
+                                            <div class="count">
+                                                <p>(15559)</p>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                                    <div class="flex-container bottom-section">
-                                                        <div class="btn-warpper">
-                                                            <p>Hospital</p>
-                                                            <p>Kochi, Kerala</p>
-                                                        </div>
-                                                        <div class="overall-rating">
-                                                            <i class="fas fa-star"></i>
-                                                            <p>4.6</p>
-                                                        </div>
-                                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseFour">
+                                    Sort By
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingFour">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault10">
+                                        <label class="form-check-label " for="flexRadioDefault10">
+                                            Popularity
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault11" checked>
+                                        <label class="form-check-label" for="flexRadioDefault11">
+                                            Latest
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div class="container">
+                <div id="content-section-wrapper">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="navbar-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Data</li>
+                            </ol>
+                        </nav>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                                <li><a href="#">Page</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="content-section">
+                        <div class="row">
+                            <div class="col-xl-3">
+                                <div class="listing-card">
+                                    <div class="content">
+                                        <div class="image-wrapper">
+                                            <img src="assets/images/mun.jpg" alt="image">
+                                        </div>
+                                        <div class="txt-section">
+                                            <div class="flex-container top-section">
+                                                <h5>This is a heading This is a heading</h5>
+                                                <div class="right-align">
+                                                    <a href=""><i class="fas fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="flex-container bottom-section">
+                                                <div class="btn-warpper">
+                                                    <p>Hospital</p>
+                                                    <p>Kochi, Kerala</p>
+                                                </div>
+                                                <div class="overall-rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <p>4.6</p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </a>
+                                    </div>
+                                </div>
+                            </div>
 
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="right-align pagination-wrapper">
+                                    <nav aria-label="...">
+                                        <ul class="pagination">
+                                            <li class="page-item disabled">
+                                                <a class="page-link a-prev" href="#" tabindex="-1"
+                                                    aria-disabled="true"><i class="fas fa-angle-double-left"></i>
+                                                    Previous </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item active" aria-current="page">
+                                                <a class="page-link" href="#">2</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link a-next" href="#">Next <i
+                                                        class="fas fa-angle-double-right"></i></a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="navbar navbar-default">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                                </ol>
+                            </nav>
+                        </nav>
+                        <div class="related-search">
+                            <h3>Related <span>Searches</span></h3>
+                            <div class="row">
+                                <div class="col-xl-3">
+                                    <div class="keyword-wrapper">
+                                        <ul class="common-ul">
+                                            <li><a href="">Flats in Kochi</a></li>
+                                            <li><a href="">Apartments in Kochi</a></li>
+                                            <li><a href="">Flat Rent in Kochi</a></li>
+                                            <li><a href="">Hostels for Boys</a></li>
+                                            <li><a href="">Hostels for Girls</a></li>
+                                            <li><a href="">Paying Guest</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div class="keyword-wrapper">
+                                        <ul class="common-ul">
+                                            <li><a href="">Flats in Kochi</a></li>
+                                            <li><a href="">Apartments in Kochi</a></li>
+                                            <li><a href="">Flat Rent in Kochi</a></li>
+                                            <li><a href="">Hostels for Boys</a></li>
+                                            <li><a href="">Hostels for Girls</a></li>
+                                            <li><a href="">Paying Guest</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div class="keyword-wrapper">
+                                        <ul class="common-ul">
+                                            <li><a href="">Flats in Kochi</a></li>
+                                            <li><a href="">Apartments in Kochi</a></li>
+                                            <li><a href="">Flat Rent in Kochi</a></li>
+                                            <li><a href="">Hostels for Boys</a></li>
+                                            <li><a href="">Hostels for Girls</a></li>
+                                            <li><a href="">Paying Guest</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <div class="keyword-wrapper">
+                                        <ul class="common-ul">
+                                            <li><a href="">Flats in Kochi</a></li>
+                                            <li><a href="">Apartments in Kochi</a></li>
+                                            <li><a href="">Flat Rent in Kochi</a></li>
+                                            <li><a href="">Hostels for Boys</a></li>
+                                            <li><a href="">Hostels for Girls</a></li>
+                                            <li><a href="">Paying Guest</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -185,7 +532,167 @@
             </div>
         </div>
     </section>
+    <!------------------------------------------------------------------Popular Content--------------------------------------------------------->
+    <section class="popular-content">
+        <div class="container">
+            <h5>Popular Links</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+            </p>
+            <h5>Popular Cities</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+            </p>
+            <h5>Popular searches</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+            </p>
+        </div>
+    </section>
+    <!------------------------------------------------------------------Footer------------------------------------------------------------------>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Beheco</a></li>
+                        <li><a href="">Featured</a></li>
+                        <li><a href="">Trending</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3">
+                    <ul>
+                        <li><a href="">Help</a></li>
+                        <li><a href="">FAQ's</a></li>
+                        <li><a href="">Terms and conditions</a></li>
+                        <li><a href="">Privacy / Cookies</a></li>
+                        <li><a href="">Security</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-xl-3">
+                    <ul>
+                        <li><a href="">Emergency Services</a></li>
+                        <li><a href="">Food and Beaverages</a></li>
+                        <li><a href="">Rooms and Rentals</a></li>
+                        <li><a href="">Health Care</a></li>
+                        <li><a href="">Automobile</a></li>
+                        <li><a href="">Dress & Accessories</a></li>
+                        <li><a href="">Eductional Institutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3">
+                    <h6>Registered Address:</h6>
+                    <p>3rd floor, 120 Holborn, London EC1N 2TD, United Kingdom. VAT number: 791 7261 06.</p>
+
+                    <div class="contact-details">
+                        <h6>Email:</h6>
+                        <a href="">info@beheco.in</a>
+                        <a href="">contact@beheco.in</a>
+                    </div>
+                    <div class="contact-details mgn-top-20">
+                        <h6>Contact Number::</h6>
+                        <a href="">+91 1800 123 456</a>
+                        <a href="">+91 1800 987 654</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright-section">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <p>Copyright © 2022 Beheco.in . All rights reserved.</p>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="social-links">
+                            <a href="" class="icon fb">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="icon tw">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="" class="icon insta">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="" class="icon tw">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------------------------Move to Top------------------------------------------------------------->
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="move-to-top">
+        <div class="btn-content">
+            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12 7"
+                style="enable-background:new 0 0 12 7;" xml:space="preserve" width="12px" height="7px">
+                <style type="text/css">
+                    .top {
+                        fill: #FFFFFF;
+                    }
+                </style>
+                <path class="top" d="M6,1.9L1.3,6.8C1,7.1,0.5,7.1,0.2,6.8c-0.3-0.3-0.3-0.8,0-1.1l5.2-5.4C5.6,0.1,5.8,0,6,0s0.4,0.1,0.6,0.2
+           l5.2,5.4c0.3,0.3,0.3,0.8,0,1.1c-0.3,0.3-0.8,0.3-1.1,0L6,1.9z" />
+            </svg>
+        </div>
+
+    </button>
     <!-- -----------------------------------------------------------------External Javascript------------------------------------------------------------->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

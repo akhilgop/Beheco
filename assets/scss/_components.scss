@@ -248,3 +248,72 @@ textarea {
 ::placeholder {
     color: rgba($color: $body-color, $alpha: 0.2);
 }
+// ----------------------------------------------------Pagination-----------------------------------------------------//
+.page-link {
+    @include circle(30px, $white);
+    border: 1px solid $primary;
+    padding: 0;
+    margin: 0px 10px;
+    color: $primary;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: $secondary;
+        color: $white;
+        border-color: $secondary;
+        text-decoration: none;
+    }
+}
+.page-item.active .page-link {
+    box-shadow: none;
+    outline: 0;
+    background-color: $primary;
+    color: $white;
+    border-color: $primary;
+    text-decoration: none;
+}
+.a-prev,
+.a-next {
+    width: auto;
+    border-color: transparent !important;
+    border-radius: 0;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: transparent;
+        color: $secondary;
+        border-color: $secondary;
+        text-decoration: none;
+    }
+}
+.a-prev {
+    i {
+        margin-right: 10px;
+    }
+}
+.a-next {
+    i {
+        margin-left: 10px;
+    }
+}
+// ----------------------------------------------------UL-----------------------------------------------------//
+.common-ul {
+    list-style: none;
+    padding: 0;
+    li {
+        a {
+            @include text(18px, 40px, 400, $black9);
+            &:hover,
+            &:active,
+            &:focus {
+                outline: 0;
+                color: $primary;
+                text-decoration: none;
+            }
+        }
+    }
+}

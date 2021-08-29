@@ -208,3 +208,9 @@ $.each(instance, function (key, value) {
     }
 }
 // ----------------------------------------------------Search Results Banner-----------------------------------------------------//
+$(document).ready(function () {
+    $("#sidebarCollapse").on("click", function () {
+        $("#sidebar").toggleClass("active");
+        $(this).toggleClass("active");
+    });
+});
