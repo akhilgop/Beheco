@@ -464,4 +464,52 @@
         }
     }
 }
-// ----------------------------------------------------Serach Results Bannerr-----------------------------------------------------//
+// ----------------------------------------------------File Upload-----------------------------------------------------//
+#file {
+    position: relative;
+    display: inline-block;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.file-upload {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    #fileInput {
+        display: none;
+    }
+    .text-center {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    textarea {
+        height: 50px !important;
+        overflow: hidden;
+        padding: 12px;
+        background-color: $white !important;
+    }
+}
+.btn-upload {
+    margin: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: $tertiary;
+    border: 1px solid $tertiary;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        color: $primary;
+        background-color: $primary;
+        border-color: $primary;
+        color: $white;
+    }
+}
+
+.container-row {
+    padding-top: 50px;
+}

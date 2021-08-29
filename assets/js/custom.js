@@ -214,3 +214,73 @@ $(document).ready(function () {
         $(this).toggleClass("active");
     });
 });
+
+// ----------------------------------------------------------Star Rating--------------------------------------------------------//
+var $star_rating = $('.star-rating .fa-star');
+
+var SetRatingStar = function () {
+    return $star_rating.each(function () {
+        if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
+            return $(this).removeClass('far').addClass('fas');
+        } else {
+            return $(this).removeClass('fas').addClass('far');
+        }
+    });
+};
+
+$star_rating.on('click', function () {
+    $star_rating.siblings('input.rating-value').val($(this).data('rating'));
+    return SetRatingStar();
+});
+
+SetRatingStar();
+$(document).ready(function () {
+
+});
+
+// ----------------------------------------------------Custom File Upload-----------------------------------------------------//
+function GetFileInfo() {
+    var wrapper = $('<div/>').css({ height: 0, width: 0, 'overflow': 'hidden' });
+    var fileInput = document.getElementById("fileInput");
+    var message = "";
+
+    /*fileInput.change(function(){
+      $this = $(this);
+      $('#file').html($('input:file')[0].files.name);
+    });*/
+    if ('files' in fileInput) {
+        if (fileInput.files.length == 0) {
+            message = "Please browse for one or more files.";
+        } else {
+            for (var i = 0; i < fileInput.files.length; i++) {
+                var file = fileInput.files[i];
+                if ('name' in file) {
+                    message += file.name + "\t ";
+                }
+                else {
+                    message += file.fileName + "\t";
+                }
+            }
+        }
+    }
+    else {
+        if (fileInput.value == "") {
+            message += "Please browse for one or more files.";
+            message += "<br />Use the Control or Shift key for multiple selection.";
+        }
+        else {
+            message += "Your browser doesn't support the files property!";
+            message += "<br />The path of the selected file: " + fileInput.value;
+        }
+    }
+
+    var info = document.getElementById("file");
+    info.innerHTML = message;
+}
+/*$('#file').click(function(){
+    fileInput.click();
+}).show();*/
+
+$('.btn-upload').click(function () {
+    fileInput.click();
+}).show();

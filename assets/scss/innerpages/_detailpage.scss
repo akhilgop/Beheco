@@ -1,0 +1,437 @@
+// ----------------------------------------------------Profile Top-----------------------------------------------------//
+.profile {
+    padding-top: 161px;
+    padding-bottom: 0;
+    .cover-bg {
+        height: 300px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+        border: 5px solid $white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+        margin-top: -100px;
+        margin-bottom: 50px;
+        img {
+            width: 100%;
+        }
+    }
+    .quick-action-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+        a {
+            @include circle(50px, $primary);
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover,
+            &:active,
+            &:focus {
+                box-shadow: none;
+                outline: 0;
+                background-color: $secondary;
+                border-color: $secondary;
+                text-decoration: none;
+            }
+        }
+    }
+    .general-info {
+        .title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            h2 {
+                @include text(25px, 25px, 600, $body-color);
+                margin-bottom: 0px;
+            }
+            i,
+            img {
+                margin-left: 10px;
+                color: $primary;
+            }
+        }
+        p {
+            @include text(15px, 15px, 400, $black9);
+            margin-bottom: 15px;
+        }
+        .overall-rating {
+            display: flex;
+            align-items: center;
+            i {
+                font-size: 16px;
+                margin-right: 10px;
+                color: $primary;
+            }
+            h6 {
+                @include text(15px, 15px, 600, $black9);
+                margin: 0;
+                span {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .highlighted-content {
+        padding: 30px;
+        background-color: rgba($color: $primary, $alpha: 0.1);
+        border-radius: 15px;
+        height: 100%;
+        .timing {
+            p {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .align-right {
+            p {
+                text-align: right;
+            }
+        }
+        p {
+            @include text(15px, 15px, 400, $black9);
+        }
+        .inner-link {
+            display: flex;
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                display: block;
+                @include text(15px, 15px, 400, $black9);
+                &:hover,
+                &:active,
+                &:focus {
+                    box-shadow: none;
+                    outline: 0;
+                    text-decoration: none;
+                    color: $primary;
+                }
+            }
+            i {
+                color: $primary;
+                font-size: 15px;
+            }
+
+            .icon-section {
+                display: flex;
+                justify-content: flex-end;
+                width: 20%;
+            }
+            .text-section {
+                width: 80%;
+                a {
+                    text-align: right;
+                }
+                p {
+                    text-align: right;
+                    @include text(15px, 21px, 400, $black9);
+                }
+            }
+        }
+        .location-icn {
+            margin-top: 5px;
+        }
+    }
+}
+// ----------------------------------------------------About Card-----------------------------------------------------//
+.about-card {
+    margin-top: 50px;
+}
+// ----------------------------------------------------Card Default-----------------------------------------------------//
+.card-default {
+    width: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 1px solid $bdr;
+
+    h3 {
+        @include text(20px, 20px, 700, $primary);
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    h3.center {
+        text-align: center;
+    }
+    h3.align-right {
+        text-align: right;
+    }
+    p {
+        @include text(16px, 30px, 400, $black9);
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    ul {
+        list-style-image: url("../../images/svg/card-list-style-image.svg");
+        padding-left: 30px;
+        margin-bottom: 0;
+        li {
+            p {
+                @include text(16px, 40px, 400, $black9);
+                margin-left: 10px;
+            }
+        }
+    }
+    .view-more-link {
+        @include text(16px, 18px, 600, $primary);
+        &:hover,
+        &:active,
+        &:focus {
+            box-shadow: none;
+            outline: 0;
+            text-decoration: none;
+            color: $secondary;
+        }
+    }
+    .card-body {
+        padding: 0;
+        border: none;
+        p {
+            @include text(16px, 30px, 400, $black9);
+        }
+    }
+}
+// ----------------------------------------------------Equal Height-----------------------------------------------------//
+.eq-height {
+    .card-default {
+        height: 100%;
+    }
+}
+// ----------------------------------------------------Rating-----------------------------------------------------//
+.rate-me {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    .stars {
+        i {
+            font-size: 20px;
+            color: $primary;
+            margin-right: 10px;
+        }
+    }
+    h6 {
+        @include text(20px, 20px, 600, $primary);
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        text-decoration: none;
+        color: $secondary;
+    }
+}
+// ----------------------------------------------------Reviews & Ratings------------------------------------------------//
+.review-rating {
+    padding-top: 30px;
+    .filters {
+        display: flex;
+        .radio-button {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .current-overall-rating {
+        display: flex;
+        align-items: center;
+        margin: 50px 0 20px 0;
+        i {
+            font-size: 45px;
+            color: $primary;
+            margin-right: 10px;
+        }
+        h3 {
+            @include text(40px, 40px, 600, $black6);
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+    }
+    .rating-text-wrpper {
+        p {
+            margin-bottom: 0;
+            @include text(16px, 20px, 400, $black9);
+        }
+    }
+
+    .rating-form {
+        h4 {
+            @include text(20px, 20px, 600, $body-color);
+            margin: 30px 0 20px 0;
+        }
+    }
+}
+.rating-progress {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+    .rt-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .star-type {
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 10px;
+            color: $black9;
+            margin-left: 5px;
+        }
+        p {
+            @include text(14px, 17px, 400, $black9);
+            margin-bottom: 0px;
+        }
+    }
+    .progress {
+        border-radius: 10px;
+        height: 4px;
+        width: 100%;
+        margin: 0 10px;
+        .progress-bar {
+            background-color: $primary;
+        }
+    }
+    .star-count {
+        p {
+            @include text(14px, 17px, 400, $black9);
+            margin-bottom: 0px;
+        }
+    }
+}
+.star-rating {
+    span {
+        cursor: pointer;
+        font-size: 20px;
+        margin-right: 15px;
+        color: $primary;
+    }
+}
+.feedbacks {
+    .feedback-card {
+        padding: 20px;
+        border: 1px solid $bdr;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        .dp {
+            @include circle(60px, rgba($color: $primary, $alpha: 0.2));
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+            p {
+                @include text(20px, 20px, 600, $primary);
+                margin: 0;
+            }
+        }
+        .main-content {
+            width: 80%;
+            margin-left: 20px;
+            p {
+                @include text(16px, 30px, 400, $black9);
+                margin-bottom: 0px;
+            }
+            .auther-info {
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                p {
+                    @include text(12px, 12px, 400, $black9);
+                    margin-left: 10px;
+                }
+                h6 {
+                    @include text(16px, 16px, 600, $body-color);
+                    margin: 0;
+                }
+            }
+        }
+        .right-portion {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            .flex-container {
+                i {
+                    color: $primary;
+                    margin-right: 10px;
+                }
+                h3 {
+                    @include text(20px, 20px, 600, $primary);
+                }
+            }
+            .likes-wrapper {
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                .like {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 15px;
+                    i {
+                        font-size: 12px;
+                        color: $black9;
+                    }
+                    p {
+                        @include text(12px, 12px, 400, $black9);
+                        margin-left: 10px;
+                        margin-bottom: 0;
+                    }
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        box-shadow: none;
+                        outline: 0;
+                        text-decoration: none;
+                        i,
+                        p {
+                            color: $primary;
+                        }
+                    }
+                }
+                .dislike {
+                    @extend .like;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+// ----------------------------------------------------Questions------------------------------------------------//
+.questions {
+    padding-top: 50px;
+    .answer-card {
+        padding: 20px;
+        border: 1px solid $bdr;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        p {
+            @include text(16px, 30px, 400, $black9);
+        }
+        h5 {
+            @include text(18px, 18px, 600, $body-color);
+            margin-bottom: 20px;
+        }
+    }
+}
+.similar-result {
+    margin-top: 50px;
+    padding: 50px 0;
+    background-color: rgba($color: $secondary, $alpha: 0.05);
+}
