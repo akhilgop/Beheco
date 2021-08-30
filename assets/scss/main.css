@@ -3003,6 +3003,10 @@ h2 {
   line-height: 28px;
 }
 
+.footer p {
+  color: #fff;
+}
+
 .footer .copyright-section {
   padding: 45px 0;
   margin-top: 50px;
@@ -3017,9 +3021,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3781,6 +3785,14 @@ h2 {
   background-image: url("../images/cochin-carnival.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.help-bg {
+  background-image: url("../../images/help-bg.jpg");
+}
+
+.terms-bg {
+  background-image: url("../../images/help-bg.jpg");
 }
 
 html {
