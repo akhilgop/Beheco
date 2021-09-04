@@ -149,7 +149,7 @@ button {
 }
 .btn-view-more {
     padding: 0 22px;
-    font-size: 20px;
+    font-size: 18px;
     height: 50px;
     background-color: rgba($color: $primary, $alpha: 0.2);
     border-radius: $bdr-rds;
@@ -166,7 +166,7 @@ button {
 }
 .btn-view-all {
     padding: 0 50px;
-    font-size: 20px;
+    font-size: 18px;
     height: 50px;
     background-color: $primary;
     border-radius: $bdr-rds;
@@ -249,7 +249,7 @@ button {
 }
 .btn-general {
     padding: 0 22px;
-    font-size: 20px;
+    font-size: 18px;
     height: 50px;
     background-color: $primary;
     border-radius: $bdr-rds;
@@ -266,7 +266,7 @@ button {
 }
 .btn-submit-secondary {
     padding: 0 50px;
-    font-size: 20px;
+    font-size: 18px;
     height: 50px;
     background-color: $secondary;
     border-radius: $bdr-rds;
@@ -284,7 +284,7 @@ button {
 }
 .btn-submit-primary {
     padding: 0 50px;
-    font-size: 20px;
+    font-size: 18px;
     height: 50px;
     background-color: $primary;
     border-radius: $bdr-rds;
@@ -301,7 +301,7 @@ button {
 }
 .btn-submit-outline {
     padding: 0 50px;
-    font-size: 20px;
+    font-size: 18px;
     height: 50px;
     background-color: transparent;
     border-radius: $bdr-rds;
@@ -413,7 +413,9 @@ textarea.form-control {
     background-color: $white;
     border-radius: $bdr-rds;
 }
-
+.form-label {
+    font-size: $p;
+}
 // ----------------------------------------------------Placeholder-----------------------------------------------------//
 
 .form-control::-webkit-input-placeholder {

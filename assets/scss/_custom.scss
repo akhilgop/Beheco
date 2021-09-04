@@ -940,3 +940,582 @@ button.slick-prev:hover {
     opacity: 0.75;
     color: black;
 }
+// --------------------------------------------------------------------Image Upload with Cropper-----------------------------------------------------------------//
+.file-cropper {
+    /*croppie*/
+    #img-crop {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    #img-crop .block {
+        border-radius: 1em;
+        background-color: #eff3f6;
+        border-radius: $bdr-rds2;
+        box-shadow: $box-shadow;
+    }
+    #img-crop .block .stage {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        border-radius: $bdr-rds2;
+        overflow: hidden;
+    }
+    #img-crop #upload label#filedrag {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("../images/svg/ImageUpload.svg") 50% 50% no-repeat;
+        background-size: 25% auto;
+        transition: background 0.3s ease;
+        cursor: pointer;
+        border-radius: $bdr-rds2;
+        box-shadow: $box-shadow;
+        border: 10px solid $white;
+    }
+    #img-crop #upload label#filedrag.hover {
+        background-image: url("//img.icons8.com/ios/96/c8cccf/upload-2-filled.png");
+    }
+    #img-crop #upload input[type="file"] {
+        display: none;
+    }
+    #img-crop #crop {
+        display: none;
+        /******** Range Input ********/
+    }
+
+    #croppie {
+        border-radius: $bdr-rds2;
+        box-shadow: $box-shadow;
+        border: 10px solid $white;
+    }
+    .cr-boundary {
+        border-radius: $bdr-rds;
+        overflow: hidden;
+    }
+    .btn-wrapper {
+        margin: 30px 0;
+        display: flex;
+    }
+    .btn-crop {
+        padding: 0px 20px;
+        @include buttn-outline($trans, $primary, $primary);
+        border-radius: $bdr-rds;
+        height: 40px !important;
+        width: 50%;
+    }
+    #img-crop #crop .cr-boundary {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    #img-crop #crop .cr-boundary .cr-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: 0 0;
+        z-index: -1;
+        max-width: none;
+    }
+    #img-crop #crop .cr-boundary .cr-viewport {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        box-shadow: 0 0 0 900px #d9d9d9;
+        z-index: 0;
+    }
+    #img-crop #crop .cr-boundary .cr-overlay {
+        position: absolute;
+        z-index: 2;
+        cursor: move;
+    }
+    #img-crop #crop .cr-slider-wrap {
+        width: 27%;
+        height: 2em;
+        position: absolute;
+        top: 90%;
+        transform: translateY(100%);
+        z-index: 99;
+        display: flex;
+    }
+    #img-crop #crop .cr-slider-wrap .cr-slider {
+        width: 60%;
+        background-color: transparent;
+    }
+    #img-crop #crop .cr-slider-wrap .cr-slider {
+        -webkit-appearance: none;
+    }
+    #img-crop #crop .cr-slider-wrap .cr-slider::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 4px;
+        background-color: #c8cccf;
+        border: 0;
+        border-radius: 1em;
+    }
+    #img-crop #crop .cr-slider-wrap .cr-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 16px;
+        height: 16px;
+        margin-top: -6px;
+        background-color: $primary;
+        border-radius: 50%;
+        border: none;
+        transform: scale(1);
+        -webkit-transition: transform 0.3s;
+        transition: transform 0.3s;
+    }
+    #img-crop #crop .cr-slider-wrap .cr-slider:hover::-webkit-slider-thumb {
+        transform: scale(1.25);
+    }
+    #img-crop #crop .cr-slider-wrap .cr-slider:focus {
+        outline: none;
+    }
+    #img-crop #crop .cr-slider-wrap .cr-slider:focus::-webkit-slider-thumb {
+        background-color: #425389;
+    }
+    #img-crop #crop .cr-slider-wrap .cr-slider::-moz-range-track {
+        width: 100%;
+        height: 4px;
+        background-color: #c8cccf;
+        border: 0;
+        border-radius: 1em;
+    }
+    #img-crop #crop .cr-slider-wrap .cr-slider::-moz-range-thumb {
+        height: 16px;
+        width: 16px;
+        margin-top: -6px;
+        background-color: $primary;
+        border-radius: 50%;
+        border: none;
+        transform: scale(1);
+        -moz-transition: transform 0.3s;
+        transition: transform 0.3s;
+    }
+    #img-crop #crop .cr-slider-wrap .cr-slider:hover::-moz-range-thumb {
+        transform: scale(1.25);
+    }
+    #img-crop #crop .cr-slider-wrap .cr-slider:-moz-focusring {
+        outline: 1px solid white;
+        outline-offset: -1px;
+    }
+    #img-crop #crop .cr-slider-wrap .cr-slider:-moz-focusring::-moz-range-thumb {
+        background-color: #425389;
+    }
+    #img-crop #crop .cr-slider-wrap .cr-slider::-ms-track {
+        width: 300px;
+        height: 4px;
+        background: transparent;
+        border-color: transparent;
+        border-width: 6px 0;
+        color: transparent;
+    }
+    #img-crop #crop .cr-slider-wrap .cr-slider::-ms-fill-lower,
+    #img-crop #crop .cr-slider-wrap .cr-slider::-ms-fill-upper {
+        background: #c8cccf;
+        border-radius: 10px;
+    }
+    #img-crop #crop .cr-slider-wrap .cr-slider::-ms-thumb {
+        border: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background-color: $primary;
+    }
+    #img-crop #crop .cr-slider-wrap #cr-rotate {
+        color: $primary;
+        text-align: right;
+        background-color: transparent;
+        flex: 1;
+    }
+    #img-crop #result {
+        display: none;
+        position: relative;
+    }
+    #img-crop #result #close {
+        @include circle(30px, $primary);
+        background-color: $primary !important;
+        background: url("//img.icons8.com/material/48/ffffff/multiply.png") 50% 50% no-repeat;
+        background-size: 55%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+    #img-crop #result #close:hover {
+        background-image: url("//img.icons8.com/material/48/ffffff/multiply.png");
+    }
+    #img-crop #result img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 20px;
+        border: 10px solid $white;
+        box-shadow: $box-shadow;
+    }
+    #upload {
+        border-radius: $bdr-rds2;
+    }
+    #cr-rotate {
+        @include buttn-outline($trans, $primary, $primary);
+        border-radius: $bdr-rds;
+        color: $primary !important;
+        @include flex-hv-cntr;
+        &:hover,
+        &:active,
+        &:focus {
+            box-shadow: none;
+            outline: 0;
+            text-decoration: none;
+            color: $white !important;
+            background-color: $primary !important;
+            padding: 0 5px;
+        }
+    }
+}
+// ------------------------------------------------------------Cover Image Uploader with Cropper--------------------------------------------//
+.cover-image {
+    margin-bottom: 80px;
+    /*croppie*/
+    #img-crop-cover {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    #img-crop-cover .block {
+        border-radius: 1em;
+        background-color: #eff3f6;
+        border-radius: $bdr-rds2;
+        box-shadow: $box-shadow;
+    }
+    #img-crop-cover .block .stage {
+        width: 960px;
+        height: 200px;
+        position: relative;
+        border-radius: $bdr-rds2;
+        overflow: hidden;
+    }
+    #img-crop-cover #upload-cover label#filedrag-cover {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("../images/svg/ImageUpload.svg") 50% 50% no-repeat;
+        background-size: 6% auto;
+        transition: background 0.3s ease;
+        cursor: pointer;
+        border-radius: $bdr-rds2;
+        box-shadow: $box-shadow;
+        border: 10px solid $white;
+    }
+    #img-crop-cover #upload-cover label#filedrag-cover.hover {
+        background-image: url("//img.icons8.com/ios/96/c8cccf/upload-2-filled.png");
+    }
+    #img-crop-cover #upload-cover input[type="file"] {
+        display: none;
+    }
+    #img-crop-cover #crop-cover {
+        display: none;
+        /******** Range Input ********/
+    }
+
+    #croppie-cover {
+        border-radius: $bdr-rds2;
+        box-shadow: $box-shadow;
+        border: 10px solid $white;
+    }
+    .cr-boundary {
+        border-radius: $bdr-rds;
+        overflow: hidden;
+    }
+    .btn-wrapper {
+        margin: 30px auto;
+        display: flex;
+        width: 30%;
+    }
+    .btn-crop {
+        padding: 0px 20px;
+        @include buttn-outline($trans, $primary, $primary);
+        border-radius: $bdr-rds;
+        height: 40px !important;
+        width: 50%;
+    }
+    #img-crop-cover #crop-cover .cr-boundary {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    #img-crop-cover #crop-cover .cr-boundary .cr-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: 0 0;
+        z-index: -1;
+        max-width: none;
+    }
+    #img-crop-cover #crop-cover .cr-boundary .cr-viewport {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        box-shadow: 0 0 0 900px #d9d9d9;
+        z-index: 0;
+    }
+    #img-crop-cover #crop-cover .cr-boundary .cr-overlay {
+        position: absolute;
+        z-index: 2;
+        cursor: move;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap {
+        width: 30%;
+        height: 2em;
+        position: absolute;
+        top: 100%;
+        -webkit-transform: translateX(50%);
+        transform: translateY(100%);
+        transform: translateX(114%);
+        z-index: 99;
+        display: flex;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider {
+        width: 70%;
+        background-color: transparent;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider {
+        -webkit-appearance: none;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 4px;
+        background-color: #c8cccf;
+        border: 0;
+        border-radius: 1em;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 16px;
+        height: 16px;
+        margin-top: -6px;
+        background-color: $primary;
+        border-radius: 50%;
+        border: none;
+        transform: scale(1);
+        -webkit-transition: transform 0.3s;
+        transition: transform 0.3s;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider:hover::-webkit-slider-thumb {
+        transform: scale(1.25);
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider:focus {
+        outline: none;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider:focus::-webkit-slider-thumb {
+        background-color: #425389;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-moz-range-track {
+        width: 100%;
+        height: 4px;
+        background-color: #c8cccf;
+        border: 0;
+        border-radius: 1em;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-moz-range-thumb {
+        height: 16px;
+        width: 16px;
+        margin-top: -6px;
+        background-color: $primary;
+        border-radius: 50%;
+        border: none;
+        transform: scale(1);
+        -moz-transition: transform 0.3s;
+        transition: transform 0.3s;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider:hover::-moz-range-thumb {
+        transform: scale(1.25);
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider:-moz-focusring {
+        outline: 1px solid white;
+        outline-offset: -1px;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider:-moz-focusring::-moz-range-thumb {
+        background-color: #425389;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-ms-track {
+        width: 300px;
+        height: 4px;
+        background: transparent;
+        border-color: transparent;
+        border-width: 6px 0;
+        color: transparent;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-ms-fill-lower,
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-ms-fill-upper {
+        background: #c8cccf;
+        border-radius: 10px;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-ms-thumb {
+        border: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background-color: $primary;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap #cr-rotate {
+        color: $primary;
+        text-align: right;
+        background-color: transparent;
+        flex: 1;
+    }
+    #img-crop-cover #result-cover {
+        display: none;
+    }
+    #img-crop-cover #result-cover #close {
+        width: 50px;
+        height: 50px;
+        background: url("//img.icons8.com/material/48/c8cccf/multiply.png") 50% 50% no-repeat;
+        background-size: 80%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+    #img-crop-cover #result-cover #close:hover {
+        background-image: url("//img.icons8.com/material/48/8193a2/multiply.png");
+    }
+    #img-crop-cover #result-cover img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    #upload-cover {
+        border-radius: $bdr-rds2;
+    }
+    #cr-rotate {
+        @include buttn-outline($trans, $primary, $primary);
+        border-radius: $bdr-rds;
+        color: $primary !important;
+        &:hover,
+        &:active,
+        &:focus {
+            box-shadow: none;
+            outline: 0;
+            text-decoration: none;
+            color: $white !important;
+            background-color: $primary !important;
+            padding: 0 5px;
+        }
+    }
+}
+// ------------------------------------------------------------Business Photo Uploader--------------------------------------------//
+.add-photos-section {
+    margin-top: 50px;
+    @mixin flex-direction($value) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: $value;
+        flex-direction: $value;
+    }
+
+    @mixin align-items($value) {
+        -webkit-box-align: $value;
+        -ms-flex-align: $value;
+        -ms-grid-row-align: $value;
+        align-items: $value;
+    }
+
+    @mixin display-flex($value) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: $value;
+    }
+
+    @mixin justify-content-center {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    @mixin flex-wrap($value) {
+        -ms-flex-wrap: $value;
+        flex-wrap: $value;
+    }
+    .custom-file-preview-item {
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .panel {
+        background-color: #fff;
+        border-radius: 0.75rem;
+        padding: 0.75rem;
+        height: 100%;
+    }
+    .custom-file-image {
+        &-input {
+            display: none;
+        }
+
+        .custom-file-preview {
+            @include display-flex(flex);
+            @include flex-wrap(wrap);
+            justify-content: center;
+
+            &-list {
+                @include display-flex(flex);
+                @include flex-wrap(wrap);
+            }
+
+            &-add {
+                position: relative;
+                @include display-flex(flex);
+                @include justify-content-center;
+                @include align-items(center);
+                @include flex-direction(column);
+                width: 200px;
+                height: 200px;
+                margin-right: 0.75rem;
+                margin-bottom: 0.75rem;
+                cursor: pointer;
+                box-shadow: $box-shadow;
+                border-radius: $bdr-rds2;
+                border: 10px solid $white;
+                background-color: #eff3f6 !important;
+                background: url("../images/svg/ImageUpload.svg") 50% 50% no-repeat;
+            }
+
+            &-item {
+                position: relative;
+                background-repeat: no-repeat;
+                border-radius: 6px;
+                width: 200px;
+                height: 200px;
+                margin-right: 0.75rem;
+                margin-bottom: 0.75rem;
+                box-shadow: $box-shadow;
+                border-radius: $bdr-rds2;
+                border: 10px solid $white;
+            }
+            &-del {
+                right: -5px;
+                background: $primary;
+                color: $white;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                @include flex-hv-cntr;
+                text-align: center;
+                margin-top: -6px;
+                cursor: pointer;
+                box-shadow: $box-shadow;
+                i {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

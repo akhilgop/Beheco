@@ -201,20 +201,9 @@
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <h2 class="common-h2">Enter
-                                            <span>Basic Details</span>
-                                        </h2>
-                                        <p class="helper-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                            elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
+                                        <h3 class="custom-h text-center">Enter <span>Basic Details</span></h3>
                                         <div class="form-wrapper">
                                             <div class="general-info">
-                                                <h3 class="common-h3">General <span>Information</span></h3>
                                                 <div class="row">
                                                     <div class="col-xl-6">
                                                         <div class="mb-3">
@@ -236,6 +225,28 @@
                                                                 <option value="2">Two</option>
                                                                 <option value="3">Three</option>
                                                             </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xl-6">
+                                                        <div class="mb-3">
+                                                            <label for="exampleFormControlInput1"
+                                                                class="form-label">Year of Establishment
+                                                                (Optional)</label>
+                                                            <input type="number" class="form-control"
+                                                                id="exampleFormControlInput1"
+                                                                placeholder="Year of Establishment">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <div class="mb-3">
+                                                            <label for="exampleFormControlInput1"
+                                                                class="form-label">Name of Founder (Optional)
+                                                            </label>
+                                                            <input type="text" class="form-control"
+                                                                id="exampleFormControlInput1"
+                                                                placeholder="Founder's Name">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -333,7 +344,7 @@
                                                 </div>
                                             </div>
                                             <div class="contact-details">
-                                                <h3 class="common-h3"><span>Contact</span> Details</h3>
+                                                <h3 class="common-h3 text-center"><span>Contact</span> Details</h3>
                                                 <div class="row">
                                                     <div class="col-xl-6">
                                                         <label class="form-label">Office Number</label>
@@ -437,7 +448,7 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-xl-12">
-                                                        <div class="right-align">
+                                                        <div class="center-align">
                                                             <button type="button"
                                                                 class="btn btn-submit-outline">Reset</button>
                                                             <button type="button"
@@ -461,7 +472,106 @@
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
+                                    <div class="cover-image">
+                                        <h3 class="custom-h text-center">Add <span>Cover Picture</span></h3>
+                                        <div class="file-cropper">
+                                            <div id="img-crop-cover">
+                                                <div id="upload-cover">
+                                                    <div class="block">
+                                                        <div class="stage">
+                                                            <label id="filedrag-cover">
+                                                                <input type="file" id="fileselect-cover"
+                                                                    name="fileselect-cover" accept="image/*" />
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="crop-cover">
+                                                    <div class="block">
+                                                    </div>
+                                                    <div class="stage">
+                                                        <div id="croppie-cover"></div>
+                                                        <div class="btn-wrapper">
+                                                            <button class="btn btn-crop" id="prev-cover"
+                                                                onclick="cropCancel();">Clear</button>
+                                                            <button class="btn btn-crop" id="next-cover"
+                                                                onclick="cropResult();">Set</button>
+                                                        </div>
+                                                    </div>
 
+                                                </div>
+                                                <div id="result-cover">
+                                                    <button class="btn" id="close-cover"
+                                                        onclick="cropCancel();"></button>
+                                                    <div class="block">
+                                                        <div class="stage"><img src="" /></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="profile-pic-section">
+                                        <h3 class="custom-h text-center">Add <span>Profile Picture</span></h3>
+                                        <div class="file-cropper">
+                                            <div class="profile-image">
+                                                <div id="img-crop">
+                                                    <div id="upload">
+                                                        <div class="block">
+                                                            <div class="stage">
+                                                                <label id="filedrag">
+                                                                    <input type="file" id="fileselect" name="fileselect"
+                                                                        accept="image/*" />
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="crop">
+                                                        <div class="block">
+                                                        </div>
+                                                        <div class="stage">
+                                                            <div id="croppie"></div>
+                                                            <div class="btn-wrapper">
+                                                                <button class="btn btn-crop" id="prev"
+                                                                    onclick="cropCancel();">Clear</button>
+                                                                <button class="btn btn-crop" id="next"
+                                                                    onclick="cropResult();">Set</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div id="result">
+                                                        <button class="btn" id="close" onclick="cropCancel();"></button>
+                                                        <div class="block">
+                                                            <div class="stage"><img src="" /></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="add-photos-section">
+                                        <h3 class="custom-h text-center">Add <span>Photos of your Business</span></h3>
+                                        <div class="custom-file-image">
+                                            <input type="file" id="fileImage" name="fileImage"
+                                                class="custom-file-image-input" accept="image/*" multiple="multiple">
+                                            <div class="custom-file-preview">
+                                                <label class="custom-file-preview-add" for="fileImage">
+
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p class="text-danger error-product_image"></p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-12 mgn-top-30">
+                                            <div class="center-align">
+                                                <button type="button" class="btn btn-submit-outline">Previous</button>
+                                                <button type="button" class="btn btn-submit-primary">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -475,7 +585,21 @@
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-
+                                    <h3 class="custom-h text-center">Add <span>Your Location</span></h3>
+                                    <div class="location-wrapper">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d291.94309037737787!2d76.58947476060854!3d10.107077075406194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d10.1070728!2d76.5893272!4m5!1s0x3b07e5cc63ace517%3A0xbaeb093424efee5f!2sThrikkariyoor%2C%20Kerala!3m2!1d10.1012659!2d76.6008334!5e0!3m2!1sen!2sin!4v1630769291593!5m2!1sen!2sin"
+                                            width="100%" height="450" style="border:0;" allowfullscreen=""
+                                            loading="lazy"></iframe>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-12 mgn-top-30">
+                                            <div class="center-align">
+                                                <button type="button" class="btn btn-submit-outline">Previous</button>
+                                                <button type="button" class="btn btn-submit-primary">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -489,7 +613,132 @@
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-
+                                    <h3 class="custom-h text-center">Add <span>Keywords</span></h3>
+                                    <div class="keyword-wrapper">
+                                        <div class="search-bar mgn-btm-20">
+                                            <div class="row">
+                                                <div class="col-xl-2">
+                                                </div>
+                                                <div class="col-xl-8">
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Search Keyword">
+                                                        <button class="btn btn-primary btn-search" type="button"
+                                                            id="button-addon2"><i
+                                                                class="fas fa-search"></i><span>Search</span></button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="keywords">
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined">Sample
+                                                    Keyword</label>
+                                            </div>
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined1"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined1">Sample
+                                                    Keyword</label>
+                                            </div>
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined2"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined2">Sample
+                                                    Keyword</label>
+                                            </div>
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined3"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined3">Sample
+                                                    Keyword</label>
+                                            </div>
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined4"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined4">Sample
+                                                    Keyword</label>
+                                            </div>
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined5"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined5">Sample
+                                                    Keyword</label>
+                                            </div>
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined6"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined6">Sample
+                                                    Keyword</label>
+                                            </div>
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined7"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined7">Sample
+                                                    Keyword</label>
+                                            </div>
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined8"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined8">Sample
+                                                    Keyword</label>
+                                            </div>
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined9"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined9">Sample
+                                                    Keyword</label>
+                                            </div>
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined210"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined10">Sample
+                                                    Keyword</label>
+                                            </div>
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined11"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined11">Sample
+                                                    Keyword</label>
+                                            </div>
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined12"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined12">Sample
+                                                    Keyword</label>
+                                            </div>
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined13"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined13">Sample
+                                                    Keyword</label>
+                                            </div>
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined14"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined14">Sample
+                                                    Keyword</label>
+                                            </div>
+                                            <div class="keyword">
+                                                <input type="checkbox" class="btn-check" id="btn-check-outlined15"
+                                                    autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-check-outlined15">Sample
+                                                    Keyword</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-12 mgn-top-30">
+                                            <div class="center-align">
+                                                <button type="button" class="btn btn-submit-outline">Previous</button>
+                                                <button type="button" class="btn btn-submit-primary">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -603,6 +852,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.2/croppie.min.js'></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/selectbox.js"></script>
     <script src="assets/js/wow/wow.min.js"></script>

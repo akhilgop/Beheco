@@ -23,34 +23,90 @@
     <section>
         <div class="container">
             <!------------------------------------------------------------------Sign Up------------------------------------------------------------->
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SignUp">
-                Sign Up
-            </button>
+            <div class="btn-wrapper">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SignUp">
+                    Sign Up
+                </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="SignUp" tabindex="-1" aria-labelledby="SignUpLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <div class="logo">
-                                <img src="assets/images/logo.png" alt="logo">
+                <!-- Modal -->
+                <div class="modal fade" id="SignUp" tabindex="-1" aria-labelledby="SignUpLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="logo">
+                                    <img src="assets/images/logo.png" alt="logo">
+                                </div>
+                                <div class="content">
+                                    <h2 class="common-h2"><span>Sign Up</span> and Explore More</h2>
+                                    <div class="d-grid gap-2">
+                                        <button class="btn btn-google" type="button">
+                                            <div class="icon">
+                                                <i class="fab fa-google"></i>
+                                            </div>
+                                            <span>Sign in with Google</span>
+                                        </button>
+                                        <button class="btn btn-facebook" type="button">
+                                            <div class="icon">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </div>
+                                            <span>Sign in with Facebook</span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="content">
-                                <h2 class="common-h2"><span>Sign Up</span> and Explore More</h2>
-                                <div class="d-grid gap-2">
-                                    <button class="btn btn-google" type="button">
-                                        <div class="icon">
-                                            <i class="fab fa-google"></i>
-                                        </div>
-                                        <span>Sign in with Google</span>
-                                    </button>
-                                    <button class="btn btn-facebook" type="button">
-                                        <div class="icon">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </div>
-                                        <span>Sign in with Facebook</span>
-                                    </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------------------------------------------------Success------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Success">
+                    Success
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="Success" tabindex="-1" aria-labelledby="SuccessLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body n">
+                                <div class="icon-wrapper">
+                                    <img src="assets/images/svg/check.svg" alt="success">
+                                </div>
+                                <div class="content">
+                                    <h2 class="success-heading">Success</h2>
+                                    <p>Now you can Explore Everything</p>
+                                    <div class="d-grid gap-2 full-wdth-btn">
+                                        <button type="button" class="btn btn-primary-outline">Explore now</button>
+                                        <button type="button" class="btn btn-primary">View your profile</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------------------------------------------------Error------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Error">
+                    Error
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="Error" tabindex="-1" aria-labelledby="ErrorLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body n">
+                                <div class="icon-wrapper">
+                                    <img src="assets/images/svg/x-circle.svg" alt="success">
+                                </div>
+                                <div class="content">
+                                    <h2 class="error-heading">Error</h2>
+                                    <p>Please check the Internet connection</p>
+                                    <div class="d-grid gap-2 full-wdth-btn">
+                                        <button type="button" class="btn btn-danger-outline">Explore now</button>
+                                        <button type="button" class="btn btn-danger">View your profile</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -58,59 +114,6 @@
                 </div>
             </div>
 
-            <!------------------------------------------------------------------Success------------------------------------------------------------->
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Success">
-                Success
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="Success" tabindex="-1" aria-labelledby="SuccessLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-body n">
-                            <div class="icon-wrapper">
-                                <img src="assets/images/svg/check.svg" alt="success">
-                            </div>
-                            <div class="content">
-                                <h2 class="success-heading">Success</h2>
-                                <p>Now you can Explore Everything</p>
-                                <div class="d-grid gap-2 full-wdth-btn">
-                                    <button type="button" class="btn btn-primary-outline">Explore now</button>
-                                    <button type="button" class="btn btn-primary">View your profile</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!------------------------------------------------------------------Error------------------------------------------------------------->
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Error">
-                Error
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="Error" tabindex="-1" aria-labelledby="ErrorLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-body n">
-                            <div class="icon-wrapper">
-                                <img src="assets/images/svg/x-circle.svg" alt="success">
-                            </div>
-                            <div class="content">
-                                <h2 class="error-heading">Error</h2>
-                                <p>Please check the Internet connection</p>
-                                <div class="d-grid gap-2 full-wdth-btn">
-                                    <button type="button" class="btn btn-danger-outline">Explore now</button>
-                                    <button type="button" class="btn btn-danger">View your profile</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
     </section>

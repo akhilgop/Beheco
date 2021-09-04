@@ -88,6 +88,16 @@
   transition: 0.2s all ease-out;
 }
 
+.listing-card:hover {
+  -webkit-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+}
+
+.listing-card:hover .content {
+  -webkit-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
+}
+
 .listing-card:hover .content .image-wrapper {
   -webkit-transition: 0.2s all ease-out;
   transition: 0.2s all ease-out;
@@ -184,10 +194,14 @@
   border-radius: 10px;
   overflow: hidden;
   height: 288px;
+  -webkit-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
 }
 
 .listing-card .image-wrapper img {
   width: 100%;
+  -webkit-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
 }
 
 .listing-card .btn-save {
@@ -488,10 +502,15 @@
 
 .results-content .accordion-body .clearfix .form-check {
   float: left;
+  margin-bottom: 15px;
 }
 
 .results-content .accordion-body .clearfix .count {
   float: right;
+}
+
+.results-content .accordion-body .clearfix .count p {
+  margin-bottom: 0;
 }
 
 .results-content .accordion-body label,
@@ -1292,7 +1311,7 @@
 .general-banner {
   width: 100vw;
   height: 35vh;
-  margin-top: 161px;
+  margin-top: 128px;
   padding-top: 50px;
   background-image: url("../../images/general-banner.jpg");
   background-repeat: no-repeat;
@@ -1695,5 +1714,43 @@ p {
   border-top-left-radius: 0 !important;
   border-radius: 10px;
   margin-top: -1px;
+}
+
+.location-wrapper {
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.location-wrapper iframe {
+  border-radius: 10px;
+}
+
+.keyword-wrapper .search-bar .btn-search {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0 20px;
+}
+
+.keyword-wrapper .search-bar span {
+  margin-left: 10px;
+}
+
+.keyword-wrapper .keywords {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.keyword-wrapper .keywords .keyword {
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=innerpages.css.map */

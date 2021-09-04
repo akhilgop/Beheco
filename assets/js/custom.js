@@ -388,3 +388,172 @@ $exitButton.click(function () {
     // Fade out the overlay
     $("#overlay").fadeOut("slow");
 });
+
+// ----------------------------------------------------Image Cropper-----------------------------------------------------//
+const $upload = $('#upload'),
+    $crop = $('#crop'),
+    $result = $('#result'),
+    $croppie = $('#croppie');
+
+var cr,
+    cr_img = '',
+    img_w = 200,
+    img_h = 200,
+    isCrop = 0;
+
+$(function () {
+    if (window.File && window.FileList && window.FileReader)
+        fileInit();
+    else
+        alert('Error');
+});
+
+//********* file select/drop *********
+var fileselect = document.getElementById("fileselect"),
+    filedrag = document.getElementById("filedrag");
+
+function fileInit() {
+    // file select
+    fileselect.addEventListener("change", FileSelectHandler, false);
+    // is XHR2 available?
+    var xhr = new XMLHttpRequest();
+    // file drop
+    if (xhr.upload) {
+        filedrag.addEventListener("dragover", FileDragHover, false);
+        filedrag.addEventListener("dragleave", FileDragHover, false);
+        filedrag.addEventListener("drop", FileSelectHandler, false);
+    }
+}
+
+// file selection
+function FileSelectHandler(e) {
+    // cancel event and hover styling
+    FileDragHover(e);
+    // fetch FileList object
+    var files = e.target.files || e.dataTransfer.files;
+    if (files[0] && files[0].type.match('image.*')) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $upload.hide();
+            if (cr_img == '') {
+                cr_img = e.target.result;
+                cropInit();
+            }
+            else {
+                cr_img = e.target.result;
+                bindCropImg();
+            }
+            $crop.fadeIn(300);
+        }
+        reader.readAsDataURL(files[0]);
+    }
+}
+
+// file drag hover
+function FileDragHover(e) {
+    e.stopPropagation();
+    e.preventDefault();
+    filedrag.className = (e.type == "dragover" ? "hover" : "");
+}
+
+//********* crop *********
+function cropInit() {
+    cr = $croppie.croppie({
+        viewport: {
+            width: img_w,
+            height: img_h
+        },
+        boundary: {
+            width: img_w,
+            height: img_h
+        },
+        mouseWheelZoom: false,
+        enableOrientation: true
+    });
+
+    $(".cr-slider-wrap").append('<button id="cr-rotate" onClick="cropRotate(-90);">↻ Rotate</button>');
+
+    bindCropImg();
+}
+
+function bindCropImg() {
+    cr.croppie('bind', {
+        url: cr_img
+    });
+}
+
+function cropRotate(deg) {
+    cr.croppie('rotate', parseInt(deg));
+}
+
+function cropCancel() {
+    if ($upload.is(':hidden')) {
+        $upload.fadeIn(300).siblings().hide();
+        fileselect.value = "";
+        isCrop = 0;
+    }
+}
+
+function cropResult() {
+    if (!isCrop) {
+        isCrop = 1;
+        cr.croppie('result', {
+            type: 'canvas', // canvas(base64)|html
+            size: { width: img_w, height: img_h }, //'viewport'|'original'|{width:500, height:500}
+            format: 'jpeg', //'jpeg'|'png'|'webp'
+            quality: 1 //0~1
+        }).then(function (resp) {
+            $crop.hide();
+            $result.find('img').attr('src', resp);
+            $result.fadeIn(300);
+        });
+    }
+}
+
+// ----------------------------------------------------Image Uploader-----------------------------------------------------//
+function CustomUpload(element) {
+    let ref = this;
+    this.imageFileArray = [];
+    this.element = $(element);
+    this.element.on('change', async function (e) {
+        let arrayImage = e.target.files;
+        let start = ref.imageFileArray.length;
+        let validExt = ['image/jpg', 'image/jpeg', 'image/png'];
+        $.each(arrayImage, (index, item) => {
+            if ($.inArray(item.type, validExt) != -1) {
+                item.index = start + index;
+                ref.imageFileArray.push(item);
+                let fr = new FileReader();
+                let imageItem = '';
+                fr.onload = function (event) {
+                    imageItem += `
+<div class="custom-file-preview-item"
+style="background: url('${event.target.result}')">
+<span data-key="${item.index}" class="custom-file-preview-del"><i
+class="fa fa-times"></i></span>
+</div>
+`;
+                    $('.custom-file-preview').append(imageItem);
+                }
+                fr.readAsDataURL(item);
+            } else {
+                alert('This is not an image');
+            }
+            //Array images
+            console.log(ref.imageFileArray);
+        });
+    });
+    this.element.parent().on('click', '.custom-file-preview-del', function (e) {
+        e.preventDefault();
+        let del = $(this);
+        let id = del.data('key');
+        let index = ref.imageFileArray.findIndex(item => {
+            return item.index == id;
+        });
+        ref.imageFileArray.splice(index, 1);
+        del.parent().remove();
+        //Array after deleted
+        console.log(ref.imageFileArray);
+    });
+}
+const upload = new CustomUpload('#fileImage');

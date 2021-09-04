@@ -206,9 +206,13 @@
             clear: both;
             .form-check {
                 float: left;
+                margin-bottom: 15px;
             }
             .count {
                 float: right;
+                p {
+                    margin-bottom: 0;
+                }
             }
         }
         label,
