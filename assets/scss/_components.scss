@@ -40,10 +40,11 @@ a {
     font-size: $p;
     text-decoration: none;
     transition: all 0.5s ease-out;
+    cursor: pointer;
     &:hover,
     &:active,
     &:focus {
-        text-decoration: underline;
+        text-decoration: none;
         transition: all 0.5s ease-out;
         outline: 0;
     }
@@ -55,8 +56,25 @@ a {
         font-weight: 600 !important;
     }
 }
-.media-show {
-    display: none;
+
+.nav-item {
+    .nav-link {
+        @include a-animate;
+    }
+    .nav-link.dropdown-toggle {
+        &:after {
+            background: inherit !important;
+            position: relative !important;
+            display: inherit !important;
+            height: auto;
+            left: inherit;
+            position: relative !important;
+        }
+        &:hover:after {
+            width: inherit;
+            left: inherit;
+        }
+    }
 }
 // ----------------------------------------------------Button-----------------------------------------------------//
 button {
@@ -64,11 +82,11 @@ button {
     cursor: pointer;
     text-decoration: none;
     transition: all 0.5s ease-out;
-    border-radius: 10px;
+    border-radius: $bdr-rds;
     &:hover,
     &:active,
     &:focus {
-        box-shadow: none;
+        box-shadow: none !important;
         outline: 0;
     }
 }
@@ -114,10 +132,10 @@ button {
 }
 .btn-black {
     @include buttn($black, $white, $black);
-    height: 50px;
-    @include flex-cntr;
-    padding: 0 26px;
-    border-radius: 10px;
+    height: 45px;
+    @include flex-hv-cntr;
+    padding: 0 20px;
+    border-radius: $bdr-rds;
     &:hover,
     &:active,
     &:focus {
@@ -134,7 +152,7 @@ button {
     font-size: 20px;
     height: 50px;
     background-color: rgba($color: $primary, $alpha: 0.2);
-    border-radius: 10px;
+    border-radius: $bdr-rds;
     color: $primary;
     &:hover,
     &:active,
@@ -151,7 +169,7 @@ button {
     font-size: 20px;
     height: 50px;
     background-color: $primary;
-    border-radius: 10px;
+    border-radius: $bdr-rds;
     color: $white;
     &:hover,
     &:active,
@@ -168,7 +186,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: $bdr-rds;
     height: 50px;
     text-align: center;
     position: relative;
@@ -185,7 +203,7 @@ button {
     &:hover,
     &:active,
     &:focus {
-        box-shadow: none;
+        box-shadow: none !important;
         outline: 0;
         background-color: darken($color: $google, $amount: 10%);
         color: $white;
@@ -208,24 +226,33 @@ button {
 }
 .btn-primary-check {
     @include buttn-outline($white, $primary, $primary);
+    border-radius: $bdr-rds;
 }
 .btn-check:active + .btn-primary-check,
 .btn-check:checked + .btn-primary-check,
 .btn-primary-check.active,
 .btn-primary-check:active,
 .show > .btn-primary-check.dropdown-toggle {
-    box-shadow: none;
+    box-shadow: none !important;
     outline: 0;
     background-color: $primary;
     color: $white;
     border-color: $primary;
+}
+.btn-primary-check:active {
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+    }
 }
 .btn-general {
     padding: 0 22px;
     font-size: 20px;
     height: 50px;
     background-color: $primary;
-    border-radius: 10px;
+    border-radius: $bdr-rds;
     color: $white;
     &:hover,
     &:active,
@@ -242,7 +269,7 @@ button {
     font-size: 20px;
     height: 50px;
     background-color: $secondary;
-    border-radius: 10px;
+    border-radius: $bdr-rds;
     color: $white;
     margin-right: 20px;
     &:hover,
@@ -260,7 +287,7 @@ button {
     font-size: 20px;
     height: 50px;
     background-color: $primary;
-    border-radius: 10px;
+    border-radius: $bdr-rds;
     color: $white;
     &:hover,
     &:active,
@@ -277,7 +304,7 @@ button {
     font-size: 20px;
     height: 50px;
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: $bdr-rds;
     color: $primary;
     margin-right: 20px;
     border: 1px solid $primary;
@@ -320,47 +347,116 @@ button {
         text-decoration: none;
     }
 }
+.btn-outline-primary {
+    @include buttn-outline($trans, $primary, $primary);
+    border-radius: $bdr-rds;
+}
+
+.btn-outline-secondary {
+    @include buttn-outline($trans, $secondary, $secondary);
+    border-radius: $bdr-rds;
+}
+.btn-outline-tertiary {
+    @include buttn-outline($trans, $tertiary, $tertiary);
+    border-radius: $bdr-rds;
+}
+.btn-outline-light {
+    @include buttn-outline($trans, $white6, $white6);
+    border-radius: $bdr-rds;
+}
+.btn-white {
+    @include buttn($white, $primary, $white);
+    border-radius: $bdr-rds;
+}
+.btn {
+    @include flex-hv-cntr;
+}
 // ----------------------------------------------------Form Control-----------------------------------------------------//
 
 .form-check-input:checked {
     background-color: $primary;
     border-color: $primary;
     box-shadow: none;
+    outline: 0;
 }
 .form-check-inline {
     margin-right: 30px;
 }
+
 .form-control {
-    border-radius: 10px;
     height: 50px;
+    border: 1px solid $bdr;
+    border-radius: $bdr-rds;
+    font-size: calc(#{$p} - 2px);
+    font-weight: 400;
     &:focus {
         box-shadow: none;
-        border: 1px solid $primary;
+        outline: 0;
+        border-color: $primary;
     }
 }
-textarea {
+textarea.form-control {
     height: inherit !important;
     resize: none;
 }
-.form-label {
-    color: $black9;
+.form-check-input:focus {
+    box-shadow: none !important;
 }
-.mb-3 {
-    margin-bottom: 20px !important;
+.form-check-label {
+    color: $body-color;
+    opacity: 0.7;
+    font-size: $p !important;
+    font-weight: 400 !important;
 }
+.input-group-text {
+    padding: 0px 20px;
+    background-color: $white;
+    border-radius: $bdr-rds;
+}
+
 // ----------------------------------------------------Placeholder-----------------------------------------------------//
-::-webkit-input-placeholder {
-    /* Edge */
-    color: rgba($color: $body-color, $alpha: 0.2);
+
+.form-control::-webkit-input-placeholder {
+    color: rgba($color: $body-color, $alpha: 0.5);
 }
 
-:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: rgba($color: $body-color, $alpha: 0.2);
+.form-control::-moz-placeholder {
+    color: rgba($color: $body-color, $alpha: 0.5);
+}
+.form-control:-ms-input-placeholder {
+    color: rgba($color: $body-color, $alpha: 0.5);
+}
+.form-control:placeholder {
+    color: rgba($color: $body-color, $alpha: 0.5);
+}
+// ----------------------------------------------------Mouse Selection-----------------------------------------------------//
+::-moz-selection {
+    /* Code for Firefox */
+    color: $white;
+    background: rgba($color: $primary, $alpha: 0.7);
 }
 
-::placeholder {
-    color: rgba($color: $body-color, $alpha: 0.2);
+::selection {
+    color: $white;
+    background: rgba($color: $primary, $alpha: 0.7);
+}
+// ----------------------------------------------------Nav or Pills-----------------------------------------------------//
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background: $primary;
+    color: $white;
+}
+.nav-pills {
+    .nav-link {
+        color: $primary;
+        background: $white;
+    }
+}
+.tab-content {
+    background-color: $white;
+    padding: 30px;
+    border-radius: $bdr-rds;
+    width: 100%;
 }
 // ----------------------------------------------------Pagination-----------------------------------------------------//
 .page-link {
@@ -467,7 +563,7 @@ textarea {
         }
     }
     .accordion-item {
-        @include bshadow;
+        box-shadow: $box-shadow;
         border: none;
         border-bottom: 1px solid $bdr;
     }
@@ -522,4 +618,80 @@ textarea {
         font-size: 16px;
         margin-top: 10px;
     }
+}
+// --------------------------------------------------------------------File Input-----------------------------------------------------------------//
+.hidden-xs-up {
+    // display: none;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.file-input {
+    background-color: $white !important;
+    position: relative;
+}
+.file-upload {
+    .btn-primary-outline {
+        border-top-right-radius: $bdr-rds !important;
+        border-bottom-right-radius: $bdr-rds !important;
+        &:hover,
+        &:active,
+        &:focus {
+            box-shadow: none;
+            outline: 0;
+            text-decoration: none;
+        }
+    }
+}
+// --------------------------------------------------------------------Modal----------------------------------------------------------------------//
+.modal-content {
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    padding: 50px;
+}
+.modal-dialog {
+    @include flex-hv-cntr;
+    height: 100%;
+}
+.modal-body {
+    padding: 0;
+}
+// -------------------------------------------------------------------Toggle Buttons--------------------------------------------------------------------//
+.btn-check:active + .btn-outline-primary:focus,
+.btn-check:checked + .btn-outline-primary:focus,
+.btn-outline-primary.active:focus,
+.btn-outline-primary.dropdown-toggle.show:focus,
+.btn-outline-primary:active:focus {
+    box-shadow: none !important;
+    background-color: $primary;
+}
+.btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+    box-shadow: none !important;
+    background-color: $primary;
+    border-color: $primary;
+}
+.btn-check:focus + .btn-outline-primary,
+.btn-outline-primary:focus {
+    box-shadow: none !important;
+}
+// -------------------------------------------------------------------Carousal--------------------------------------------------------------------//
+.carousel-item {
+    height: 400px;
+    overflow: hidden;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: $white;
+}
+.carousel-dark .carousel-control-next-icon,
+.carousel-dark .carousel-control-prev-icon {
+    filter: inherit !important;
+}
+.carousel-indicators button.active {
+    background-color: $primary !important;
 }

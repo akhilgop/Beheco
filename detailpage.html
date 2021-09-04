@@ -98,8 +98,11 @@
                         <div class="dropdown">
                             <button class="btn btn-user dropdown-toggle" type="button" id="dropdownMenuButton1"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="assets/images/svg/user.svg" alt="user-icon">
-                                <span>Signin / Register</span>
+                                <div class="img-wrapper">
+                                    <img src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                        alt="user-icon">
+                                </div>
+                                <span>Hello Jack</span>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -181,6 +184,10 @@
                 </div>
                 <div class="col-xl-6">
                     <div class="quick-action-wrapper">
+                        <a href="" class="phone media-show" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="Direction">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
                         <a href="" class="dir" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Direction">
                             <img src="assets/images/svg/directions.svg" alt="dir">
                         </a>
@@ -260,10 +267,225 @@
             </div>
 
             <div class="added-photos">
-                <div class="row">
-                    <div class="col-xl-12">
+                <div id="gallery">
+                    <div id="image-gallery">
+                        <div class="row">
+                            <div class="col-lg-2 image">
+                                <div class="img-wrapper">
+                                    <a href="https://unsplash.it/500"><img src="https://unsplash.it/500"
+                                            class="img-responsive"></a>
+                                    <div class="img-overlay">
+                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 image">
+                                <div class="img-wrapper">
+                                    <a href="https://unsplash.it/600"><img src="https://unsplash.it/600"
+                                            class="img-responsive"></a>
+                                    <div class="img-overlay">
+                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 image">
+                                <div class="img-wrapper">
+                                    <a href="https://unsplash.it/700"><img src="https://unsplash.it/700"
+                                            class="img-responsive"></a>
+                                    <div class="img-overlay">
+                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 image">
+                                <div class="img-wrapper">
+                                    <a href="https://unsplash.it/800"><img src="https://unsplash.it/800"
+                                            class="img-responsive"></a>
+                                    <div class="img-overlay">
+                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 image">
+                                <div class="img-wrapper">
+                                    <a href="https://unsplash.it/900"><img src="https://unsplash.it/900"
+                                            class="img-responsive"></a>
+                                    <div class="img-overlay">
+                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 image">
+                                <div class="img-wrapper">
+                                    <a href="https://unsplash.it/1000"><img src="https://unsplash.it/1000"
+                                            class="img-responsive"></a>
+                                    <div class="img-overlay">
+                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse-container">
+                                <div class="collapse" id="galleryViewMore">
+                                    <div class="card card-body">
+                                        <div class="row">
+                                            <div class="col-lg-2 image">
+                                                <div class="img-wrapper">
+                                                    <a
+                                                        href="https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"><img
+                                                            src="https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+                                                            class="img-responsive"></a>
+                                                    <div class="img-overlay">
+                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 image">
+                                                <div class="img-wrapper">
+                                                    <a href="https://unsplash.it/600"><img src="https://unsplash.it/600"
+                                                            class="img-responsive"></a>
+                                                    <div class="img-overlay">
+                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 image">
+                                                <div class="img-wrapper">
+                                                    <a href="https://unsplash.it/700"><img src="https://unsplash.it/700"
+                                                            class="img-responsive"></a>
+                                                    <div class="img-overlay">
+                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 image">
+                                                <div class="img-wrapper">
+                                                    <a href="https://unsplash.it/800"><img src="https://unsplash.it/800"
+                                                            class="img-responsive"></a>
+                                                    <div class="img-overlay">
+                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 image">
+                                                <div class="img-wrapper">
+                                                    <a href="https://unsplash.it/900"><img src="https://unsplash.it/900"
+                                                            class="img-responsive"></a>
+                                                    <div class="img-overlay">
+                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 image">
+                                                <div class="img-wrapper">
+                                                    <a href="https://unsplash.it/1000"><img
+                                                            src="https://unsplash.it/1000" class="img-responsive"></a>
+                                                    <div class="img-overlay">
+                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- End row -->
+                                        <div class="row mgn-top-30">
+                                            <div class="col-lg-2 image">
+                                                <div class="img-wrapper">
+                                                    <a href="https://unsplash.it/500"><img src="https://unsplash.it/500"
+                                                            class="img-responsive"></a>
+                                                    <div class="img-overlay">
+                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 image">
+                                                <div class="img-wrapper">
+                                                    <a href="https://unsplash.it/600"><img src="https://unsplash.it/600"
+                                                            class="img-responsive"></a>
+                                                    <div class="img-overlay">
+                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 image">
+                                                <div class="img-wrapper">
+                                                    <a href="https://unsplash.it/700"><img src="https://unsplash.it/700"
+                                                            class="img-responsive"></a>
+                                                    <div class="img-overlay">
+                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 image">
+                                                <div class="img-wrapper">
+                                                    <a href="https://unsplash.it/800"><img src="https://unsplash.it/800"
+                                                            class="img-responsive"></a>
+                                                    <div class="img-overlay">
+                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 image">
+                                                <div class="img-wrapper">
+                                                    <a href="https://unsplash.it/900"><img src="https://unsplash.it/900"
+                                                            class="img-responsive"></a>
+                                                    <div class="img-overlay">
+                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 image">
+                                                <div class="img-wrapper">
+                                                    <a href="https://unsplash.it/1000"><img
+                                                            src="https://unsplash.it/1000" class="img-responsive"></a>
+                                                    <div class="img-overlay">
+                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- End row -->
+                                        <div class="row mgn-top-30">
+                                            <div class="flex-h-cntr pagination-wrapper">
+                                                <nav aria-label="...">
+                                                    <ul class="pagination">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link a-prev" href="#" tabindex="-1"
+                                                                aria-disabled="true"><i
+                                                                    class="fas fa-angle-double-left"></i>
+                                                                Previous </a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item active" aria-current="page">
+                                                            <a class="page-link" href="#">2</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link a-next" href="#">Next <i
+                                                                    class="fas fa-angle-double-right"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <button class="btn btn-view-more" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#galleryViewMore" aria-expanded="false"
+                                        aria-controls="galleryViewMore">
+                                        View More
+                                    </button>
+                                </p>
 
-                    </div>
+                            </div>
+                        </div><!-- End row -->
+
+
+                    </div><!-- End image gallery -->
                 </div>
             </div>
             <div class="row">
@@ -440,7 +662,7 @@
                             </div>
                             <div class="radio-button">
                                 <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                                <label class="btn btn-primary-check" for="option2">Popular</label>
+                                <label class="btn btn-primary-check" for="option2">Recent</label>
                             </div>
                             <div class="radio-button">
                                 <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
@@ -553,13 +775,13 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="" class="form-label">Attach Photos</label>
-                                        <div class="file-upload">
-                                            <div class="text-center" onload="GetFileInfo ()">
-                                                <textarea id="file" class="form-control" readonly></textarea>
-                                                <span class="btn btn-lg btn-danger btn-upload">Browse</span>
-                                            </div>
-                                            <input type="file" name="file" id="fileInput" display:"none"
-                                                onchange="GetFileInfo ()" multiple />
+                                        <div class="input-group file-upload">
+                                            <input type="text" class="form-control file-input"
+                                                placeholder="Chose file(s) ..." readonly="readonly"
+                                                data-action="display" />
+                                            <input type="file" class="hidden-xs-up" name="file">
+                                            <button class="btn btn-primary-outline" type="button"
+                                                data-action="browse">Browse</button>
                                         </div>
                                     </div>
                                     <div class="mb-3">
@@ -697,7 +919,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="" class="common-a">View All Reviews and comments</a>
+                            <a href="" class="common-a" data-bs-toggle="modal" data-bs-target="#allReviews">View All
+                                Reviews and comments</a>
                         </div>
                     </div>
                 </div>
@@ -744,6 +967,7 @@
 
                                 </div>
                             </div>
+
                         </div>
                         <div class="col-xl-6">
                             <div class="answer-card">
@@ -769,8 +993,12 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-xl-12">
+                            <a href="" class="common-a" data-bs-toggle="modal" data-bs-target="#allQuestions">
+                                View All Questions and Answers
+                            </a>
+                        </div>
                     </div>
-                    <a href="" class="common-a">View All Questions and Answers</a>
                 </div>
             </div>
         </div>
@@ -1058,6 +1286,576 @@
             </div>
         </div>
     </section>
+    <!------------------------------------------------------------------All Reviews Modal------------------------------------------------------------->
+    <!-- Modal -->
+    <div class="modal fade" id="allReviews" tabindex="-1" aria-labelledby="allReviews" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3 class="custom-h">All <span>Reviews</span></h3>
+                </div>
+                <div class="content">
+                    <div class="feedback-card">
+                        <div class="dp">
+                            <img src="https://images.pexels.com/photos/7693105/pexels-photo-7693105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="user-img">
+                        </div>
+                        <div class="main-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                            <div class="auther-info">
+                                <h6>Alex George</h6>
+                                <p> | </p>
+                                <p class="location">Kochi, Kerala</p>
+                            </div>
+
+                        </div>
+                        <div class="right-portion">
+                            <div class="flex-container">
+                                <i class="fas fa-star-half-alt"></i>
+                                <h3>4.0</h3>
+                            </div>
+                            <div class="likes-wrapper">
+                                <a href="" class="like">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <p>122</p>
+                                </a>
+                                <a href="" class="dislike">
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <p>122</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <div class="dp">
+                            <p>AG</p>
+                        </div>
+                        <div class="main-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                            <div class="auther-info">
+                                <h6>Alex George</h6>
+                                <p> | </p>
+                                <p class="location">Kochi, Kerala</p>
+                            </div>
+
+                        </div>
+                        <div class="right-portion">
+                            <div class="flex-container">
+                                <i class="fas fa-star-half-alt"></i>
+                                <h3>4.0</h3>
+                            </div>
+                            <div class="likes-wrapper">
+                                <a href="" class="like">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <p>122</p>
+                                </a>
+                                <a href="" class="dislike">
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <p>122</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <div class="dp">
+                            <img src="https://images.pexels.com/photos/7693105/pexels-photo-7693105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="user-img">
+                        </div>
+                        <div class="main-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                            <div class="auther-info">
+                                <h6>Alex George</h6>
+                                <p> | </p>
+                                <p class="location">Kochi, Kerala</p>
+                            </div>
+
+                        </div>
+                        <div class="right-portion">
+                            <div class="flex-container">
+                                <i class="fas fa-star-half-alt"></i>
+                                <h3>4.0</h3>
+                            </div>
+                            <div class="likes-wrapper">
+                                <a href="" class="like">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <p>122</p>
+                                </a>
+                                <a href="" class="dislike">
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <p>122</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <div class="dp">
+                            <p>AG</p>
+                        </div>
+                        <div class="main-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                            <div class="auther-info">
+                                <h6>Alex George</h6>
+                                <p> | </p>
+                                <p class="location">Kochi, Kerala</p>
+                            </div>
+
+                        </div>
+                        <div class="right-portion">
+                            <div class="flex-container">
+                                <i class="fas fa-star-half-alt"></i>
+                                <h3>4.0</h3>
+                            </div>
+                            <div class="likes-wrapper">
+                                <a href="" class="like">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <p>122</p>
+                                </a>
+                                <a href="" class="dislike">
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <p>122</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <div class="dp">
+                            <img src="https://images.pexels.com/photos/7693105/pexels-photo-7693105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="user-img">
+                        </div>
+                        <div class="main-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                            <div class="auther-info">
+                                <h6>Alex George</h6>
+                                <p> | </p>
+                                <p class="location">Kochi, Kerala</p>
+                            </div>
+
+                        </div>
+                        <div class="right-portion">
+                            <div class="flex-container">
+                                <i class="fas fa-star-half-alt"></i>
+                                <h3>4.0</h3>
+                            </div>
+                            <div class="likes-wrapper">
+                                <a href="" class="like">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <p>122</p>
+                                </a>
+                                <a href="" class="dislike">
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <p>122</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <div class="dp">
+                            <p>AG</p>
+                        </div>
+                        <div class="main-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                            <div class="auther-info">
+                                <h6>Alex George</h6>
+                                <p> | </p>
+                                <p class="location">Kochi, Kerala</p>
+                            </div>
+
+                        </div>
+                        <div class="right-portion">
+                            <div class="flex-container">
+                                <i class="fas fa-star-half-alt"></i>
+                                <h3>4.0</h3>
+                            </div>
+                            <div class="likes-wrapper">
+                                <a href="" class="like">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <p>122</p>
+                                </a>
+                                <a href="" class="dislike">
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <p>122</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <div class="dp">
+                            <img src="https://images.pexels.com/photos/7693105/pexels-photo-7693105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="user-img">
+                        </div>
+                        <div class="main-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                            <div class="auther-info">
+                                <h6>Alex George</h6>
+                                <p> | </p>
+                                <p class="location">Kochi, Kerala</p>
+                            </div>
+
+                        </div>
+                        <div class="right-portion">
+                            <div class="flex-container">
+                                <i class="fas fa-star-half-alt"></i>
+                                <h3>4.0</h3>
+                            </div>
+                            <div class="likes-wrapper">
+                                <a href="" class="like">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <p>122</p>
+                                </a>
+                                <a href="" class="dislike">
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <p>122</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <div class="dp">
+                            <p>AG</p>
+                        </div>
+                        <div class="main-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                            <div class="auther-info">
+                                <h6>Alex George</h6>
+                                <p> | </p>
+                                <p class="location">Kochi, Kerala</p>
+                            </div>
+
+                        </div>
+                        <div class="right-portion">
+                            <div class="flex-container">
+                                <i class="fas fa-star-half-alt"></i>
+                                <h3>4.0</h3>
+                            </div>
+                            <div class="likes-wrapper">
+                                <a href="" class="like">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <p>122</p>
+                                </a>
+                                <a href="" class="dislike">
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <p>122</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <div class="dp">
+                            <img src="https://images.pexels.com/photos/7693105/pexels-photo-7693105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="user-img">
+                        </div>
+                        <div class="main-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                            <div class="auther-info">
+                                <h6>Alex George</h6>
+                                <p> | </p>
+                                <p class="location">Kochi, Kerala</p>
+                            </div>
+
+                        </div>
+                        <div class="right-portion">
+                            <div class="flex-container">
+                                <i class="fas fa-star-half-alt"></i>
+                                <h3>4.0</h3>
+                            </div>
+                            <div class="likes-wrapper">
+                                <a href="" class="like">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <p>122</p>
+                                </a>
+                                <a href="" class="dislike">
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <p>122</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-card">
+                        <div class="dp">
+                            <p>AG</p>
+                        </div>
+                        <div class="main-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                            <div class="auther-info">
+                                <h6>Alex George</h6>
+                                <p> | </p>
+                                <p class="location">Kochi, Kerala</p>
+                            </div>
+
+                        </div>
+                        <div class="right-portion">
+                            <div class="flex-container">
+                                <i class="fas fa-star-half-alt"></i>
+                                <h3>4.0</h3>
+                            </div>
+                            <div class="likes-wrapper">
+                                <a href="" class="like">
+                                    <i class="fas fa-thumbs-up"></i>
+                                    <p>122</p>
+                                </a>
+                                <a href="" class="dislike">
+                                    <i class="fas fa-thumbs-down"></i>
+                                    <p>122</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="flex-h-cntr pagination-wrapper">
+                        <nav aria-label="...">
+                            <ul class="pagination">
+                                <li class="page-item disabled">
+                                    <a class="page-link a-prev" href="#" tabindex="-1" aria-disabled="true"><i
+                                            class="fas fa-angle-double-left"></i>
+                                        Previous </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active" aria-current="page">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                <li class="page-item">
+                                    <a class="page-link a-next" href="#">Next <i
+                                            class="fas fa-angle-double-right"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------------All Questions Modal------------------------------------------------------------->
+    <!-- Modal -->
+    <div class="modal fade" id="allQuestions" tabindex="-1" aria-labelledby="allQuestions" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h3 class="custom-h">All <span>Quations & Answers</span></h3>
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="answer-card">
+                                <div class="main-content">
+                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                                    <div class="auther-info">
+                                        <h6>Alex George</h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="answer-card">
+                                <div class="main-content">
+                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                                    <div class="auther-info">
+                                        <h6>Alex George</h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="answer-card">
+                                <div class="main-content">
+                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                                    <div class="auther-info">
+                                        <h6>Alex George</h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="answer-card">
+                                <div class="main-content">
+                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                                    <div class="auther-info">
+                                        <h6>Alex George</h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="answer-card">
+                                <div class="main-content">
+                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                                    <div class="auther-info">
+                                        <h6>Alex George</h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="answer-card">
+                                <div class="main-content">
+                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                                    <div class="auther-info">
+                                        <h6>Alex George</h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="answer-card">
+                                <div class="main-content">
+                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <div class="auther-info">
+                                        <h6>Alex George</h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="answer-card">
+                                <div class="main-content">
+                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                    <p>Lorem ipsum dolor sit amet, </p>
+                                    <div class="auther-info">
+                                        <h6>Alex George</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="answer-card">
+                                <div class="main-content">
+                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <div class="auther-info">
+                                        <h6>Alex George</h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="answer-card">
+                                <div class="main-content">
+                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                    <p>Lorem ipsum dolor sit amet, </p>
+                                    <div class="auther-info">
+                                        <h6>Alex George</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="answer-card">
+                                <div class="main-content">
+                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <div class="auther-info">
+                                        <h6>Alex George</h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="answer-card">
+                                <div class="main-content">
+                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                    <p>Lorem ipsum dolor sit amet, </p>
+                                    <div class="auther-info">
+                                        <h6>Alex George</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="answer-card">
+                                <div class="main-content">
+                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                                    <div class="auther-info">
+                                        <h6>Alex George</h6>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="answer-card">
+                                <div class="main-content">
+                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                    <p>Lorem ipsum dolor sit amet, </p>
+                                    <div class="auther-info">
+                                        <h6>Alex George</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="flex-h-cntr pagination-wrapper">
+                        <nav aria-label="...">
+                            <ul class="pagination">
+                                <li class="page-item disabled">
+                                    <a class="page-link a-prev" href="#" tabindex="-1" aria-disabled="true"><i
+                                            class="fas fa-angle-double-left"></i>
+                                        Previous </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active" aria-current="page">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                <li class="page-item">
+                                    <a class="page-link a-next" href="#">Next <i
+                                            class="fas fa-angle-double-right"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!------------------------------------------------------------------Move to Top------------------------------------------------------------->
     <button onclick="topFunction()" id="myBtn" title="Go to top" class="move-to-top">
         <div class="btn-content">

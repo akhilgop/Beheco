@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     .navbar-brand {
         img {
-            width: 90%;
+            width: 75%;
         }
     }
     a {
@@ -73,7 +73,7 @@
         }
     }
     .navbar-brand {
-        padding: 20px 0;
+        padding: 10px 0;
     }
     .nav-link {
         margin: 0 15px;
@@ -97,9 +97,16 @@
             box-shadow: none;
             outline: 0;
         }
-        img {
+        .img-wrapper {
+            @include circle-image(41px);
             margin-right: 10px;
         }
+        img {
+            height: 100%;
+        }
+    }
+    .d-flex {
+        align-items: center;
     }
 }
 
@@ -114,7 +121,7 @@
     background: url("../images/svg/banner.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    @include flex-cntr;
+    @include flex-hv-cntr;
     .search-bar-container {
         padding: 50px 50px 20px 50px;
         background-color: $white;
@@ -219,6 +226,11 @@ h2 {
     .image-wrapper {
         border-radius: 10px;
         overflow: hidden;
+        height: 288px;
+        img {
+            height: 100%;
+            transition: 0.2s all ease-out;
+        }
     }
 }
 // -----------------------------------------------------------------Counter Statistics-------------------------------------------------------------
@@ -308,6 +320,7 @@ h2 {
             height: 136px;
             overflow: hidden;
             border-radius: 10px;
+
             img {
                 width: 100%;
             }
@@ -316,6 +329,8 @@ h2 {
             display: flex;
             justify-content: center;
             margin-top: -70px;
+            z-index: 11;
+            position: relative;
             img {
                 width: 130px;
                 height: 130px;
@@ -324,6 +339,15 @@ h2 {
                 border: 3px solid $white;
             }
         }
+    }
+    .save-btn {
+        @include circle(30px, $primary);
+        color: $white;
+        font-size: 16px;
+        position: absolute;
+        bottom: 45px;
+        right: 20px;
+        z-index: 1;
     }
     .freelancer-info {
         .info-content {
@@ -566,7 +590,7 @@ h2 {
             border-bottom-left-radius: 0;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
-            padding: 0 69px;
+            padding: 0 30px;
             height: 70px;
             font-size: 20px;
         }
@@ -625,9 +649,16 @@ h2 {
             align-items: center;
             .icon {
                 @include circle(30px, $secondary);
+                color: $white;
                 margin-right: 15px;
                 &:last-child {
                     margin-right: 0;
+                }
+                &:hover,
+                &:active,
+                &:focus {
+                    background-color: $tertiary;
+                    color: $white;
                 }
             }
         }

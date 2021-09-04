@@ -1,6 +1,6 @@
 // ----------------------------------------------------Profile Top-----------------------------------------------------//
 .profile {
-    padding-top: 161px;
+    padding-top: 128px;
     padding-bottom: 0;
     .cover-bg {
         height: 300px;
@@ -29,6 +29,7 @@
         a {
             @include circle(50px, $primary);
             margin-right: 20px;
+            color: $white;
             &:last-child {
                 margin-right: 0;
             }
@@ -330,6 +331,7 @@
         margin: 0 10px;
         .progress-bar {
             background-color: $primary;
+            height: 100%;
         }
     }
     .star-count {
@@ -347,115 +349,178 @@
         color: $primary;
     }
 }
-.feedbacks {
-    .feedback-card {
-        padding: 20px;
-        border: 1px solid $bdr;
-        border-radius: 15px;
-        margin-bottom: 20px;
-        display: flex;
-        flex-wrap: nowrap;
-        .dp {
-            @include circle(60px, rgba($color: $primary, $alpha: 0.2));
-            overflow: hidden;
-            img {
-                width: 100%;
-            }
+
+.feedback-card {
+    padding: 20px;
+    border: 1px solid $bdr;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    .dp {
+        @include circle(60px, rgba($color: $primary, $alpha: 0.2));
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+        p {
+            @include text(20px, 20px, 600, $primary);
+            margin: 0;
+        }
+    }
+    .main-content {
+        width: 80%;
+        margin-left: 20px;
+        p {
+            @include text(16px, 30px, 400, $black9);
+            margin-bottom: 0px;
+        }
+        .auther-info {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
             p {
-                @include text(20px, 20px, 600, $primary);
+                @include text(12px, 12px, 400, $black9);
+                margin-left: 10px;
+            }
+            h6 {
+                @include text(16px, 16px, 600, $body-color);
                 margin: 0;
             }
         }
-        .main-content {
-            width: 80%;
-            margin-left: 20px;
-            p {
-                @include text(16px, 30px, 400, $black9);
-                margin-bottom: 0px;
+    }
+    .right-portion {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        .flex-container {
+            i {
+                color: $primary;
+                margin-right: 10px;
             }
-            .auther-info {
+            h3 {
+                @include text(20px, 20px, 600, $primary);
+            }
+        }
+        .likes-wrapper {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            .like {
                 display: flex;
                 align-items: center;
-                margin-top: 10px;
+                margin-right: 15px;
+                i {
+                    font-size: 12px;
+                    color: $black9;
+                }
                 p {
                     @include text(12px, 12px, 400, $black9);
                     margin-left: 10px;
+                    margin-bottom: 0;
                 }
-                h6 {
-                    @include text(16px, 16px, 600, $body-color);
-                    margin: 0;
-                }
-            }
-        }
-        .right-portion {
-            display: flex;
-            justify-content: flex-end;
-            flex-wrap: wrap;
-            .flex-container {
-                i {
-                    color: $primary;
-                    margin-right: 10px;
-                }
-                h3 {
-                    @include text(20px, 20px, 600, $primary);
-                }
-            }
-            .likes-wrapper {
-                display: flex;
-                align-items: flex-end;
-                justify-content: flex-end;
-                .like {
-                    display: flex;
-                    align-items: center;
-                    margin-right: 15px;
-                    i {
-                        font-size: 12px;
-                        color: $black9;
-                    }
+                &:hover,
+                &:active,
+                &:focus {
+                    box-shadow: none;
+                    outline: 0;
+                    text-decoration: none;
+                    i,
                     p {
-                        @include text(12px, 12px, 400, $black9);
-                        margin-left: 10px;
-                        margin-bottom: 0;
-                    }
-                    &:hover,
-                    &:active,
-                    &:focus {
-                        box-shadow: none;
-                        outline: 0;
-                        text-decoration: none;
-                        i,
-                        p {
-                            color: $primary;
-                        }
+                        color: $primary;
                     }
                 }
-                .dislike {
-                    @extend .like;
-                    margin-right: 0;
-                }
+            }
+            .dislike {
+                @extend .like;
+                margin-right: 0;
             }
         }
     }
 }
+
 // ----------------------------------------------------Questions------------------------------------------------//
 .questions {
     padding-top: 50px;
-    .answer-card {
-        padding: 20px;
-        border: 1px solid $bdr;
-        border-radius: 15px;
-        margin-bottom: 20px;
-        p {
-            @include text(16px, 30px, 400, $black9);
-        }
-        h5 {
-            @include text(18px, 18px, 600, $body-color);
-            margin-bottom: 20px;
-        }
-    }
 }
 .similar-result {
     margin-top: 50px;
     padding: 50px 0;
     background-color: rgba($color: $secondary, $alpha: 0.05);
+}
+.answer-card {
+    padding: 20px;
+    border: 1px solid $bdr;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    p {
+        @include text(16px, 30px, 400, $black9);
+    }
+    h5 {
+        @include text(18px, 18px, 600, $body-color);
+        margin-bottom: 20px;
+    }
+}
+// ----------------------------------------------------Image Gallery------------------------------------------------//
+.collapse-container {
+    margin-top: 30px;
+    .collapse {
+        width: 100%;
+    }
+    .collapse:not(.show) {
+        transition: none;
+        animation-delay: none;
+        transition-delay: none;
+    }
+    .btn {
+        margin: auto;
+        text-align: center;
+    }
+    .card-body {
+        margin-bottom: 30px;
+    }
+}
+// ----------------------------------------------------All Reviews Modal------------------------------------------------//
+#allReviews {
+    .modal-dialog {
+        max-width: 1000px;
+    }
+    .modal-content {
+        max-height: 600px;
+        padding: 30px 30px 0 30px;
+    }
+    .content {
+        overflow-y: auto;
+        padding: 0 20px 0 0;
+    }
+    .modal-footer {
+        padding: 0;
+    }
+    .pagination-wrapper {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+// ----------------------------------------------------All Reviews Modal------------------------------------------------//
+#allQuestions {
+    .modal-dialog {
+        max-width: 1000px;
+    }
+    .modal-content {
+        max-height: 600px;
+        padding: 30px 30px 0 30px;
+    }
+    .content {
+        overflow-y: auto;
+        padding: 0 20px 0 0;
+    }
+    .modal-footer {
+        padding: 0;
+    }
+    .pagination-wrapper {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
 }

@@ -13,7 +13,34 @@
     color: $white;
     text-decoration: none;
 }
-
+@mixin a-animate {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: $primary;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    &:hover:after {
+        width: 100%;
+        left: 0;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        text-decoration: none;
+    }
+}
 @mixin buttn($bg, $color, $bdr) {
     background: $bg;
     color: $color;
@@ -41,8 +68,9 @@
     &:hover,
     &:active,
     &:focus {
-        background-color: darken($color: $color, $amount: 10%);
-        color: $bg;
+        background-color: $color;
+        border-color: $bg;
+        color: $white;
     }
 }
 
@@ -67,12 +95,19 @@
     text-align: center;
 }
 
-@mixin flex-cntr {
+@mixin flex-hv-cntr {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+@mixin flex-v-cntr {
+    display: flex;
+    align-items: center;
+}
+@mixin flex-h-cntr {
+    display: flex;
+    justify-content: center;
+}
 @mixin nopad {
     margin: 0 !important;
     padding: 0 !important;
@@ -110,7 +145,15 @@
     height: $unit;
     border-radius: 50%;
     background-color: $bg;
-    @include flex-cntr;
+    @include flex-hv-cntr;
+}
+@mixin circle-image($unit) {
+    width: $unit;
+    height: $unit;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 @mixin text($fs, $lh, $fw, $clr) {
     font-size: $fs;
@@ -126,6 +169,19 @@
     position: sticky;
     top: 0;
 }
-@mixin bshadow {
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+@mixin right-align {
+    @include flex-hv-cntr;
+    height: 100%;
+}
+@mixin bg-cover-nrp {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@mixin bg-cover-rp {
+    background-size: cover;
+    background-repeat: repeat;
+}
+@mixin bg-contain-nrp {
+    background-size: contain;
+    background-repeat: no-repeat;
 }

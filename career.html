@@ -681,13 +681,13 @@
                                 <div class="col-xl-6">
                                     <div class="mb-3">
                                         <label for="" class="form-label">Attach CV</label>
-                                        <div class="file-upload">
-                                            <div class="text-center" onload="GetFileInfo ()">
-                                                <textarea id="file" class="form-control" readonly></textarea>
-                                                <span class="btn btn-lg btn-danger btn-upload">Browse</span>
-                                            </div>
-                                            <input type="file" name="file" id="fileInput" display:"none"
-                                                onchange="GetFileInfo ()" multiple />
+                                        <div class="input-group file-upload">
+                                            <input type="text" class="form-control file-input"
+                                                placeholder="Chose file(s) ..." readonly="readonly"
+                                                data-action="display" />
+                                            <input type="file" class="hidden-xs-up" name="file">
+                                            <button class="btn btn-primary-outline" type="button"
+                                                data-action="browse">Browse</button>
                                         </div>
                                     </div>
                                 </div>
@@ -785,13 +785,13 @@
                                 <div class="col-xl-6">
                                     <div class="mb-3">
                                         <label for="" class="form-label">Attach CV</label>
-                                        <div class="file-upload">
-                                            <div class="text-center" onload="GetFileInfo ()">
-                                                <textarea id="file" class="form-control" readonly></textarea>
-                                                <span class="btn btn-lg btn-danger btn-upload">Browse</span>
-                                            </div>
-                                            <input type="file" name="file" id="fileInput" display:"none"
-                                                onchange="GetFileInfo ()" multiple />
+                                        <div class="input-group file-upload">
+                                            <input type="text" class="form-control file-input"
+                                                placeholder="Chose file(s) ..." readonly="readonly"
+                                                data-action="display" />
+                                            <input type="file" class="hidden-xs-up" name="file">
+                                            <button class="btn btn-primary-outline" type="button"
+                                                data-action="browse">Browse</button>
                                         </div>
                                     </div>
                                 </div>

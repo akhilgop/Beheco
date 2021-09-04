@@ -202,7 +202,7 @@ p {
         width: 100%;
         padding: 20px;
         border-radius: 20px;
-        @include bshadow;
+        box-shadow: $box-shadow;
         .content {
             border-radius: 10px;
             overflow: hidden;
@@ -224,7 +224,7 @@ p {
 .card-general {
     padding: 20px;
     border-radius: 20px;
-    @include bshadow;
+    box-shadow: $box-shadow;
     p {
         @include text(16px, 30px, 400, $black9);
         margin-bottom: 20px;
@@ -257,4 +257,77 @@ p {
 .pos-sticky {
     position: sticky;
     top: 200px;
+}
+// -------------------------------------------------------------------Toggle Buttons--------------------------------------------------------------------//
+.btn-check:active + .btn-outline-primary:focus,
+.btn-check:checked + .btn-outline-primary:focus,
+.btn-outline-primary.active:focus,
+.btn-outline-primary.dropdown-toggle.show:focus,
+.btn-outline-primary:active:focus {
+    box-shadow: none !important;
+    background-color: $primary;
+}
+.btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+    box-shadow: none !important;
+    background-color: $primary;
+    border-color: $primary;
+}
+.btn-check:focus + .btn-outline-primary,
+.btn-outline-primary:focus {
+    box-shadow: none !important;
+}
+// ------------------------------------------------------------------Breadcrumb--------------------------------------------------------------------//
+.breadcrumb-item + .breadcrumb-item::before {
+    color: $primary;
+}
+// ------------------------------------------------------------------Collapse---------------------------------------------------------------------//
+
+.card-body {
+    padding: 0;
+    border: none;
+    background-color: $trans;
+}
+
+.collapse.show {
+    margin-bottom: 10px;
+}
+// ------------------------------------------------------------------Progress Bar-----------------------------------------------------------------//
+.progress-bar {
+    height: 10px;
+    border-radius: $bdr-rds;
+}
+.progress {
+    margin-bottom: 10px;
+    height: 10px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+// --------------------------------------------------------------------Nav Tabs-----------------------------------------------------------------//
+
+.nav-tabs {
+    border: none !important;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-color: $trans !important;
+}
+.nav-tabs {
+    .nav-link:hover::after {
+        display: none;
+    }
+    .nav-link {
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        color: $primary;
+    }
+}
+.tab-content {
+    border-top-left-radius: 0 !important;
+    border-radius: $bdr-rds;
+    margin-top: -1px;
 }
