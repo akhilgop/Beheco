@@ -460,6 +460,19 @@
         @include text(18px, 18px, 600, $body-color);
         margin-bottom: 20px;
     }
+    h6 {
+        color: $black6 !important;
+    }
+    .auther-info {
+        clear: both;
+        overflow: hidden;
+        h6 {
+            float: left;
+        }
+        .reply-qn {
+            float: right;
+        }
+    }
 }
 // ----------------------------------------------------Image Gallery------------------------------------------------//
 .collapse-container {
@@ -522,5 +535,38 @@
         width: 100%;
         margin-top: 20px;
         margin-bottom: 10px;
+    }
+}
+// ----------------------------------------------------Offer Slider------------------------------------------------//
+.offer-slider {
+    max-height: 420px;
+    margin-top: 50px;
+    .img {
+        background-size: contain !important ;
+        background-repeat: no-repeat !important;
+    }
+}
+.offer-modal {
+    max-width: 800px;
+    img {
+        width: 100%;
+    }
+    .offer-description {
+        padding-top: 30px;
+        max-height: 300px;
+        overflow: auto;
+        text-align: left;
+    }
+}
+.reply-qn {
+    color: $primary;
+    font-weight: 600;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        text-decoration: none;
+        color: $primary;
     }
 }

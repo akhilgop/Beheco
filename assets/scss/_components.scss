@@ -697,3 +697,13 @@ textarea.form-control {
 .carousel-indicators button.active {
     background-color: $primary !important;
 }
+
+.form-select {
+    height: 50px;
+    border: 1px solid $bdr;
+    border-radius: $bdr-rds;
+    &:focus {
+        box-shadow: none !important;
+        border: 1px solid $primary;
+    }
+}

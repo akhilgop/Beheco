@@ -1065,6 +1065,18 @@ textarea.form-control {
   background-color: #059762 !important;
 }
 
+.form-select {
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.form-select:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 1px solid #059762;
+}
+
 #myBtn {
   display: none;
   position: fixed;
@@ -1582,7 +1594,8 @@ textarea.form-control {
           animation: 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0s left;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  background-size: cover !important;
+  background-size: cover;
+  border-radius: 10px;
   background-position: 50% !important;
 }
 

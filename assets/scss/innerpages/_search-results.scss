@@ -183,3 +183,12 @@
         display: flex;
     }
 }
+// --------------------------------------------------------------Offer Ad Content Slider-------------------------------------------------------//
+.offer-ad-content {
+    margin: 30px 0;
+    .carousel-inner {
+        max-height: 250px;
+        overflow: hidden;
+        border-radius: $bdr-rds2;
+    }
+}
