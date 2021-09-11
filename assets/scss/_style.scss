@@ -683,27 +683,30 @@ h2 {
             text-decoration: none;
         }
     }
-    .a-animate {
-        text-decoration: none;
-        position: relative;
-        display: inline-block;
-        &:after {
-            background: none repeat scroll 0 0 transparent;
-            bottom: 0;
-            content: "";
-            display: block;
-            height: 2px;
-            left: 50%;
-            position: absolute;
-            background: $white;
-            transition: width 0.3s ease 0s, left 0.3s ease 0s;
-            width: 0;
-        }
-        &:hover:after {
-            width: 100%;
-            left: 0;
+    .link-animate {
+        a {
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            &:after {
+                background: none repeat scroll 0 0 transparent;
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 2px;
+                left: 0%;
+                position: absolute;
+                background: $white;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                width: 0;
+            }
+            &:hover:after {
+                width: 100%;
+                left: 0;
+            }
         }
     }
+
     .contact-details {
         a {
             display: inline-block;
@@ -738,6 +741,16 @@ h2 {
                     color: $white;
                 }
             }
+        }
+    }
+}
+#advertise {
+    .modal-dialog {
+        max-width: 700px;
+        .description-text {
+            margin-top: -20px;
+            margin-bottom: 30px;
+            text-align: center;
         }
     }
 }

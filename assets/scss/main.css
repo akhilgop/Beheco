@@ -72,7 +72,7 @@ a:hover, a:active, a:focus {
   content: "";
   display: block;
   height: 2px;
-  left: 50%;
+  left: 0%;
   position: absolute;
   background: #059762;
   -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
@@ -4666,19 +4666,19 @@ h2 {
   text-decoration: none;
 }
 
-.footer .a-animate {
+.footer .link-animate a {
   text-decoration: none;
   position: relative;
   display: inline-block;
 }
 
-.footer .a-animate:after {
+.footer .link-animate a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
   display: block;
   height: 2px;
-  left: 50%;
+  left: 0%;
   position: absolute;
   background: #fff;
   -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
@@ -4686,7 +4686,7 @@ h2 {
   width: 0;
 }
 
-.footer .a-animate:hover:after {
+.footer .link-animate a:hover:after {
   width: 100%;
   left: 0;
 }
@@ -4747,6 +4747,16 @@ h2 {
 .footer .copyright-section .social-links .icon:hover, .footer .copyright-section .social-links .icon:active, .footer .copyright-section .social-links .icon:focus {
   background-color: #33aa55;
   color: #fff;
+}
+
+#advertise .modal-dialog {
+  max-width: 700px;
+}
+
+#advertise .modal-dialog .description-text {
+  margin-top: -20px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .mgn-top-5 {
@@ -5698,7 +5708,7 @@ h2 {
   content: "";
   display: block;
   height: 2px;
-  left: 50%;
+  left: 0%;
   position: absolute;
   background: #059762;
   -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
