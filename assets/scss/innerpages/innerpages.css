@@ -235,6 +235,38 @@
   font-weight: 600;
 }
 
+.related-search a {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.related-search a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #059762;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.related-search a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.related-search a:hover, .related-search a:active, .related-search a:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+  text-decoration: none;
+}
+
 .mini-banner {
   padding: 128px 0 0 0;
 }
@@ -1255,6 +1287,9 @@
 
 .answer-card .auther-info h6 {
   float: left;
+  font-size: 16px;
+  color: #666 !important;
+  font-weight: 400;
 }
 
 .answer-card .auther-info .reply-qn {
@@ -1333,6 +1368,11 @@
   width: 100%;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+#allQuestions p,
+#allQuestions h5 {
+  text-align: left !important;
 }
 
 .offer-slider {

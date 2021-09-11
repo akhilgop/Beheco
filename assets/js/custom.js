@@ -1,4 +1,4 @@
-// ----------------------------------------------------------------nbbar On Scroll-------------------------------------------------------------------
+// ----------------------------------------------------------------navbar On Scroll-------------------------------------------------------------------
 
 var nb = document.querySelector('.nb'); // Identify target
 window.addEventListener('scroll', function (event) { // To listen for event
@@ -591,6 +591,39 @@ const upload = new CustomUpload('#fileImage');
     });
 
 }).call(this);
+//---------------------------------------------------------------------Animate on Scroll------------------------------------------------------------------
+function animateFrom(elem, direction) {
+    // 'use strict';
+    direction = direction || 1;
+    var x = 0,
+        y = direction * 100;
+    elem.style.transform = "translate(" + x + "px, " + y + "px)";
+    elem.style.opacity = "0";
+    gsap.fromTo(elem, { x: x, y: y, autoAlpha: 0 }, {
+        duration: 1.25,
+        x: 0,
+        y: 0,
+        autoAlpha: 1,
+        ease: "expo",
+        overwrite: "auto"
+    });
+}
 
-  //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiPGFub255bW91cz4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFBQSxDQUFBLENBQUUsMEJBQUYsQ0FBNkIsQ0FBQyxJQUE5QixDQUFBOztFQUNBLENBQUEsQ0FBRSxnQ0FBRixDQUFtQyxDQUFDLElBQXBDLENBQUEsRUFEQTs7O0VBS0EsQ0FBQSxDQUFFLGtCQUFGLENBQXFCLENBQUMsS0FBdEIsQ0FBNEIsUUFBQSxDQUFDLEtBQUQsQ0FBQTtBQUM1QixRQUFBO0lBQUUsS0FBSyxDQUFDLGNBQU4sQ0FBQTtJQUNBLENBQUEsQ0FBRSwwQkFBRixDQUE2QixDQUFDLElBQTlCLENBQUE7SUFDQSxTQUFBLEdBQVksQ0FBQSxDQUFFLElBQUYsQ0FBTyxDQUFDLElBQVIsQ0FBYSxLQUFiO0lBQ1osQ0FBQSxDQUFFLEdBQUEsR0FBTSxTQUFSLENBQWtCLENBQUMsSUFBbkIsQ0FBQTtJQUNBLENBQUEsQ0FBRSxrQkFBRixDQUFxQixDQUFDLFdBQXRCLENBQWtDLFdBQWxDO0lBQ0EsQ0FBQSxDQUFFLElBQUYsQ0FBTyxDQUFDLFFBQVIsQ0FBaUIsV0FBakI7SUFDQSxDQUFBLENBQUUsb0NBQUYsQ0FBdUMsQ0FBQyxXQUF4QyxDQUFvRCxXQUFwRDtJQUNBLENBQUEsQ0FBRSw0Q0FBQSxHQUErQyxTQUEvQyxHQUEyRCxLQUE3RCxDQUFtRSxDQUFDLFFBQXBFLENBQTZFLFdBQTdFO0VBUjBCLENBQTVCLEVBTEE7OztFQWtCQSxDQUFBLENBQUUsb0NBQUYsQ0FBdUMsQ0FBQyxLQUF4QyxDQUE4QyxRQUFBLENBQUMsS0FBRCxDQUFBO0FBQzlDLFFBQUE7SUFBRSxLQUFLLENBQUMsY0FBTixDQUFBO0lBQ0EsQ0FBQSxDQUFFLDBCQUFGLENBQTZCLENBQUMsSUFBOUIsQ0FBQTtJQUNBLG1CQUFBLEdBQXNCLENBQUEsQ0FBRSxJQUFGLENBQU8sQ0FBQyxJQUFSLENBQWEsS0FBYjtJQUN0QixDQUFBLENBQUUsR0FBQSxHQUFNLG1CQUFSLENBQTRCLENBQUMsSUFBN0IsQ0FBQTtJQUNBLENBQUEsQ0FBRSxvQ0FBRixDQUF1QyxDQUFDLFdBQXhDLENBQW9ELFdBQXBEO0lBQ0EsQ0FBQSxDQUFFLElBQUYsQ0FBTyxDQUFDLFFBQVIsQ0FBaUIsV0FBakI7SUFDQSxDQUFBLENBQUUsa0JBQUYsQ0FBcUIsQ0FBQyxXQUF0QixDQUFrQyxXQUFsQztJQUNBLENBQUEsQ0FBRSwwQkFBQSxHQUE2QixtQkFBN0IsR0FBbUQsS0FBckQsQ0FBMkQsQ0FBQyxRQUE1RCxDQUFxRSxXQUFyRTtFQVI0QyxDQUE5QztBQWxCQSIsInNvdXJjZXNDb250ZW50IjpbIiQoJy5qcy12ZXJ0aWNhbC10YWItY29udGVudCcpLmhpZGUoKVxuJCgnLmpzLXZlcnRpY2FsLXRhYi1jb250ZW50OmZpcnN0Jykuc2hvdygpXG5cbiMjIyBpZiBpbiB0YWIgbW9kZSAjIyNcblxuJCgnLmpzLXZlcnRpY2FsLXRhYicpLmNsaWNrIChldmVudCkgLT5cbiAgZXZlbnQucHJldmVudERlZmF1bHQoKVxuICAkKCcuanMtdmVydGljYWwtdGFiLWNvbnRlbnQnKS5oaWRlKClcbiAgYWN0aXZlVGFiID0gJCh0aGlzKS5hdHRyKCdyZWwnKVxuICAkKCcjJyArIGFjdGl2ZVRhYikuc2hvdygpXG4gICQoJy5qcy12ZXJ0aWNhbC10YWInKS5yZW1vdmVDbGFzcyAnaXMtYWN0aXZlJ1xuICAkKHRoaXMpLmFkZENsYXNzICdpcy1hY3RpdmUnXG4gICQoJy5qcy12ZXJ0aWNhbC10YWItYWNjb3JkaW9uLWhlYWRpbmcnKS5yZW1vdmVDbGFzcyAnaXMtYWN0aXZlJ1xuICAkKCcuanMtdmVydGljYWwtdGFiLWFjY29yZGlvbi1oZWFkaW5nW3JlbF49XFwnJyArIGFjdGl2ZVRhYiArICdcXCddJykuYWRkQ2xhc3MgJ2lzLWFjdGl2ZSdcbiAgcmV0dXJuXG5cbiMjIyBpZiBpbiBhY2NvcmRpb24gbW9kZSAjIyNcblxuJCgnLmpzLXZlcnRpY2FsLXRhYi1hY2NvcmRpb24taGVhZGluZycpLmNsaWNrIChldmVudCkgLT5cbiAgZXZlbnQucHJldmVudERlZmF1bHQoKVxuICAkKCcuanMtdmVydGljYWwtdGFiLWNvbnRlbnQnKS5oaWRlKClcbiAgYWNjb3JkaW9uX2FjdGl2ZVRhYiA9ICQodGhpcykuYXR0cigncmVsJylcbiAgJCgnIycgKyBhY2NvcmRpb25fYWN0aXZlVGFiKS5zaG93KClcbiAgJCgnLmpzLXZlcnRpY2FsLXRhYi1hY2NvcmRpb24taGVhZGluZycpLnJlbW92ZUNsYXNzICdpcy1hY3RpdmUnXG4gICQodGhpcykuYWRkQ2xhc3MgJ2lzLWFjdGl2ZSdcbiAgJCgnLmpzLXZlcnRpY2FsLXRhYicpLnJlbW92ZUNsYXNzICdpcy1hY3RpdmUnXG4gICQoJy5qcy12ZXJ0aWNhbC10YWJbcmVsXj1cXCcnICsgYWNjb3JkaW9uX2FjdGl2ZVRhYiArICdcXCddJykuYWRkQ2xhc3MgJ2lzLWFjdGl2ZSdcbiAgcmV0dXJuXG4iXX0=
-  //# sourceURL=coffeescript
+function hide(elem) {
+    gsap.set(elem, { autoAlpha: 0 });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray(".gs_reveal").forEach(function (elem) {
+        hide(elem); // assure that the element is hidden when scrolled into view
+
+        ScrollTrigger.create({
+            trigger: elem,
+            onEnter: function () { animateFrom(elem) },
+            onEnterBack: function () { animateFrom(elem, -1) },
+            onLeave: function () { hide(elem) } // assure that the element is hidden when scrolled into view
+        });
+    });
+});

@@ -166,12 +166,18 @@
 .custom-h {
     font-weight: 600 !important;
 }
+.no-bdr {
+    border: 0 !important;
+}
 // ----------------------------------------------------------------Media Show & Hide---------------------------------------------------------------//
 .media-hide {
     display: block;
 }
 .media-show {
     display: none;
+}
+.disp-none {
+    display: none !important;
 }
 // ----------------------------------------------------------------Button Wrapper---------------------------------------------------------------//
 .btn-wrapper {

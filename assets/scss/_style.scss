@@ -10,6 +10,14 @@
             width: 75%;
         }
     }
+    .content-count {
+        display: flex;
+        align-items: center;
+        .badge {
+            margin-left: 5px;
+            margin-bottom: 0;
+        }
+    }
     a {
         &:hover,
         &:active,
@@ -62,8 +70,20 @@
                 &:last-child {
                     margin: 0;
                 }
+                &:hover,
+                &:active,
+                &:focus {
+                    text-decoration: none;
+                    transition: all 0.5s ease-out;
+                    outline: 0;
+                    color: $primary;
+                    background-color: $secondary;
+                }
             }
         }
+    }
+    .dropdown-item {
+        padding: 7px 15px !important;
     }
     .icon {
         @include circle(20px, $primary);
@@ -88,6 +108,8 @@
         background-color: transparent;
         border-color: transparent;
         margin-right: 40px;
+        display: flex;
+        align-items: center;
         &::after {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23337AB7' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
         }
@@ -103,6 +125,10 @@
         }
         img {
             height: 100%;
+        }
+        .badge {
+            margin-bottom: 0;
+            margin-left: 5px;
         }
     }
     .d-flex {
@@ -150,6 +176,7 @@
             p {
                 opacity: 0.5;
                 margin: 30px 0;
+                color: $black6;
             }
         }
         .search-bar-section {
@@ -395,18 +422,36 @@ h2 {
     padding: 20px;
     background-color: $white9;
     border-radius: 20px;
+    overflow: hidden;
     display: flex;
     margin-bottom: 30px;
     flex-wrap: nowrap;
     box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.2s all ease-out;
+    height: 253px;
+    &:hover {
+        background-color: $white;
+        overflow: hidden;
+        transition: 0.2s all ease-out;
+        .img-section {
+            img {
+                width: 110%;
+                transition: 0.2s all ease-out;
+                overflow: hidden;
+            }
+        }
+    }
     .img-section {
         border-radius: 10px;
         overflow: hidden;
         width: 30%;
+        display: block !important;
+        transition: 0.2s all ease-out;
         img {
             width: 100%;
         }
     }
+
     .text-section {
         width: 70%;
         padding-left: 20px;
@@ -496,12 +541,12 @@ h2 {
 // ------------------------------------------------------------------Testimonials-----------------------------------------------------------------
 .testimonials {
     margin-top: 100px;
-    background-color: rgba($color: $primary, $alpha: 0.05);
+    background-color: rgba($color: $primary, $alpha: 0.02);
     .testimonial-card {
         padding: 40px;
         background: $white;
-        border: 1px solid $bdr;
         border-radius: 20px;
+        box-shadow: $box-shadow;
         position: relative;
         display: flex;
         flex-wrap: wrap;
@@ -517,7 +562,7 @@ h2 {
             height: 90px;
             border-radius: 50%;
             overflow: hidden;
-            border: 2px solid $bdr;
+            border: 2px solid $tertiary;
             img {
                 width: 100%;
             }
@@ -528,18 +573,19 @@ h2 {
                 text-align: center;
                 width: 100%;
                 white-space: normal;
-                @include text(18px, 25px, 400, $black6);
+                @include text(18px, 30px, 400, $black1);
             }
             .right-align {
                 flex-wrap: wrap;
                 h5 {
                     @include text(16px, 16px, 600, $primary);
-                    text-align: right;
+                    text-align: center;
                     width: 100%;
                 }
                 p {
                     @include text(14px, 16px, 400, $black6);
-                    text-align: right;
+                    text-align: center;
+                    width: 100%;
                 }
             }
         }
@@ -548,7 +594,7 @@ h2 {
         padding: 40px 0;
     }
     .hs__item:first-child {
-        margin-left: 0;
+        margin-left: 5px;
     }
     .hs__item {
         flex-basis: calc(100% / 3.5 - (10px * 2) - (20px / 4));
@@ -592,6 +638,9 @@ h2 {
             padding-left: 20px;
             font-size: 20px;
             border-color: transparent;
+            &:focus {
+                border: 2px solid $primary;
+            }
         }
         .btn {
             border-top-left-radius: 0;
@@ -631,13 +680,33 @@ h2 {
         &:focus {
             box-shadow: none;
             outline: 0;
-            color: $secondary;
             text-decoration: none;
+        }
+    }
+    .a-animate {
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        &:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: $white;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+        &:hover:after {
+            width: 100%;
+            left: 0;
         }
     }
     .contact-details {
         a {
-            display: block;
+            display: inline-block;
             line-height: 28px;
         }
     }
@@ -645,7 +714,7 @@ h2 {
         color: $white;
     }
     .copyright-section {
-        padding: 45px 0;
+        padding: 30px 0;
         margin-top: 50px;
         border-top: 1px solid $bdr;
         p {

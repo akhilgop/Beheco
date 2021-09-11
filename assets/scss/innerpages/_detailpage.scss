@@ -468,6 +468,9 @@
         overflow: hidden;
         h6 {
             float: left;
+            font-size: 16px;
+            color: $black6 !important;
+            font-weight: 400;
         }
         .reply-qn {
             float: right;
@@ -535,6 +538,10 @@
         width: 100%;
         margin-top: 20px;
         margin-bottom: 10px;
+    }
+    p,
+    h5 {
+        text-align: left !important;
     }
 }
 // ----------------------------------------------------Offer Slider------------------------------------------------//

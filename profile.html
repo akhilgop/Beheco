@@ -81,18 +81,77 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="search-bar ms-auto me-auto media-hide">
-                    <div class="content">
-                        <select class="form-select select2 js" aria-label="Default select example">
-                            <option selected>City</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <input type="text" class="form-control" placeholder="Search Something" value="Searched Keyword">
-                        <button type="button" class="btn btn-primary"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
+                <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <div class="mega-menu">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <div class="dropdown-content">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-xl-4">
+                                            <div class="column">
+                                                <a href="#">Emergency
+                                                    Services</a>
+                                                <a href="#">Food &
+                                                    Beverages</a>
+                                                <a href="#">Rooms &
+                                                    Rentals</a>
+                                                <a href="#">Professionals</a>
+                                                <a href="#">Experts</a>
+                                                <a href="#">Healthcare</a>
+                                                <a href="#">Public
+                                                    Places</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <div class="column">
+                                                <a href="#">Home &
+                                                    Office</a>
+                                                <a href="#">Automobile</a>
+                                                <a href="#">Educational
+                                                    Institutions</a>
+                                                <a href="#">Financial
+                                                    institutions</a>
+                                                <a href="#">Dress &
+                                                    Accessories</a>
+                                                <a href="#">Travel &
+                                                    Tourism</a>
+                                                <a href="#">Wedding &
+                                                    Events</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <div class="column">
+                                                <a href="#">Electronics</a>
+                                                <a href="#">Retail &
+                                                    Wholesale</a>
+                                                <a href="#">Media &
+                                                    Entertainment</a>
+                                                <a href="#">Telecom</a>
+                                                <a href="#">Construction</a>
+                                                <a href="#">Sports</a>
+                                                <a href="#">Health &
+                                                    Fitness</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Featured</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                </ul>
                 <div class="d-flex">
                     <div class="signin-box">
                         <div class="dropdown">
@@ -169,12 +228,12 @@
                                     <i class="far fa-heart"></i> Saved Items
                                 </div>
                             </a>
-                            <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab4">
+                            <a href="javascript:void(0)" class="js-vertical-tab vertical-tab disp-none" rel="tab4">
                                 <div class="title-wrapper">
                                     <i class="fas fa-history"></i> My Activities
                                 </div>
                             </a>
-                            <a href="javascript:void(0)" class="js-vertical-tab vertical-tab" rel="tab5">
+                            <a href="javascript:void(0)" class="js-vertical-tab vertical-tab disp-none" rel="tab5">
                                 <div class="title-wrapper">
                                     <i class="fas fa-cog"></i> Settings
                                 </div>
@@ -267,7 +326,7 @@
                                         <div class="col-xl-6">
                                             <div class="mb-3">
                                                 <input type="radio" class="btn-check" name="options" id="option1"
-                                                    autocomplete="off">
+                                                    checked autocomplete="off">
                                                 <label class="btn btn-b-list" for="option1">
                                                     <div class="business-list">
                                                         <div class="logo">
@@ -756,6 +815,7 @@
                                             <div class="tab-pane fade" id="pills-pageContent" role="tabpanel"
                                                 aria-labelledby="pills-pageContent-tab">
                                                 <div class="about-content-section">
+                                                    <h3 class="custom-h">Basic <span>Info</span></h3>
                                                     <div class="row">
                                                         <div class="col-xl-12">
                                                             <div class="mb-3">
@@ -766,6 +826,31 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <h3 class="custom-h mgn-top-20"><span>Timings</span></h3>
+                                                    <div class="row">
+                                                        <div class="col-xl-6">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Choose Timing</label>
+                                                                <select class="form-select select2 js"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Open this select menu</option>
+                                                                    <option value="1">Monday - Friday</option>
+                                                                    <option value="2">Monday - Saturday</option>
+                                                                    <option value="3">Everyday</option>
+                                                                    <option value="4">Custom</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-6">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Timing Value</label>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Eg: 9 AM - 6 PM">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <h3 class="custom-h mgn-top-20"><span>Headlines</span></h3>
                                                     <div class="row">
                                                         <div class="col-xl-6">
                                                             <div class="mb-3">
@@ -806,7 +891,7 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-xl-12">
-                                                            <button type="button" class="btn btn-outline-primary">Add
+                                                            <button type="button" class="btn btn-outline-primary">+ Add
                                                                 More Headlines</button>
                                                         </div>
                                                     </div>
@@ -842,7 +927,27 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-6">
-
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Offer Heading</label>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Eg: Flat 60% OFF">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xl-6">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Business Name</label>
+                                                                <input type="text" class="form-control"
+                                                                    value="Jack's Gift House" disabled>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-6">
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Location</label>
+                                                                <input type="text" class="form-control"
+                                                                    value="Kochi, Kerala">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="row">
@@ -1234,7 +1339,7 @@
         </div>
     </section>
     <!------------------------------------------------------------------Footer------------------------------------------------------------------>
-    <section class="footer wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+    <section class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-xl-3">
@@ -1338,10 +1443,6 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js'></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/selectbox.js"></script>
-    <script src="assets/js/wow/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
 </body>
 
 </html>
