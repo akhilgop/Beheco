@@ -28,6 +28,11 @@
             color: $primary !important;
         }
     }
+    .navbar-toggler-icon {
+        img {
+            width: 35px !important;
+        }
+    }
     .top-menu {
         width: 100vw;
         background-color: rgba($color: $primary, $alpha: 0.1);
@@ -227,6 +232,12 @@ h2 {
             display: flex;
         }
     }
+    .category-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+    }
+
     .category {
         padding: 40px;
         border-radius: 20px;

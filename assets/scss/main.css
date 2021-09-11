@@ -3017,6 +3017,443 @@ button.slick-prev:hover {
   .media-hide {
     display: none;
   }
+  .nb {
+    width: 100vw !important;
+  }
+  .nb .top-menu {
+    display: none;
+  }
+  .nb .navbar-collapse {
+    padding-bottom: 20px;
+  }
+  .nb .navbar-brand img {
+    width: 60% !important;
+  }
+  .nb .d-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nb .d-flex .signin-box {
+    width: 100%;
+    margin-bottom: 20px !important;
+  }
+  .nb .d-flex .signin-box .btn-user {
+    padding: 0 !important;
+    margin: auto;
+  }
+  .nb .d-flex .btn-black {
+    width: 100% !important;
+  }
+  .banner {
+    background-position: bottom !important;
+  }
+  .banner .search-bar-container {
+    padding: 20px !important;
+    width: 100% !important;
+  }
+  .banner .search-bar-container p {
+    display: none;
+  }
+  .banner .search-bar-container h2 {
+    font-size: 24px !important;
+    line-height: normal !important;
+  }
+  .banner .search-bar-container h1 {
+    font-size: 32px !important;
+    line-height: normal !important;
+  }
+  .category-wrapper {
+    margin-top: 30px !important;
+  }
+  .category-wrapper .category-row {
+    width: 100% !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .category-wrapper .category-row .category {
+    padding: 17px !important;
+  }
+  .category-wrapper .category-row .category .icon {
+    width: 60px !important;
+    height: 60px !important;
+    margin: auto;
+  }
+  .category-wrapper .category-row .category .icon img {
+    width: 50% !important;
+  }
+  .category-wrapper .category-row .c15 .icon img {
+    height: 50% !important;
+  }
+  .gs_reveal {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .bg-pad {
+    display: none !important;
+  }
+  .counter {
+    background-image: none !important;
+  }
+  .counter h4 {
+    font-size: 24px !important;
+    line-height: normal !important;
+  }
+  .counter p {
+    font-size: 18px !important;
+    line-height: normal !important;
+  }
+  .counter img {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .featured {
+    padding-bottom: 30px !important;
+  }
+  .testimonials {
+    padding-bottom: 0px !important;
+  }
+  .testimonials .hs__item {
+    min-width: 90% !important;
+  }
+  .testimonials .hs__item:last-child {
+    margin-right: 0 !important;
+  }
+  .contact-form {
+    padding-top: 0 !important;
+  }
+  .contact-form .form-section {
+    padding-top: 30px !important;
+    margin-right: 0 !important;
+  }
+  .faq {
+    padding: 20px !important;
+    margin: 50px 0 !important;
+  }
+  .faq .content {
+    background-size: 50% !important;
+  }
+  .faq h5 {
+    font-size: 24px !important;
+  }
+  .faq p {
+    font-size: 16px !important;
+  }
+  .subscribe {
+    margin-top: 100px;
+  }
+  .subscribe h5 {
+    font-size: 24px !important;
+    margin-top: 30px;
+  }
+  .subscribe h5 span {
+    font-size: 24px !important;
+  }
+  .subscribe .newletter-input .form-control {
+    height: 50px !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    font-size: 16px !important;
+  }
+  .subscribe .newletter-input .btn {
+    height: 50px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    padding: 0 20px !important;
+  }
+  .popular-content p:last-child {
+    margin-bottom: 0;
+  }
+  .footer {
+    width: 100vw !important;
+    padding: 50px 0 0 0 !important;
+  }
+  .footer ul {
+    padding-left: 0 !important;
+  }
+  .footer p,
+  .footer a {
+    font-size: 16px !important;
+  }
+  .footer .copyright-section {
+    margin-top: 30px !important;
+  }
+  .footer .copyright-section p {
+    text-align: center;
+  }
+  .footer .copyright-section .social-links {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .media-show {
+    display: block !important;
+  }
+  .media-hide {
+    display: none;
+  }
+  .nb {
+    width: 100vw !important;
+  }
+  .nb .top-menu {
+    display: none;
+  }
+  .nb .navbar-brand img {
+    width: 60% !important;
+  }
+  .nb .d-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nb .d-flex .signin-box {
+    width: 100%;
+    margin-bottom: 20px !important;
+  }
+  .nb .d-flex .signin-box .btn-user {
+    padding: 0 !important;
+    margin: auto;
+  }
+  .nb .d-flex .btn-black {
+    width: 100% !important;
+  }
+  .nb .navbar-collapse {
+    padding-bottom: 20px;
+  }
+  .banner {
+    background-position: bottom !important;
+  }
+  .banner .search-bar-container {
+    padding: 20px !important;
+    width: 100% !important;
+  }
+  .banner .search-bar-container p {
+    display: none;
+  }
+  .banner .search-bar-container h2 {
+    font-size: 24px !important;
+    line-height: normal !important;
+  }
+  .banner .search-bar-container h1 {
+    font-size: 32px !important;
+    line-height: normal !important;
+  }
+  .category-wrapper {
+    margin-top: 30px !important;
+  }
+  .category-wrapper .category-row {
+    width: 100% !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .category-wrapper .category-row .category {
+    padding: 17px !important;
+  }
+  .category-wrapper .category-row .category .icon {
+    width: 60px !important;
+    height: 60px !important;
+    margin: auto;
+  }
+  .category-wrapper .category-row .category .icon img {
+    width: 50% !important;
+  }
+  .category-wrapper .category-row .c15 .icon img {
+    height: 50% !important;
+  }
+  .gs_reveal {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .bg-pad {
+    display: none !important;
+  }
+  .counter {
+    background-image: none !important;
+  }
+  .counter h4 {
+    font-size: 24px !important;
+    line-height: normal !important;
+  }
+  .counter p {
+    font-size: 18px !important;
+    line-height: normal !important;
+  }
+  .counter img {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .featured {
+    padding-bottom: 30px !important;
+  }
+  .testimonials {
+    padding-bottom: 0px !important;
+  }
+  .testimonials .hs__item {
+    min-width: 90% !important;
+  }
+  .testimonials .hs__item:last-child {
+    margin-right: 0 !important;
+  }
+  .contact-form {
+    padding-top: 0 !important;
+  }
+  .contact-form .form-section {
+    padding-top: 30px !important;
+    margin-right: 0 !important;
+  }
+  .faq {
+    padding: 20px !important;
+    margin: 50px 0 !important;
+  }
+  .faq .content {
+    background-size: 50% !important;
+  }
+  .faq h5 {
+    font-size: 24px !important;
+  }
+  .faq p {
+    font-size: 16px !important;
+  }
+  .subscribe {
+    margin-top: 100px;
+  }
+  .subscribe h5 {
+    font-size: 24px !important;
+    margin-top: 30px;
+  }
+  .subscribe h5 span {
+    font-size: 24px !important;
+  }
+  .subscribe .newletter-input .form-control {
+    height: 50px !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    font-size: 16px !important;
+  }
+  .subscribe .newletter-input .btn {
+    height: 50px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    padding: 0 20px !important;
+  }
+  .popular-content p:last-child {
+    margin-bottom: 0;
+  }
+  .footer {
+    width: 100vw !important;
+    padding: 50px 0 0 0 !important;
+  }
+  .footer ul {
+    padding-left: 0 !important;
+  }
+  .footer p,
+  .footer a {
+    font-size: 16px !important;
+  }
+  .footer .copyright-section {
+    margin-top: 30px !important;
+  }
+  .footer .copyright-section p {
+    text-align: center;
+  }
+  .footer .copyright-section .social-links {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    margin-top: 20px;
+  }
+  .event-container:hover .img-section img {
+    width: 100% !important;
+  }
+  .event-container .img-section img {
+    border-radius: 10px;
+  }
+  .event-container .img-section img:hover {
+    width: 100% !important;
+  }
+  .coming-soon-card {
+    padding: 20px !important;
+    background-size: 50%;
+  }
+  .coming-soon-card h3 {
+    font-size: 30px !important;
+    margin-bottom: 20px !important;
+  }
+  .coming-soon-card img {
+    margin-bottom: 20px;
+  }
+  .coming-soon-card .content {
+    padding: 0 !important;
+  }
+  .testimonial-card {
+    max-width: 100% !important;
+    padding: 20px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .name-link {
+    display: none;
+  }
+  .media-show {
+    display: block !important;
+  }
+  .media-hide {
+    display: none;
+  }
+  .nb {
+    width: 100vw !important;
+  }
+  .nb .top-menu {
+    display: none;
+  }
+  .nb .navbar-brand img {
+    width: 60% !important;
+  }
+  .nb .d-flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .nb .d-flex .signin-box {
+    width: 100%;
+    margin-bottom: 20px !important;
+  }
+  .nb .d-flex .signin-box .btn-user {
+    padding: 0 !important;
+    margin: auto;
+  }
+  .nb .d-flex .btn-black {
+    width: 100% !important;
+  }
+  .nb .navbar-collapse {
+    padding-bottom: 20px;
+  }
+  .banner {
+    background-position: bottom !important;
+  }
+  .banner .search-bar-container {
+    padding: 20px !important;
+    width: 70% !important;
+  }
+  .banner .search-bar-container p {
+    display: none;
+  }
+  .banner .search-bar-container h2 {
+    font-size: 24px !important;
+    line-height: normal !important;
+  }
+  .banner .search-bar-container h1 {
+    font-size: 32px !important;
+    line-height: normal !important;
+  }
 }
 
 @media screen and (min-width: 1700px) {
@@ -3722,6 +4159,10 @@ button.slick-prev:hover {
   color: #059762 !important;
 }
 
+.nb .navbar-toggler-icon img {
+  width: 35px !important;
+}
+
 .nb .top-menu {
   width: 100vw;
   background-color: rgba(5, 151, 98, 0.1);
@@ -4024,6 +4465,15 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.categories .category-row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
 }
 
 .categories .category {
@@ -5492,13 +5942,6 @@ h2 {
   padding: 0;
 }
 
-.event1 {
-  background-image: url("../images/cochin-carnival.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: none;
-}
-
 .help-bg {
   background-image: url("../../images/help-bg.jpg");
 }
@@ -5979,6 +6422,84 @@ h2 {
   }
   .nav-item {
     margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hs__arrows .arrow {
+    width: 40px !important;
+    height: 40px !important;
+    border: 1px solid !important;
+  }
+  .hs__arrows .arrow svg {
+    width: 50%;
+  }
+  .hs__arrows .arrow-prev {
+    border: 2px solid #000 !important;
+    margin-right: 10px !important;
+  }
+  .hs__arrows .arrow-next {
+    border: 2px solid #059762 !important;
+  }
+  .hs__item {
+    width: 90% !important;
+  }
+  .hs__item .content-box {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .hs__wrapper {
+    margin-top: 30px !important;
+    overflow: hidden;
+  }
+  .carousel-item,
+  .full-screen-ad {
+    height: auto !important;
+  }
+  .top-pick-card .text-portion,
+  .top-pick-card .btn-wrapper {
+    width: 100% !important;
+  }
+  .top-pick-card .text-portion .btn,
+  .top-pick-card .btn-wrapper .btn {
+    width: 100% !important;
+  }
+  .top-pick-card .card-description {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px !important;
+  }
+  .event-card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto !important;
+    margin-bottom: 20px !important;
+  }
+  .event-card .img-section {
+    width: 100%;
+  }
+  .event-card .text-section {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-top: 20px;
+  }
+  .coming-soon-card {
+    padding: 20px !important;
+    background-size: 50%;
+  }
+  .coming-soon-card h3 {
+    font-size: 30px !important;
+    margin-bottom: 20px !important;
+  }
+  .coming-soon-card img {
+    margin-bottom: 20px;
+  }
+  .coming-soon-card .content {
+    padding: 0 !important;
+  }
+  .testimonial-card {
+    max-width: 100% !important;
+    padding: 20px !important;
   }
 }
 
