@@ -290,7 +290,8 @@
         font-size: calc(0.66 * #{$h1});
     }
     h2 {
-        font-size: calc(0.66 * #{$h2});
+        font-size: calc(0.5 * #{$h2});
+        line-height: normal;
     }
     p,
     a {
@@ -407,10 +408,47 @@
         }
     }
     .hs__item {
-        width: 90% !important;
+        width: 43% !important;
+        margin-right: 15px !important;
         .content-box {
+            padding: 10px !important;
             width: 100% !important;
             max-width: 100% !important;
+            height: 100%;
+            .txt-section {
+                padding-top: 10px !important;
+                h5 {
+                    font-size: 18px !important;
+                    white-space: normal !important;
+                }
+                p {
+                    font-size: 14px !important;
+                    margin: 10px 0 !important;
+                }
+            }
+        }
+    }
+    .slider-wrapper .content-box .txt-section .bottom-section {
+        flex-wrap: wrap !important;
+        .btn-warpper {
+            width: 100% !important;
+            .btn {
+                width: 100% !important;
+            }
+        }
+        .overall-rating {
+            width: 100% !important;
+            justify-content: center !important;
+            margin-top: 10px !important;
+            display: none !important;
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+    .slider-wrapper {
+        .image-wrapper {
+            height: 120px !important;
         }
     }
     .hs__wrapper {
@@ -445,6 +483,12 @@
             width: 100% !important;
             padding-left: 0 !important;
             padding-top: 20px;
+            h5 {
+                font-size: 18px !important;
+            }
+            p {
+                font-size: $mob-p !important;
+            }
         }
     }
 
@@ -468,12 +512,169 @@
     }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
+    .hs__item {
+        width: 43% !important;
+        margin-right: 15px !important;
+        .content-box {
+            padding: 10px !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            height: 100%;
+            .txt-section {
+                padding-top: 10px !important;
+                h5 {
+                    font-size: 18px !important;
+                    white-space: normal !important;
+                }
+                p {
+                    font-size: 14px !important;
+                    margin: 10px 0 !important;
+                }
+            }
+        }
+    }
+    .slider-wrapper .content-box .txt-section .bottom-section {
+        flex-wrap: wrap !important;
+        .btn-warpper {
+            width: 100% !important;
+            .btn {
+                width: 100% !important;
+            }
+        }
+        .overall-rating {
+            width: 100% !important;
+            justify-content: center !important;
+            margin-top: 10px !important;
+            display: none !important;
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+    .slider-wrapper {
+        .image-wrapper {
+            height: 120px !important;
+        }
+    }
+    .coming-soon-card {
+        padding: 20px !important;
+        background-size: 50%;
+        h3 {
+            font-size: 30px !important;
+            margin-bottom: 20px !important;
+        }
+        img {
+            margin-bottom: 20px;
+        }
+        .content {
+            padding: 0 !important;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .hs__item {
+        width: 25% !important;
+        margin-right: 15px !important;
+        flex: inherit !important;
+        .content-box {
+            padding: 10px !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            height: 100%;
+            .txt-section {
+                padding-top: 10px !important;
+                h5 {
+                    font-size: 18px !important;
+                    white-space: normal !important;
+                }
+                p {
+                    font-size: 14px !important;
+                    margin: 10px 0 !important;
+                }
+            }
+        }
+    }
+    .slider-wrapper .content-box .txt-section .bottom-section {
+        flex-wrap: wrap !important;
+        .btn-warpper {
+            width: 100% !important;
+            .btn {
+                width: 100% !important;
+            }
+        }
+        .overall-rating {
+            width: 100% !important;
+            justify-content: center !important;
+            margin-top: 10px !important;
+            display: none !important;
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+    .slider-wrapper {
+        .image-wrapper {
+            height: 120px !important;
+        }
+    }
+    .coming-soon-card {
+        padding: 20px !important;
+        background-size: 50%;
+        h3 {
+            font-size: 30px !important;
+            margin-bottom: 20px !important;
+        }
+        img {
+            margin-bottom: 20px;
+        }
+        .content {
+            padding: 0 !important;
+        }
+    }
+    h2 {
+        font-size: calc(0.66 * #{$h2}) !important;
+        line-height: normal;
+    }
+    .event-card {
+        flex-wrap: wrap;
+        height: auto !important;
+        margin-bottom: 20px !important;
+        .img-section {
+            width: 100%;
+        }
+        .text-section {
+            width: 100% !important;
+            padding-left: 0 !important;
+            padding-top: 20px;
+            h5 {
+                font-size: 18px !important;
+            }
+            p {
+                font-size: $mob-p !important;
+            }
+        }
+    }
+    .top-pick-card {
+        height: 330px !important;
+        .text-portion,
+        .btn-wrapper {
+            width: 100% !important;
+            .btn {
+                width: 100% !important;
+            }
+        }
+        .card-description {
+            flex-wrap: wrap;
+            padding: 20px !important;
+        }
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .hs__wrapper {
+        padding-right: 0 !important;
+    }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
@@ -490,5 +691,13 @@
 @media screen and (min-width: 1700px) {
     .container {
         max-width: 1620px !important;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .event-card:hover .img-section img {
+        width: 100% !important;
+    }
+    .slider-wrapper .content-box:hover .image-wrapper img {
+        height: 100% !important;
     }
 }
