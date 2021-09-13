@@ -986,6 +986,7 @@ textarea.form-control {
 .file-upload .btn-primary-outline {
   border-top-right-radius: 10px !important;
   border-bottom-right-radius: 10px !important;
+  height: 50px;
 }
 
 .file-upload .btn-primary-outline:hover, .file-upload .btn-primary-outline:active, .file-upload .btn-primary-outline:focus {
@@ -1075,6 +1076,10 @@ textarea.form-control {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   border: 1px solid #059762;
+}
+
+.responsive-search-bar .select2-selection {
+  max-width: 180px !important;
 }
 
 #myBtn {
@@ -3858,6 +3863,9 @@ button.slick-prev:hover {
   }
   .upcoming-events .img-section img {
     border-radius: 10px;
+  }
+  .nb .dropdown-content {
+    width: 60vw !important;
   }
 }
 

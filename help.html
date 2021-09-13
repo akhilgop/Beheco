@@ -24,7 +24,7 @@
         <div class="top-menu">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-5">
+                    <div class="col-xl-5 col-sm-7">
                         <div class="left-portion">
                             <div class="phone">
                                 <div class="icon">
@@ -40,20 +40,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-7">
+                    <div class="col-xl-7 col-sm-5">
                         <div class="right-portion ml-auto">
                             <div class="common-links">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#advertise"><span
                                         class="badge bg-primary">Advertise Here</span></a>
-                                <div class="separator"></div>
-                                <a href="career.html">Careers</a>
-                                <div class="separator"></div>
-                                <a href="popup.html">Help</a>
-                                <div class="separator"></div>
-                                <a href="new-business.html">Download App</a>
-                                <div class="separator"></div>
+                                <div class="separator  "></div>
+                                <a href="career.html" class="name-link  ">Careers</a>
+                                <div class="separator name-link  "></div>
+                                <a href="help.html" class="name-link  ">Help</a>
+                                <div class="separator name-link  "></div>
+                                <a href="popup.html" class="name-link  ">Download App</a>
+                                <div class="separator name-link  "></div>
                             </div>
-                            <div class="social-links">
+                            <div class="social-links  ">
                                 <a href="" class="icon fb">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
@@ -79,12 +79,11 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><img src="assets/images/svg/menu_icon.svg" alt=""></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
-
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown media-hide">
                         <div class="mega-menu">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -144,11 +143,15 @@
                             </div>
                         </div>
                     </li>
+                    <li class="nav-item media-show">
+                        <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal"
+                            data-bs-target="#advertise">Advertise Here</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Featured</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Offers</a>
+                        <a class="nav-link" href="offers.html">Offers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Events</a>
@@ -157,19 +160,16 @@
                 <div class="d-flex">
                     <div class="signin-box">
                         <div class="dropdown">
-                            <button class="btn btn-user dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="assets/images/svg/user.svg" alt="user-icon">
+                            <button class="btn btn-user" type="button" data-bs-toggle="modal" data-bs-target="#SignUp">
+                                <div class="img-wrapper">
+                                    <img src="assets/images/svg/user.svg" alt="user-icon">
+                                </div>
                                 <span>Signin / Register</span>
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
                         </div>
                     </div>
-                    <button class="btn btn-black"><img src="assets/images/svg/plus-icon.svg" alt="plus-icon"><span>Add
+                    <button class="btn btn-black" data-bs-toggle="modal" data-bs-target="#newListing"><img
+                            src="assets/images/svg/plus-icon.svg" alt="plus-icon"><span>Add
                             Free Listing</span></button>
                 </div>
             </div>
@@ -206,7 +206,7 @@
                 deserunt mollit anim id est laborum.</p>
             <div class="video-wrapper">
                 <div class="row">
-                    <div class="col-xl-4 gs_reveal">
+                    <div class="col-xl-4 col-lg-4 gs_reveal">
                         <div class="video-card">
                             <div class="content">
                                 <iframe width="100%" height="300px" src="https://www.youtube.com/embed/gFlw49pQi80"
@@ -219,7 +219,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 gs_reveal">
+                    <div class="col-xl-4 col-lg-4 gs_reveal">
                         <div class="video-card">
                             <div class="content">
                                 <iframe width="100%" height="300px" src="https://www.youtube.com/embed/gFlw49pQi80"
@@ -232,7 +232,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 gs_reveal">
+                    <div class="col-xl-4 col-lg-4 gs_reveal">
                         <div class="video-card">
                             <div class="content">
                                 <iframe width="100%" height="300px" src="https://www.youtube.com/embed/gFlw49pQi80"
@@ -252,39 +252,39 @@
     <!------------------------------------------------------------------Footer------------------------------------------------------------------>
     <section class="footer gs_reveal">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-3 gs_reveal">
+            <div class="row link-animate">
+                <div class="col-xl-3 col-md-6 gs_reveal">
                     <ul>
-                        <li><a href="" class="a-animate">Home</a></li>
-                        <li><a href="" class="a-animate">Featured</a></li>
-                        <li><a href="" class="a-animate">Trending</a></li>
-                        <li><a href="" class="a-animate">Events</a></li>
-                        <li><a href="career.html" class="a-animate">Careers</a></li>
-                        <li><a href="contact.html" class="a-animate">Contact</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Featured</a></li>
+                        <li><a href="">Trending</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="career.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-xl-3 gs_reveal">
+                <div class="col-xl-3 col-md-6 gs_reveal">
                     <ul>
-                        <li><a href="help.html" class="a-animate">Help</a></li>
-                        <li><a href="faq.html" class="a-animate">FAQ's</a></li>
-                        <li><a href="terms.html" class="a-animate">Terms and conditions</a></li>
-                        <li><a href="" class="a-animate">Privacy / Cookies</a></li>
-                        <li><a href="" class="a-animate">Security</a></li>
+                        <li><a href="help.html">Help</a></li>
+                        <li><a href="faq.html">FAQ's</a></li>
+                        <li><a href="terms.html">Terms and conditions</a></li>
+                        <li><a href="">Privacy / Cookies</a></li>
+                        <li><a href="">Security</a></li>
 
                     </ul>
                 </div>
-                <div class="col-xl-3 gs_reveal">
+                <div class="col-xl-3 col-md-6 gs_reveal">
                     <ul>
-                        <li><a href="" class="a-animate">Emergency Services</a></li>
-                        <li><a href="" class="a-animate">Food and Beaverages</a></li>
-                        <li><a href="" class="a-animate">Rooms and Rentals</a></li>
-                        <li><a href="" class="a-animate">Health Care</a></li>
-                        <li><a href="" class="a-animate">Automobile</a></li>
-                        <li><a href="" class="a-animate">Dress & Accessories</a></li>
-                        <li><a href="" class="a-animate">Eductional Institutions</a></li>
+                        <li><a href="">Emergency Services</a></li>
+                        <li><a href="">Food and Beaverages</a></li>
+                        <li><a href="">Rooms and Rentals</a></li>
+                        <li><a href="">Health Care</a></li>
+                        <li><a href="">Automobile</a></li>
+                        <li><a href="">Dress & Accessories</a></li>
+                        <li><a href="">Eductional Institutions</a></li>
                     </ul>
                 </div>
-                <div class="col-xl-3 gs_reveal">
+                <div class="col-xl-3 col-md-6 gs_reveal">
                     <h6>Registered Address:</h6>
                     <p>3rd floor, 120 Holborn, London EC1N 2TD, United Kingdom. VAT number: 791 7261 06.</p>
 
@@ -303,10 +303,10 @@
             </div>
             <div class="copyright-section gs_reveal">
                 <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-md-7">
                         <p class="gs_reveal">Copyright © 2022 Beheco.in . All rights reserved.</p>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-md-5">
                         <div class="social-links gs_reveal">
                             <a href="" class="icon fb">
                                 <i class="fab fa-facebook-f"></i>

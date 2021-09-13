@@ -204,6 +204,7 @@ p {
         padding: 20px;
         border-radius: 20px;
         box-shadow: $box-shadow;
+        margin-bottom: 30px;
         .content {
             border-radius: 10px;
             overflow: hidden;
@@ -258,6 +259,12 @@ p {
 .pos-sticky {
     position: sticky;
     top: 200px;
+}
+.help {
+    padding-bottom: 70px !important;
+}
+.video-wrapper {
+    margin-bottom: 20px;
 }
 // -------------------------------------------------------------------Toggle Buttons--------------------------------------------------------------------//
 .btn-check:active + .btn-outline-primary:focus,
@@ -361,5 +368,129 @@ p {
             margin-bottom: 10px;
             margin-right: 10px;
         }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .general-banner {
+        margin-top: 74px;
+    }
+    .common-h2 {
+        margin-bottom: 20px !important;
+    }
+    section {
+        padding: 50px 0 !important;
+        p {
+            font-size: $mob-p !important;
+        }
+    }
+    .common-section {
+        .content {
+            padding: 0 !important;
+        }
+    }
+    .life {
+        p:last-child {
+            margin-bottom: 0 !important;
+        }
+        .life-content {
+            padding: 0 !important;
+        }
+        .life-image-wrapper {
+            padding: 0 !important;
+            img {
+                display: none;
+            }
+        }
+    }
+    .open-positions {
+        padding-bottom: 20px !important;
+    }
+    .accordion-section {
+        margin-top: 0 !important;
+        .accordion {
+            margin-bottom: 30px;
+        }
+        .accordion-button {
+            font-size: 16px !important;
+        }
+    }
+    .drop-cv {
+        h2 {
+            font-size: 24px !important;
+            line-height: 40px !important;
+        }
+        .image-wrapper {
+            margin-top: 30px !important;
+            img {
+                width: 100% !important;
+            }
+        }
+    }
+    .video-card {
+        margin-bottom: 30px !important;
+    }
+    .help {
+        padding-bottom: 0 !important;
+    }
+    .video-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .card-general {
+        margin-left: 0 !important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .video-card {
+        margin-bottom: 30px !important;
+    }
+    .help {
+        padding-bottom: 0 !important;
+    }
+    .video-wrapper {
+        margin-bottom: 20px;
+    }
+    .common-h2 {
+        margin-bottom: 20px !important;
+    }
+    .general-banner .content h2 {
+        font-size: 48px !important;
+    }
+    .life {
+        p:last-child {
+            margin-bottom: 0 !important;
+        }
+        .life-content {
+            padding: 0 !important;
+        }
+        .life-image-wrapper {
+            padding: 0 !important;
+            img {
+                display: none;
+            }
+        }
+    }
+    .accordion-section {
+        margin-top: 0 !important;
+        .accordion {
+            margin-bottom: 30px;
+        }
+        .accordion-button {
+            font-size: 16px !important;
+        }
+    }
+    .drop-cv {
+        h2 {
+            font-size: 24px !important;
+            line-height: 40px !important;
+        }
+        .image-wrapper {
+            margin-top: 30px !important;
+        }
+    }
+
+    .card-general {
+        margin-left: 0 !important;
     }
 }

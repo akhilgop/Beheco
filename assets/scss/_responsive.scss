@@ -917,6 +917,11 @@
             }
         }
     }
+    .nb {
+        .dropdown-content {
+            width: 60vw !important;
+        }
+    }
 }
 
 @media screen and (min-width: 1366px) and (max-width: 1700px) {

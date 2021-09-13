@@ -637,6 +637,7 @@ textarea.form-control {
     .btn-primary-outline {
         border-top-right-radius: $bdr-rds !important;
         border-bottom-right-radius: $bdr-rds !important;
+        height: 50px;
         &:hover,
         &:active,
         &:focus {
@@ -705,5 +706,10 @@ textarea.form-control {
     &:focus {
         box-shadow: none !important;
         border: 1px solid $primary;
+    }
+}
+.responsive-search-bar {
+    .select2-selection {
+        max-width: 180px !important;
     }
 }
