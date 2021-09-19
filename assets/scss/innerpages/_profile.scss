@@ -156,3 +156,66 @@
         }
     }
 }
+.vertical-tabs-container .vertical-tab-accordion-heading:focus,
+.vertical-tabs-container .vertical-tab-accordion-heading:hover {
+    color: $primary !important;
+}
+@media screen and (max-width: 575px) {
+    .btn-b-list {
+        height: auto;
+        padding: 0;
+    }
+    .business-information {
+        ul {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: auto;
+        }
+        .tab-content {
+            padding: 30px 0 !important;
+        }
+    }
+    .savd-content {
+        .listing-card {
+            padding: 10px !important;
+            .image-wrapper {
+                height: 160px !important;
+            }
+            .top-section {
+                h5 {
+                    font-size: 18px !important;
+                    line-height: 20px !important;
+                }
+            }
+        }
+        .listing-wrapper {
+            grid-template-columns: repeat(2, 1fr) !important;
+            width: 100% !important;
+            grid-column-gap: 15px !important;
+            grid-row-gap: 15px !important;
+        }
+    }
+    .vertical-tab-content {
+        padding: 15px !important;
+    }
+    .notification-card {
+        padding: 15px !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px solid $bdr;
+        .main-content {
+            width: 100% !important;
+            margin: 20px 0 !important;
+            p {
+                text-align: center;
+            }
+        }
+        .right-portion {
+            width: 100% !important;
+            justify-content: center !important;
+        }
+    }
+    #tab5 {
+        background-color: rgba($color: $primary, $alpha: 0.1);
+    }
+}

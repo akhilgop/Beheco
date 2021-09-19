@@ -374,6 +374,9 @@ p {
 @media screen and (max-width: 767px) {
     .general-banner {
         margin-top: 74px;
+        h2 {
+            font-size: 32px !important;
+        }
     }
     .common-h2 {
         margin-bottom: 20px !important;
@@ -439,6 +442,30 @@ p {
 
     .card-general {
         margin-left: 0 !important;
+    }
+    .add-new-wrapper {
+        .accordion-body {
+            padding: 30px 20px !important;
+        }
+        .accordion {
+            margin-bottom: 0 !important;
+        }
+    }
+    #upload-cover {
+        width: 100% !important;
+        .stage {
+            width: 100% !important;
+            height: 120px !important;
+        }
+    }
+    .cover-image-wrapper #img-crop-cover #upload-cover label#filedrag-cover {
+        background-size: 10% auto !important;
+    }
+    .location-wrapper {
+        padding: 10px !important;
+    }
+    .contact-card {
+        margin-top: 30px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {

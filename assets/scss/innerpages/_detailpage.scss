@@ -714,6 +714,13 @@
     .similar-result {
         margin-top: 0 !important;
     }
+    .drop-cv-modal {
+        overflow-y: auto !important;
+        margin: 20px auto !important;
+        .modal-content {
+            padding: 450px 20px 50px 20px !important;
+        }
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .inner-nb {

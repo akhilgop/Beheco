@@ -196,3 +196,181 @@
         border-radius: $bdr-rds2;
     }
 }
+@media screen and (max-width: 470px) {
+    .offers {
+        #content-section-wrapper {
+            width: 100% !important;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mini-banner {
+        padding-top: 138px !important;
+        padding-bottom: 0 !important;
+    }
+    .results-content {
+        padding-top: 0 !important;
+        width: 97% !important;
+    }
+    #content-section-wrapper {
+        padding: 0 !important;
+        margin-left: -50px;
+        .listing-card {
+            padding: 10px !important;
+            .image-wrapper {
+                height: 160px !important;
+            }
+            .top-section {
+                h5 {
+                    font-size: 18px !important;
+                    line-height: 20px !important;
+                }
+            }
+        }
+        .listing-wrapper {
+            grid-template-columns: repeat(2, 1fr) !important;
+            width: 100% !important;
+        }
+    }
+    .results-content #sidebarCollapse {
+        display: block !important;
+    }
+    .pagination {
+        flex-wrap: wrap;
+        .page-item {
+            margin-bottom: 10px;
+        }
+    }
+    .keyword-wrapper {
+        a {
+            font-size: $mob-p !important;
+            line-height: 28px !important;
+        }
+    }
+    .related-search {
+        padding-bottom: 0 !important;
+    }
+    .results-page {
+        .container-fluid {
+            padding: 0 15px !important;
+        }
+        .search-bar {
+            width: 100% !important;
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .mini-banner {
+        padding-top: 174px !important;
+        padding-bottom: 0 !important;
+    }
+    .results-content #sidebar {
+        min-width: 250px !important;
+    }
+    #content-section-wrapper {
+        width: 100% !important;
+        padding: 0 20px !important;
+        .listing-wrapper {
+            grid-template-columns: repeat(2, 1fr) !important;
+            width: 100% !important;
+            .listing-card {
+                padding: 15px !important;
+                .image-wrapper {
+                    height: 160px !important;
+                }
+            }
+        }
+    }
+    .results-content {
+        padding-top: 0 !important;
+        width: 100% !important;
+    }
+    .pagination {
+        flex-wrap: wrap;
+        .page-item {
+            margin-bottom: 10px;
+        }
+    }
+    .keyword-wrapper {
+        a {
+            font-size: $p !important;
+        }
+    }
+    .results-content #sidebarCollapse {
+        display: block !important;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .mini-banner {
+        padding-top: 128px !important;
+        padding-bottom: 0 !important;
+    }
+    .results-content #sidebar {
+        min-width: 250px !important;
+    }
+    #content-section-wrapper {
+        width: 100% !important;
+        padding: 0 20px !important;
+        .listing-wrapper {
+            grid-template-columns: repeat(3, 1fr) !important;
+            width: 100% !important;
+            .listing-card {
+                padding: 15px !important;
+                .image-wrapper {
+                    height: 160px !important;
+                }
+            }
+        }
+    }
+    .results-content {
+        padding-top: 0 !important;
+        width: 100% !important;
+    }
+    .pagination {
+        flex-wrap: wrap;
+        .page-item {
+            margin-bottom: 10px;
+        }
+    }
+    .keyword-wrapper {
+        a {
+            font-size: $p !important;
+        }
+    }
+    .results-content {
+        padding-bottom: 0 !important;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1345px) {
+    #content-section-wrapper {
+        width: 100% !important;
+        padding: 0 20px !important;
+        .listing-wrapper {
+            grid-template-columns: repeat(3, 1fr) !important;
+            width: 100% !important;
+            .listing-card {
+                padding: 15px !important;
+                .image-wrapper {
+                    height: 160px !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1346px) and (max-width: 1800px) {
+    #content-section-wrapper {
+        width: 100% !important;
+        padding: 0 20px !important;
+        .listing-wrapper {
+            grid-template-columns: repeat(4, 1fr) !important;
+            width: 100% !important;
+            .listing-card {
+                padding: 15px !important;
+                .image-wrapper {
+                    height: 180px !important;
+                }
+            }
+        }
+    }
+}
