@@ -58,6 +58,7 @@
         }
     }
 }
+
 .listing-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -211,11 +212,18 @@
     }
     .results-content {
         padding-top: 0 !important;
-        width: 97% !important;
+        width: 100% !important;
+        .sidebar-header {
+            margin-top: 0 !important;
+        }
+        .breadcrumb-item.active {
+            font-size: $mob-p;
+            padding-top: 5px;
+        }
     }
     #content-section-wrapper {
         padding: 0 !important;
-        margin-left: -50px;
+        // margin-left: -50px;
         .listing-card {
             padding: 10px !important;
             .image-wrapper {
@@ -231,6 +239,8 @@
         .listing-wrapper {
             grid-template-columns: repeat(2, 1fr) !important;
             width: 100% !important;
+            grid-column-gap: 15px;
+            grid-row-gap: 15px;
         }
     }
     .results-content #sidebarCollapse {
@@ -257,6 +267,28 @@
         }
         .search-bar {
             width: 100% !important;
+        }
+    }
+    .offers {
+        .content-section {
+            width: 91vw !important;
+        }
+        #content-section-wrapper .listing-card .image-wrapper {
+            height: 120px !important;
+        }
+        #content-section-wrapper {
+            width: 91vw !important;
+        }
+        .listing-card {
+            .bottom-section {
+                flex-wrap: wrap !important;
+                .btn-warpper,
+                .overall-rating {
+                    width: 100% !important;
+                    justify-content: left !important;
+                    margin: 5px 0;
+                }
+            }
         }
     }
 }

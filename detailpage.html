@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel='stylesheet' href='https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css'>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -21,7 +21,7 @@
 
 <body>
     <!-- -----------------------------------------------------------------Navbar------------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg inner-nb nb fixed-top">
+    <nav class="navbar navbar-expand-lg nb fixed-top">
         <div class="top-menu">
             <div class="container">
                 <div class="row">
@@ -82,52 +82,97 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><img src="assets/images/svg/menu_icon.svg" alt=""></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="search-bar ms-auto me-auto media-hide">
-                    <div class="content">
-                        <select class="form-select select2 js" aria-label="Default select example">
-                            <option selected>City</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <input type="text" class="form-control" placeholder="Search Something" value="Searched Keyword">
-                        <button type="button" class="btn btn-primary"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
+                <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown media-hide">
+                        <div class="mega-menu">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                                <i class="fas fa-chevron-down on-h"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-xl-4">
+                                            <div class="column">
+                                                <a href="#">Emergency
+                                                    Services</a>
+                                                <a href="#">Food &
+                                                    Beverages</a>
+                                                <a href="#">Rooms &
+                                                    Rentals</a>
+                                                <a href="#">Professionals</a>
+                                                <a href="#">Experts</a>
+                                                <a href="#">Healthcare</a>
+                                                <a href="#">Public
+                                                    Places</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <div class="column">
+                                                <a href="#">Home &
+                                                    Office</a>
+                                                <a href="#">Automobile</a>
+                                                <a href="#">Educational
+                                                    Institutions</a>
+                                                <a href="#">Financial
+                                                    institutions</a>
+                                                <a href="#">Dress &
+                                                    Accessories</a>
+                                                <a href="#">Travel &
+                                                    Tourism</a>
+                                                <a href="#">Wedding &
+                                                    Events</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <div class="column">
+                                                <a href="#">Electronics</a>
+                                                <a href="#">Retail &
+                                                    Wholesale</a>
+                                                <a href="#">Media &
+                                                    Entertainment</a>
+                                                <a href="#">Telecom</a>
+                                                <a href="#">Construction</a>
+                                                <a href="#">Sports</a>
+                                                <a href="#">Health &
+                                                    Fitness</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item media-show">
+                        <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal"
+                            data-bs-target="#advertise">Advertise Here</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Featured</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="offers.html">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                </ul>
                 <div class="d-flex">
                     <div class="signin-box">
                         <div class="dropdown">
-                            <button class="btn btn-user dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-user" type="button" data-bs-toggle="modal" data-bs-target="#SignUp">
                                 <div class="img-wrapper">
-                                    <img src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                        alt="user-icon">
+                                    <img src="assets/images/svg/user.svg" alt="user-icon">
                                 </div>
-                                <span>Hello Jack</span>
+                                <span>Signin / Register</span>
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
                         </div>
                     </div>
-                    <button class="btn btn-black"><img src="assets/images/svg/plus-icon.svg" alt="plus-icon"><span>Add
+                    <button class="btn btn-black" data-bs-toggle="modal" data-bs-target="#newListing"><img
+                            src="assets/images/svg/plus-icon.svg" alt="plus-icon"><span>Add
                             Free Listing</span></button>
-                </div>
-            </div>
-            <div class="search-bar responsive-search-bar media-show">
-                <div class="content">
-                    <select class="form-select select2 js" aria-label="Default select example">
-                        <option selected>City</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                    <input type="text" class="form-control" placeholder="Search Something" value="Searched Keyword">
-                    <button type="button" class="btn btn-primary"><i class="fas fa-search"></i></button>
                 </div>
             </div>
         </div>
@@ -270,227 +315,87 @@
             </div>
 
             <div class="added-photos">
-                <div id="gallery">
-                    <div id="image-gallery">
-                        <div class="row">
-                            <div class="col-lg-2 image">
-                                <div class="img-wrapper">
-                                    <a href="https://unsplash.it/500"><img src="https://unsplash.it/500"
-                                            class="img-responsive"></a>
-                                    <div class="img-overlay">
-                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                    </div>
+                <div class="demo-gallery">
+                    <ul id="lightgallery" class="row">
+                        <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                            data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                            data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                            <a href="">
+                                <img class="img-responsive"
+                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                <div class="demo-gallery-poster">
+                                    <img src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
                                 </div>
-                            </div>
-                            <div class="col-lg-2 image">
-                                <div class="img-wrapper">
-                                    <a href="https://unsplash.it/600"><img src="https://unsplash.it/600"
-                                            class="img-responsive"></a>
-                                    <div class="img-overlay">
-                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                    </div>
+                            </a>
+                        </li>
+                        <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                            data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                            data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                            <a href="">
+                                <img class="img-responsive"
+                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                <div class="demo-gallery-poster">
+                                    <img src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
                                 </div>
-                            </div>
-                            <div class="col-lg-2 image">
-                                <div class="img-wrapper">
-                                    <a href="https://unsplash.it/700"><img src="https://unsplash.it/700"
-                                            class="img-responsive"></a>
-                                    <div class="img-overlay">
-                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                    </div>
+                            </a>
+                        </li>
+                        <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                            data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/13-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/13-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/13.jpg 800"
+                            data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg">
+                            <a href="">
+                                <img class="img-responsive"
+                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-13.jpg">
+                                <div class="demo-gallery-poster">
+                                    <img src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
                                 </div>
-                            </div>
-                            <div class="col-lg-2 image">
-                                <div class="img-wrapper">
-                                    <a href="https://unsplash.it/800"><img src="https://unsplash.it/800"
-                                            class="img-responsive"></a>
-                                    <div class="img-overlay">
-                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                    </div>
+                            </a>
+                        </li>
+                        <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                            data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/4-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/4-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/4.jpg 800"
+                            data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg">
+                            <a href="">
+                                <img class="img-responsive"
+                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg">
+                                <div class="demo-gallery-poster">
+                                    <img src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
                                 </div>
-                            </div>
-                            <div class="col-lg-2 image">
-                                <div class="img-wrapper">
-                                    <a href="https://unsplash.it/900"><img src="https://unsplash.it/900"
-                                            class="img-responsive"></a>
-                                    <div class="img-overlay">
-                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                    </div>
+                            </a>
+                        </li>
+                        <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                            data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                            data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                            <a href="">
+                                <img class="img-responsive"
+                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                <div class="demo-gallery-poster">
+                                    <img src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
                                 </div>
-                            </div>
-                            <div class="col-lg-2 image">
-                                <div class="img-wrapper">
-                                    <a href="https://unsplash.it/1000"><img src="https://unsplash.it/1000"
-                                            class="img-responsive"></a>
-                                    <div class="img-overlay">
-                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                    </div>
+                            </a>
+                        </li>
+                        <li class="col-xl-2 col-md-4 col-sm-4  col-6"
+                            data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                            data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                            <a href="">
+                                <img class="img-responsive"
+                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                <div class="demo-gallery-poster">
+                                    <img src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
                                 </div>
-                            </div>
-                            <div class="collapse-container">
-                                <div class="collapse" id="galleryViewMore">
-                                    <div class="card card-body">
-                                        <div class="row" id="image-gallery">
-                                            <div class="col-lg-2 image">
-                                                <div class="img-wrapper">
-                                                    <a
-                                                        href="https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"><img
-                                                            src="https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-                                                            class="img-responsive"></a>
-                                                    <div class="img-overlay">
-                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2 image">
-                                                <div class="img-wrapper">
-                                                    <a href="https://unsplash.it/600"><img src="https://unsplash.it/600"
-                                                            class="img-responsive"></a>
-                                                    <div class="img-overlay">
-                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2 image">
-                                                <div class="img-wrapper">
-                                                    <a href="https://unsplash.it/700"><img src="https://unsplash.it/700"
-                                                            class="img-responsive"></a>
-                                                    <div class="img-overlay">
-                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2 image">
-                                                <div class="img-wrapper">
-                                                    <a href="https://unsplash.it/800"><img src="https://unsplash.it/800"
-                                                            class="img-responsive"></a>
-                                                    <div class="img-overlay">
-                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2 image">
-                                                <div class="img-wrapper">
-                                                    <a href="https://unsplash.it/900"><img src="https://unsplash.it/900"
-                                                            class="img-responsive"></a>
-                                                    <div class="img-overlay">
-                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2 image">
-                                                <div class="img-wrapper">
-                                                    <a href="https://unsplash.it/1000"><img
-                                                            src="https://unsplash.it/1000" class="img-responsive"></a>
-                                                    <div class="img-overlay">
-                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2 image">
-                                                <div class="img-wrapper">
-                                                    <a href="https://unsplash.it/500"><img src="https://unsplash.it/500"
-                                                            class="img-responsive"></a>
-                                                    <div class="img-overlay">
-                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2 image">
-                                                <div class="img-wrapper">
-                                                    <a href="https://unsplash.it/600"><img src="https://unsplash.it/600"
-                                                            class="img-responsive"></a>
-                                                    <div class="img-overlay">
-                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2 image">
-                                                <div class="img-wrapper">
-                                                    <a href="https://unsplash.it/700"><img src="https://unsplash.it/700"
-                                                            class="img-responsive"></a>
-                                                    <div class="img-overlay">
-                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2 image">
-                                                <div class="img-wrapper">
-                                                    <a href="https://unsplash.it/800"><img src="https://unsplash.it/800"
-                                                            class="img-responsive"></a>
-                                                    <div class="img-overlay">
-                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2 image">
-                                                <div class="img-wrapper">
-                                                    <a href="https://unsplash.it/900"><img src="https://unsplash.it/900"
-                                                            class="img-responsive"></a>
-                                                    <div class="img-overlay">
-                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2 image">
-                                                <div class="img-wrapper">
-                                                    <a href="https://unsplash.it/1000"><img
-                                                            src="https://unsplash.it/1000" class="img-responsive"></a>
-                                                    <div class="img-overlay">
-                                                        <i class="fas fa-search-plus" aria-hidden="true"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div><!-- End row -->
-                                        <div class="row mgn-top-30" id="image-gallery">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="collapse-container">
+                        <p>
+                            <button class="btn btn-view-more" type="button" data-bs-toggle="modal"
+                                data-bs-target="#galleryViewMore">
+                                View More
+                            </button>
+                        </p>
 
-                                        </div><!-- End row -->
-                                        <div class="row mgn-top-30">
-                                            <div class="flex-h-cntr pagination-wrapper">
-                                                <nav aria-label="...">
-                                                    <ul class="pagination">
-                                                        <li class="page-item disabled">
-                                                            <a class="page-link a-prev" href="#" tabindex="-1"
-                                                                aria-disabled="true"><i
-                                                                    class="fas fa-angle-double-left"></i>
-                                                                Previous </a>
-                                                        </li>
-                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                        <li class="page-item active" aria-current="page">
-                                                            <a class="page-link" href="#">2</a>
-                                                        </li>
-                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">6</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">7</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">8</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">9</a></li>
-                                                        <li class="page-item"><a class="page-link" href="#">10</a></li>
-                                                        <li class="page-item">
-                                                            <a class="page-link a-next" href="#">Next <i
-                                                                    class="fas fa-angle-double-right"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>
-                                    <button class="btn btn-view-more" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#galleryViewMore" aria-expanded="false"
-                                        aria-controls="galleryViewMore">
-                                        View More
-                                    </button>
-                                </p>
-
-                            </div>
-                        </div><!-- End row -->
-
-
-                    </div><!-- End image gallery -->
+                    </div>
                 </div>
+
+
             </div>
             <div class="row">
                 <div class="col-xl-7 col-lg-7">
@@ -1939,6 +1844,275 @@
             </div>
         </div>
     </div>
+    <!------------------------------------------------------------------Gallery View More------------------------------------------------------------->
+    <!-- Modal -->
+    <div class="modal fade" id="galleryViewMore" tabindex="-1" aria-labelledby="galleryViewMoreLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="content text-left">
+                        <div class="flex-heading">
+                            <h2 class="common-h2"><span>Image</span> Gallery</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="added-photos">
+                            <div class="demo-gallery">
+                                <ul id="lightgallery1" class="row">
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/13-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/13-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/13.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-13.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/4-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/4-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/4.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/13-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/13-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/13.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-13.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/4-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/4-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/4.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/13-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/13-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/13.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-13.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/4-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/4-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/4.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                        data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                        data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                        <a href="">
+                                            <img class="img-responsive"
+                                                src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                            <div class="demo-gallery-poster">
+                                                <img
+                                                    src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="flex-h-cntr pagination-wrapper">
+                                <nav aria-label="...">
+                                    <ul class="pagination">
+                                        <li class="page-item disabled">
+                                            <a class="page-link a-prev" href="#" tabindex="-1" aria-disabled="true"><i
+                                                    class="fas fa-angle-double-left"></i>
+                                                Previous </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active" aria-current="page">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link a-next" href="#">Next <i
+                                                    class="fas fa-angle-double-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!------------------------------------------------------------------Move to Top------------------------------------------------------------->
     <button onclick="topFunction()" id="myBtn" title="Go to top" class="move-to-top">
         <div class="btn-content">
@@ -1958,6 +2132,14 @@
     </button>
     <!-- -----------------------------------------------------------------External Javascript------------------------------------------------------------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js'></script>
+    <script src='https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js'></script>
+    <script src='https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js'></script>
+    <script src='https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js'></script>
+    <script src='https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js'></script>
+    <script src='https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js'></script>
+    <script src='https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js'></script>
+    <script src='https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>

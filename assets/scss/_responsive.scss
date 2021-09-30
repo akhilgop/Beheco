@@ -143,6 +143,7 @@
         }
     }
     .subscribe {
+        overflow: visible !important;
         margin-top: 100px;
         h5 {
             font-size: 24px !important;
@@ -281,6 +282,17 @@
         }
         .common-h2 {
             font-size: 18px !important;
+        }
+    }
+    .coming-soon {
+        .slider-content {
+            margin-top: 20px;
+            .slider {
+                min-height: 200px !important;
+                .img {
+                    border-radius: $bdr-rds;
+                }
+            }
         }
     }
 }
@@ -547,6 +559,17 @@
             }
         }
     }
+    .coming-soon {
+        .slider-content {
+            margin-top: 20px;
+            .slider {
+                min-height: 200px !important;
+                .img {
+                    border-radius: $bdr-rds;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -748,6 +771,17 @@
     .gs_reveal {
         opacity: 1 !important;
         visibility: visible !important;
+    }
+    .coming-soon {
+        .slider-content {
+            margin-top: 20px;
+            .slider {
+                min-height: 400px !important;
+                .img {
+                    border-radius: $bdr-rds;
+                }
+            }
+        }
     }
 }
 

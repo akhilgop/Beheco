@@ -304,11 +304,17 @@
   }
   .results-content {
     padding-top: 0 !important;
-    width: 97% !important;
+    width: 100% !important;
+  }
+  .results-content .sidebar-header {
+    margin-top: 0 !important;
+  }
+  .results-content .breadcrumb-item.active {
+    font-size: calc(16px - 2px);
+    padding-top: 5px;
   }
   #content-section-wrapper {
     padding: 0 !important;
-    margin-left: -50px;
   }
   #content-section-wrapper .listing-card {
     padding: 10px !important;
@@ -324,6 +330,8 @@
     -ms-grid-columns: (1fr)[2] !important;
         grid-template-columns: repeat(2, 1fr) !important;
     width: 100% !important;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
   }
   .results-content #sidebarCollapse {
     display: block !important;
@@ -347,6 +355,27 @@
   }
   .results-page .search-bar {
     width: 100% !important;
+  }
+  .offers .content-section {
+    width: 91vw !important;
+  }
+  .offers #content-section-wrapper .listing-card .image-wrapper {
+    height: 120px !important;
+  }
+  .offers #content-section-wrapper {
+    width: 91vw !important;
+  }
+  .offers .listing-card .bottom-section {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .offers .listing-card .bottom-section .btn-warpper,
+  .offers .listing-card .bottom-section .overall-rating {
+    width: 100% !important;
+    -webkit-box-pack: left !important;
+        -ms-flex-pack: left !important;
+            justify-content: left !important;
+    margin: 5px 0;
   }
 }
 
@@ -627,6 +656,8 @@
 
 @media (max-width: 768px) {
   .results-content #sidebar {
+    min-width: 250px !important;
+    max-width: 250px !important;
     margin-left: -250px;
     -webkit-transform: rotateY(90deg);
             transform: rotateY(90deg);
@@ -1491,10 +1522,6 @@
   float: right;
 }
 
-.collapse-container {
-  margin-top: 30px;
-}
-
 .collapse-container .collapse {
   width: 100%;
 }
@@ -1515,6 +1542,25 @@
 
 .collapse-container .card-body {
   margin-bottom: 30px;
+}
+
+#galleryViewMore {
+  overflow-y: auto !important;
+}
+
+#galleryViewMore .modal-dialog {
+  display: block !important;
+  min-width: 93%;
+  height: auto !important;
+}
+
+.big-modal {
+  overflow: auto !important;
+}
+
+.big-modal .modal-dialog {
+  display: block !important;
+  height: auto !important;
 }
 
 #allReviews .modal-dialog {
@@ -1608,6 +1654,50 @@
   color: #059762;
 }
 
+#galleryViewMore .modal-dialog {
+  min-width: 93%;
+}
+
+#galleryViewMore .pagination-wrapper {
+  margin-top: 0 !important;
+}
+
+#galleryViewMore #lightgallery1 {
+  margin-bottom: 0 !important;
+}
+
+#lightgallery {
+  margin-bottom: 0 !important;
+}
+
+.flex-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.flex-heading h2 {
+  width: 98%;
+}
+
+@media screen and (max-width: 575px) {
+  .offer-slider {
+    height: 200px !important;
+    margin-bottom: 30px;
+  }
+  .offer-slider .imgs {
+    height: 200px !important;
+  }
+  .offer-slider .imgs img {
+    background-size: cover !important;
+  }
+  .slider-content .slider .img {
+    background-size: cover !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .inner-nb {
     padding-bottom: 10px !important;
@@ -1699,28 +1789,35 @@
   .rating-form h4 {
     margin-top: 0 !important;
   }
-  .feedbacks .feedback-card {
+  .feedbacks .feedback-card,
+  #allReviews .feedback-card {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .feedbacks .feedback-card .main-content {
+  .feedbacks .feedback-card .main-content,
+  #allReviews .feedback-card .main-content {
     width: 100% !important;
     margin: 20px 0 !important;
   }
-  .feedbacks .feedback-card .right-portion {
+  .feedbacks .feedback-card .right-portion,
+  #allReviews .feedback-card .right-portion {
     width: 100% !important;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .feedbacks .feedback-card .right-portion .likes-wrapper,
-  .feedbacks .feedback-card .right-portion .flex-container {
+  .feedbacks .feedback-card .right-portion .flex-container,
+  #allReviews .feedback-card .right-portion .likes-wrapper,
+  #allReviews .feedback-card .right-portion .flex-container {
     width: 50% !important;
   }
-  .feedbacks .feedback-card .right-portion .flex-container h3 {
+  .feedbacks .feedback-card .right-portion .flex-container h3,
+  #allReviews .feedback-card .right-portion .flex-container h3 {
     margin-bottom: 0 !important;
   }
-  .feedbacks .feedback-card .dp {
+  .feedbacks .feedback-card .dp,
+  #allReviews .feedback-card .dp {
     margin: auto;
   }
   .similar-result {
@@ -1731,7 +1828,29 @@
     margin: 20px auto !important;
   }
   .drop-cv-modal .modal-content {
-    padding: 450px 20px 50px 20px !important;
+    padding: 50px 20px !important;
+  }
+  .offer-slider {
+    margin-top: 0px !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .offer-slider {
+    margin-bottom: 30px;
+  }
+  .offer-slider .imgs {
+    height: 400px !important;
+  }
+  .offer-slider .imgs img {
+    background-size: cover !important;
+  }
+  .slider-content .slider .img {
+    background-size: cover !important;
+  }
+  .slider-content {
+    margin-top: 0 !important;
+    margin-bottom: 80px;
   }
 }
 
@@ -1746,9 +1865,9 @@
     height: 100%;
   }
   .quick-action-wrapper {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+    -webkit-box-pack: left !important;
+        -ms-flex-pack: left !important;
+            justify-content: left !important;
     margin: auto;
   }
   .card-default {
@@ -1765,9 +1884,9 @@
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .quick-action-wrapper {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+    -webkit-box-pack: left !important;
+        -ms-flex-pack: left !important;
+            justify-content: left !important;
     margin: auto;
   }
   .inner-nb {
@@ -1805,6 +1924,12 @@
   }
   .feedbacks {
     margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .big-modal {
+    min-width: 93% !important;
   }
 }
 
@@ -2665,6 +2790,7 @@ p {
   .savd-content .listing-card .top-section h5 {
     font-size: 18px !important;
     line-height: 20px !important;
+    height: 40px;
   }
   .savd-content .listing-wrapper {
     -ms-grid-columns: (1fr)[2] !important;

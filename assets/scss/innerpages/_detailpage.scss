@@ -498,7 +498,6 @@
 }
 // ----------------------------------------------------Image Gallery------------------------------------------------//
 .collapse-container {
-    margin-top: 30px;
     .collapse {
         width: 100%;
     }
@@ -513,6 +512,21 @@
     }
     .card-body {
         margin-bottom: 30px;
+    }
+}
+#galleryViewMore {
+    overflow-y: auto !important;
+    .modal-dialog {
+        display: block !important;
+        min-width: 93%;
+        height: auto !important;
+    }
+}
+.big-modal {
+    overflow: auto !important;
+    .modal-dialog {
+        display: block !important;
+        height: auto !important;
     }
 }
 // ----------------------------------------------------All Reviews Modal------------------------------------------------//
@@ -594,6 +608,43 @@
         outline: 0;
         text-decoration: none;
         color: $primary;
+    }
+}
+// ----------------------------------------------------Gallery View More------------------------------------------------//
+#galleryViewMore {
+    .modal-dialog {
+        min-width: 93%;
+    }
+    .pagination-wrapper {
+        margin-top: 0 !important;
+    }
+    #lightgallery1 {
+        margin-bottom: 0 !important;
+    }
+}
+#lightgallery {
+    margin-bottom: 0 !important;
+}
+.flex-heading {
+    display: flex;
+    flex-wrap: nowrap;
+    h2 {
+        width: 98%;
+    }
+}
+@media screen and (max-width: 575px) {
+    .offer-slider {
+        height: 200px !important;
+        margin-bottom: 30px;
+        .imgs {
+            height: 200px !important;
+            img {
+                background-size: cover !important;
+            }
+        }
+    }
+    .slider-content .slider .img {
+        background-size: cover !important;
     }
 }
 @media screen and (max-width: 767px) {
@@ -686,7 +737,8 @@
             margin-top: 0 !important;
         }
     }
-    .feedbacks {
+    .feedbacks,
+    #allReviews {
         .feedback-card {
             flex-wrap: wrap;
             .main-content {
@@ -718,8 +770,29 @@
         overflow-y: auto !important;
         margin: 20px auto !important;
         .modal-content {
-            padding: 450px 20px 50px 20px !important;
+            padding: 50px 20px !important;
         }
+    }
+    .offer-slider {
+        margin-top: 0px !important;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .offer-slider {
+        margin-bottom: 30px;
+        .imgs {
+            height: 400px !important;
+            img {
+                background-size: cover !important;
+            }
+        }
+    }
+    .slider-content .slider .img {
+        background-size: cover !important;
+    }
+    .slider-content {
+        margin-top: 0 !important;
+        margin-bottom: 80px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -733,7 +806,7 @@
         }
     }
     .quick-action-wrapper {
-        justify-content: center !important;
+        justify-content: left !important;
         margin: auto;
     }
     .card-default {
@@ -751,7 +824,7 @@
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .quick-action-wrapper {
-        justify-content: center !important;
+        justify-content: left !important;
         margin: auto;
     }
     .inner-nb {
@@ -796,5 +869,10 @@
     }
     .feedbacks {
         margin-top: 50px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .big-modal {
+        min-width: 93% !important;
     }
 }
