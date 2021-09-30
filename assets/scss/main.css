@@ -3239,6 +3239,7 @@ button.slick-prev:hover {
   }
   .top-pick-card {
     margin-bottom: 20px !important;
+    height: 300px !important;
   }
   .modal-dialog {
     width: 93% !important;
@@ -3277,9 +3278,13 @@ button.slick-prev:hover {
   }
   .coming-soon .slider-content .slider {
     min-height: 200px !important;
+    height: 200px;
   }
   .coming-soon .slider-content .slider .img {
     border-radius: 10px;
+  }
+  .container-fluid {
+    padding-right: 15px !important;
   }
 }
 

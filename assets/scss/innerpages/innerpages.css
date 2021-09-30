@@ -37,7 +37,7 @@
 }
 
 .offer-banner {
-  padding-top: 100px !important;
+  padding-top: 75px !important;
   padding-bottom: 0 !important;
 }
 
@@ -123,12 +123,12 @@
   font-size: 22px;
   line-height: 30px;
   margin-bottom: 5px;
-  height: 60px;
+  height: 63px;
   overflow: hidden;
 }
 
 .listing-card .txt-section p {
-  margin: 10px 0;
+  margin: 7px 0;
 }
 
 .listing-card .txt-section .right-align {
@@ -362,13 +362,13 @@
     width: 100% !important;
   }
   .offers .content-section {
-    width: 91vw !important;
+    width: 93vw !important;
   }
   .offers #content-section-wrapper .listing-card .image-wrapper {
     height: 120px !important;
   }
   .offers #content-section-wrapper {
-    width: 91vw !important;
+    width: 93vw !important;
   }
   .offers .listing-card .bottom-section {
     -ms-flex-wrap: wrap !important;
@@ -380,7 +380,7 @@
     -webkit-box-pack: left !important;
         -ms-flex-pack: left !important;
             justify-content: left !important;
-    margin: 5px 0;
+    margin-bottom: 5px;
   }
 }
 

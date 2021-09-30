@@ -249,6 +249,7 @@
     }
     .top-pick-card {
         margin-bottom: 20px !important;
+        height: 300px !important;
     }
     .modal-dialog {
         width: 93% !important;
@@ -289,11 +290,15 @@
             margin-top: 20px;
             .slider {
                 min-height: 200px !important;
+                height: 200px;
                 .img {
                     border-radius: $bdr-rds;
                 }
             }
         }
+    }
+    .container-fluid {
+        padding-right: 15px !important;
     }
 }
 
