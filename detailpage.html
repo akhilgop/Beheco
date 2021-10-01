@@ -16,6 +16,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Beheco | Details</title>
 </head>
 
@@ -198,6 +199,7 @@
                         <p>Hospitals</p>
                         <p>Kochi, Kerala</p>
                         <p>Year of established: 2001</p>
+                        <p>Founded By: John Smith</p>
                         <div class="overall-rating">
                             <i class="fas fa-star-half-alt"></i>
                             <h6>4.2 <span>(5000 Votes)</span></h6>
@@ -846,7 +848,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="" class="common-a" data-bs-toggle="modal" data-bs-target="#allReviews">View All
+                            <a href="" class="common-a a-animate" data-bs-toggle="modal"
+                                data-bs-target="#allReviews">View All
                                 Reviews and comments</a>
                         </div>
                     </div>
@@ -1219,7 +1222,11 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
-                    <h3 class="custom-h">All <span>Reviews</span></h3>
+                    <div class="flex-heading">
+                        <h3 class="custom-h">All <span>Reviews</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
                 </div>
                 <div class="content">
                     <div class="feedback-card">
@@ -1540,31 +1547,22 @@
                 </div>
                 <div class="modal-footer">
                     <div class="flex-h-cntr pagination-wrapper">
-                        <nav aria-label="...">
-                            <ul class="pagination">
-                                <li class="page-item disabled">
-                                    <a class="page-link a-prev" href="#" tabindex="-1" aria-disabled="true"><i
-                                            class="fas fa-angle-double-left"></i>
-                                        Previous </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item active" aria-current="page">
-                                    <a class="page-link" href="#">2</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                <li class="page-item"><a class="page-link" href="#">6</a></li>
-                                <li class="page-item"><a class="page-link" href="#">7</a></li>
-                                <li class="page-item"><a class="page-link" href="#">8</a></li>
-                                <li class="page-item"><a class="page-link" href="#">9</a></li>
-                                <li class="page-item"><a class="page-link" href="#">10</a></li>
-                                <li class="page-item">
-                                    <a class="page-link a-next" href="#">Next <i
-                                            class="fas fa-angle-double-right"></i></a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <div class="pagination">
+                            <a class="prev page-numbers " href="javascript:;"><i class="fas fa-angle-double-left"></i>
+                                <span>Prev</span></a>
+                            <span aria-current="page" class="page-numbers current">1</span>
+                            <a class="page-numbers" href="javascript:;">2</a>
+                            <a class="page-numbers" href="javascript:;">3</a>
+                            <a class="page-numbers" href="javascript:;">4</a>
+                            <a class="page-numbers" href="javascript:;">5</a>
+                            <a class="page-numbers" href="javascript:;">6</a>
+                            <a class="page-numbers" href="javascript:;">7</a>
+                            <a class="page-numbers" href="javascript:;">8</a>
+                            <a class="page-numbers" href="javascript:;">9</a>
+                            <a class="page-numbers" href="javascript:;">10</a>
+                            <a class="next page-numbers" href="javascript:;"><span>Next</span> <i
+                                    class="fas fa-angle-double-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1576,7 +1574,11 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
-                    <h3 class="custom-h">All <span>Questions & Answers</span></h3>
+                    <div class="flex-heading">
+                        <h3 class="custom-h">All <span>Questions & Answers</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
                 </div>
                 <div class="content">
                     <div class="row">
@@ -1752,31 +1754,22 @@
                 </div>
                 <div class="modal-footer">
                     <div class="flex-h-cntr pagination-wrapper">
-                        <nav aria-label="...">
-                            <ul class="pagination">
-                                <li class="page-item disabled">
-                                    <a class="page-link a-prev" href="#" tabindex="-1" aria-disabled="true"><i
-                                            class="fas fa-angle-double-left"></i>
-                                        Previous </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item active" aria-current="page">
-                                    <a class="page-link" href="#">2</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                <li class="page-item"><a class="page-link" href="#">6</a></li>
-                                <li class="page-item"><a class="page-link" href="#">7</a></li>
-                                <li class="page-item"><a class="page-link" href="#">8</a></li>
-                                <li class="page-item"><a class="page-link" href="#">9</a></li>
-                                <li class="page-item"><a class="page-link" href="#">10</a></li>
-                                <li class="page-item">
-                                    <a class="page-link a-next" href="#">Next <i
-                                            class="fas fa-angle-double-right"></i></a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <div class="pagination">
+                            <a class="prev page-numbers " href="javascript:;"><i class="fas fa-angle-double-left"></i>
+                                <span>Prev</span></a>
+                            <span aria-current="page" class="page-numbers current">1</span>
+                            <a class="page-numbers" href="javascript:;">2</a>
+                            <a class="page-numbers" href="javascript:;">3</a>
+                            <a class="page-numbers" href="javascript:;">4</a>
+                            <a class="page-numbers" href="javascript:;">5</a>
+                            <a class="page-numbers" href="javascript:;">6</a>
+                            <a class="page-numbers" href="javascript:;">7</a>
+                            <a class="page-numbers" href="javascript:;">8</a>
+                            <a class="page-numbers" href="javascript:;">9</a>
+                            <a class="page-numbers" href="javascript:;">10</a>
+                            <a class="next page-numbers" href="javascript:;"><span>Next</span> <i
+                                    class="fas fa-angle-double-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1801,7 +1794,11 @@
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                             cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <button type="button" class="btn btn-submit-primary">Grab Now</button>
+                        <div class="btn-wrapper">
+                            <button type="button" class="btn btn-submit-outline" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-submit-primary">Grab Now</button>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -1813,7 +1810,11 @@
         <div class="modal-dialog offer-modal">
             <div class="modal-content">
                 <div class="modal-body text-left">
-                    <h3 class="custom-h">Reply <span>Question</span></h3>
+                    <div class="flex-heading">
+                        <h3 class="custom-h">Reply <span>Question</span></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="mb-3">
@@ -2081,31 +2082,23 @@
                         </div>
                         <div class="row">
                             <div class="flex-h-cntr pagination-wrapper">
-                                <nav aria-label="...">
-                                    <ul class="pagination">
-                                        <li class="page-item disabled">
-                                            <a class="page-link a-prev" href="#" tabindex="-1" aria-disabled="true"><i
-                                                    class="fas fa-angle-double-left"></i>
-                                                Previous </a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item active" aria-current="page">
-                                            <a class="page-link" href="#">2</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">6</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">7</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">8</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">9</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">10</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link a-next" href="#">Next <i
-                                                    class="fas fa-angle-double-right"></i></a>
-                                        </li>
-                                    </ul>
-                                </nav>
+                                <div class="pagination">
+                                    <a class="prev page-numbers " href="javascript:;"><i
+                                            class="fas fa-angle-double-left"></i>
+                                        <span>Prev</span></a>
+                                    <span aria-current="page" class="page-numbers current">1</span>
+                                    <a class="page-numbers" href="javascript:;">2</a>
+                                    <a class="page-numbers" href="javascript:;">3</a>
+                                    <a class="page-numbers" href="javascript:;">4</a>
+                                    <a class="page-numbers" href="javascript:;">5</a>
+                                    <a class="page-numbers" href="javascript:;">6</a>
+                                    <a class="page-numbers" href="javascript:;">7</a>
+                                    <a class="page-numbers" href="javascript:;">8</a>
+                                    <a class="page-numbers" href="javascript:;">9</a>
+                                    <a class="page-numbers" href="javascript:;">10</a>
+                                    <a class="next page-numbers" href="javascript:;"><span>Next</span> <i
+                                            class="fas fa-angle-double-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>

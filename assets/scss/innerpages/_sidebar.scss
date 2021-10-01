@@ -220,10 +220,14 @@
         label,
         p,
         a {
-            color: rgba($color: $black, $alpha: 0.5);
+            font-size: 14px !important;
+            color: rgba($color: $black, $alpha: 0.7);
         }
         .form-check {
             margin-bottom: 1rem;
+        }
+        .form-check-label {
+            opacity: 1 !important;
         }
     }
     #content-section-wrapper {
@@ -239,4 +243,14 @@
 .container-fluid {
     padding-left: 20px;
     padding-right: 40px;
+}
+
+.clearfix:last-child {
+    .form-check {
+        margin-bottom: 0;
+    }
+}
+
+.collapse.show {
+    margin: 0 !important;
 }

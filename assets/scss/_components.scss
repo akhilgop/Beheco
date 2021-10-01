@@ -53,6 +53,7 @@ a {
     font-weight: 600 !important;
     span {
         color: $primary;
+        font-family: $primary-font !important;
         font-weight: 600 !important;
     }
 }
@@ -136,6 +137,9 @@ button {
     @include flex-hv-cntr;
     padding: 0 20px;
     border-radius: $bdr-rds;
+    span {
+        font-weight: 600;
+    }
     &:hover,
     &:active,
     &:focus {
@@ -149,7 +153,7 @@ button {
 }
 .btn-view-more {
     padding: 0 22px;
-    font-size: 18px;
+    font-size: 16px;
     height: 50px;
     background-color: rgba($color: $primary, $alpha: 0.2);
     border-radius: $bdr-rds;
@@ -166,7 +170,7 @@ button {
 }
 .btn-view-all {
     padding: 0 50px;
-    font-size: 18px;
+    font-size: 16px;
     height: 50px;
     background-color: $primary;
     border-radius: $bdr-rds;
@@ -190,6 +194,7 @@ button {
     height: 50px;
     text-align: center;
     position: relative;
+
     .icon {
         text-align: left;
         position: absolute;
@@ -198,6 +203,7 @@ button {
     }
     span {
         text-align: center;
+        font-weight: 600;
     }
     margin-bottom: 20px;
     &:hover,
@@ -249,7 +255,7 @@ button {
 }
 .btn-general {
     padding: 0 22px;
-    font-size: 18px;
+    font-size: 16px;
     height: 50px;
     background-color: $primary;
     border-radius: $bdr-rds;
@@ -266,7 +272,7 @@ button {
 }
 .btn-submit-secondary {
     padding: 0 50px;
-    font-size: 18px;
+    font-size: 16px;
     height: 50px;
     background-color: $secondary;
     border-radius: $bdr-rds;
@@ -284,7 +290,7 @@ button {
 }
 .btn-submit-primary {
     padding: 0 50px;
-    font-size: 18px;
+    font-size: 16px;
     height: 50px;
     background-color: $primary;
     border-radius: $bdr-rds;
@@ -301,7 +307,7 @@ button {
 }
 .btn-submit-outline {
     padding: 0 50px;
-    font-size: 18px;
+    font-size: 16px;
     height: 50px;
     background-color: transparent;
     border-radius: $bdr-rds;
@@ -518,7 +524,7 @@ textarea.form-control {
     padding: 0;
     li {
         a {
-            @include text(18px, 40px, 400, $black9);
+            @include text(16px, 36px, 400, $black9);
             &:hover,
             &:active,
             &:focus {
@@ -572,6 +578,7 @@ textarea.form-control {
     .accordion-button {
         @include text(20px, 20px, 600, $body-color);
         padding: 30px 20px;
+        font-family: $primary-font;
         &:hover,
         &:active,
         &:focus {
@@ -703,6 +710,8 @@ textarea.form-control {
     height: 50px;
     border: 1px solid $bdr;
     border-radius: $bdr-rds;
+    font-family: $secondary-font;
+    font-size: 14px;
     &:focus {
         box-shadow: none !important;
         border: 1px solid $primary;

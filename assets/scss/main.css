@@ -57,6 +57,7 @@ a:hover, a:active, a:focus {
 
 .common-h2 span {
   color: #059762;
+  font-family: "Circular" !important;
   font-weight: 600 !important;
 }
 
@@ -294,6 +295,10 @@ button:hover, button:active, button:focus {
   border-color: black;
 }
 
+.btn-black span {
+  font-weight: 600;
+}
+
 .btn-black:hover, .btn-black:active, .btn-black:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -307,7 +312,7 @@ button:hover, button:active, button:focus {
 
 .btn-view-more {
   padding: 0 22px;
-  font-size: 18px;
+  font-size: 16px;
   height: 50px;
   background-color: rgba(5, 151, 98, 0.2);
   border-radius: 10px;
@@ -325,7 +330,7 @@ button:hover, button:active, button:focus {
 
 .btn-view-all {
   padding: 0 50px;
-  font-size: 18px;
+  font-size: 16px;
   height: 50px;
   background-color: #059762;
   border-radius: 10px;
@@ -380,6 +385,7 @@ button:hover, button:active, button:focus {
 
 .btn-google span, .btn-facebook span {
   text-align: center;
+  font-weight: 600;
 }
 
 .btn-google:hover, .btn-facebook:hover, .btn-google:active, .btn-facebook:active, .btn-google:focus, .btn-facebook:focus {
@@ -456,7 +462,7 @@ button:hover, button:active, button:focus {
 
 .btn-general {
   padding: 0 22px;
-  font-size: 18px;
+  font-size: 16px;
   height: 50px;
   background-color: #059762;
   border-radius: 10px;
@@ -474,7 +480,7 @@ button:hover, button:active, button:focus {
 
 .btn-submit-secondary {
   padding: 0 50px;
-  font-size: 18px;
+  font-size: 16px;
   height: 50px;
   background-color: #8fd03d;
   border-radius: 10px;
@@ -493,7 +499,7 @@ button:hover, button:active, button:focus {
 
 .btn-submit-primary {
   padding: 0 50px;
-  font-size: 18px;
+  font-size: 16px;
   height: 50px;
   background-color: #059762;
   border-radius: 10px;
@@ -511,7 +517,7 @@ button:hover, button:active, button:focus {
 
 .btn-submit-outline {
   padding: 0 50px;
-  font-size: 18px;
+  font-size: 16px;
   height: 50px;
   background-color: transparent;
   border-radius: 10px;
@@ -837,10 +843,10 @@ textarea.form-control {
 }
 
 .common-ul li a {
-  font-size: 18px;
-  line-height: 40px;
+  font-size: 16px;
+  line-height: 36px;
   font-weight: 400;
-  color: #999;
+  color: #666;
 }
 
 .common-ul li a:hover, .common-ul li a:active, .common-ul li a:focus {
@@ -908,6 +914,7 @@ textarea.form-control {
   font-weight: 600;
   color: #111;
   padding: 30px 20px;
+  font-family: "Circular";
 }
 
 .accordion-section .accordion-button:hover, .accordion-section .accordion-button:active, .accordion-section .accordion-button:focus {
@@ -950,7 +957,7 @@ textarea.form-control {
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
-  color: #999;
+  color: #666;
 }
 
 .accordion-section .accordion-body ul {
@@ -961,7 +968,7 @@ textarea.form-control {
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  color: #999;
+  color: #666;
   margin-bottom: 20px;
 }
 
@@ -1070,6 +1077,8 @@ textarea.form-control {
   height: 50px;
   border: 1px solid #ddd;
   border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
 }
 
 .form-select:focus {
@@ -1279,8 +1288,8 @@ textarea.form-control {
 }
 
 .slider-wrapper .hs__item .txt-section p {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 15px;
+  line-height: 15px;
   font-weight: 400;
   color: rgba(17, 17, 17, 0.5);
   white-space: nowrap;
@@ -1290,8 +1299,8 @@ textarea.form-control {
 }
 
 .slider-wrapper .hs__item .txt-section h5 {
-  font-size: 25px;
-  line-height: 25px;
+  font-size: 20px;
+  line-height: 20px;
   font-weight: 600;
   color: #111;
   white-space: nowrap;
@@ -1476,8 +1485,8 @@ textarea.form-control {
 
 .slider-wrapper .content-box .txt-section .overall-rating p {
   margin: 0 0 0 10px;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 16px;
   font-weight: 400;
   color: #111;
 }
@@ -1502,8 +1511,8 @@ textarea.form-control {
 
 .slider-wrapper .content-box .overall-rating p {
   margin: 0 0 0 10px;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 16px;
   font-weight: 400;
   color: #111;
 }
@@ -3007,6 +3016,123 @@ button.slick-prev:hover {
   will-change: transform, opacity;
 }
 
+a {
+  text-decoration: none;
+}
+
+.pagination-wrapper {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.pagination-wrapper .prev,
+.pagination-wrapper .next {
+  width: auto !important;
+  border-radius: 0px !important;
+  border-color: transparent !important;
+}
+
+.pagination-wrapper .prev i,
+.pagination-wrapper .next i {
+  margin-top: 2px;
+}
+
+.pagination-wrapper .prev i {
+  margin-right: 10px;
+}
+
+.pagination-wrapper .next i {
+  margin-left: 10px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 1199px) {
+  .pagination {
+    height: 30px;
+    margin-top: 50px;
+    padding: 0 10px;
+    border-radius: 25px;
+  }
+}
+
+.page-numbers {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+  -webkit-transition: 400ms ease;
+  transition: 400ms ease;
+  color: #059762;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  line-height: normal;
+  margin-right: 10px;
+  border: 1px solid #059762;
+  font-size: 14px;
+}
+
+.page-numbers:hover, .page-numbers.current {
+  background-color: #059762;
+  color: #fff;
+  border-color: #059762;
+}
+
+.page-numbers.prev:hover, .page-numbers.next:hover {
+  background-color: transparent;
+  color: #8fd03d;
+}
+
+@media only screen and (max-width: 1199px) {
+  .page-numbers {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+  .page-numbers {
+    display: none;
+  }
+  .page-numbers:nth-of-type(2) {
+    position: relative;
+    margin-right: 50px;
+  }
+  .page-numbers:nth-of-type(2)::after {
+    content: "...";
+    position: absolute;
+    font-size: 25px;
+    top: 0;
+    left: 45px;
+  }
+  .page-numbers:nth-child(-n + 3), .page-numbers:nth-last-child(-n + 3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .page-numbers:nth-last-child(-n + 4)::after {
+    content: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pagination-wrapper .prev span,
+  .pagination-wrapper .next span {
+    display: none !important;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .media-show {
     display: block !important;
@@ -3237,6 +3363,9 @@ button.slick-prev:hover {
   .testimonials .common-h2 span {
     display: block;
   }
+  .testimonials {
+    margin-top: 20px !important;
+  }
   .top-pick-card {
     margin-bottom: 20px !important;
     height: 300px !important;
@@ -3279,12 +3408,32 @@ button.slick-prev:hover {
   .coming-soon .slider-content .slider {
     min-height: 200px !important;
     height: 200px;
+    margin-bottom: 30px;
   }
   .coming-soon .slider-content .slider .img {
     border-radius: 10px;
   }
   .container-fluid {
     padding-right: 15px !important;
+  }
+  .demo-gallery > ul > li {
+    list-style: outside none none;
+    margin-bottom: 20px !important;
+  }
+  .btn-google .icon, .btn-facebook .icon,
+  .btn-facebook .icon {
+    top: 8px !important;
+  }
+  .signin-box .dropdown-menu.show {
+    min-width: 100% !important;
+    border-radius: 10px;
+  }
+  .signin-box a,
+  .signin-box span {
+    font-size: 14px !important;
+  }
+  .event-card .img-section {
+    max-height: 200px !important;
   }
 }
 
@@ -3542,6 +3691,13 @@ button.slick-prev:hover {
   }
   .coming-soon .slider-content .slider .img {
     border-radius: 10px;
+  }
+  .btn-google .icon, .btn-facebook .icon,
+  .btn-facebook .icon {
+    top: 8px !important;
+  }
+  .event-card .img-section {
+    max-height: 200px !important;
   }
 }
 
@@ -3901,8 +4057,8 @@ button.slick-prev:hover {
     background-position: bottom !important;
   }
   .banner .search-bar-container {
-    padding: 20px !important;
-    width: 70% !important;
+    padding: 30px !important;
+    width: 60% !important;
   }
   .categories .category-row {
     width: 100% !important;
@@ -4602,6 +4758,15 @@ button.slick-prev:hover {
   width: 75%;
 }
 
+.nb .signin-box .dropdown-menu.show {
+  border-radius: 10px;
+}
+
+.nb .signin-box .dropdown-menu.show a,
+.nb .signin-box .dropdown-menu.show span {
+  font-size: 14px !important;
+}
+
 .nb .content-count {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4766,6 +4931,7 @@ button.slick-prev:hover {
 .nb .nav-link {
   margin: 0 15px;
   color: #111 !important;
+  font-weight: 500;
 }
 
 .nb .btn-black img {
@@ -4811,6 +4977,10 @@ button.slick-prev:hover {
 .nb .btn-user .badge {
   margin-bottom: 0;
   margin-left: 5px;
+}
+
+.nb .btn-user span {
+  font-weight: 500 !important;
 }
 
 .nb .d-flex {
@@ -4874,6 +5044,7 @@ button.slick-prev:hover {
 
 .banner .search-bar-container .content h1 span {
   color: #8fd03d;
+  font-family: "Circular";
 }
 
 .banner .search-bar-container .content p {
@@ -5191,6 +5362,7 @@ h2 {
 .freelancers .freelancer-info .info-content p,
 .freelancers .freelancer-info .info-content h5 {
   text-align: center;
+  color: #111;
 }
 
 .freelancers .freelancer-info .info-content p {
@@ -5332,6 +5504,7 @@ h2 {
   line-height: 62px;
   font-weight: 700;
   color: #059762;
+  font-family: "Circular";
   margin-bottom: 50px;
 }
 
@@ -5393,6 +5566,7 @@ h2 {
   line-height: 36px;
   font-weight: 600;
   color: #111;
+  font-family: "Circular";
 }
 
 .faq .content p {
@@ -5449,8 +5623,8 @@ h2 {
   text-align: center;
   width: 100%;
   white-space: normal;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 28px;
   font-weight: 400;
   color: #111;
 }
@@ -5511,6 +5685,7 @@ h2 {
   line-height: 36px;
   font-weight: 600;
   color: #111;
+  font-family: "Circular";
   margin-bottom: 30px;
 }
 
@@ -5564,7 +5739,7 @@ h2 {
   font-size: 25px;
   line-height: 25px;
   font-weight: 600;
-  color: #666;
+  color: #059762;
   margin-bottom: 30px;
 }
 
@@ -5588,7 +5763,7 @@ h2 {
 }
 
 .footer a {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 40px;
   font-weight: 400;
   color: #fff;
@@ -5718,6 +5893,10 @@ h2 {
 
 .btn-close:hover, .btn-close:active, .btn-close:focus {
   background-color: #8fd03d !important;
+}
+
+.slider-wrapper .content-box .txt-section .btn-warpper p:last-child {
+  margin: 0;
 }
 
 .mgn-top-5 {
@@ -6631,11 +6810,13 @@ h2 {
 
 .custom-h {
   margin-bottom: 30px;
+  font-family: "Circular";
 }
 
 .custom-h span {
   color: #059762;
   font-weight: 600;
+  font-family: "Circular";
 }
 
 .text-cntr {
@@ -6689,6 +6870,22 @@ h2 {
 
 .no-bdr {
   border: 0 !important;
+}
+
+.flex-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.flex-heading h2 {
+  width: 98%;
+}
+
+.flex-heading h3 {
+  width: 98%;
 }
 
 .media-hide {
@@ -7349,23 +7546,29 @@ p,
 a,
 span,
 label,
-button {
-  font-family: "Circular", sans-serif;
+.form-control {
+  font-family: "Inter", sans-serif;
   font-weight: 400;
 }
 
-.btn {
-  font-family: "Circular", sans-serif;
+.btn,
+button {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
 }
 
 h1,
-h2,
+h2 {
+  font-family: "Circular";
+  font-weight: 700;
+}
+
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Circular";
-  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
 }
 
 @font-face {

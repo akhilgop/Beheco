@@ -247,6 +247,9 @@
             }
         }
     }
+    .testimonials {
+        margin-top: 20px !important;
+    }
     .top-pick-card {
         margin-bottom: 20px !important;
         height: 300px !important;
@@ -291,6 +294,7 @@
             .slider {
                 min-height: 200px !important;
                 height: 200px;
+                margin-bottom: 30px;
                 .img {
                     border-radius: $bdr-rds;
                 }
@@ -299,6 +303,29 @@
     }
     .container-fluid {
         padding-right: 15px !important;
+    }
+    .demo-gallery > ul > li {
+        list-style: outside none none;
+        margin-bottom: 20px !important;
+    }
+    .btn-google .icon,
+    .btn-facebook .icon {
+        top: 8px !important;
+    }
+    .signin-box {
+        .dropdown-menu.show {
+            min-width: 100% !important;
+            border-radius: $bdr-rds;
+        }
+        a,
+        span {
+            font-size: 14px !important;
+        }
+    }
+    .event-card {
+        .img-section {
+            max-height: 200px !important;
+        }
     }
 }
 
@@ -573,6 +600,15 @@
                     border-radius: $bdr-rds;
                 }
             }
+        }
+    }
+    .btn-google .icon,
+    .btn-facebook .icon {
+        top: 8px !important;
+    }
+    .event-card {
+        .img-section {
+            max-height: 200px !important;
         }
     }
 }
@@ -970,8 +1006,8 @@
     .banner {
         background-position: bottom !important;
         .search-bar-container {
-            padding: 20px !important;
-            width: 70% !important;
+            padding: 30px !important;
+            width: 60% !important;
         }
     }
     .categories .category-row {

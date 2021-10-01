@@ -151,14 +151,14 @@
         .txt-section {
             padding: 20px 0px 0 0;
             p {
-                @include text(16px, 16px, 400, rgba($color: $body-color, $alpha: 0.5));
+                @include text(15px, 15px, 400, rgba($color: $body-color, $alpha: 0.5));
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 margin: 10px 0 20px 0;
             }
             h5 {
-                @include text(25px, 25px, 600, $body-color);
+                @include text(20px, 20px, 600, $body-color);
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -304,7 +304,7 @@
                 width: 40%;
                 p {
                     margin: 0 0 0 10px;
-                    @include text(18px, 18px, 400, $body-color);
+                    @include text(16px, 16px, 400, $body-color);
                 }
                 i {
                     color: $primary;
@@ -319,7 +319,7 @@
             align-items: center;
             p {
                 margin: 0 0 0 10px;
-                @include text(18px, 18px, 400, $body-color);
+                @include text(16px, 16px, 400, $body-color);
             }
             i {
                 color: $primary;
@@ -1559,4 +1559,155 @@ button.slick-prev:hover {
     opacity: 0;
     visibility: hidden;
     will-change: transform, opacity;
+}
+// ------------------------------------------------------------------------Responsive Pagination-----------------------------------------------------
+
+//----------  responsive breakpoints
+//------------------------------------------------------------------------------
+@mixin breakpoint($value) {
+    @if $value == "phone" {
+        @media only screen and (min-width: 120px) and (max-width: 767px) {
+            @content;
+        }
+    } @else if $value == "tablet" {
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            @content;
+        }
+    } @else if $value == "touch" {
+        @media only screen and (min-width: 120px) and (max-width: 1024px) {
+            @content;
+        }
+    } @else if $value == "desktop" {
+        @media only screen and (min-width: 1025px) {
+            @content;
+        }
+    } @else {
+        @media only screen and (max-width: $value) {
+            @content;
+        }
+    }
+}
+
+// Colors
+$white: #fff;
+$black: #000;
+$grey: #595959;
+$grey-dark: #2b2b2b;
+$grey-light: #eee;
+$green: #86c023;
+$blue: #017ac7;
+
+// Transition
+$duration: 400ms;
+$easing: ease;
+
+//----------  reset
+//------------------------------------------------------------------------------
+
+a {
+    text-decoration: none;
+}
+
+//----------  pagination
+//------------------------------------------------------------------------------
+.pagination-wrapper {
+    text-align: center;
+    margin: 40px 0;
+    .prev,
+    .next {
+        width: auto !important;
+        border-radius: 0px !important;
+        border-color: transparent !important;
+
+        i {
+            margin-top: 2px;
+        }
+    }
+    .prev {
+        i {
+            margin-right: 10px;
+        }
+    }
+    .next {
+        i {
+            margin-left: 10px;
+        }
+    }
+}
+
+.pagination {
+    display: inline-block;
+
+    @include breakpoint(1199px) {
+        height: 30px;
+        margin-top: 50px;
+        padding: 0 10px;
+        border-radius: 25px;
+    }
+}
+
+.page-numbers {
+    @include circle(30px, $white);
+    float: left;
+    transition: $duration $easing;
+    color: $primary;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    line-height: normal;
+    margin-right: 10px;
+    border: 1px solid $primary;
+    font-size: 14px;
+    &:hover,
+    &.current {
+        background-color: $primary;
+        color: $white;
+        border-color: $primary;
+    }
+
+    &.prev:hover,
+    &.next:hover {
+        background-color: transparent;
+        color: $secondary;
+    }
+
+    @include breakpoint(1199px) {
+        font-size: 16px;
+    }
+
+    @include breakpoint(touch) {
+        display: none;
+
+        &:nth-of-type(2) {
+            position: relative;
+            margin-right: 50px;
+            &::after {
+                content: "...";
+                position: absolute;
+                font-size: 25px;
+                top: 0;
+                left: 45px;
+            }
+        }
+
+        &:nth-child(-n + 3),
+        &:nth-last-child(-n + 3) {
+            display: flex;
+        }
+
+        &:nth-last-child(-n + 4) {
+            &::after {
+                content: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .pagination-wrapper {
+        .prev,
+        .next {
+            span {
+                display: none !important;
+            }
+        }
+    }
 }

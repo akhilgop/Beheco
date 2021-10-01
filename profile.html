@@ -162,12 +162,30 @@
                 <div class="d-flex">
                     <div class="signin-box">
                         <div class="dropdown">
-                            <button class="btn btn-user" type="button" data-bs-toggle="modal" data-bs-target="#SignUp">
+                            <button class="btn btn-user dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <div class="img-wrapper">
-                                    <img src="assets/images/svg/user.svg" alt="user-icon">
+                                    <img src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                        alt="user-icon">
                                 </div>
-                                <span>Signin / Register</span>
+                                <span>Hello Jack</span>
+                                <span>
+                                    <p class="badge bg-primary">New</p>
+                                </span>
                             </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item flx-v-cntr" href="#">
+                                        <div class="content-count">
+                                            <span>Notifications</span>
+                                            <span>
+                                                <h6 class="badge bg-primary">1</h6>
+                                            </span>
+                                        </div>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Saved Items</a></li>
+                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                            </ul>
                         </div>
                     </div>
                     <button class="btn btn-black" data-bs-toggle="modal" data-bs-target="#newListing"><img

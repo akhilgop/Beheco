@@ -23,21 +23,26 @@ p,
 a,
 span,
 label,
-button {
-    font-family: "Circular", sans-serif;
+.form-control {
+    font-family: "Inter", sans-serif;
     font-weight: 400;
 }
-.btn {
-    font-family: "Circular", sans-serif;
+.btn,
+button {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
 }
 h1,
-h2,
+h2 {
+    font-family: "Circular";
+    font-weight: 700;
+}
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Circular";
-    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
 }
 @font-face {
     font-family: "Circular";
