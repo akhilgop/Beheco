@@ -311,31 +311,35 @@ $(document).ready(function () {
 const $upload = $('#upload'),
     $crop = $('#crop'),
     $result = $('#result'),
-    $croppie = $('#croppie');
+    $croppie = $('#croppie'),
+    $download = $('download')
 
 var cr,
     cr_img = '',
-    img_w = 200,
-    img_h = 200,
+    img_w = 320,
+    img_h = 320,
     isCrop = 0;
 
+//支援上傳檔案判斷
 $(function () {
     if (window.File && window.FileList && window.FileReader)
-        fileInit();
+        fileInit()
     else
-        alert('Error');
+        alert('您的裝置不支援圖片上傳');
 });
 
+
 //********* file select/drop *********
+
 var fileselect = document.getElementById("fileselect"),
     filedrag = document.getElementById("filedrag");
 
 function fileInit() {
-    // file select
+    //file select
     fileselect.addEventListener("change", FileSelectHandler, false);
-    // is XHR2 available?
+    //is XHR2 avalible
     var xhr = new XMLHttpRequest();
-    // file drop
+    //file drop
     if (xhr.upload) {
         filedrag.addEventListener("dragover", FileDragHover, false);
         filedrag.addEventListener("dragleave", FileDragHover, false);
@@ -343,22 +347,25 @@ function fileInit() {
     }
 }
 
-// file selection
+
+//file selection
 function FileSelectHandler(e) {
     // cancel event and hover styling
     FileDragHover(e);
     // fetch FileList object
+
     var files = e.target.files || e.dataTransfer.files;
     if (files[0] && files[0].type.match('image.*')) {
         var reader = new FileReader();
         reader.onload = function (e) {
             $upload.hide();
-            if (cr_img == '') {
-                cr_img = e.target.result;
+
+            if (cr_img == '') {//第一次上傳
+                cr_img = e.target.result
                 cropInit();
             }
-            else {
-                cr_img = e.target.result;
+            else {// 綁定照片
+                cr_img = e.target.result
                 bindCropImg();
             }
             $crop.fadeIn(300);
@@ -371,15 +378,16 @@ function FileSelectHandler(e) {
 function FileDragHover(e) {
     e.stopPropagation();
     e.preventDefault();
-    filedrag.className = (e.type == "dragover" ? "hover" : "");
+    filedrag.classname = (e.type == "dragover" ? "hover" : "")
 }
 
 //********* crop *********
 function cropInit() {
     cr = $croppie.croppie({
         viewport: {
-            width: img_w,
-            height: img_h
+            width: 300,
+            height: 300,
+            type: 'circle'
         },
         boundary: {
             width: img_w,
@@ -389,21 +397,26 @@ function cropInit() {
         enableOrientation: true
     });
 
-    $(".cr-slider-wrap").append('<button id="cr-rotate" onClick="cropRotate(-90);">↻ Rotate</button>');
+    $(".cr-slider-wrap").append('<button id="cr-rotate" onClick="cropRotate(-90);">↻ Rotate</button>')
 
     bindCropImg();
 }
 
+//綁定圖片
 function bindCropImg() {
     cr.croppie('bind', {
         url: cr_img
     });
 }
 
+//旋轉按鈕
+
 function cropRotate(deg) {
-    cr.croppie('rotate', parseInt(deg));
+    cr.croppie('rotate', parseInt(deg))
 }
 
+
+//取消裁切
 function cropCancel() {
     if ($upload.is(':hidden')) {
         $upload.fadeIn(300).siblings().hide();
@@ -412,21 +425,26 @@ function cropCancel() {
     }
 }
 
+//圖片裁切
+
 function cropResult() {
     if (!isCrop) {
         isCrop = 1;
         cr.croppie('result', {
-            type: 'canvas', // canvas(base64)|html
-            size: { width: img_w, height: img_h }, //'viewport'|'original'|{width:500, height:500}
-            format: 'jpeg', //'jpeg'|'png'|'webp'
-            quality: 1 //0~1
+            type: 'canvas',
+            size: { width: img_w, height: img_h },
+            format: 'png',
+            quality: 1,
+            circle: true
         }).then(function (resp) {
             $crop.hide();
-            $result.find('img').attr('src', resp);
-            $result.fadeIn(300);
-        });
+            $result.find('img').attr('src', resp)
+            $result.find('a').attr('href', resp)
+            $result.fadeIn(300)
+        })
     }
 }
+
 
 // ----------------------------------------------------Image Uploader-----------------------------------------------------//
 function CustomUpload(element) {
@@ -545,3 +563,114 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// ----------------------------------------------------Image Cropper on Pop up DP-----------------------------------------------------//
+// Start upload preview image
+$(".gambar").attr("src", "https://images.unsplash.com/photo-1528892952291-009c663ce843?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=644&q=80");
+var $uploadCrop,
+    tempFilename,
+    rawImg,
+    imageId;
+function readFile(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('.upload-demo').addClass('ready');
+            $('#cropImagePop').modal('show');
+            rawImg = e.target.result;
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+    else {
+        swal("Sorry - you're browser doesn't support the FileReader API");
+    }
+}
+
+$uploadCrop = $('#upload-demo').croppie({
+    viewport: {
+        width: 200,
+        height: 200,
+    },
+    enforceBoundary: false,
+    enableExif: true
+});
+$('#cropImagePop').on('shown.bs.modal', function () {
+    // alert('Shown pop');
+    $uploadCrop.croppie('bind', {
+        url: rawImg
+    }).then(function () {
+        console.log('jQuery bind complete');
+    });
+});
+
+$('.item-img').on('change', function () {
+    imageId = $(this).data('id'); tempFilename = $(this).val();
+    $('#cancelCropBtn').data('id', imageId); readFile(this);
+});
+$('#cropImageBtn').on('click', function (ev) {
+    $uploadCrop.croppie('result', {
+        type: 'base64',
+        format: 'jpeg',
+        size: { width: 200, height: 200 }
+    }).then(function (resp) {
+        $('#item-img-output').attr('src', resp);
+        $('#cropImagePop').modal('hide');
+    });
+});
+// End upload preview image
+
+// ----------------------------------------------------Image Cropper on Pop up Cover-----------------------------------------------------//
+var cover = document.querySelector('.cover-pic-image')
+// Start upload preview image
+$(".cover-pic-image").attr("src", "https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+var $uploadCrop1,
+    tempFilename1,
+    rawImg1,
+    imageId1;
+function readFile1(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $('.cover-demo').addClass('ready');
+            $('#coverImagePop').modal('show');
+            rawImg1 = e.target.result;
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+    else {
+        swal("Sorry - you're browser doesn't support the FileReader API");
+    }
+}
+
+$uploadCrop1 = $('#cover-demo').croppie({
+    viewport: {
+        width: 850,
+        height: 200,
+    },
+    enforceBoundary: false,
+    enableExif: true
+});
+$('#coverImagePop').on('shown.bs.modal', function () {
+    // alert('Shown pop');
+    $uploadCrop1.croppie('bind', {
+        url: rawImg1
+    }).then(function () {
+        console.log('jQuery bind complete');
+    });
+});
+
+$('.item-img1').on('change', function () {
+    imageId1 = $(this).data('id'); tempFilename1 = $(this).val();
+    $('#cancelCropBtn').data('id', imageId1); readFile1(this);
+});
+$('#coverImageBtn').on('click', function (ev) {
+    $uploadCrop1.croppie('result', {
+        type: 'base64',
+        format: 'jpeg',
+        size: { width: 850, height: 200 }
+    }).then(function (resp) {
+        $('#item-img-output1').attr('src', resp);
+        $('#coverImagePop').modal('hide');
+    });
+});
+				// End upload preview image

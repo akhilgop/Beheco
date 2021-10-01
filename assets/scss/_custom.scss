@@ -1711,14 +1711,17 @@ a {
         }
     }
 }
-
-.title::after {
-    content: "0";
+// ------------------------------------------------------------------------Banner Text Change-----------------------------------------------------
+.title-animate::after {
+    content: "City";
     color: $secondary;
     animation: changeText 2s 2s infinite;
 }
 @keyframes changeText {
     from {
+        content: "City";
+    }
+    25% {
         content: "City";
     }
 
@@ -1729,4 +1732,95 @@ a {
     to {
         content: "Events";
     }
+}
+// ------------------------------------------------------------------------Image Cropper Pop up for DP-----------------------------------------------------
+.picture-wrapper {
+    position: relative;
+    label.cabinet {
+        display: block;
+        cursor: pointer;
+    }
+
+    label.cabinet input.file {
+        height: 100%;
+        width: auto;
+        opacity: 0;
+        -moz-opacity: 0;
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    }
+
+    #upload-demo {
+        width: 200px;
+        height: 200px;
+    }
+    figure figcaption {
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        text-shadow: 0 0 10px #000;
+    }
+    .img-thumbnail {
+        padding: 0 !important;
+    }
+    figure {
+        margin: 0 !important;
+    }
+    label.cabinet input.file {
+        display: none;
+    }
+}
+#upload-demo {
+    width: 300px;
+    height: 300px;
+}
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+// -------------------------------------------------------------------Image Cropper Pop up for Cover-----------------------------------------------
+.cover-wrapper {
+    position: relative;
+    label.cabinet {
+        display: block;
+        cursor: pointer;
+    }
+
+    label.cabinet input.file {
+        height: 100%;
+        width: auto;
+        opacity: 0;
+        -moz-opacity: 0;
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    }
+
+    #cover-demo {
+        width: 820px;
+        height: 428px;
+    }
+    figure figcaption {
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        text-shadow: 0 0 10px #000;
+    }
+    .img-thumbnail {
+        padding: 0 !important;
+    }
+    figure {
+        margin: 0 !important;
+    }
+    label.cabinet input.file {
+        display: none;
+    }
+}
+#cover-demo {
+    width: 1000px;
+    height: 600px;
 }
