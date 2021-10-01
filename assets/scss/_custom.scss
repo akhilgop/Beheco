@@ -1711,3 +1711,22 @@ a {
         }
     }
 }
+
+.title::after {
+    content: "0";
+    color: $secondary;
+    animation: changeText 2s 2s infinite;
+}
+@keyframes changeText {
+    from {
+        content: "City";
+    }
+
+    50% {
+        content: "Offers";
+    }
+
+    to {
+        content: "Events";
+    }
+}

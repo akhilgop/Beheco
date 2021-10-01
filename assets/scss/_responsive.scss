@@ -1000,6 +1000,14 @@
 }
 
 @media screen and (min-width: 1366px) and (max-width: 1700px) {
+    .nb {
+        p,
+        a,
+        label,
+        span {
+            font-size: 14px !important;
+        }
+    }
     .hs__wrapper {
         padding-right: 0 !important;
     }

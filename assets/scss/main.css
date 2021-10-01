@@ -3133,6 +3133,37 @@ a {
   }
 }
 
+.title::after {
+  content: "0";
+  color: #8fd03d;
+  -webkit-animation: changeText 2s 2s infinite;
+          animation: changeText 2s 2s infinite;
+}
+
+@-webkit-keyframes changeText {
+  from {
+    content: "City";
+  }
+  50% {
+    content: "Offers";
+  }
+  to {
+    content: "Events";
+  }
+}
+
+@keyframes changeText {
+  from {
+    content: "City";
+  }
+  50% {
+    content: "Offers";
+  }
+  to {
+    content: "Events";
+  }
+}
+
 @media screen and (max-width: 575px) {
   .media-show {
     display: block !important;
@@ -4050,6 +4081,12 @@ a {
 }
 
 @media screen and (min-width: 1366px) and (max-width: 1700px) {
+  .nb p,
+  .nb a,
+  .nb label,
+  .nb span {
+    font-size: 14px !important;
+  }
   .hs__wrapper {
     padding-right: 0 !important;
   }
@@ -7531,6 +7568,10 @@ h2 {
 
 .modal-content .full-wdth-btn .btn:first-child {
   margin-bottom: 10px;
+}
+
+#requirement .modal-body {
+  text-align: left !important;
 }
 
 html {

@@ -37,7 +37,7 @@
 }
 
 .offer-banner {
-  padding-top: 75px !important;
+  padding-top: 128px !important;
   padding-bottom: 0 !important;
 }
 
@@ -303,9 +303,16 @@
 }
 
 @media screen and (max-width: 767px) {
+  .offer-banner {
+    padding-top: 80px !important;
+    padding-bottom: 0 !important;
+  }
   .mini-banner {
     padding-top: 138px !important;
     padding-bottom: 0 !important;
+  }
+  #applyNow .custom-h span {
+    display: inline-block !important;
   }
   .results-content {
     padding-top: 0 !important;
