@@ -189,7 +189,7 @@
     background: $white3;
     background-repeat: no-repeat;
     position: relative;
-    background: url("../images/svg/banner.svg");
+    background: url("../images/banner.png");
     background-repeat: no-repeat;
     background-size: contain;
     @include flex-hv-cntr;
@@ -822,4 +822,8 @@ h2 {
     p:last-child {
         margin: 0;
     }
+}
+
+.text-primary {
+    color: $primary !important;
 }

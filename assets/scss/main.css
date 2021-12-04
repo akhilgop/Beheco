@@ -1293,7 +1293,6 @@ textarea.form-control {
   font-weight: 400;
   color: rgba(17, 17, 17, 0.5);
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
   margin: 10px 0 20px 0;
 }
@@ -3309,7 +3308,8 @@ a {
     width: 100% !important;
   }
   .banner {
-    background-position: bottom !important;
+    height: auto !important;
+    background: none !important;
   }
   .banner .search-bar-container {
     padding: 20px !important;
@@ -3325,6 +3325,9 @@ a {
   .banner .search-bar-container h1 {
     font-size: 32px !important;
     line-height: normal !important;
+  }
+  .categories {
+    padding-top: 0 !important;
   }
   .category-wrapper {
     margin-top: 30px !important;
@@ -5151,7 +5154,7 @@ a {
   background: #f3f3f3;
   background-repeat: no-repeat;
   position: relative;
-  background: url("../images/svg/banner.svg");
+  background: url("../images/banner.png");
   background-repeat: no-repeat;
   background-size: contain;
   display: -webkit-box;
@@ -6044,6 +6047,10 @@ h2 {
 
 .slider-wrapper .content-box .txt-section .btn-warpper p:last-child {
   margin: 0;
+}
+
+.text-primary {
+  color: #059762 !important;
 }
 
 .mgn-top-5 {

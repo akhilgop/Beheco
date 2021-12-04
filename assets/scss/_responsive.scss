@@ -34,7 +34,8 @@
         }
     }
     .banner {
-        background-position: bottom !important;
+        height: auto !important;
+        background: none !important;
         .search-bar-container {
             padding: 20px !important;
             width: 100% !important;
@@ -51,6 +52,9 @@
                 line-height: normal !important;
             }
         }
+    }
+    .categories {
+        padding-top: 0 !important;
     }
     .category-wrapper {
         margin-top: 30px !important;

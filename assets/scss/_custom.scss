@@ -153,7 +153,6 @@
             p {
                 @include text(15px, 15px, 400, rgba($color: $body-color, $alpha: 0.5));
                 white-space: nowrap;
-                overflow: hidden;
                 text-overflow: ellipsis;
                 margin: 10px 0 20px 0;
             }
