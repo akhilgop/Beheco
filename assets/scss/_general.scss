@@ -1,0 +1,91 @@
+div.bg-primary {
+    background: $primary !important;
+}
+div.bg-secondary,
+section.bg-secondary {
+    background-color: $secondary !important;
+}
+.text-primary,
+.txt-primary {
+    color: $primary !important;
+}
+.text-secondary {
+    color: $secondary !important;
+}
+.text-gray {
+    color: $gray3 !important;
+}
+.text-primary-hover {
+    &:hover {
+        color: $primary !important;
+    }
+}
+.text-secondary-hover {
+    &:hover {
+        color: $secondary !important;
+    }
+}
+.text-white-hover {
+    &:hover {
+        color: $white !important;
+    }
+}
+.bg-grey {
+    background-color: $white9 !important;
+}
+.text-white-muted {
+    color: rgba($color: $white, $alpha: 0.5) !important;
+}
+.text-muted-default {
+    color: rgba($color: $body-color, $alpha: 0.5) !important;
+}
+.primary-hover {
+    &:hover {
+        background: $primary !important;
+        color: $white !important;
+        border-color: $primary !important;
+    }
+}
+.text-secondary,
+.txt-secondary {
+    color: $secondary !important;
+}
+.border-bottom-muted-white {
+    border-bottom: 1px solid $gray3;
+}
+hr {
+    background-color: $bdr !important;
+    opacity: 1 !important;
+}
+
+// ----------------------------------------------------------------------Font Size---------------------------------------------------------------//
+.text-lg {
+    font-size: 40px !important;
+}
+.text-md {
+    font-size: 30px !important;
+}
+.text-md-sm {
+    font-size: 24px !important;
+}
+.text-xxxl {
+    font-size: 80px !important;
+}
+// ----------------------------------------------------------------------Button---------------------------------------------------------------//
+.btn-round {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+}
+.bg-google {
+    background-color: $google;
+    color: $white !important;
+}
+.bg-facebook {
+    background-color: $facebook;
+    color: $white !important;
+}

@@ -91,7 +91,9 @@ button {
         outline: 0;
     }
 }
-
+.btn-close {
+    border-radius: 50% !important;
+}
 .btn-primary {
     @include buttn($primary, $white, $primary);
 }
