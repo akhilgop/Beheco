@@ -211,6 +211,8 @@
 
 .listing-card .btn-save {
   padding: 0;
+  z-index: 1111;
+  position: relative;
 }
 
 .listing-card .btn-save:hover i, .listing-card .btn-save:active i, .listing-card .btn-save:focus i {

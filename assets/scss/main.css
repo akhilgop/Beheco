@@ -5500,7 +5500,7 @@ h2 {
   position: absolute;
   bottom: 45px;
   right: 20px;
-  z-index: 1;
+  z-index: 111;
 }
 
 .freelancers .freelancer-info .info-content {

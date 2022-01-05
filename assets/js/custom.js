@@ -529,7 +529,7 @@ const upload = new CustomUpload('#fileImage');
 }).call(this);
 //---------------------------------------------------------------------Animate on Scroll------------------------------------------------------------------
 function animateFrom(elem, direction) {
-    // 'use strict';
+    'use strict';
     direction = direction || 1;
     var x = 0,
         y = direction * 100;

@@ -153,6 +153,8 @@
     }
     .btn-save {
         padding: 0;
+        z-index: 1111;
+        position: relative;
         &:hover,
         &:active,
         &:focus {
