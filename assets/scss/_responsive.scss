@@ -258,17 +258,7 @@
         margin-bottom: 20px !important;
         height: 300px !important;
     }
-    .modal-dialog {
-        width: 93% !important;
-    }
-    .modal {
-        position: absolute;
-        top: 50%;
-        left: 0%;
-        -webkit-transform: translate(2%, -50%);
-        transform: translate(2%, -50%);
-        width: 98% !important;
-    }
+
     .modal-content {
         padding: 20px !important;
         .custom-h {
@@ -576,25 +566,7 @@
     .top-pick-card {
         margin-bottom: 20px !important;
     }
-    .modal-dialog {
-        width: 90% !important;
-    }
-    .modal {
-        position: absolute;
-        top: 50%;
-        left: 0%;
-        -webkit-transform: translate(0%, -50%);
-        transform: translate(0%, -50%);
-    }
-    .modal-content {
-        padding: 20px !important;
-        .custom-h {
-            font-size: 24px !important;
-            span {
-                display: block;
-            }
-        }
-    }
+    
     .coming-soon {
         .slider-content {
             margin-top: 20px;

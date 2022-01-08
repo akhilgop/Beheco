@@ -1,0 +1,523 @@
+// ----------------------------------------------------Button-----------------------------------------------------//
+button {
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    border-radius: $b-rds-md;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none !important;
+        outline: 0;
+    }
+}
+.btn-close {
+    border-radius: 50% !important;
+}
+.btn-primary {
+    @include buttn($primary, $white, $primary);
+    border-radius: $b-rds-md;
+}
+
+.btn-secondary {
+    @include buttn($secondary, $white, $secondary);
+    border-radius: $b-rds-md;
+}
+
+.btn-tertiary {
+    @include buttn($tertiary, $white, $tertiary);
+    &:hover,
+    &:active,
+    &:focus {
+        color: $white !important;
+    }
+}
+
+.btn-primary-outline {
+    @include buttn-outline($white, $primary, $primary);
+}
+
+.btn-secondary-outline {
+    @include buttn-outline($white, $secondary, $secondary);
+}
+.btn-danger-outline {
+    @include buttn-outline($white, $red, $red);
+}
+.btn-white-outline {
+    @include buttn-outline(transparent, $white, $white);
+    font-family: "Circular", sans-serif;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        transition: all 0.5s ease-out;
+        outline: 0;
+        background-color: $white;
+        color: $primary;
+        border-color: $white;
+    }
+}
+.btn-secondary-outline {
+    @include buttn-outline($primary, $secondary, $secondary);
+}
+.btn-black {
+    @include buttn($black, $white, $black);
+    height: 45px;
+    @include flex-hv-cntr;
+    padding: 0 20px;
+    border-radius: $b-rds-md;
+    span {
+        font-weight: 600;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        transition: all 0.5s ease-out;
+        outline: 0;
+        background-color: $primary;
+        color: $white;
+        border-color: $primary;
+    }
+}
+.btn-view-more {
+    height: $height-default;
+    background-color: rgba($color: $primary, $alpha: 0.2);
+    border-radius: $b-rds-md;
+    color: $primary;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: $primary;
+        color: $white;
+        border-color: $primary;
+    }
+}
+.btn-view-all {
+    padding: 0 50px;
+    font-size: 16px;
+    height: $height-default;
+    background-color: $primary;
+    border-radius: $b-rds-md;
+    color: $white;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: $tertiary;
+        color: $white;
+        border-color: $tertiary;
+    }
+}
+.btn-google {
+    @include buttn($google, $white, $google);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $b-rds-md;
+    height: $height-default;
+    text-align: center;
+    position: relative;
+
+    .icon {
+        text-align: left;
+        position: absolute;
+        left: 15px;
+        top: 13px;
+    }
+    span {
+        text-align: center;
+        font-weight: 600;
+    }
+    margin-bottom: 20px;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none !important;
+        outline: 0;
+        background-color: darken($color: $google, $amount: 10%);
+        color: $white;
+        border-color: darken($color: $google, $amount: 10%);
+    }
+}
+.btn-facebook {
+    @extend .btn-google;
+    @include buttn($facebook, $white, $facebook);
+    margin: 0;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: darken($color: $facebook, $amount: 10%);
+        color: $white;
+        border-color: darken($color: $facebook, $amount: 10%);
+    }
+}
+.btn-primary-check {
+    @include buttn-outline($white, $primary, $primary);
+    border-radius: $b-rds-md;
+}
+.btn-check:active + .btn-primary-check,
+.btn-check:checked + .btn-primary-check,
+.btn-primary-check.active,
+.btn-primary-check:active,
+.show > .btn-primary-check.dropdown-toggle {
+    box-shadow: none !important;
+    outline: 0;
+    background-color: $primary;
+    color: $white;
+    border-color: $primary;
+}
+.btn-primary-check:active {
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+    }
+}
+.btn-general {
+    padding: 0 22px;
+    font-size: 16px;
+    height: $height-default;
+    background-color: $primary;
+    border-radius: $b-rds-md;
+    color: $white;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: $tertiary;
+        color: $white;
+        border-color: $tertiary;
+    }
+}
+.btn-submit-secondary {
+    padding: 0 50px;
+    font-size: 16px;
+    height: $height-default;
+    background-color: $secondary;
+    border-radius: $b-rds-md;
+    color: $white;
+    margin-right: 20px;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: $tertiary;
+        color: $white;
+        border-color: $tertiary;
+    }
+}
+.btn-submit-primary {
+    padding: 0 50px;
+    font-size: 16px;
+    height: $height-default;
+    background-color: $primary;
+    border-radius: $b-rds-md;
+    color: $white;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: $tertiary;
+        color: $white;
+        border-color: $tertiary;
+    }
+}
+.btn-submit-outline {
+    padding: 0 50px;
+    font-size: 16px;
+    height: $height-default;
+    background-color: transparent;
+    border-radius: $b-rds-md;
+    color: $primary;
+    margin-right: 20px;
+    border: 1px solid $primary;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        background-color: $primary;
+        color: $white;
+        border-color: $primary;
+    }
+}
+.btn-plus {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: transparent;
+    border: 1px solid $bdr;
+    padding: 0 20px;
+    color: $primary;
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        color: $secondary;
+        text-decoration: none;
+    }
+}
+.common-a {
+    @include text(16px, 16px, 600, $primary);
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: none;
+        outline: 0;
+        color: $secondary;
+        text-decoration: none;
+    }
+}
+
+.btn-white {
+    @include buttn($white, $primary, $white);
+}
+button,
+.btn {
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:focus {
+        box-shadow: none !important;
+        outline: 0;
+    }
+}
+.btn {
+    height: $height-default;
+    @include in-flex-hv-cntr;
+    padding: 0 $btn-pad;
+    border-radius: $b-rds;
+}
+.btn-sm {
+    height: $height-sm;
+    font-size: $fs-14;
+    padding: 0 20px !important;
+}
+.btn-xs {
+    height: $height-xs;
+    font-size: $fs-12;
+    padding: 0 15px !important;
+}
+.btn-lg {
+    height: $height-lg;
+    font-size: $fs-18;
+}
+.btn-xl {
+    height: $height-xl;
+    padding: 0 40px !important;
+    font-size: $fs-20;
+}
+.btn-xxl {
+    height: $height-xxl;
+    padding: 0 50px !important;
+    font-size: $fs-24;
+}
+.btn-xxxl {
+    height: $height-xxxl;
+    padding: 0 75px !important;
+    font-size: $fs-30;
+    border-radius: $b-rds-md;
+}
+.btn-outline-primary {
+    @include buttn-outline($trans, $primary, $primary);
+}
+
+.btn-outline-secondary {
+    @include buttn-outline($trans, $secondary, $secondary);
+}
+.btn-outline-tertiary {
+    @include buttn-outline($trans, $tertiary, $tertiary);
+}
+.btn-outline-light {
+    @include buttn-outline($trans, $white6, $white6);
+}
+.btn-outline-black {
+    @include buttn-outline($trans, $black, $black);
+    color: $black !important;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $black;
+        border-color: $black;
+        color: $white !important;
+    }
+}
+.btn-outline-google {
+    @include buttn-outline($trans, $google, $google);
+}
+.btn-outline-facebook {
+    @include buttn-outline($trans, $facebook, $facebook);
+}
+.btn-white {
+    @include buttn($white, $primary, $white);
+}
+.btn-primary-animate {
+    @include btn-animate($primary, $white, $secondary);
+}
+.btn-secondary-animate {
+    @include btn-animate($secondary, $white, $tertiary);
+}
+.btn-tertiary-animate {
+    @include btn-animate($tertiary, $white, $secondary);
+}
+.btn-outline-primary-animate {
+    @include btn-animate($white, $primary, $secondary);
+}
+.btn-outline-secondary-animate {
+    @include btn-animate($white, $secondary, $tertiary);
+}
+.btn-outline-tertiary-animate {
+    @include btn-animate($white, $tertiary, $secondary);
+}
+.btn-outline-white {
+    @include buttn-outline($trans, $white6, $white6);
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $white;
+        border-color: $white;
+        color: $primary;
+    }
+}
+.btn-circle {
+    @include round($height-default);
+    border: 1px solid transparent;
+}
+.btn-icon {
+    width: $height-default;
+    height: $height-default;
+    border-radius: $b-rds;
+    font-weight: inherit !important;
+    @include flex-hv-cntr;
+    border: 1px solid transparent;
+}
+.circle-outline-white {
+    @include outline-circle($white);
+}
+.circle-outline-primary {
+    @include outline-circle($primary);
+}
+.circle-outline-secondary {
+    @include outline-circle($secondary);
+}
+.circle-outline-tertiary {
+    @include outline-circle($tertiary);
+}
+.input-group {
+    .btn {
+        padding: 0 20px !important;
+    }
+}
+.btn-success,
+.btn-outline-success {
+    border: 1px solid $success;
+}
+.btn-danger,
+.btn-outline-danger {
+    border: 1px solid $danger;
+}
+.btn-warning,
+.btn-outline-warning {
+    border: 1px solid $warning;
+}
+.btn-info,
+.btn-outline-info {
+    border: 1px solid $info;
+}
+.btn-outline-danger,
+.btn-outline-success,
+.btn-outline-warning,
+.btn-outline-info {
+    background-color: $white;
+}
+.btn-primary-light {
+    @include buttn-light($primary);
+}
+.btn-secondary-light {
+    @include buttn-light($secondary);
+}
+.btn-tertiary-light {
+    @include buttn-light($tertiary);
+}
+.btn-success-light {
+    @include buttn-light($success);
+}
+.btn-danger-light {
+    @include buttn-light($danger);
+}
+.btn-warning-light {
+    @include buttn-light($warning);
+}
+.btn-info-light {
+    @include buttn-light($info);
+}
+.btn-black-light {
+    @include buttn-light($black);
+}
+.btn-google-light {
+    @include buttn-light($google);
+}
+.btn-facebook-light {
+    @include buttn-light($facebook);
+}
+// ----------------------------------------------------------------Button Wrapper---------------------------------------------------------------//
+.btn-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    .btn {
+        margin-right: 20px;
+        height: $height-default;
+    }
+    .btn:last-child {
+        margin-right: 0px;
+    }
+}
+.block-btn-wrapper {
+    .btn {
+        width: 100% !important;
+        margin-bottom: 20px;
+        height: $height-default;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+// -------------------------------------------------------------------Toggle Buttons--------------------------------------------------------------------//
+.btn-check:active + .btn-outline-primary:focus,
+.btn-check:checked + .btn-outline-primary:focus,
+.btn-outline-primary.active:focus,
+.btn-outline-primary.dropdown-toggle.show:focus,
+.btn-outline-primary:active:focus {
+    box-shadow: none !important;
+    background-color: $primary;
+}
+.btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+    box-shadow: none !important;
+    background-color: $primary;
+    border-color: $primary;
+}
+.btn-check:focus + .btn-outline-primary,
+.btn-outline-primary:focus {
+    box-shadow: none !important;
+}

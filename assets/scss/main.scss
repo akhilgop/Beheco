@@ -12,6 +12,11 @@
 @import "popup";
 @import "general";
 @import "table";
+
+@import "components/background";
+@import "components/button";
+@import "components/links";
+@import "components/text";
 // ----------------------------------------------------Common Classes-----------------------------------------------------//
 html {
     scroll-behavior: smooth;

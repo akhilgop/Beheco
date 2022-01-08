@@ -1607,7 +1607,6 @@
 }
 
 #allReviews .modal-content {
-  max-height: 600px;
   padding: 30px 30px 0 30px;
 }
 
@@ -1636,7 +1635,6 @@
 }
 
 #allQuestions .modal-content {
-  max-height: 600px;
   padding: 30px 30px 0 30px;
 }
 

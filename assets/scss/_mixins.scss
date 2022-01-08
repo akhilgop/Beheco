@@ -56,7 +56,22 @@
         border-color: darken($color: $bg, $amount: 10%);
     }
 }
-
+@mixin buttn-light($bg) {
+    background: rgba($color: $bg, $alpha: 0.2);
+    color: $bg;
+    border: 1px solid transparent;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $bg;
+        color: $white;
+        border-color: $bg;
+    }
+}
 @mixin buttn-outline($bg, $color, $bdr) {
     background: $bg;
     color: $color;

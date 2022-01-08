@@ -1,0 +1,153 @@
+// ----------------------------------------------------------------Text---------------------------------------------------------------//
+.font-primary {
+    font-family: $primary-font;
+}
+.font-secondary {
+    font-family: $secondary-font;
+}
+h1 {
+    font-size: $h1;
+    span {
+        font-family: $primary-font;
+    }
+}
+
+h2 {
+    font-size: $h2;
+    span {
+        font-family: $primary-font;
+    }
+}
+
+h3 {
+    font-size: $h3;
+}
+
+h4 {
+    font-size: $h4;
+}
+
+h5 {
+    font-size: $h5;
+}
+
+h6 {
+    font-size: $h6;
+}
+
+p {
+    font-size: $p;
+    line-height: 1.5;
+    color: $black6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+.common-h2 {
+    font-weight: 600 !important;
+    span {
+        color: $primary;
+        font-family: $primary-font !important;
+        font-weight: 600 !important;
+    }
+}
+
+.text-white {
+    a,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    label,
+    span {
+        color: $white;
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+        color: $white;
+    }
+}
+.text-normal {
+    a,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    label,
+    span {
+        color: $body-color;
+    }
+}
+.custom-h {
+    margin-bottom: 30px;
+    font-family: $primary-font;
+    span {
+        color: $primary;
+        font-weight: 600;
+        font-family: $primary-font;
+    }
+}
+.text-cntr {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+.common-h2,
+.custom-h {
+    font-weight: 600 !important;
+}
+
+// ----------------------------------------------------------------Font Sizes---------------------------------------------------------------//
+.fw-600 {
+    font-weight: 600 !important;
+}
+.fs-10 {
+    font-size: $fs-10 !important;
+}
+.fs-12 {
+    font-size: $fs-12 !important;
+}
+.fs-14 {
+    font-size: $fs-14 !important;
+}
+.fs-16 {
+    font-size: $fs-16 !important;
+}
+.fs-18 {
+    font-size: $fs-18 !important;
+}
+.fs-20 {
+    font-size: $fs-20 !important;
+}
+.fs-24 {
+    font-size: $fs-24 !important;
+}
+.fs-30 {
+    font-size: $fs-30 !important;
+}
+// ----------------------------------------------------------------Font Sizes---------------------------------------------------------------//
+.flex-heading {
+    display: flex;
+    flex-wrap: nowrap;
+    h2 {
+        width: 98%;
+    }
+    h3 {
+        width: 98%;
+    }
+}

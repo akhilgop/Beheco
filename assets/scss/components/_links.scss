@@ -1,0 +1,68 @@
+a {
+    font-size: $p;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        transition: all 0.5s ease-out;
+        outline: 0;
+    }
+}
+.a-animate {
+    @include a-animate;
+}
+// ----------------------------------------------------Link Animate-----------------------------------------------------//
+.animate-primary {
+    @include link-animate($primary);
+}
+.animate-secondary {
+    @include link-animate($secondary);
+}
+.animate-tertiary {
+    @include link-animate($tertiary);
+}
+.animate-success {
+    @include link-animate($success);
+}
+.animate-danger {
+    @include link-animate($danger);
+}
+.animate-warning {
+    @include link-animate($warning);
+}
+.animate-info {
+    @include link-animate($info);
+}
+.animate-light {
+    @include link-animate($light);
+}
+.animate-dark {
+    @include link-animate($dark);
+}
+.animate-white {
+    @include link-animate($white);
+}
+
+// ----------------------------------------------------Nav Link-----------------------------------------------------//
+.nav-item {
+    .nav-link {
+        @include a-animate;
+    }
+    .nav-link.dropdown-toggle {
+        &:after {
+            background: inherit !important;
+            position: relative !important;
+            display: inherit;
+            height: auto;
+            left: inherit;
+            position: relative !important;
+        }
+        &:hover:after {
+            width: inherit;
+            left: inherit;
+        }
+    }
+}

@@ -1,0 +1,167 @@
+.bg-primary {
+    background-color: $primary !important;
+    a,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    label,
+    span {
+        color: $white;
+    }
+}
+.bg-secondary {
+    background-color: $secondary !important;
+    a,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    label,
+    span {
+        color: $white;
+    }
+}
+.bg-tertiary {
+    background-color: $tertiary;
+    a,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    label,
+    span {
+        color: $white;
+    }
+}
+.bg-black {
+    background-color: $black;
+}
+.bg-white {
+    background-color: $white;
+}
+.bg-light {
+    background-color: $white6;
+}
+.bg-primary-light {
+    background-color: rgba($color: $primary, $alpha: 0.1);
+}
+.bg-secondary-light {
+    background-color: rgba($color: $secondary, $alpha: 0.1);
+}
+.bg-tertiary-light {
+    background-color: rgba($color: $tertiary, $alpha: 0.1);
+}
+.bg-white-light9 {
+    background-color: $white9;
+}
+.bg-white-light8 {
+    background-color: $white8;
+}
+.bg-white-light7 {
+    background-color: $white7;
+}
+.bg-white-light6 {
+    background-color: $white6;
+}
+.bg-white-light5 {
+    background-color: $white5;
+}
+.bg-white-light4 {
+    background-color: $white4;
+}
+.bg-white-light3 {
+    background-color: $white3;
+}
+.bg-white-light2 {
+    background-color: $white2;
+}
+.bg-white-light1 {
+    background-color: $white1;
+}
+.bg-google {
+    background: $google !important;
+    color: $white !important;
+}
+.bg-facebook {
+    background: $facebook !important;
+    color: $white !important;
+}
+
+.bg-danger {
+    background: $red !important;
+}
+.bg-blue {
+    background: $blue !important;
+    color: $white !important;
+}
+.bg-red {
+    background: $red !important;
+    color: $white !important;
+}
+.bg-yellow {
+    background: $yellow !important;
+    color: $black !important;
+}
+// ----------------------------------------------------------Light Color Shades--------------------------------------------------------//
+.bg-primary-light {
+    background-color: $primary-light !important;
+}
+.bg-secondary-light {
+    background-color: $secondary-light !important;
+}
+.bg-tertiary-light {
+    background-color: $tertiary-light !important;
+}
+.bg-primary-medium-light {
+    background-color: rgba($color: $primary, $alpha: 0.4) !important;
+}
+.bg-secondary-medium-light {
+    background-color: rgba($color: $secondary, $alpha: 0.4) !important;
+}
+.bg-tertiary-medium-light {
+    background-color: rgba($color: $tertiary, $alpha: 0.4) !important;
+}
+// ----------------------------------------------------------Dark Color Shades--------------------------------------------------------//
+.bg-primary-dark {
+    background-color: $primary-dark !important;
+}
+.bg-secondary-dark {
+    background-color: $secondary-dark !important;
+}
+.bg-tertiary-dark {
+    background-color: $tertiary-dark !important;
+}
+.bg-primary-medium-dark {
+    background-color: darken($color: $primary, $amount: 20%);
+}
+.bg-secondary-medium-dark {
+    background-color: darken($color: $secondary, $amount: 20%);
+}
+.bg-tertiary-medium-dark {
+    background-color: darken($color: $tertiary, $amount: 20%);
+}
+// ----------------------------------------------------------------Inverted---------------------------------------------------------------//
+.inverted {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    span,
+    label {
+        color: $white !important;
+    }
+}
