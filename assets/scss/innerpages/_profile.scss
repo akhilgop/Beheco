@@ -1,7 +1,7 @@
 // --------------------------------------------------------------Profile-------------------------------------------------------------//
 .business-profile {
     .cover-bg {
-        border-radius: $bdr-rds2;
+        border-radius: $b-rds-md;
     }
     .profile-pic {
         margin: -100px auto 30px auto;
@@ -28,7 +28,7 @@
         background-color: $white;
     }
     .nav-link {
-        border-radius: $bdr-rds;
+        border-radius: $b-rds;
         padding: 10px 20px;
         margin-right: 10px;
         overflow: hidden;
@@ -56,8 +56,13 @@
 .btn-b-list {
     text-align: left;
     justify-content: flex-start !important;
-    border-radius: $bdr-rds;
+    border-radius: $b-rds;
     background-color: $white;
+    height: auto !important;
+    width: 100% !important;
+    .business-list {
+        padding: 20px 0;
+    }
     h5 {
         margin-bottom: 0 !important;
     }
@@ -75,7 +80,7 @@
     }
 }
 .subscription-card {
-    border-radius: $bdr-rds2;
+    border-radius: $b-rds-md;
     padding: 20px;
     box-shadow: $box-shadow;
     .amount {
@@ -107,7 +112,7 @@
     }
     .sub-h2 {
         padding: 10px 20px;
-        border-radius: $bdr-rds;
+        border-radius: $b-rds;
         background-color: rgba($color: $primary, $alpha: 0.1);
         color: $primary;
         text-align: center;

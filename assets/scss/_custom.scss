@@ -392,7 +392,7 @@
         /* check JS for other settings */
         animation: 0.6s cubic-bezier(0.645, 0.045, 0.355, 1) 0s left;
         animation-fill-mode: forwards;
-        border-radius: $bdr-rds;
+        border-radius: $b-rds;
         background-position: center !important;
         // background-repeat: no-repeat !important;
     }
@@ -543,7 +543,7 @@
     }
 
     .demo-gallery > ul > li a {
-        border-radius: $bdr-rds;
+        border-radius: $b-rds;
         display: block;
         overflow: hidden;
         position: relative;
@@ -987,14 +987,14 @@ button.slick-prev:hover {
     #img-crop .block {
         border-radius: 1em;
         background-color: #eff3f6;
-        border-radius: $bdr-rds2;
+        border-radius: $b-rds-md;
         box-shadow: $box-shadow;
     }
     #img-crop .block .stage {
         width: 200px;
         height: 200px;
         position: relative;
-        border-radius: $bdr-rds2;
+        border-radius: $b-rds-md;
         overflow: hidden;
     }
     #img-crop #upload label#filedrag {
@@ -1005,7 +1005,7 @@ button.slick-prev:hover {
         background-size: 25% auto;
         transition: background 0.3s ease;
         cursor: pointer;
-        border-radius: $bdr-rds2;
+        border-radius: $b-rds-md;
         box-shadow: $box-shadow;
         border: 10px solid $white;
     }
@@ -1021,12 +1021,12 @@ button.slick-prev:hover {
     }
 
     #croppie {
-        border-radius: $bdr-rds2;
+        border-radius: $b-rds-md;
         box-shadow: $box-shadow;
         border: 10px solid $white;
     }
     .cr-boundary {
-        border-radius: $bdr-rds;
+        border-radius: $b-rds;
         overflow: hidden;
     }
     .btn-wrapper {
@@ -1036,7 +1036,7 @@ button.slick-prev:hover {
     .btn-crop {
         padding: 0px 20px;
         @include buttn-outline($trans, $primary, $primary);
-        border-radius: $bdr-rds;
+        border-radius: $b-rds;
         height: 40px !important;
         width: 50%;
     }
@@ -1192,11 +1192,11 @@ button.slick-prev:hover {
         box-shadow: $box-shadow;
     }
     #upload {
-        border-radius: $bdr-rds2;
+        border-radius: $b-rds-md;
     }
     #cr-rotate {
         @include buttn-outline($trans, $primary, $primary);
-        border-radius: $bdr-rds;
+        border-radius: $b-rds;
         color: $primary !important;
         @include flex-hv-cntr;
         &:hover,
@@ -1224,14 +1224,14 @@ button.slick-prev:hover {
     #img-crop-cover .block {
         border-radius: 1em;
         background-color: #eff3f6;
-        border-radius: $bdr-rds2;
+        border-radius: $b-rds-md;
         box-shadow: $box-shadow;
     }
     #img-crop-cover .block .stage {
         width: 960px;
         height: 200px;
         position: relative;
-        border-radius: $bdr-rds2;
+        border-radius: $b-rds-md;
         overflow: hidden;
     }
     #img-crop-cover #upload-cover label#filedrag-cover {
@@ -1242,7 +1242,7 @@ button.slick-prev:hover {
         background-size: 6% auto;
         transition: background 0.3s ease;
         cursor: pointer;
-        border-radius: $bdr-rds2;
+        border-radius: $b-rds-md;
         box-shadow: $box-shadow;
         border: 10px solid $white;
     }
@@ -1258,12 +1258,12 @@ button.slick-prev:hover {
     }
 
     #croppie-cover {
-        border-radius: $bdr-rds2;
+        border-radius: $b-rds-md;
         box-shadow: $box-shadow;
         border: 10px solid $white;
     }
     .cr-boundary {
-        border-radius: $bdr-rds;
+        border-radius: $b-rds;
         overflow: hidden;
     }
     .btn-wrapper {
@@ -1274,7 +1274,7 @@ button.slick-prev:hover {
     .btn-crop {
         padding: 0px 20px;
         @include buttn-outline($trans, $primary, $primary);
-        border-radius: $bdr-rds;
+        border-radius: $b-rds;
         height: 40px !important;
         width: 50%;
     }
@@ -1428,11 +1428,11 @@ button.slick-prev:hover {
         display: block;
     }
     #upload-cover {
-        border-radius: $bdr-rds2;
+        border-radius: $b-rds-md;
     }
     #cr-rotate {
         @include buttn-outline($trans, $primary, $primary);
-        border-radius: $bdr-rds;
+        border-radius: $b-rds;
         color: $primary !important;
         &:hover,
         &:active,
@@ -1515,7 +1515,7 @@ button.slick-prev:hover {
                 margin-bottom: 0.75rem;
                 cursor: pointer;
                 box-shadow: $box-shadow;
-                border-radius: $bdr-rds2;
+                border-radius: $b-rds-md;
                 border: 10px solid $white;
                 background-color: #eff3f6 !important;
                 background: url("../images/svg/ImageUpload.svg") 50% 50% no-repeat;
@@ -1530,7 +1530,7 @@ button.slick-prev:hover {
                 margin-right: 0.75rem;
                 margin-bottom: 0.75rem;
                 box-shadow: $box-shadow;
-                border-radius: $bdr-rds2;
+                border-radius: $b-rds-md;
                 border: 10px solid $white;
             }
             &-del {
@@ -1610,14 +1610,13 @@ a {
 //----------  pagination
 //------------------------------------------------------------------------------
 .pagination-wrapper {
-    text-align: center;
     margin: 40px 0;
     .prev,
     .next {
         width: auto !important;
         border-radius: 0px !important;
         border-color: transparent !important;
-
+        background-color: transparent !important;
         i {
             margin-top: 2px;
         }
@@ -1632,19 +1631,17 @@ a {
             margin-left: 10px;
         }
     }
-}
+    .pagination {
+        display: inline-block;
 
-.pagination {
-    display: inline-block;
-
-    @include breakpoint(1199px) {
-        height: 30px;
-        margin-top: 50px;
-        padding: 0 10px;
-        border-radius: 25px;
+        @include breakpoint(1199px) {
+            height: 30px;
+            margin-top: 50px;
+            padding: 0 10px;
+            border-radius: 25px;
+        }
     }
 }
-
 .page-numbers {
     @include circle(30px, $white);
     float: left;

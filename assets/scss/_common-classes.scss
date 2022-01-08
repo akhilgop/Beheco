@@ -13,7 +13,7 @@
 .card-box {
     padding: 30px;
     background-color: $white;
-    border-radius: $bdr-rds2;
+    border-radius: $b-rds-md;
     box-shadow: $box-shadow;
     margin-bottom: 30px;
     &:last-child {
@@ -111,6 +111,68 @@
 .bg-white-light1 {
     background-color: $white1;
 }
+.bg-google {
+    background: $google !important;
+    color: $white !important;
+}
+.bg-facebook {
+    background: $facebook !important;
+    color: $white !important;
+}
+
+.bg-danger {
+    background: $red !important;
+}
+.bg-blue {
+    background: $blue !important;
+    color: $white !important;
+}
+.bg-red {
+    background: $red !important;
+    color: $white !important;
+}
+.bg-yellow {
+    background: $yellow !important;
+    color: $black !important;
+}
+// ----------------------------------------------------------Light Color Shades--------------------------------------------------------//
+.bg-primary-light {
+    background-color: $primary-light !important;
+}
+.bg-secondary-light {
+    background-color: $secondary-light !important;
+}
+.bg-tertiary-light {
+    background-color: $tertiary-light !important;
+}
+.bg-primary-medium-light {
+    background-color: rgba($color: $primary, $alpha: 0.4) !important;
+}
+.bg-secondary-medium-light {
+    background-color: rgba($color: $secondary, $alpha: 0.4) !important;
+}
+.bg-tertiary-medium-light {
+    background-color: rgba($color: $tertiary, $alpha: 0.4) !important;
+}
+// ----------------------------------------------------------Dark Color Shades--------------------------------------------------------//
+.bg-primary-dark {
+    background-color: $primary-dark !important;
+}
+.bg-secondary-dark {
+    background-color: $secondary-dark !important;
+}
+.bg-tertiary-dark {
+    background-color: $tertiary-dark !important;
+}
+.bg-primary-medium-dark {
+    background-color: darken($color: $primary, $amount: 20%);
+}
+.bg-secondary-medium-dark {
+    background-color: darken($color: $secondary, $amount: 20%);
+}
+.bg-tertiary-medium-dark {
+    background-color: darken($color: $tertiary, $amount: 20%);
+}
 // ----------------------------------------------------------------Text---------------------------------------------------------------//
 .text-white {
     a,
@@ -181,6 +243,33 @@
         width: 98%;
     }
 }
+.fw-600 {
+    font-weight: 600 !important;
+}
+.fs-10 {
+    font-size: $fs-10 !important;
+}
+.fs-12 {
+    font-size: $fs-12 !important;
+}
+.fs-14 {
+    font-size: $fs-14 !important;
+}
+.fs-16 {
+    font-size: $fs-16 !important;
+}
+.fs-18 {
+    font-size: $fs-18 !important;
+}
+.fs-20 {
+    font-size: $fs-20 !important;
+}
+.fs-24 {
+    font-size: $fs-24 !important;
+}
+.fs-30 {
+    font-size: $fs-30 !important;
+}
 // ----------------------------------------------------------------Media Show & Hide---------------------------------------------------------------//
 .media-hide {
     display: block;
@@ -197,7 +286,7 @@
     flex-wrap: nowrap;
     .btn {
         margin-right: 20px;
-        height: 50px;
+        height: $height-default;
     }
     .btn:last-child {
         margin-right: 0px;
@@ -207,89 +296,167 @@
     .btn {
         width: 100% !important;
         margin-bottom: 20px;
-        height: 50px;
+        height: $height-default;
         &:last-child {
             margin-bottom: 0px;
         }
     }
 }
-// ----------------------------------------------------------------Responsive Padding---------------------------------------------------------------//
-.resp-pad-rb10 {
-    padding-right: 10px;
+// ----------------------------------------------------------------Other Classess---------------------------------------------------------------//
+.box-shadow {
+    box-shadow: $box-shadow !important;
 }
-.resp-pad-rb20 {
-    padding-right: 20px;
+.border-radius {
+    border-radius: $b-rds !important;
 }
-.resp-pad-rb30 {
-    padding-right: 30px;
+.font-primary {
+    font-family: $primary-font;
 }
-.resp-pad-rb40 {
-    padding-right: 40px;
+.font-secondary {
+    font-family: $secondary-font;
 }
-.resp-pad-rb50 {
-    padding-right: 50px;
+// ----------------------------------------------------------------Circles---------------------------------------------------------------//
+.circle-default {
+    @include circle-only($height-default);
 }
-.resp-pad-lb10 {
-    padding-left: 10px;
+.circle-sm {
+    @include circle-only($height-sm);
 }
-.resp-pad-lb20 {
-    padding-left: 20px;
+.circle-xs {
+    @include circle-only($height-xs);
 }
-.resp-pad-lb30 {
-    padding-left: 30px;
+.circle-lg {
+    @include circle-only($height-lg);
 }
-.resp-pad-lb40 {
-    padding-left: 40px;
+.circle-xl {
+    @include circle-only($height-xl);
 }
-.resp-pad-lb50 {
-    padding-left: 50px;
+.circle-xxl {
+    @include circle-only($height-xxl);
 }
-// ----------------------------------------------------------------Responsive Margin-------------------------------------------------------------//
-.resp-mgn-rb10 {
-    margin-right: 10px;
+.circle-xxxl {
+    @include circle-only($height-xxxl);
 }
-.resp-mgn-rb20 {
-    margin-right: 20px;
-}
-.resp-mgn-rb30 {
-    margin-right: 30px;
-}
-.resp-mgn-rb40 {
-    margin-right: 40px;
-}
-.resp-mgn-rb50 {
-    margin-right: 50px;
-}
-.resp-mgn-lb10 {
-    margin-left: 10px;
-}
-.resp-mgn-lb20 {
-    margin-left: 20px;
-}
-.resp-mgn-lb30 {
-    margin-left: 30px;
-}
-.resp-mgn-lb40 {
-    margin-left: 40px;
-}
-.resp-mgn-lb50 {
-    margin-left: 50px;
-}
-// ----------------------------------------------------------------General Classes-----------------------------------------------------------//
-
-.f-left {
-    float: left;
-}
-.f-right {
-    float: right;
-}
-.clearfix {
-    &::after {
-        content: "";
-        clear: both;
-        display: table;
+.circle-img {
+    overflow: hidden;
+    img {
+        height: 100%;
+        max-height: 100%;
     }
 }
+// ----------------------------------------------------------------Borders---------------------------------------------------------------//
+.border-primary {
+    border: 1px solid $primary;
+}
+.border-secondary {
+    border: 1px solid $secondary;
+}
+.border-tertiary {
+    border: 1px solid $tertiary;
+}
+.border-white {
+    border: 1px solid $white;
+}
+.border-black {
+    border: 1px solid $black;
+}
+.border-primary-2 {
+    border: 2px solid $primary;
+}
+.border-secondary-2 {
+    border: 2px solid $secondary;
+}
+.border-tertiary-2 {
+    border: 2px solid $tertiary;
+}
+.border-white-2 {
+    border: 2px solid $white;
+}
+.border-black-2 {
+    border: 2px solid $black;
+}
+.border-primary-3 {
+    border: 3px solid $primary;
+}
+.border-secondary-3 {
+    border: 3px solid $secondary;
+}
+.border-tertiary-3 {
+    border: 3px solid $tertiary;
+}
+.border-white-3 {
+    border: 3px solid $white;
+}
+.border-black-3 {
+    border: 3px solid $black;
+}
+.border-primary-4 {
+    border: 4px solid $primary;
+}
+.border-secondary-4 {
+    border: 4px solid $secondary;
+}
+.border-tertiary-4 {
+    border: 4px solid $tertiary;
+}
+.border-white-4 {
+    border: 4px solid $white;
+}
+.border-black-4 {
+    border: 4px solid $black;
+}
+.border-primary-5 {
+    border: 5px solid $primary;
+}
+.border-secondary-5 {
+    border: 5px solid $secondary;
+}
+.border-tertiary-5 {
+    border: 5px solid $tertiary;
+}
+.border-white-5 {
+    border: 5px solid $white;
+}
+.border-black-5 {
+    border: 5px solid $black;
+}
+.border-top,
+.border-bottom,
+.border-right,
+.border-left {
+    border-color: $bdr !important;
+}
+// ----------------------------------------------------------------Inverted---------------------------------------------------------------//
+.inverted {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    a,
+    span,
+    label {
+        color: $white !important;
+    }
+}
+@media screen and (max-width: 991px) {
+    .nb .nav-item .nav-link {
+        padding: 20px;
+    }
+    .nb {
+        max-height: 100vh;
+        overflow-y: scroll;
+    }
+    .dropdown-menu.country-dropdown {
+        min-width: 100% !important;
+    }
+    .dropdown.dropdown-menu-end.nav-link {
+        width: 100% !important;
+    }
+}
+
 // ----------------------------------------------------------------Responsive Classes-----------------------------------------------------------//
 @media screen and (max-width: 991px) {
     .media-show {
@@ -314,7 +481,7 @@
         height: 40px;
         padding: 0 20px;
     }
-    
+
     section {
         padding: 50px 0;
     }

@@ -228,6 +228,9 @@ p {
     padding: 20px;
     border-radius: 20px;
     box-shadow: $box-shadow;
+    a {
+        font-weight: 600 !important;
+    }
     p {
         @include text(16px, 30px, 400, $black9);
         margin-bottom: 20px;
@@ -307,7 +310,7 @@ p {
 // ------------------------------------------------------------------Progress Bar-----------------------------------------------------------------//
 .progress-bar {
     height: 10px;
-    border-radius: $bdr-rds;
+    border-radius: $b-rds;
 }
 .progress {
     margin-bottom: 10px;
@@ -337,12 +340,12 @@ p {
 }
 .tab-content {
     border-top-left-radius: 0 !important;
-    border-radius: $bdr-rds;
+    border-radius: $b-rds;
     margin-top: -1px;
 }
 // --------------------------------------------------------------------Location Marker-----------------------------------------------------------------//
 .location-wrapper {
-    border-radius: $bdr-rds2;
+    border-radius: $b-rds-md;
     box-shadow: $box-shadow;
     padding: 20px;
     overflow: hidden;
@@ -353,8 +356,8 @@ p {
 .keyword-wrapper {
     .search-bar {
         .btn-search {
-            border-top-right-radius: $bdr-rds;
-            border-bottom-right-radius: $bdr-rds;
+            border-top-right-radius: $b-rds;
+            border-bottom-right-radius: $b-rds;
             padding: 0 20px;
         }
         span {

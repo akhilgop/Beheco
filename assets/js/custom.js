@@ -673,4 +673,12 @@ $('#coverImageBtn').on('click', function (ev) {
         $('#coverImagePop').modal('hide');
     });
 });
-				// End upload preview image
+// End upload preview image
+
+// ----------------------------------------------------------------Datepicker-----------------------------------------------------------
+$(function () {
+    $("#datepicker").datepicker({
+        autoclose: true,
+        todayHighlight: true
+    });
+});

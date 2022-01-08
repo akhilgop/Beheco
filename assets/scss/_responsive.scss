@@ -300,7 +300,7 @@
                 height: 200px;
                 margin-bottom: 30px;
                 .img {
-                    border-radius: $bdr-rds;
+                    border-radius: $b-rds;
                 }
             }
         }
@@ -319,7 +319,7 @@
     .signin-box {
         .dropdown-menu.show {
             min-width: 100% !important;
-            border-radius: $bdr-rds;
+            border-radius: $b-rds;
         }
         a,
         span {
@@ -601,7 +601,7 @@
             .slider {
                 min-height: 200px !important;
                 .img {
-                    border-radius: $bdr-rds;
+                    border-radius: $b-rds;
                 }
             }
         }
@@ -823,7 +823,7 @@
             .slider {
                 min-height: 400px !important;
                 .img {
-                    border-radius: $bdr-rds;
+                    border-radius: $b-rds;
                 }
             }
         }

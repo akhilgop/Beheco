@@ -4,17 +4,47 @@ $secondary: #8fd03d;
 $tertiary: #33aa55;
 $bdr: #ddd;
 $body-color: #111;
-$bdr-rds: 10px;
-$bdr-rds2: 20px;
 $box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
-$pad: 10px;
 $trans: transparent;
+$success: #31a24c;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #cf0d1e;
+$light: #f8f9fa;
+$dark: #212529;
+// ----------------------------------------------------Dark Versions----------------------------------------------//
+$primary-dark: darken(
+    $color: $primary,
+    $amount: 10%,
+);
+$secondary-dark: darken(
+    $color: $secondary,
+    $amount: 10%,
+);
+$tertiary-dark: darken(
+    $color: $tertiary,
+    $amount: 10%,
+);
+// ----------------------------------------------------Light Versions---------------------------------------------//
+$primary-light: rgba(
+    $color: $primary,
+    $alpha: 0.1,
+) !important;
+$secondary-light: rgba(
+    $color: $secondary,
+    $alpha: 0.1,
+) !important;
+$tertiary-light: rgba(
+    $color: $tertiary,
+    $alpha: 0.1,
+) !important;
 // ----------------------------------------------------Other Colors----------------------------------------------//
 $color1: #d9534f;
 $color2: #5cb85c;
 $color3: #cdffa1;
 $google: #dc4d23;
 $facebook: #3d5da5;
+
 // ----------------------------------------------------Text Colors------------------------------------------------//
 $txt1: #151442;
 $txt2: #342b42;
@@ -58,6 +88,15 @@ $green: #5cb85c !default;
 $full-w: 100%;
 $half-w: 50%;
 $qtr-w: 25%;
+// --------------------------------------------------------Height-----------------------------------------------//
+$height-xxs: 20px;
+$height-xs: 30px;
+$height-sm: 40px;
+$height-default: 50px;
+$height-lg: 60px;
+$height-xl: 80px;
+$height-xxl: 100px;
+$height-xxxl: 150px;
 // ----------------------------------------------------Text-----------------------------------------------------//
 $h1: 80px;
 $h2: 47px;
@@ -66,6 +105,30 @@ $h4: 24px;
 $h5: 20px;
 $h6: 18px;
 $p: 16px;
+$fs-10: 10px;
+$fs-12: 12px;
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-20: 20px;
+$fs-24: 24px;
+$fs-30: 30px;
 $mob-p: calc(#{$p} - 2px);
 $primary-font: "Circular";
 $secondary-font: "Inter", sans-serif;
+// ----------------------------------------------------Padding--------------------------------------------------//
+$pad-default: 20px;
+$pad-small: 10px;
+$pad-medium: 30px;
+$pad-lg: 40px;
+$pad-xl: 50px;
+$pad-xxl: 60px;
+$btn-pad: 30px;
+// ------------------------------------------------------Border Radius------------------------------------------//
+$b-rds-xs: 7px;
+$b-rds: 10px;
+$b-rds-md: 20px;
+$b-rds-lg: 30px;
+$b-rds-xl: 40px;
+$b-rds-xxl: 50px;
+$b-rds-xxxl: 60px;
