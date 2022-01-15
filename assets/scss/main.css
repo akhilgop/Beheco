@@ -3133,6 +3133,102 @@ a {
   height: 600px;
 }
 
+.loader {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: #059762;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.loader .loader-content {
+  width: 8vmax;
+  height: 8vmax;
+  border-right: 4px solid #ffffff;
+  border-radius: 100%;
+  -webkit-animation: spinRight 800ms linear infinite;
+          animation: spinRight 800ms linear infinite;
+}
+
+.loader .loader-content:before, .loader .loader-content:after {
+  content: "";
+  width: 6vmax;
+  height: 6vmax;
+  display: block;
+  position: absolute;
+  top: calc(50% - 3vmax);
+  left: calc(50% - 3vmax);
+  border-left: 3px solid #ffffff;
+  border-radius: 100%;
+  -webkit-animation: spinLeft 800ms linear infinite;
+          animation: spinLeft 800ms linear infinite;
+}
+
+.loader .loader-content:after {
+  width: 4vmax;
+  height: 4vmax;
+  top: calc(50% - 2vmax);
+  left: calc(50% - 2vmax);
+  border: 0;
+  border-right: 2px solid #ffffff;
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes spinLeft {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
+@keyframes spinLeft {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
+@-webkit-keyframes spinRight {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes spinRight {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 @media screen and (max-width: 575px) {
   .media-show {
     display: block !important;
