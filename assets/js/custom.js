@@ -622,7 +622,7 @@ $('#cropImageBtn').on('click', function (ev) {
 // ----------------------------------------------------Image Cropper on Pop up Cover-----------------------------------------------------//
 var cover = document.querySelector('.cover-pic-image')
 // Start upload preview image
-$(".cover-pic-image").attr("src", "https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+$(".cover-pic-image").attr("src", "");
 var $uploadCrop1,
     tempFilename1,
     rawImg1,
