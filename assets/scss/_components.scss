@@ -838,3 +838,94 @@ input[type="range"]::-ms-fill-lower {
         }
     }
 }
+
+// ---------------------------------------------------Arrow Buttons ------------------------------------------------------------
+.arrow {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 0 !important;
+}
+.arrow-next {
+    border: 3px solid $primary;
+    svg path {
+        fill: $primary;
+        stroke: $primary;
+        transition: all 0.5s ease-out;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $primary;
+        transition: all 0.5s ease-out;
+        box-shadow: none;
+        svg path {
+            fill: $white;
+            stroke: $white;
+            transition: all 0.5s ease-out;
+        }
+    }
+}
+.arrow-prev {
+    border: 3px solid $black;
+    svg path {
+        fill: $black;
+        stroke: $black;
+        transition: all 0.5s ease-out;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: $black;
+        border: 3px solid $black;
+        transition: all 0.5s ease-out;
+        box-shadow: none;
+        svg path {
+            fill: $white;
+            stroke: $white;
+            transition: all 0.5s ease-out;
+        }
+    }
+    svg {
+        transform: rotate(180deg);
+        path {
+            fill: $black;
+        }
+    }
+}
+// ---------------------------------------------------Nav Tabs ------------------------------------------------------------
+.main-tab {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 12px;
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        color: $primary !important;
+        border-bottom: 5px solid $primary !important;
+        border-radius: 0 !important;
+    }
+    .nav-tabs .nav-link {
+        border-radius: 0 !important;
+        padding: 20px 30px !important;
+        border-bottom: 5px solid $trans !important;
+        border-top: none !important;
+        border-left: none !important;
+        border-right: none !important;
+        color: $black6;
+    }
+}
+.tab-content {
+    background-color: $white9 !important;
+}
+@media screen and (max-width: 767px) {
+    .main-tab {
+        margin: auto;
+        text-align: center;
+        .nav-tabs .nav-link {
+            padding: 15px 25px !important;
+        }
+    }
+}

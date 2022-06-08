@@ -682,3 +682,4 @@ $(function () {
         todayHighlight: true
     });
 });
+

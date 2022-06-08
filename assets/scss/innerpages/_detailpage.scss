@@ -185,17 +185,16 @@
         }
     }
 }
-// ----------------------------------------------------About Card-----------------------------------------------------//
-.about-card {
-    margin-top: 50px;
-}
+
 // ----------------------------------------------------Card Default-----------------------------------------------------//
 .card-default {
     width: 100%;
     padding: 30px;
     border-radius: 20px;
     margin-bottom: 30px;
-    border: 1px solid $bdr;
+    // border: 1px solid $bdr;
+    background-color: $white;
+    box-shadow: $box-shadow;
 
     h3 {
         @include text(20px, 20px, 700, $primary);
@@ -403,7 +402,7 @@
                 margin-left: 10px;
             }
             h6 {
-                @include text(16px, 16px, 600, $body-color);
+                @include text(16px, 16px, 600, $black);
                 margin: 0;
             }
         }
@@ -498,7 +497,7 @@
         h6 {
             float: left;
             font-size: 16px;
-            color: $black6 !important;
+            color: $black !important;
             font-weight: 400;
         }
         .reply-qn {

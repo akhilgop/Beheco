@@ -161,8 +161,9 @@
 }
 
 @mixin circle($unit, $bg) {
-    width: $unit;
-    height: $unit;
+    width: $unit !important;
+    height: $unit !important;
+    min-width: $unit !important;
     border-radius: 50%;
     background-color: $bg;
     @include flex-hv-cntr;
@@ -245,7 +246,7 @@
     text-decoration: none;
     position: relative;
     display: inline-block;
-    color: $color !important;
+    // color: $color !important;
     font-weight: 600;
     &:after {
         background: none repeat scroll 0 0 transparent;

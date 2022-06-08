@@ -4,14 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/scss/main.css" type="text/css" rel="stylesheet">
     <link href="assets/scss/innerpages/innerpages.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+    <link href="assets/css/theme.css" type="text/css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -20,52 +17,173 @@
 </head>
 
 <body>
-    <!-- -----------------------------------------------------------------Navbar------------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg nb fixed-top">
-        <div class="top-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-5 col-sm-7">
-                        <div class="left-portion">
-                            <div class="phone">
-                                <div class="icon">
-                                    <i class="fas fa-phone-alt"></i>
+    <div class="header-wrapper">
+        <!-- -----------------------------------------------------------------Navbar------------------------------------------------------------->
+        <nav class="navbar navbar-expand-lg nb fixed-top">
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 col-lg-7">
+                            <div class="left-portion">
+                                <div class="phone">
+                                    <div class="icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <a class="animate-primary" href="">+91 1800 234 567</a>
                                 </div>
-                                <a href="">+91 1800 234 567</a>
+                                <div class="email">
+                                    <div class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <a class="animate-primary" href="">mail@beheco.in</a>
+                                </div>
                             </div>
-                            <div class="email">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="col-xl-7 col-lg-5 d-none d-lg-block">
+                            <div class="right-portion ml-auto">
+                                <div class="common-links">
+                                    <a data-bs-toggle="modal" data-bs-target="#advertiseHere"><span
+                                            class="badge bg-primary py-1 px-2 flex-v-center fs-12">Advertise
+                                            Here</span></a>
+                                    <div class="separator  "></div>
+                                    <a href="career.html" class="name-link animate-primary">Careers</a>
+                                    <div class="separator name-link  "></div>
+                                    <a href="demo/theme.html" class="name-link  animate-primary">Help</a>
+                                    <div class="separator name-link  "></div>
+                                    <a href="popup.html" class="name-link animate-primary">Download App</a>
+                                    <div class="separator name-link  "></div>
                                 </div>
-                                <a href="">mail@beheco.in</a>
+                                <div class="social-links  ">
+                                    <a href="" class="icon fb">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="" class="icon tw">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="" class="icon insta">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="" class="icon tw">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-7 col-sm-5">
-                        <div class="right-portion ml-auto">
-                            <div class="common-links">
-                                <a href="" data-bs-toggle="modal" data-bs-target="#advertise"><span
-                                        class="badge bg-primary">Advertise Here</span></a>
-                                <div class="separator  "></div>
-                                <a href="career.html" class="name-link  ">Careers</a>
-                                <div class="separator name-link  "></div>
-                                <a href="help.html" class="name-link  ">Help</a>
-                                <div class="separator name-link  "></div>
-                                <a href="popup.html" class="name-link  ">Download App</a>
-                                <div class="separator name-link  "></div>
+                </div>
+            </div>
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars text-black"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#categoryModal">Categories</a>
+                        </li>
+                        <li class="nav-item media-show">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#advertiseHere">Advertise
+                                Here</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Featured</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="offers.html">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <div class="signin-box">
+                            <div class="dropdown">
+                                <button class="btn btn-user" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#SignIn">
+                                    <div class="img-wrapper">
+                                        <img src="assets/images/svg/user.svg" alt="user-icon">
+                                    </div>
+                                    <span class="animate-primary">Signin / Register</span>
+                                </button>
                             </div>
-                            <div class="social-links  ">
-                                <a href="" class="icon fb">
+                        </div>
+                        <button class="btn btn-black" data-bs-toggle="modal" data-bs-target="#newListing"><img
+                                src="assets/images/svg/plus-icon.svg" alt="plus-icon"><span>Add
+                                Free Listing</span></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-----------------------------------------------------------------Add New Listing Modal --------------------------------------------------------->
+        <div class="modal fade" id="newListing" tabindex="-1" aria-labelledby="addNewListing" aria-hidden="true">
+            <div class="modal-dialog add-new-listing-modal modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="content">
+                            <div class="flex-heading">
+                                <h3 class="custom-h">Select the<span> Type of Listing</span></h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="d-grid gap-3">
+                                <button type="button" class="btn btn-primary-light"
+                                    onclick="location.href = 'new-business.html'">Business</button>
+                                <button type="button" class="btn btn-primary-light"
+                                    onclick="location.href = 'new-business.html'">Freelancer</button>
+                                <button type="button" class="btn btn-primary-light"
+                                    onclick="location.href = 'new-business.html'">Place</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------Sign In Modal------------------------------------------------------------->
+        <!-- Modal -->
+        <div class="modal fade" id="SignIn" tabindex="-1" aria-labelledby="SignInLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="right-align">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="logo">
+                            <img src="assets/images/logo.png" alt="logo">
+                        </div>
+                        <div class="content">
+                            <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48"><span>Sign In</span> and Explore More</h2>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email Address">
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="block-btn-wrapper">
+                                <button type="button" class="btn btn-primary btn-view-all"
+                                    onclick="location.href = 'profile.html'">Sign In</button>
+                            </div>
+                            <hr>
+                            <p>Don't have a Beheco Account? <a
+                                    class=" text-primary fw-bold a-animate text-primary-hover" data-bs-toggle="modal"
+                                    data-bs-target="#SignUp" data-bs-dismiss="modal">Register
+                                    Here!</a></p>
+                            <hr>
+                            <p class="text-center mb-0">OR</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="" class="btn-round bg-google">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="" class="btn-round bg-facebook">
                                     <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="" class="icon tw">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="" class="icon insta">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="" class="icon tw">
-                                    <i class="fab fa-linkedin-in"></i>
                                 </a>
                             </div>
                         </div>
@@ -73,110 +191,192 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><img src="assets/images/svg/menu_icon.svg" alt=""></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown media-hide">
-                        <div class="mega-menu">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Categories
-                                <i class="fas fa-chevron-down on-h"></i>
-                            </a>
-                            <div class="dropdown-content">
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-xl-4">
-                                            <div class="column">
-                                                <a href="#">Emergency
-                                                    Services</a>
-                                                <a href="#">Food &
-                                                    Beverages</a>
-                                                <a href="#">Rooms &
-                                                    Rentals</a>
-                                                <a href="#">Professionals</a>
-                                                <a href="#">Experts</a>
-                                                <a href="#">Healthcare</a>
-                                                <a href="#">Public
-                                                    Places</a>
-                                            </div>
+        <!------------------------------------------------------------------Sign Up Modal------------------------------------------------------------->
+        <!-- Modal -->
+        <div class="modal fade" id="SignUp" tabindex="-1" aria-labelledby="SignUpLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="right-align">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="logo">
+                            <img src="assets/images/logo.png" alt="logo">
+                        </div>
+                        <div class="content">
+                            <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48"><span>Sign Up</span></h2>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Email Address">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <input type="number" class="form-control" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <input type="password" class="form-control" placeholder="Confirm Password">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-btn-wrapper">
+                                <button type="button" class="btn btn-primary btn-view-all">Sign Up</button>
+                            </div>
+                            <hr>
+                            <p>Already have a Beheco Account? <a href=""
+                                    class="text-primary fw-bold a-animate text-primary-hover" data-bs-toggle="modal"
+                                    data-bs-target="#SignIn" data-bs-dismiss="modal">Sign In
+                                    Here!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------Advertise Here------------------------------------------------------------->
+        <!-- Modal -->
+        <div class="modal fade" id="advertiseHere" tabindex="-1" aria-labelledby="advertiseHereLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="content text-left">
+                            <div class="flex-heading">
+                                <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48"><span>Advertise with</span> Beheco
+                                </h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <p class="description-text">Please fill up this form, Our executives will contact you
+                                soon.</p>
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Your Full Name</label>
+                                        <input type="text" class="form-control" placeholder="Eg: John Smith">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Business Name</label>
+                                        <input type="text" class="form-control" placeholder="Eg: ABC Pvt Ltd">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" placeholder="Eg: name@example.com">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Contact Number</label>
+                                        <input type="text" class="form-control" placeholder="Eg: +919876543211">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-btn-wrapper">
+                                <button type="button" class="btn btn-view-all">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------Category Modal------------------------------------------------------------->
+        <!-- Modal -->
+        <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="content text-left">
+                            <div class="flex-heading">
+                                <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48">All <span>Categories</span></h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="column">
+                                            <a href="#">Emergency
+                                                Services</a>
+                                            <a href="#">Food &amp;
+                                                Beverages</a>
+                                            <a href="#">Rooms &amp;
+                                                Rentals</a>
+                                            <a href="#">Professionals</a>
+                                            <a href="#">Experts</a>
+                                            <a href="#">Healthcare</a>
+                                            <a href="#">Public
+                                                Places</a>
                                         </div>
-                                        <div class="col-xl-4">
-                                            <div class="column">
-                                                <a href="#">Home &
-                                                    Office</a>
-                                                <a href="#">Automobile</a>
-                                                <a href="#">Educational
-                                                    Institutions</a>
-                                                <a href="#">Financial
-                                                    institutions</a>
-                                                <a href="#">Dress &
-                                                    Accessories</a>
-                                                <a href="#">Travel &
-                                                    Tourism</a>
-                                                <a href="#">Wedding &
-                                                    Events</a>
-                                            </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="column">
+                                            <a href="#">Home &amp;
+                                                Office</a>
+                                            <a href="#">Automobile</a>
+                                            <a href="#">Educational
+                                                Institutions</a>
+                                            <a href="#">Financial
+                                                institutions</a>
+                                            <a href="#">Dress &amp;
+                                                Accessories</a>
+                                            <a href="#">Travel &amp;
+                                                Tourism</a>
+                                            <a href="#">Wedding &amp;
+                                                Events</a>
                                         </div>
-                                        <div class="col-xl-4">
-                                            <div class="column">
-                                                <a href="#">Electronics</a>
-                                                <a href="#">Retail &
-                                                    Wholesale</a>
-                                                <a href="#">Media &
-                                                    Entertainment</a>
-                                                <a href="#">Telecom</a>
-                                                <a href="#">Construction</a>
-                                                <a href="#">Sports</a>
-                                                <a href="#">Health &
-                                                    Fitness</a>
-                                            </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="column">
+                                            <a href="#">Electronics</a>
+                                            <a href="#">Retail &amp;
+                                                Wholesale</a>
+                                            <a href="#">Media &amp;
+                                                Entertainment</a>
+                                            <a href="#">Telecom</a>
+                                            <a href="#">Construction</a>
+                                            <a href="#">Sports</a>
+                                            <a href="#">Health &amp;
+                                                Fitness</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="nav-item media-show">
-                        <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal"
-                            data-bs-target="#advertise">Advertise Here</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Featured</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="offers.html">Offers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
-                    </li>
-                </ul>
-                <div class="d-flex">
-                    <div class="signin-box">
-                        <div class="dropdown">
-                            <button class="btn btn-user" type="button" data-bs-toggle="modal" data-bs-target="#SignUp">
-                                <div class="img-wrapper">
-                                    <img src="assets/images/svg/user.svg" alt="user-icon">
-                                </div>
-                                <span>Signin / Register</span>
-                            </button>
-                        </div>
                     </div>
-                    <button class="btn btn-black" data-bs-toggle="modal" data-bs-target="#newListing"><img
-                            src="assets/images/svg/plus-icon.svg" alt="plus-icon"><span>Add
-                            Free Listing</span></button>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
     <!------------------------------------------------------------------Banner------------------------------------------------------------------>
     <section class="general-banner gs_reveal">
         <div class="overlay">
@@ -199,7 +399,7 @@
     <!------------------------------------------------------------------Open Positions--------------------------------------------------------->
     <section class="open-positions wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
         <div class="container">
-            <h2 class="common-h2 gs_reveal">Common <span>Questions</span></h2>
+            <h2 class="common-h2 gs_reveal fs-mob-30 fs-md-36 fs-lg-48">Common <span>Questions</span></h2>
             <div class="accordion-section">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6">
@@ -279,17 +479,17 @@
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6">
-                        <div class="accordion gs_reveal" id="accordionExample11">
+                        <div class="accordion accordion-flush gs_reveal" id="accordionFlushExample">
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
+                                <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne1" aria-expanded="false"
-                                        aria-controls="collapseOne1">
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
                                         4. Lorem ipsum dolor sit amet?
                                     </button>
                                 </h2>
-                                <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionExample11">
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                             tempor
@@ -301,21 +501,19 @@
                                             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
                                             in
                                             culpa qui officia deserunt mollit anim id est laborum.</p>
-
-
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
+                                <h2 class="accordion-header" id="flush-headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo1" aria-expanded="false"
-                                        aria-controls="collapseTwo1">
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
                                         5. Lorem ipsum dolor sit amet?
                                     </button>
                                 </h2>
-                                <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                             tempor
@@ -327,21 +525,19 @@
                                             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
                                             in
                                             culpa qui officia deserunt mollit anim id est laborum.</p>
-
-
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingThree">
+                                <h2 class="accordion-header" id="flush-headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree1" aria-expanded="false"
-                                        aria-controls="collapseThree1">
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
                                         6. Lorem ipsum dolor sit amet?
                                     </button>
                                 </h2>
-                                <div id="collapseThree1" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                             tempor
@@ -353,7 +549,6 @@
                                             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
                                             in
                                             culpa qui officia deserunt mollit anim id est laborum.</p>
-
                                     </div>
                                 </div>
                             </div>
@@ -443,19 +638,8 @@
     <!------------------------------------------------------------------Move to Top------------------------------------------------------------->
     <button onclick="topFunction()" id="myBtn" title="Go to top" class="move-to-top">
         <div class="btn-content">
-            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12 7"
-                style="enable-background:new 0 0 12 7;" xml:space="preserve" width="12px" height="7px">
-                <style type="text/css">
-                    .top {
-                        fill: #FFFFFF;
-                    }
-                </style>
-                <path class="top" d="M6,1.9L1.3,6.8C1,7.1,0.5,7.1,0.2,6.8c-0.3-0.3-0.3-0.8,0-1.1l5.2-5.4C5.6,0.1,5.8,0,6,0s0.4,0.1,0.6,0.2
-           l5.2,5.4c0.3,0.3,0.3,0.8,0,1.1c-0.3,0.3-0.8,0.3-1.1,0L6,1.9z" />
-            </svg>
+            <i class="fas fa-chevron-up text-white"></i>
         </div>
-
     </button>
     <!-- -----------------------------------------------------------------External Javascript------------------------------------------------------------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

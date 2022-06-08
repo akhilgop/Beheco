@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/scss/main.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="assets/css/theme.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" type="text/css" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
@@ -16,52 +19,172 @@
 </head>
 
 <body>
-    <!-- -----------------------------------------------------------------Navbar------------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg nb fixed-top">
-        <div class="top-menu">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-5 col-sm-7">
-                        <div class="left-portion">
-                            <div class="phone">
-                                <div class="icon">
-                                    <i class="fas fa-phone-alt"></i>
+    <div class="header-wrapper">
+        <!-- -----------------------------------------------------------------Navbar------------------------------------------------------------->
+        <nav class="navbar navbar-expand-lg nb fixed-top">
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 col-lg-7">
+                            <div class="left-portion">
+                                <div class="phone">
+                                    <div class="icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <a class="animate-primary" href="">+91 1800 234 567</a>
                                 </div>
-                                <a href="">+91 1800 234 567</a>
+                                <div class="email">
+                                    <div class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <a class="animate-primary" href="">mail@beheco.in</a>
+                                </div>
                             </div>
-                            <div class="email">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="col-xl-7 col-lg-5 d-none d-lg-block">
+                            <div class="right-portion ml-auto">
+                                <div class="common-links">
+                                    <a data-bs-toggle="modal" data-bs-target="#advertiseHere"><span
+                                            class="badge bg-primary py-1 px-2 flex-v-center fs-12">Advertise
+                                            Here</span></a>
+                                    <div class="separator  "></div>
+                                    <a href="career.html" class="name-link animate-primary">Careers</a>
+                                    <div class="separator name-link  "></div>
+                                    <a href="demo/theme.html" class="name-link  animate-primary">Help</a>
+                                    <div class="separator name-link  "></div>
+                                    <a href="popup.html" class="name-link animate-primary">Download App</a>
+                                    <div class="separator name-link  "></div>
                                 </div>
-                                <a href="">mail@beheco.in</a>
+                                <div class="social-links  ">
+                                    <a href="" class="icon fb">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="" class="icon tw">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="" class="icon insta">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="" class="icon tw">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-7 col-sm-5">
-                        <div class="right-portion ml-auto">
-                            <div class="common-links">
-                                <a href="" data-bs-toggle="modal" data-bs-target="#advertise"><span
-                                        class="badge bg-primary">Advertise Here</span></a>
-                                <div class="separator  "></div>
-                                <a href="career.html" class="name-link  ">Careers</a>
-                                <div class="separator name-link  "></div>
-                                <a href="demo/theme.html" class="name-link  ">Help</a>
-                                <div class="separator name-link  "></div>
-                                <a href="popup.html" class="name-link">Download App</a>
-                                <div class="separator name-link  "></div>
+                </div>
+            </div>
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars text-black"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#categoryModal">Categories</a>
+                        </li>
+                        <li class="nav-item media-show">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#advertiseHere">Advertise
+                                Here</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Featured</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="offers.html">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <div class="signin-box">
+                            <div class="dropdown">
+                                <button class="btn btn-user" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#SignIn">
+                                    <div class="img-wrapper">
+                                        <img src="assets/images/svg/user.svg" alt="user-icon">
+                                    </div>
+                                    <span class="animate-primary">Signin / Register</span>
+                                </button>
                             </div>
-                            <div class="social-links  ">
-                                <a href="" class="icon fb">
+                        </div>
+                        <button class="btn btn-black" data-bs-toggle="modal" data-bs-target="#newListing"><img
+                                src="assets/images/svg/plus-icon.svg" alt="plus-icon"><span>Add
+                                Free Listing</span></button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-----------------------------------------------------------------Add New Listing Modal --------------------------------------------------------->
+        <div class="modal fade" id="newListing" tabindex="-1" aria-labelledby="addNewListing" aria-hidden="true">
+            <div class="modal-dialog add-new-listing-modal modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="content">
+                            <div class="flex-heading">
+                                <h3 class="custom-h">Select the<span> Type of Listing</span></h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="d-grid gap-3">
+                                <button type="button" class="btn btn-primary-light"
+                                    onclick="location.href = 'new-business.html'">Business</button>
+                                <button type="button" class="btn btn-primary-light"
+                                    onclick="location.href = 'new-business.html'">Freelancer</button>
+                                <button type="button" class="btn btn-primary-light"
+                                    onclick="location.href = 'new-business.html'">Place</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------Sign In Modal------------------------------------------------------------->
+        <!-- Modal -->
+        <div class="modal fade" id="SignIn" tabindex="-1" aria-labelledby="SignInLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="right-align">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="logo">
+                            <img src="assets/images/logo.png" alt="logo">
+                        </div>
+                        <div class="content">
+                            <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48"><span>Sign In</span> and Explore More</h2>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email Address">
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="block-btn-wrapper">
+                                <button type="button" class="btn btn-primary btn-view-all"
+                                    onclick="location.href = 'profile.html'">Sign In</button>
+                            </div>
+                            <hr>
+                            <p>Don't have a Beheco Account? <a
+                                    class=" text-primary fw-bold a-animate text-primary-hover" data-bs-toggle="modal"
+                                    data-bs-target="#SignUp" data-bs-dismiss="modal">Register
+                                    Here!</a></p>
+                            <hr>
+                            <p class="text-center mb-0">OR</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a href="" class="btn-round bg-google">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                                <a href="" class="btn-round bg-facebook">
                                     <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="" class="icon tw">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="" class="icon insta">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="" class="icon tw">
-                                    <i class="fab fa-linkedin-in"></i>
                                 </a>
                             </div>
                         </div>
@@ -69,110 +192,192 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><img src="assets/images/svg/menu_icon.svg" alt=""></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown media-hide">
-                        <div class="mega-menu">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Categories
-                                <i class="fas fa-chevron-down on-h"></i>
-                            </a>
-                            <div class="dropdown-content">
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-xl-4">
-                                            <div class="column">
-                                                <a href="#">Emergency
-                                                    Services</a>
-                                                <a href="#">Food &
-                                                    Beverages</a>
-                                                <a href="#">Rooms &
-                                                    Rentals</a>
-                                                <a href="#">Professionals</a>
-                                                <a href="#">Experts</a>
-                                                <a href="#">Healthcare</a>
-                                                <a href="#">Public
-                                                    Places</a>
-                                            </div>
+        <!------------------------------------------------------------------Sign Up Modal------------------------------------------------------------->
+        <!-- Modal -->
+        <div class="modal fade" id="SignUp" tabindex="-1" aria-labelledby="SignUpLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="right-align">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="logo">
+                            <img src="assets/images/logo.png" alt="logo">
+                        </div>
+                        <div class="content">
+                            <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48"><span>Sign Up</span></h2>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Email Address">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <input type="number" class="form-control" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="mb-3">
+                                        <input type="password" class="form-control" placeholder="Confirm Password">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-btn-wrapper">
+                                <button type="button" class="btn btn-primary btn-view-all">Sign Up</button>
+                            </div>
+                            <hr>
+                            <p>Already have a Beheco Account? <a href=""
+                                    class="text-primary fw-bold a-animate text-primary-hover" data-bs-toggle="modal"
+                                    data-bs-target="#SignIn" data-bs-dismiss="modal">Sign In
+                                    Here!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------Advertise Here------------------------------------------------------------->
+        <!-- Modal -->
+        <div class="modal fade" id="advertiseHere" tabindex="-1" aria-labelledby="advertiseHereLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="content text-left">
+                            <div class="flex-heading">
+                                <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48"><span>Advertise with</span> Beheco
+                                </h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <p class="description-text">Please fill up this form, Our executives will contact you
+                                soon.</p>
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Your Full Name</label>
+                                        <input type="text" class="form-control" placeholder="Eg: John Smith">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Business Name</label>
+                                        <input type="text" class="form-control" placeholder="Eg: ABC Pvt Ltd">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" placeholder="Eg: name@example.com">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Contact Number</label>
+                                        <input type="text" class="form-control" placeholder="Eg: +919876543211">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-btn-wrapper">
+                                <button type="button" class="btn btn-view-all">Contact Us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------Category Modal------------------------------------------------------------->
+        <!-- Modal -->
+        <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="content text-left">
+                            <div class="flex-heading">
+                                <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48">All <span>Categories</span></h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-xl-4">
+                                        <div class="column">
+                                            <a href="#">Emergency
+                                                Services</a>
+                                            <a href="#">Food &amp;
+                                                Beverages</a>
+                                            <a href="#">Rooms &amp;
+                                                Rentals</a>
+                                            <a href="#">Professionals</a>
+                                            <a href="#">Experts</a>
+                                            <a href="#">Healthcare</a>
+                                            <a href="#">Public
+                                                Places</a>
                                         </div>
-                                        <div class="col-xl-4">
-                                            <div class="column">
-                                                <a href="#">Home &
-                                                    Office</a>
-                                                <a href="#">Automobile</a>
-                                                <a href="#">Educational
-                                                    Institutions</a>
-                                                <a href="#">Financial
-                                                    institutions</a>
-                                                <a href="#">Dress &
-                                                    Accessories</a>
-                                                <a href="#">Travel &
-                                                    Tourism</a>
-                                                <a href="#">Wedding &
-                                                    Events</a>
-                                            </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="column">
+                                            <a href="#">Home &amp;
+                                                Office</a>
+                                            <a href="#">Automobile</a>
+                                            <a href="#">Educational
+                                                Institutions</a>
+                                            <a href="#">Financial
+                                                institutions</a>
+                                            <a href="#">Dress &amp;
+                                                Accessories</a>
+                                            <a href="#">Travel &amp;
+                                                Tourism</a>
+                                            <a href="#">Wedding &amp;
+                                                Events</a>
                                         </div>
-                                        <div class="col-xl-4">
-                                            <div class="column">
-                                                <a href="#">Electronics</a>
-                                                <a href="#">Retail &
-                                                    Wholesale</a>
-                                                <a href="#">Media &
-                                                    Entertainment</a>
-                                                <a href="#">Telecom</a>
-                                                <a href="#">Construction</a>
-                                                <a href="#">Sports</a>
-                                                <a href="#">Health &
-                                                    Fitness</a>
-                                            </div>
+                                    </div>
+                                    <div class="col-xl-4">
+                                        <div class="column">
+                                            <a href="#">Electronics</a>
+                                            <a href="#">Retail &amp;
+                                                Wholesale</a>
+                                            <a href="#">Media &amp;
+                                                Entertainment</a>
+                                            <a href="#">Telecom</a>
+                                            <a href="#">Construction</a>
+                                            <a href="#">Sports</a>
+                                            <a href="#">Health &amp;
+                                                Fitness</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="nav-item media-show">
-                        <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal"
-                            data-bs-target="#advertise">Advertise Here</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Featured</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="offers.html">Offers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
-                    </li>
-                </ul>
-                <div class="d-flex">
-                    <div class="signin-box">
-                        <div class="dropdown">
-                            <button class="btn btn-user" type="button" data-bs-toggle="modal" data-bs-target="#SignIn">
-                                <div class="img-wrapper">
-                                    <img src="assets/images/svg/user.svg" alt="user-icon">
-                                </div>
-                                <span>Signin / Register</span>
-                            </button>
-                        </div>
                     </div>
-                    <button class="btn btn-black" data-bs-toggle="modal" data-bs-target="#newListing"><img
-                            src="assets/images/svg/plus-icon.svg" alt="plus-icon"><span>Add
-                            Free Listing</span></button>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
     <!-- -----------------------------------------------------------------Banner------------------------------------------------------------------>
     <section class="banner flx-v-cntr gs_reveal">
         <div class="container">
@@ -215,7 +420,7 @@
     <!-- -----------------------------------------------------------------Categories------------------------------------------------------------->
     <section class="categories gs_reveal">
         <div class="container">
-            <h2 class="common-h2">Find your <span>Needs</span> with ease!</h2>
+            <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48">Find your <span>Needs</span> with ease!</h2>
             <div class="category-wrapper">
                 <div class="category-row gs_reveal">
                     <a href="" class="category c1">
@@ -399,86 +604,75 @@
                             <p>Telecom</p>
                         </div>
                     </a>
-
-
-                    <div class="collapse w-100" id="collapseExample">
-                        <div class="w-100 d-flex flex-wrap justify-content-center">
-                            <a href="" class="category c15">
-                                <div class="icon">
-                                    <img src="assets/images/svg/categories/astro.svg" alt="Electronics">
-                                </div>
-                                <div class="heading">
-                                    <p>Astro</p>
-                                </div>
-                            </a>
-                            <a href="" class="category c16">
-                                <div class="icon">
-                                    <img src="assets/images/svg/categories/govt.svg" alt="Retail & Wholesale">
-                                </div>
-                                <div class="heading">
-                                    <p>Government <br>
-                                        Offices</p>
-                                </div>
-                            </a>
-                            <a href="" class="category c17">
-                                <div class="icon">
-                                    <img src="assets/images/svg/categories/train.svg" alt="Media & Entertainment">
-                                </div>
-                                <div class="heading">
-                                    <p>Reservations</p>
-                                </div>
-                            </a>
-                            <a href="" class="category c18">
-                                <div class="icon">
-                                    <img src="assets/images/svg/categories/equipement.svg" alt="Telecom">
-                                </div>
-                                <div class="heading">
-                                    <p>Equipment & <br> Repair</p>
-                                </div>
-                            </a>
-                            <a href="" class="category c19">
-                                <div class="icon">
-                                    <img src="assets/images/svg/categories/factory.svg" alt="Construction">
-                                </div>
-                                <div class="heading">
-                                    <p>Manufactures</p>
-                                </div>
-                            </a>
-                            <a href="" class="category c20">
-                                <div class="icon">
-                                    <img src="assets/images/svg/categories/agri.svg" alt="Sports">
-                                </div>
-                                <div class="heading">
-                                    <p>Agriculture</p>
-                                </div>
-                            </a>
-                            <a href="" class="category c21">
-                                <div class="icon">
-                                    <img src="assets/images/svg/categories/other.svg" alt="Health & Fitness">
-                                </div>
-                                <div class="heading">
-                                    <p>Other</p>
-                                </div>
-                            </a>
+                    <a href="" class="category c15">
+                        <div class="icon">
+                            <img src="assets/images/svg/categories/astro.svg" alt="Electronics">
                         </div>
-                    </div>
-
-                    <a class="text-primary fw-bold mt-2 w-100 text-center" data-bs-toggle="collapse"
-                        href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        View More
+                        <div class="heading">
+                            <p>Astro</p>
+                        </div>
+                    </a>
+                    <a href="" class="category c16">
+                        <div class="icon">
+                            <img src="assets/images/svg/categories/govt.svg" alt="Retail & Wholesale">
+                        </div>
+                        <div class="heading">
+                            <p>Government <br>
+                                Offices</p>
+                        </div>
+                    </a>
+                    <a href="" class="category c17">
+                        <div class="icon">
+                            <img src="assets/images/svg/categories/train.svg" alt="Media & Entertainment">
+                        </div>
+                        <div class="heading">
+                            <p>Reservations</p>
+                        </div>
+                    </a>
+                    <a href="" class="category c18">
+                        <div class="icon">
+                            <img src="assets/images/svg/categories/equipement.svg" alt="Telecom">
+                        </div>
+                        <div class="heading">
+                            <p>Equipment & <br> Repair</p>
+                        </div>
+                    </a>
+                    <a href="" class="category c19">
+                        <div class="icon">
+                            <img src="assets/images/svg/categories/factory.svg" alt="Construction">
+                        </div>
+                        <div class="heading">
+                            <p>Manufactures</p>
+                        </div>
+                    </a>
+                    <a href="" class="category c20">
+                        <div class="icon">
+                            <img src="assets/images/svg/categories/agri.svg" alt="Sports">
+                        </div>
+                        <div class="heading">
+                            <p>Agriculture</p>
+                        </div>
+                    </a>
+                    <a href="" class="category c21">
+                        <div class="icon">
+                            <img src="assets/images/svg/categories/other.svg" alt="Health & Fitness">
+                        </div>
+                        <div class="heading">
+                            <p>Other</p>
+                        </div>
                     </a>
                 </div>
             </div>
         </div>
     </section>
     <!-- -----------------------------------------------------------------Featured------------------------------------------------------------->
-    <section class="featured slider-wrapper gs_reveal">
+    <div class="featured bg-secondary-light py-5 py-md-7 py-lg-10 py-xl-15">
         <div class="container">
-            <div class="hs__header">
-                <h2 class="hs__headline gs_reveal">Featured
+            <div class="d-flex justify-content-between">
+                <h2 class="mb-4 mb-lg-5 common-h2 fs-mob-30 fs-md-36 fs-lg-48 gs_reveal"><span>Featured</span> Listings
                 </h2>
-                <div class="navigation-btns hs__arrows gs_reveal">
-                    <button type="button" class="btn btn-secondary arrow disabled arrow-prev mgn-rgt-20">
+                <div class="d-flex gap-1 gs_reveal">
+                    <button type="button" class=" arrow disabled arrow-prev mgn-rgt-20">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.6 18.3"
                             style="enable-background:new 0 0 31.6 18.3;" xml:space="preserve" width="30px">
@@ -487,7 +681,7 @@
                                 d="M22.5,0.7l-1.4,1.4l6.1,6.1H0.5v1.9h26.7l-6.1,6.1l1.4,1.4l8.4-8.4L22.5,0.7z" />
                         </svg>
                     </button>
-                    <button htype="button" class="btn btn-primary arrow arrow-next" aria-label="Next">
+                    <button htype="button" class=" arrow arrow-next" aria-label="Next">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.6 18.3"
                             style="enable-background:new 0 0 31.6 18.3;" xml:space="preserve" width="30px">
@@ -498,181 +692,170 @@
                     </button>
                 </div>
             </div>
-            <div class="hs__wrapper">
-                <ul class="hs">
-                    <li class="hs__item gs_reveal">
-                        <div class="content-box">
-                            <div class="image-wrapper">
-                                <img src="assets/images/Rectangle-109.jpg" alt="image">
-                            </div>
-                            <div class="txt-section">
-                                <div class="flex-container top-section">
-                                    <h5>This is a heading</h5>
-                                    <div class="right-align">
-                                        <a href=""><i class="fas fa-heart"></i></a>
-
-                                    </div>
-
-                                </div>
-                                <p>Category</p>
-                                <p>Sub Heading</p>
-                                <div class="flex-container bottom-section">
-                                    <div class="btn-warpper">
-                                        <button type="button" class="btn btn-view-more">View More</button>
-                                    </div>
-                                    <div class="overall-rating">
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <p>4.6</p>
-                                    </div>
-                                </div>
+            <div class="owl-carousel owl-multiple owl-featured gs_reveal">
+                <div class="slide-item p-1">
+                    <div class="box-shadow bg-white border-radius-md p-3">
+                        <div class="border-radius media equal-1-1 mb-3">
+                            <span class="img-animate"
+                                style="background-image: url('assets/images/Rectangle-109.jpg');"></span>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <h5 class="w-100">This is a heading</h5>
+                            <div class="right-align">
+                                <a href="" class="text-border  text-primary-hover"><i
+                                        class="fas fa-heart text-border fs-22"></i></a>
                             </div>
                         </div>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <div class="content-box">
-                            <div class="image-wrapper">
-                                <img src="assets/images/22.png" alt="image">
+                        <p class="fs-14 text-muted mb-2">Category</p>
+                        <p class="fs-14 text-muted">Sub Heading</p>
+                        <div class="d-flex justify-content-between flex-mob-wrap">
+                            <div class="btn-warpper order-2 order-md-1 w-mob-100">
+                                <button type="button" class="btn btn-view-more btn-sm  w-mob-100">View More</button>
                             </div>
-                            <div class="txt-section">
-                                <div class="flex-container top-section">
-                                    <h5>This is a heading</h5>
-                                    <div class="right-align">
-                                        <a href=""><i class="fas fa-heart"></i></a>
-
-                                    </div>
-
-                                </div>
-                                <p>Category</p>
-                                <p>Sub Heading</p>
-                                <div class="flex-container bottom-section">
-                                    <div class="btn-warpper">
-                                        <button type="button" class="btn btn-view-more">View More</button>
-                                    </div>
-                                    <div class="overall-rating">
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <p>4.6</p>
-                                    </div>
-                                </div>
+                            <div class="d-flex gap-2 align-items-center order-1 order-md-2">
+                                <i class="fas fa-star-half-alt text-primary"></i>
+                                <p class="mb-0">4.6</p>
                             </div>
                         </div>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <div class="content-box">
-                            <div class="image-wrapper">
-                                <img src="assets/images/333.png" alt="image">
-                            </div>
-                            <div class="txt-section">
-                                <div class="flex-container top-section">
-                                    <h5>This is a heading</h5>
-                                    <div class="right-align">
-                                        <a href=""><i class="fas fa-heart"></i></a>
-
-                                    </div>
-
-                                </div>
-                                <p>Category</p>
-                                <p>Sub Heading</p>
-                                <div class="flex-container bottom-section">
-                                    <div class="btn-warpper">
-                                        <button type="button" class="btn btn-view-more">View More</button>
-                                    </div>
-                                    <div class="overall-rating">
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <p>4.6</p>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+                <div class="slide-item p-1">
+                    <div class="box-shadow bg-white border-radius-md p-3">
+                        <div class="border-radius media equal-1-1 mb-3">
+                            <span class="img-animate"
+                                style="background-image: url('assets/images/cochin-carnival.png');"></span>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <h5 class="w-100">This is a heading</h5>
+                            <div class="right-align">
+                                <a href="" class="text-border  text-primary-hover"><i
+                                        class="fas fa-heart text-border fs-22"></i></a>
                             </div>
                         </div>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <div class="content-box">
-                            <div class="image-wrapper">
-                                <img src="assets/images/444.png" alt="image">
+                        <p class="fs-14 text-muted mb-2">Category</p>
+                        <p class="fs-14 text-muted">Sub Heading</p>
+                        <div class="d-flex justify-content-between flex-mob-wrap">
+                            <div class="btn-warpper order-2 order-md-1 w-mob-100">
+                                <button type="button" class="btn btn-view-more btn-sm  w-mob-100">View More</button>
                             </div>
-                            <div class="txt-section">
-                                <div class="flex-container top-section">
-                                    <h5>This is a heading</h5>
-                                    <div class="right-align">
-                                        <a href=""><i class="fas fa-heart"></i></a>
-
-                                    </div>
-
-                                </div>
-                                <p>Category</p>
-                                <p>Sub Heading</p>
-                                <div class="flex-container bottom-section">
-                                    <div class="btn-warpper">
-                                        <button type="button" class="btn btn-view-more">View More</button>
-                                    </div>
-                                    <div class="overall-rating">
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <p>4.6</p>
-                                    </div>
-                                </div>
+                            <div class="d-flex gap-2 align-items-center order-1 order-md-2">
+                                <i class="fas fa-star-half-alt text-primary"></i>
+                                <p class="mb-0">4.6</p>
                             </div>
                         </div>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <div class="content-box">
-                            <div class="image-wrapper">
-                                <img src="assets/images/Rectangle-109.jpg" alt="image">
-                            </div>
-                            <div class="txt-section">
-                                <div class="flex-container top-section">
-                                    <h5>This is a heading</h5>
-                                    <div class="right-align">
-                                        <a href=""><i class="fas fa-heart"></i></a>
-
-                                    </div>
-
-                                </div>
-                                <p>Category</p>
-                                <p>Sub Heading</p>
-                                <div class="flex-container bottom-section">
-                                    <div class="btn-warpper">
-                                        <button type="button" class="btn btn-view-more">View More</button>
-                                    </div>
-                                    <div class="overall-rating">
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <p>4.6</p>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+                <div class="slide-item p-1">
+                    <div class="box-shadow bg-white border-radius-md p-3">
+                        <div class="border-radius media equal-1-1 mb-3">
+                            <span class="img-animate"
+                                style="background-image: url('assets/images/helathcare.jpg');"></span>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <h5 class="w-100">This is a heading</h5>
+                            <div class="right-align">
+                                <a href="" class="text-border  text-primary-hover"><i
+                                        class="fas fa-heart text-border fs-22"></i></a>
                             </div>
                         </div>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <div class="content-box">
-                            <div class="image-wrapper">
-                                <img src="assets/images/22.png" alt="image">
+                        <p class="fs-14 text-muted mb-2">Category</p>
+                        <p class="fs-14 text-muted">Sub Heading</p>
+                        <div class="d-flex justify-content-between flex-mob-wrap">
+                            <div class="btn-warpper order-2 order-md-1 w-mob-100">
+                                <button type="button" class="btn btn-view-more btn-sm  w-mob-100">View More</button>
                             </div>
-                            <div class="txt-section">
-                                <div class="flex-container top-section">
-                                    <h5>This is a heading</h5>
-                                    <div class="right-align">
-                                        <a href=""><i class="fas fa-heart"></i></a>
-
-                                    </div>
-
-                                </div>
-                                <p>Category</p>
-                                <p>Sub Heading</p>
-                                <div class="flex-container bottom-section">
-                                    <div class="btn-warpper">
-                                        <button type="button" class="btn btn-view-more">View More</button>
-                                    </div>
-                                    <div class="overall-rating">
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <p>4.6</p>
-                                    </div>
-                                </div>
+                            <div class="d-flex gap-2 align-items-center order-1 order-md-2">
+                                <i class="fas fa-star-half-alt text-primary"></i>
+                                <p class="mb-0">4.6</p>
                             </div>
                         </div>
-                    </li>
-
-                </ul>
+                    </div>
+                </div>
+                <div class="slide-item p-1">
+                    <div class="box-shadow bg-white border-radius-md p-3">
+                        <div class="border-radius media equal-1-1 mb-3">
+                            <span class="img-animate"
+                                style="background-image: url('assets/images/default_business.jpg');"></span>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <h5 class="w-100">This is a heading</h5>
+                            <div class="right-align">
+                                <a href="" class="text-border  text-primary-hover"><i
+                                        class="fas fa-heart text-border fs-22"></i></a>
+                            </div>
+                        </div>
+                        <p class="fs-14 text-muted mb-2">Category</p>
+                        <p class="fs-14 text-muted">Sub Heading</p>
+                        <div class="d-flex justify-content-between flex-mob-wrap">
+                            <div class="btn-warpper order-2 order-md-1 w-mob-100">
+                                <button type="button" class="btn btn-view-more btn-sm  w-mob-100">View More</button>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center order-1 order-md-2">
+                                <i class="fas fa-star-half-alt text-primary"></i>
+                                <p class="mb-0">4.6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item p-1">
+                    <div class="box-shadow bg-white border-radius-md p-3">
+                        <div class="border-radius media equal-1-1 mb-3">
+                            <span class="img-animate"
+                                style="background-image: url('assets/images/help-bg.jpg');"></span>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <h5 class="w-100">This is a heading</h5>
+                            <div class="right-align">
+                                <a href="" class="text-border  text-primary-hover"><i
+                                        class="fas fa-heart text-border fs-22"></i></a>
+                            </div>
+                        </div>
+                        <p class="fs-14 text-muted mb-2">Category</p>
+                        <p class="fs-14 text-muted">Sub Heading</p>
+                        <div class="d-flex justify-content-between flex-mob-wrap">
+                            <div class="btn-warpper order-2 order-md-1 w-mob-100">
+                                <button type="button" class="btn btn-view-more btn-sm  w-mob-100">View More</button>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center order-1 order-md-2">
+                                <i class="fas fa-star-half-alt text-primary"></i>
+                                <p class="mb-0">4.6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item p-1">
+                    <div class="box-shadow bg-white border-radius-md p-3">
+                        <div class="border-radius media equal-1-1 mb-3">
+                            <span class="img-animate" style="background-image: url('assets/images/room.jpg');"></span>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <h5 class="w-100">This is a heading</h5>
+                            <div class="right-align">
+                                <a href="" class="text-border  text-primary-hover"><i
+                                        class="fas fa-heart text-border fs-22"></i></a>
+                            </div>
+                        </div>
+                        <p class="fs-14 text-muted mb-2">Category</p>
+                        <p class="fs-14 text-muted">Sub Heading</p>
+                        <div class="d-flex justify-content-between flex-mob-wrap">
+                            <div class="btn-warpper order-2 order-md-1 w-mob-100">
+                                <button type="button" class="btn btn-view-more btn-sm  w-mob-100">View More</button>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center order-1 order-md-2">
+                                <i class="fas fa-star-half-alt text-primary"></i>
+                                <p class="mb-0">4.6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 mt-lg-5 d-flex justify-content-center">
+                <div class="btn-wrapper">
+                    <button type="button" class="btn btn-primary">View More</button>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- -----------------------------------------------------------------Counter------------------------------------------------------------->
     <div class="bg-pad"></div>
     <section class="counter">
@@ -710,13 +893,14 @@
         </div>
     </section>
     <!-- -----------------------------------------------------------------Near You------------------------------------------------------------->
-    <section class="near-you slider-wrapper gs_reveal">
+    <section class="near-you">
         <div class="container">
-            <div class="hs__header">
-                <h2 class="hs__headline common-h2 gs_reveal">Explore places <span>Near you</span>
+            <div class="d-flex justify-content-between">
+                <h2 class="mb-4 mb-lg-5 common-h2 fs-mob-30 fs-md-36 fs-lg-48 gs_reveal">Explore places <span>Near
+                        you</span>
                 </h2>
-                <div class="navigation-btns hs__arrows gs_reveal">
-                    <button type="button" class="btn btn-secondary arrow disabled arrow-prev mgn-rgt-20">
+                <div class="d-flex gap-1 gs_reveal">
+                    <button type="button" class=" arrow disabled arrow-prev mgn-rgt-20">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.6 18.3"
                             style="enable-background:new 0 0 31.6 18.3;" xml:space="preserve" width="30px">
@@ -725,7 +909,7 @@
                                 d="M22.5,0.7l-1.4,1.4l6.1,6.1H0.5v1.9h26.7l-6.1,6.1l1.4,1.4l8.4-8.4L22.5,0.7z" />
                         </svg>
                     </button>
-                    <button htype="button" class="btn btn-primary arrow arrow-next" aria-label="Next">
+                    <button htype="button" class=" arrow arrow-next" aria-label="Next">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.6 18.3"
                             style="enable-background:new 0 0 31.6 18.3;" xml:space="preserve" width="30px">
@@ -736,182 +920,170 @@
                     </button>
                 </div>
             </div>
-            <div class="hs__wrapper">
-                <ul class="hs">
-                    <li class="hs__item gs_reveal">
-                        <div class="content-box">
-                            <div class="image-wrapper">
-                                <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                    alt="image">
-                            </div>
-                            <div class="txt-section">
-                                <div class="flex-container top-section">
-                                    <h5>This is a heading</h5>
-                                    <div class="right-align">
-                                        <a href=""><i class="fas fa-heart"></i></a>
-
-                                    </div>
-
-                                </div>
-                                <p>Sub Heading</p>
-                                <div class="flex-container bottom-section">
-                                    <div class="btn-warpper">
-                                        <button type="button" class="btn btn-view-more">View More</button>
-                                    </div>
-                                    <div class="overall-rating">
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <p>4.6</p>
-                                    </div>
-                                </div>
+            <div class="owl-carousel owl-multiple owl-near-you gs_reveal">
+                <div class="slide-item p-1">
+                    <div class="box-shadow bg-white border-radius-md p-3">
+                        <div class="border-radius media equal-1-1 mb-3">
+                            <span class="img-animate"
+                                style="background-image: url('assets/images/Rectangle-109.jpg');"></span>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <h5 class="w-100">This is a heading</h5>
+                            <div class="right-align">
+                                <a href="" class="text-border  text-primary-hover"><i
+                                        class="fas fa-heart text-border fs-22"></i></a>
                             </div>
                         </div>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <div class="content-box">
-                            <div class="image-wrapper">
-                                <img src="https://cdn.vox-cdn.com/thumbor/0pAzN6LdawcEO1pxZXy-78_VgVU=/7x0:633x417/1400x1050/filters:focal(7x0:633x417):format(jpeg)/cdn.vox-cdn.com/assets/1311169/mslogo.jpg"
-                                    alt="image">
+                        <p class="fs-14 text-muted mb-2">Category</p>
+                        <p class="fs-14 text-muted">Sub Heading</p>
+                        <div class="d-flex justify-content-between flex-mob-wrap">
+                            <div class="btn-warpper order-2 order-md-1 w-mob-100">
+                                <button type="button" class="btn btn-view-more btn-sm  w-mob-100">View More</button>
                             </div>
-                            <div class="txt-section">
-                                <div class="flex-container top-section">
-                                    <h5>This is a heading</h5>
-                                    <div class="right-align">
-                                        <a href=""><i class="fas fa-heart"></i></a>
-
-                                    </div>
-
-                                </div>
-                                <p>Sub Heading</p>
-                                <div class="flex-container bottom-section">
-                                    <div class="btn-warpper">
-                                        <button type="button" class="btn btn-view-more">View More</button>
-                                    </div>
-                                    <div class="overall-rating">
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <p>4.6</p>
-                                    </div>
-                                </div>
+                            <div class="d-flex gap-2 align-items-center order-1 order-md-2">
+                                <i class="fas fa-star-half-alt text-primary"></i>
+                                <p class="mb-0">4.6</p>
                             </div>
                         </div>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <div class="content-box">
-                            <div class="image-wrapper">
-                                <img src="assets/images/vg.jpg" alt="image">
-                            </div>
-                            <div class="txt-section">
-                                <div class="flex-container top-section">
-                                    <h5>This is a heading</h5>
-                                    <div class="right-align">
-                                        <a href=""><i class="fas fa-heart"></i></a>
-
-                                    </div>
-
-                                </div>
-                                <p>Sub Heading</p>
-                                <div class="flex-container bottom-section">
-                                    <div class="btn-warpper">
-                                        <button type="button" class="btn btn-view-more">View More</button>
-                                    </div>
-                                    <div class="overall-rating">
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <p>4.6</p>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+                <div class="slide-item p-1">
+                    <div class="box-shadow bg-white border-radius-md p-3">
+                        <div class="border-radius media equal-1-1 mb-3">
+                            <span class="img-animate"
+                                style="background-image: url('assets/images/cochin-carnival.png');"></span>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <h5 class="w-100">This is a heading</h5>
+                            <div class="right-align">
+                                <a href="" class="text-border  text-primary-hover"><i
+                                        class="fas fa-heart text-border fs-22"></i></a>
                             </div>
                         </div>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <div class="content-box">
-                            <div class="image-wrapper">
-                                <img src="assets/images/chera.jpg" alt="image">
+                        <p class="fs-14 text-muted mb-2">Category</p>
+                        <p class="fs-14 text-muted">Sub Heading</p>
+                        <div class="d-flex justify-content-between flex-mob-wrap">
+                            <div class="btn-warpper order-2 order-md-1 w-mob-100">
+                                <button type="button" class="btn btn-view-more btn-sm  w-mob-100">View More</button>
                             </div>
-                            <div class="txt-section">
-                                <div class="flex-container top-section">
-                                    <h5>This is a heading</h5>
-                                    <div class="right-align">
-                                        <a href=""><i class="fas fa-heart"></i></a>
-
-                                    </div>
-
-                                </div>
-                                <p>Sub Heading</p>
-                                <div class="flex-container bottom-section">
-                                    <div class="btn-warpper">
-                                        <button type="button" class="btn btn-view-more">View More</button>
-                                    </div>
-                                    <div class="overall-rating">
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <p>4.6</p>
-                                    </div>
-                                </div>
+                            <div class="d-flex gap-2 align-items-center order-1 order-md-2">
+                                <i class="fas fa-star-half-alt text-primary"></i>
+                                <p class="mb-0">4.6</p>
                             </div>
                         </div>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <div class="content-box">
-                            <div class="image-wrapper">
-                                <img src="assets/images/mun.jpg" alt="image">
-                            </div>
-                            <div class="txt-section">
-                                <div class="flex-container top-section">
-                                    <h5>This is a heading</h5>
-                                    <div class="right-align">
-                                        <a href=""><i class="fas fa-heart"></i></a>
-
-                                    </div>
-
-                                </div>
-                                <p>Sub Heading</p>
-                                <div class="flex-container bottom-section">
-                                    <div class="btn-warpper">
-                                        <button type="button" class="btn btn-view-more">View More</button>
-                                    </div>
-                                    <div class="overall-rating">
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <p>4.6</p>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+                <div class="slide-item p-1">
+                    <div class="box-shadow bg-white border-radius-md p-3">
+                        <div class="border-radius media equal-1-1 mb-3">
+                            <span class="img-animate"
+                                style="background-image: url('assets/images/helathcare.jpg');"></span>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <h5 class="w-100">This is a heading</h5>
+                            <div class="right-align">
+                                <a href="" class="text-border  text-primary-hover"><i
+                                        class="fas fa-heart text-border fs-22"></i></a>
                             </div>
                         </div>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <div class="content-box">
-                            <div class="image-wrapper">
-                                <img src="assets/images/chera.jpg" alt="image">
+                        <p class="fs-14 text-muted mb-2">Category</p>
+                        <p class="fs-14 text-muted">Sub Heading</p>
+                        <div class="d-flex justify-content-between flex-mob-wrap">
+                            <div class="btn-warpper order-2 order-md-1 w-mob-100">
+                                <button type="button" class="btn btn-view-more btn-sm  w-mob-100">View More</button>
                             </div>
-                            <div class="txt-section">
-                                <div class="flex-container top-section">
-                                    <h5>This is a heading</h5>
-                                    <div class="right-align">
-                                        <a href=""><i class="fas fa-heart"></i></a>
-
-                                    </div>
-
-                                </div>
-                                <p>Sub Heading</p>
-                                <div class="flex-container bottom-section">
-                                    <div class="btn-warpper">
-                                        <button type="button" class="btn btn-view-more">View More</button>
-                                    </div>
-                                    <div class="overall-rating">
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <p>4.6</p>
-                                    </div>
-                                </div>
+                            <div class="d-flex gap-2 align-items-center order-1 order-md-2">
+                                <i class="fas fa-star-half-alt text-primary"></i>
+                                <p class="mb-0">4.6</p>
                             </div>
                         </div>
-                    </li>
-
-                </ul>
+                    </div>
+                </div>
+                <div class="slide-item p-1">
+                    <div class="box-shadow bg-white border-radius-md p-3">
+                        <div class="border-radius media equal-1-1 mb-3">
+                            <span class="img-animate"
+                                style="background-image: url('assets/images/default_business.jpg');"></span>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <h5 class="w-100">This is a heading</h5>
+                            <div class="right-align">
+                                <a href="" class="text-border  text-primary-hover"><i
+                                        class="fas fa-heart text-border fs-22"></i></a>
+                            </div>
+                        </div>
+                        <p class="fs-14 text-muted mb-2">Category</p>
+                        <p class="fs-14 text-muted">Sub Heading</p>
+                        <div class="d-flex justify-content-between flex-mob-wrap">
+                            <div class="btn-warpper order-2 order-md-1 w-mob-100">
+                                <button type="button" class="btn btn-view-more btn-sm  w-mob-100">View More</button>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center order-1 order-md-2">
+                                <i class="fas fa-star-half-alt text-primary"></i>
+                                <p class="mb-0">4.6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item p-1">
+                    <div class="box-shadow bg-white border-radius-md p-3">
+                        <div class="border-radius media equal-1-1 mb-3">
+                            <span class="img-animate"
+                                style="background-image: url('assets/images/help-bg.jpg');"></span>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <h5 class="w-100">This is a heading</h5>
+                            <div class="right-align">
+                                <a href="" class="text-border  text-primary-hover"><i
+                                        class="fas fa-heart text-border fs-22"></i></a>
+                            </div>
+                        </div>
+                        <p class="fs-14 text-muted mb-2">Category</p>
+                        <p class="fs-14 text-muted">Sub Heading</p>
+                        <div class="d-flex justify-content-between flex-mob-wrap">
+                            <div class="btn-warpper order-2 order-md-1 w-mob-100">
+                                <button type="button" class="btn btn-view-more btn-sm  w-mob-100">View More</button>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center order-1 order-md-2">
+                                <i class="fas fa-star-half-alt text-primary"></i>
+                                <p class="mb-0">4.6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-item p-1">
+                    <div class="box-shadow bg-white border-radius-md p-3">
+                        <div class="border-radius media equal-1-1 mb-3">
+                            <span class="img-animate" style="background-image: url('assets/images/room.jpg');"></span>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <h5 class="w-100">This is a heading</h5>
+                            <div class="right-align">
+                                <a href="" class="text-border  text-primary-hover"><i
+                                        class="fas fa-heart text-border fs-22"></i></a>
+                            </div>
+                        </div>
+                        <p class="fs-14 text-muted mb-2">Category</p>
+                        <p class="fs-14 text-muted">Sub Heading</p>
+                        <div class="d-flex justify-content-between flex-mob-wrap">
+                            <div class="btn-warpper order-2 order-md-1 w-mob-100">
+                                <button type="button" class="btn btn-view-more btn-sm  w-mob-100">View More</button>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center order-1 order-md-2">
+                                <i class="fas fa-star-half-alt text-primary"></i>
+                                <p class="mb-0">4.6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="center-align">
+            <div class="center-align mt-4 mt-md-5">
                 <button type="button" class="btn btn-view-all gs_reveal">View All</button>
             </div>
         </div>
     </section>
     <!-- -----------------------------------------------------------------Full screen ad---------------------------------------------------------->
-    <section class="full-screen-ad  wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+    <section class="full-screen-ad">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -961,8 +1133,8 @@
                         <div class="tpc1">
                             <div class="card-description">
                                 <div class="text-portion">
-                                    <h6 class="gs_reveal">Top Wedding Services</h6>
-                                    <p class="gs_reveal">Wedding Dress, Bridal Makeup, Groom makeup, Wedding
+                                    <h6 class="gs_reveal text-white">Top Wedding Services</h6>
+                                    <p class="gs_reveal text-white">Wedding Dress, Bridal Makeup, Groom makeup, Wedding
                                         Photographers, Mehndi Artist,
                                         Wedding Sarees, Jewelleries</p>
                                 </div>
@@ -990,8 +1162,9 @@
                         <div class="tpc2">
                             <div class="card-description">
                                 <div class="text-portion">
-                                    <h6 class="gs_reveal">Top in Health & Fitness</h6>
-                                    <p class="gs_reveal">Fitness Centres, Gym, Zumba Centres, Yoga Centres, Body Massage
+                                    <h6 class="gs_reveal text-white">Top in Health & Fitness</h6>
+                                    <p class="gs_reveal text-white">Fitness Centres, Gym, Zumba Centres, Yoga Centres,
+                                        Body Massage
                                         centres, Fitness
                                         Equipment and Accessories</p>
                                 </div>
@@ -1010,8 +1183,9 @@
                         <div class="tpc3">
                             <div class="card-description">
                                 <div class="text-portion">
-                                    <h6 class="gs_reveal">Top in Travel & Tourism</h6>
-                                    <p class="gs_reveal">Best Travel Agencies, Travel Packagers, Tours and Travels, Taxy
+                                    <h6 class="gs_reveal text-white">Top in Travel & Tourism</h6>
+                                    <p class="gs_reveal text-white">Best Travel Agencies, Travel Packagers, Tours and
+                                        Travels, Taxy
                                         Services, Vehicle
                                         Rental Services, Travel Consultancies</p>
                                 </div>
@@ -1039,8 +1213,9 @@
                         <div class="tpc4">
                             <div class="card-description">
                                 <div class="text-portion">
-                                    <h6 class="gs_reveal">Top in Food & Beavarages</h6>
-                                    <p class="gs_reveal">Restaurants, Hotels, Food Courts, Food Truck, Ice cream
+                                    <h6 class="gs_reveal text-white">Top in Food & Beavarages</h6>
+                                    <p class="gs_reveal text-white">Restaurants, Hotels, Food Courts, Food Truck, Ice
+                                        cream
                                         Parlours, Juice Parlours,
                                         Bakery, Cakes and Pastries,.....</p>
                                 </div>
@@ -1059,8 +1234,9 @@
                         <div class="tpc5">
                             <div class="card-description">
                                 <div class="text-portion">
-                                    <h6 class="gs_reveal">Top in Room & Rentals</h6>
-                                    <p class="gs_reveal">Flats, Apartments, Rental Buildings, Rental Homes, Houses,
+                                    <h6 class="gs_reveal text-white">Top in Room & Rentals</h6>
+                                    <p class="gs_reveal text-white">Flats, Apartments, Rental Buildings, Rental Homes,
+                                        Houses,
                                         Hostels, Hotels, PGs,
                                         Resorts, Home Stay,...….</p>
                                 </div>
@@ -1088,8 +1264,9 @@
                         <div class="tpc6">
                             <div class="card-description">
                                 <div class="text-portion">
-                                    <h6 class="gs_reveal">Top in Healthcare</h6>
-                                    <p class="gs_reveal">Hospitals, Clinics, Baby Care, Laboratories, Eye Care, Scanning
+                                    <h6 class="gs_reveal text-white">Top in Healthcare</h6>
+                                    <p class="gs_reveal text-white">Hospitals, Clinics, Baby Care, Laboratories, Eye
+                                        Care, Scanning
                                         Centres, Home
                                         Nursing Services, Home Care Services, ….</p>
                                 </div>
@@ -1147,13 +1324,14 @@
         </div>
     </section>
     <!-- -------------------------------------------------------------------Suggestd Freelancers---------------------------------------------------------->
-    <section class=" freelancers slider-wrapper gs_reveal">
+    <section class=" freelancers gs_reveal">
         <div class="container">
-            <div class="hs__header">
-                <h2 class="hs__headline common-h2 gs_reveal">Suggested <span>Freelancers</span>
+            <div class="d-flex justify-content-between">
+                <h2 class="mb-4 mb-lg-5 common-h2 fs-mob-30 fs-md-36 fs-lg-48 gs_reveal">Suggested
+                    <span>Freelancers</span>
                 </h2>
-                <div class="navigation-btns hs__arrows">
-                    <button type="button" class="btn btn-secondary arrow disabled arrow-prev mgn-rgt-20">
+                <div class="d-flex gap-1 gs_reveal">
+                    <button type="button" class=" arrow disabled arrow-prev mgn-rgt-20">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.6 18.3"
                             style="enable-background:new 0 0 31.6 18.3;" xml:space="preserve" width="30px">
@@ -1162,7 +1340,7 @@
                                 d="M22.5,0.7l-1.4,1.4l6.1,6.1H0.5v1.9h26.7l-6.1,6.1l1.4,1.4l8.4-8.4L22.5,0.7z" />
                         </svg>
                     </button>
-                    <button htype="button" class="btn btn-primary arrow arrow-next" aria-label="Next">
+                    <button htype="button" class=" arrow arrow-next" aria-label="Next">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.6 18.3"
                             style="enable-background:new 0 0 31.6 18.3;" xml:space="preserve" width="30px">
@@ -1173,14 +1351,13 @@
                     </button>
                 </div>
             </div>
-            <div class="hs__wrapper">
-                <ul class="hs">
-                    <li class="hs__item gs_reveal">
-                        <a href="" class="content-box box-sm">
+            <div class="owl-freelancers owl-carousel owl-multiple gs_reveal mb-4 mb-md-5">
+                <div class="slide-item p-1">
+                    <a href="">
+                        <div class="content-box box-sm box-shadow bg-white border-radius-md p-3">
                             <div class="cover-image">
                                 <img src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?cs=srgb&dl=pexels-tom%C3%A1%C5%A1-mal%C3%ADk-1660995.jpg&fm=jpg"
                                     alt="image">
-
                             </div>
                             <div class="profile-image">
                                 <img src="assets/images/mun.jpg" alt="image">
@@ -1188,14 +1365,13 @@
                                     <i class="far fa-heart"></i>
                                 </button>
                             </div>
-
                             <div class="freelancer-info">
                                 <div class="info-content">
                                     <div class="content">
                                         <h5>Jacob Kurian</h5>
                                         <p>Photographer</p>
                                         <p>Kochi, India</p>
-                                        <div class="overall-rating">
+                                        <div class="overall-rating d-flex align-items-center">
                                             <i class="fas fa-star-half-alt"></i>
                                             <p>4.6</p>
                                         </div>
@@ -1204,45 +1380,15 @@
 
                                 </div>
                             </div>
-                        </a>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <a href="" class="content-box box-sm">
+                        </div>
+                    </a>
+                </div>
+                <div class="slide-item p-1">
+                    <a href="">
+                        <div class="content-box box-sm box-shadow bg-white border-radius-md p-3">
                             <div class="cover-image">
                                 <img src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?cs=srgb&dl=pexels-tom%C3%A1%C5%A1-mal%C3%ADk-1660995.jpg&fm=jpg"
                                     alt="image">
-
-                            </div>
-                            <div class="profile-image">
-                                <img src="assets/images/mun.jpg" alt="image">
-                                <button type="button" class="save-btn btn nopad">
-                                    <i class="fas fa-heart"></i>
-                                </button>
-                            </div>
-
-                            <div class="freelancer-info">
-                                <div class="info-content">
-                                    <div class="content">
-                                        <h5>Jacob Kurian</h5>
-                                        <p>Photographer</p>
-                                        <p>Kochi, India</p>
-                                        <div class="overall-rating">
-                                            <i class="fas fa-star-half-alt"></i>
-                                            <p>4.6</p>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <a href="" class="content-box box-sm">
-                            <div class="cover-image">
-                                <img src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?cs=srgb&dl=pexels-tom%C3%A1%C5%A1-mal%C3%ADk-1660995.jpg&fm=jpg"
-                                    alt="image">
-
                             </div>
                             <div class="profile-image">
                                 <img src="assets/images/mun.jpg" alt="image">
@@ -1250,14 +1396,13 @@
                                     <i class="far fa-heart"></i>
                                 </button>
                             </div>
-
                             <div class="freelancer-info">
                                 <div class="info-content">
                                     <div class="content">
                                         <h5>Jacob Kurian</h5>
                                         <p>Photographer</p>
                                         <p>Kochi, India</p>
-                                        <div class="overall-rating">
+                                        <div class="overall-rating d-flex align-items-center">
                                             <i class="fas fa-star-half-alt"></i>
                                             <p>4.6</p>
                                         </div>
@@ -1266,14 +1411,15 @@
 
                                 </div>
                             </div>
-                        </a>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <a href="" class="content-box box-sm">
+                        </div>
+                    </a>
+                </div>
+                <div class="slide-item p-1">
+                    <a href="">
+                        <div class="content-box box-sm box-shadow bg-white border-radius-md p-3">
                             <div class="cover-image">
                                 <img src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?cs=srgb&dl=pexels-tom%C3%A1%C5%A1-mal%C3%ADk-1660995.jpg&fm=jpg"
                                     alt="image">
-
                             </div>
                             <div class="profile-image">
                                 <img src="assets/images/mun.jpg" alt="image">
@@ -1281,14 +1427,13 @@
                                     <i class="far fa-heart"></i>
                                 </button>
                             </div>
-
                             <div class="freelancer-info">
                                 <div class="info-content">
                                     <div class="content">
                                         <h5>Jacob Kurian</h5>
                                         <p>Photographer</p>
                                         <p>Kochi, India</p>
-                                        <div class="overall-rating">
+                                        <div class="overall-rating d-flex align-items-center">
                                             <i class="fas fa-star-half-alt"></i>
                                             <p>4.6</p>
                                         </div>
@@ -1297,14 +1442,15 @@
 
                                 </div>
                             </div>
-                        </a>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <a href="" class="content-box box-sm">
+                        </div>
+                    </a>
+                </div>
+                <div class="slide-item p-1">
+                    <a href="">
+                        <div class="content-box box-sm box-shadow bg-white border-radius-md p-3">
                             <div class="cover-image">
                                 <img src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?cs=srgb&dl=pexels-tom%C3%A1%C5%A1-mal%C3%ADk-1660995.jpg&fm=jpg"
                                     alt="image">
-
                             </div>
                             <div class="profile-image">
                                 <img src="assets/images/mun.jpg" alt="image">
@@ -1312,14 +1458,13 @@
                                     <i class="far fa-heart"></i>
                                 </button>
                             </div>
-
                             <div class="freelancer-info">
                                 <div class="info-content">
                                     <div class="content">
                                         <h5>Jacob Kurian</h5>
                                         <p>Photographer</p>
                                         <p>Kochi, India</p>
-                                        <div class="overall-rating">
+                                        <div class="overall-rating d-flex align-items-center">
                                             <i class="fas fa-star-half-alt"></i>
                                             <p>4.6</p>
                                         </div>
@@ -1328,14 +1473,15 @@
 
                                 </div>
                             </div>
-                        </a>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <a href="" class="content-box box-sm">
+                        </div>
+                    </a>
+                </div>
+                <div class="slide-item p-1">
+                    <a href="">
+                        <div class="content-box box-sm box-shadow bg-white border-radius-md p-3">
                             <div class="cover-image">
                                 <img src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?cs=srgb&dl=pexels-tom%C3%A1%C5%A1-mal%C3%ADk-1660995.jpg&fm=jpg"
                                     alt="image">
-
                             </div>
                             <div class="profile-image">
                                 <img src="assets/images/mun.jpg" alt="image">
@@ -1343,14 +1489,13 @@
                                     <i class="far fa-heart"></i>
                                 </button>
                             </div>
-
                             <div class="freelancer-info">
                                 <div class="info-content">
                                     <div class="content">
                                         <h5>Jacob Kurian</h5>
                                         <p>Photographer</p>
                                         <p>Kochi, India</p>
-                                        <div class="overall-rating">
+                                        <div class="overall-rating d-flex align-items-center">
                                             <i class="fas fa-star-half-alt"></i>
                                             <p>4.6</p>
                                         </div>
@@ -1359,14 +1504,15 @@
 
                                 </div>
                             </div>
-                        </a>
-                    </li>
-                    <li class="hs__item gs_reveal">
-                        <a href="" class="content-box box-sm">
+                        </div>
+                    </a>
+                </div>
+                <div class="slide-item p-1">
+                    <a href="">
+                        <div class="content-box box-sm box-shadow bg-white border-radius-md p-3">
                             <div class="cover-image">
                                 <img src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?cs=srgb&dl=pexels-tom%C3%A1%C5%A1-mal%C3%ADk-1660995.jpg&fm=jpg"
                                     alt="image">
-
                             </div>
                             <div class="profile-image">
                                 <img src="assets/images/mun.jpg" alt="image">
@@ -1374,14 +1520,13 @@
                                     <i class="far fa-heart"></i>
                                 </button>
                             </div>
-
                             <div class="freelancer-info">
                                 <div class="info-content">
                                     <div class="content">
                                         <h5>Jacob Kurian</h5>
                                         <p>Photographer</p>
                                         <p>Kochi, India</p>
-                                        <div class="overall-rating">
+                                        <div class="overall-rating d-flex align-items-center">
                                             <i class="fas fa-star-half-alt"></i>
                                             <p>4.6</p>
                                         </div>
@@ -1390,10 +1535,11 @@
 
                                 </div>
                             </div>
-                        </a>
-                    </li>
-                </ul>
+                        </div>
+                    </a>
+                </div>
             </div>
+
             <div class="center-align">
                 <button type="button" class="btn btn-view-all gs_reveal">View All</button>
             </div>
@@ -1445,125 +1591,286 @@
     <!-- -----------------------------------------------------------------Upcoming Events---------------------------------------------------------->
     <section class="upcoming-events gs_reveal">
         <div class="container">
-            <h2 class="common-h2 gs_reveal">Upcoming <span>Events</span> Near you</h2>
-            <div class="event-container">
-                <div class="row">
-                    <div class="col-xl-6 col-md-6">
-                        <a href="" class="event-card gs_reveal">
-                            <div class="img-section event1">
-                                <img src="assets/images/cochin-carnival.png" alt="cochin-carnival">
-                            </div>
-                            <div class="text-section">
-                                <h5>Cochin Carnival 2022</h5>
-                                <p class="nopad">Festive Event</p>
-                                <div class="icon-text-container location-icon">
-                                    <img src="assets/images/svg/event-location.svg" alt="icon">
-                                    <p>Fort Kochi</p>
+            <div class="d-flex justify-content-between">
+                <h2 class="mb-4 mb-lg-5 common-h2 fs-mob-30 fs-md-36 fs-lg-48 gs_reveal">Upcoming
+                    <span>Events</span>
+                </h2>
+                <div class="d-flex gap-1 gs_reveal">
+                    <button type="button" class=" arrow arrow-prev mgn-rgt-20">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.6 18.3"
+                            style="enable-background:new 0 0 31.6 18.3;" xml:space="preserve" width="30px">
+
+                            <path id="Path_30" class="arrow-prev"
+                                d="M22.5,0.7l-1.4,1.4l6.1,6.1H0.5v1.9h26.7l-6.1,6.1l1.4,1.4l8.4-8.4L22.5,0.7z" />
+                        </svg>
+                    </button>
+                    <button htype="button" class=" arrow arrow-next" aria-label="Next">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.6 18.3"
+                            style="enable-background:new 0 0 31.6 18.3;" xml:space="preserve" width="30px">
+
+                            <path id="Path_30" class="arrow-next"
+                                d="M22.5,0.7l-1.4,1.4l6.1,6.1H0.5v1.9h26.7l-6.1,6.1l1.4,1.4l8.4-8.4L22.5,0.7z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="owl-carousel owl-single owl-featured gs_reveal">
+                <div class="event-container">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6">
+                            <a href="" class="event-card gs_reveal">
+                                <div class="img-section event1">
+                                    <img src="assets/images/cochin-carnival.png" class="img-animate"
+                                        alt="cochin-carnival">
                                 </div>
-                                <div class="icon-text-container calendar-icon">
-                                    <img src="assets/images/svg/event-calendar.svg" alt="icon">
-                                    <p>25-Dec-2021 to 01-Jan-2022</p>
+                                <div class="text-section">
+                                    <h5>Cochin Carnival 2022</h5>
+                                    <p class="nopad">Festive Event</p>
+                                    <div class="icon-text-container location-icon">
+                                        <img src="assets/images/svg/event-location.svg" alt="icon">
+                                        <p>Fort Kochi</p>
+                                    </div>
+                                    <div class="icon-text-container calendar-icon">
+                                        <img src="assets/images/svg/event-calendar.svg" alt="icon">
+                                        <p>25-Dec-2021 to 01-Jan-2022</p>
+                                    </div>
+                                    <div class="description-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt
+                                            ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation
+                                            ullamco
+                                            laboris nisi ut </p>
+                                    </div>
                                 </div>
-                                <div class="description-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt
-                                        ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation
-                                        ullamco
-                                        laboris nisi ut </p>
+                            </a>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <a href="" class="event-card gs_reveal">
+                                <div class="img-section event1">
+                                    <img src="assets/images/cochin-carnival.png" class="img-animate"
+                                        alt="cochin-carnival">
                                 </div>
-                            </div>
-                        </a>
+                                <div class="text-section">
+                                    <h5>Cochin Carnival 2022</h5>
+                                    <p class="nopad">Festive Event</p>
+                                    <div class="icon-text-container location-icon">
+                                        <img src="assets/images/svg/event-location.svg" alt="icon">
+                                        <p>Fort Kochi</p>
+                                    </div>
+                                    <div class="icon-text-container calendar-icon">
+                                        <img src="assets/images/svg/event-calendar.svg" alt="icon">
+                                        <p>25-Dec-2021 to 01-Jan-2022</p>
+                                    </div>
+                                    <div class="description-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt
+                                            ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation
+                                            ullamco
+                                            laboris nisi ut </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-xl-6 col-md-6">
-                        <a href="" class="event-card gs_reveal">
-                            <div class="img-section event1">
-                                <img src="assets/images/cochin-carnival.png" alt="cochin-carnival">
-                            </div>
-                            <div class="text-section">
-                                <h5>Cochin Carnival 2022</h5>
-                                <p class="nopad">Festive Event</p>
-                                <div class="icon-text-container location-icon">
-                                    <img src="assets/images/svg/event-location.svg" alt="icon">
-                                    <p>Fort Kochi</p>
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6">
+                            <a href="" class="event-card gs_reveal">
+                                <div class="img-section event1">
+                                    <img src="assets/images/cochin-carnival.png" class="img-animate"
+                                        alt="cochin-carnival">
                                 </div>
-                                <div class="icon-text-container calendar-icon">
-                                    <img src="assets/images/svg/event-calendar.svg" alt="icon">
-                                    <p>25-Dec-2021 to 01-Jan-2022</p>
+                                <div class="text-section">
+                                    <h5>Cochin Carnival 2022</h5>
+                                    <p class="nopad">Festive Event</p>
+                                    <div class="icon-text-container location-icon">
+                                        <img src="assets/images/svg/event-location.svg" alt="icon">
+                                        <p>Fort Kochi</p>
+                                    </div>
+                                    <div class="icon-text-container calendar-icon">
+                                        <img src="assets/images/svg/event-calendar.svg" alt="icon">
+                                        <p>25-Dec-2021 to 01-Jan-2022</p>
+                                    </div>
+                                    <div class="description-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt
+                                            ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation
+                                            ullamco
+                                            laboris nisi ut </p>
+                                    </div>
                                 </div>
-                                <div class="description-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt
-                                        ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation
-                                        ullamco
-                                        laboris nisi ut </p>
+                            </a>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <a href="" class="event-card gs_reveal">
+                                <div class="img-section event1">
+                                    <img src="assets/images/cochin-carnival.png" class="img-animate"
+                                        alt="cochin-carnival">
                                 </div>
-                            </div>
-                        </a>
+                                <div class="text-section">
+                                    <h5>Cochin Carnival 2022</h5>
+                                    <p class="nopad">Festive Event</p>
+                                    <div class="icon-text-container location-icon">
+                                        <img src="assets/images/svg/event-location.svg" alt="icon">
+                                        <p>Fort Kochi</p>
+                                    </div>
+                                    <div class="icon-text-container calendar-icon">
+                                        <img src="assets/images/svg/event-calendar.svg" alt="icon">
+                                        <p>25-Dec-2021 to 01-Jan-2022</p>
+                                    </div>
+                                    <div class="description-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt
+                                            ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation
+                                            ullamco
+                                            laboris nisi ut </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-6 col-md-6">
-                        <a href="" class="event-card gs_reveal">
-                            <div class="img-section event1">
-                                <img src="assets/images/cochin-carnival.png" alt="cochin-carnival">
-                            </div>
-                            <div class="text-section">
-                                <h5>Cochin Carnival 2022</h5>
-                                <p class="nopad">Festive Event</p>
-                                <div class="icon-text-container location-icon">
-                                    <img src="assets/images/svg/event-location.svg" alt="icon">
-                                    <p>Fort Kochi</p>
+                <div class="event-container">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6">
+                            <a href="" class="event-card gs_reveal">
+                                <div class="img-section event1">
+                                    <img src="assets/images/cochin-carnival.png" class="img-animate"
+                                        alt="cochin-carnival">
                                 </div>
-                                <div class="icon-text-container calendar-icon">
-                                    <img src="assets/images/svg/event-calendar.svg" alt="icon">
-                                    <p>25-Dec-2021 to 01-Jan-2022</p>
+                                <div class="text-section">
+                                    <h5>Cochin Carnival 2022</h5>
+                                    <p class="nopad">Festive Event</p>
+                                    <div class="icon-text-container location-icon">
+                                        <img src="assets/images/svg/event-location.svg" alt="icon">
+                                        <p>Fort Kochi</p>
+                                    </div>
+                                    <div class="icon-text-container calendar-icon">
+                                        <img src="assets/images/svg/event-calendar.svg" alt="icon">
+                                        <p>25-Dec-2021 to 01-Jan-2022</p>
+                                    </div>
+                                    <div class="description-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt
+                                            ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation
+                                            ullamco
+                                            laboris nisi ut </p>
+                                    </div>
                                 </div>
-                                <div class="description-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt
-                                        ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation
-                                        ullamco
-                                        laboris nisi ut </p>
+                            </a>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <a href="" class="event-card gs_reveal">
+                                <div class="img-section event1">
+                                    <img src="assets/images/cochin-carnival.png" class="img-animate"
+                                        alt="cochin-carnival">
                                 </div>
-                            </div>
-                        </a>
+                                <div class="text-section">
+                                    <h5>Cochin Carnival 2022</h5>
+                                    <p class="nopad">Festive Event</p>
+                                    <div class="icon-text-container location-icon">
+                                        <img src="assets/images/svg/event-location.svg" alt="icon">
+                                        <p>Fort Kochi</p>
+                                    </div>
+                                    <div class="icon-text-container calendar-icon">
+                                        <img src="assets/images/svg/event-calendar.svg" alt="icon">
+                                        <p>25-Dec-2021 to 01-Jan-2022</p>
+                                    </div>
+                                    <div class="description-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt
+                                            ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation
+                                            ullamco
+                                            laboris nisi ut </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-xl-6 col-md-6">
-                        <a href="" class="event-card gs_reveal">
-                            <div class="img-section event1">
-                                <img src="assets/images/cochin-carnival.png" alt="cochin-carnival">
-                            </div>
-                            <div class="text-section">
-                                <h5>Cochin Carnival 2022</h5>
-                                <p class="nopad">Festive Event</p>
-                                <div class="icon-text-container location-icon">
-                                    <img src="assets/images/svg/event-location.svg" alt="icon">
-                                    <p>Fort Kochi</p>
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6">
+                            <a href="" class="event-card gs_reveal">
+                                <div class="img-section event1">
+                                    <img src="assets/images/cochin-carnival.png" class="img-animate"
+                                        alt="cochin-carnival">
                                 </div>
-                                <div class="icon-text-container calendar-icon">
-                                    <img src="assets/images/svg/event-calendar.svg" alt="icon">
-                                    <p>25-Dec-2021 to 01-Jan-2022</p>
+                                <div class="text-section">
+                                    <h5>Cochin Carnival 2022</h5>
+                                    <p class="nopad">Festive Event</p>
+                                    <div class="icon-text-container location-icon">
+                                        <img src="assets/images/svg/event-location.svg" alt="icon">
+                                        <p>Fort Kochi</p>
+                                    </div>
+                                    <div class="icon-text-container calendar-icon">
+                                        <img src="assets/images/svg/event-calendar.svg" alt="icon">
+                                        <p>25-Dec-2021 to 01-Jan-2022</p>
+                                    </div>
+                                    <div class="description-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt
+                                            ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation
+                                            ullamco
+                                            laboris nisi ut </p>
+                                    </div>
                                 </div>
-                                <div class="description-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt
-                                        ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation
-                                        ullamco
-                                        laboris nisi ut </p>
+                            </a>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <a href="" class="event-card gs_reveal">
+                                <div class="img-section event1">
+                                    <img src="assets/images/cochin-carnival.png" class="img-animate"
+                                        alt="cochin-carnival">
                                 </div>
-                            </div>
-                        </a>
+                                <div class="text-section">
+                                    <h5>Cochin Carnival 2022</h5>
+                                    <p class="nopad">Festive Event</p>
+                                    <div class="icon-text-container location-icon">
+                                        <img src="assets/images/svg/event-location.svg" alt="icon">
+                                        <p>Fort Kochi</p>
+                                    </div>
+                                    <div class="icon-text-container calendar-icon">
+                                        <img src="assets/images/svg/event-calendar.svg" alt="icon">
+                                        <p>25-Dec-2021 to 01-Jan-2022</p>
+                                    </div>
+                                    <div class="description-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt
+                                            ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation
+                                            ullamco
+                                            laboris nisi ut </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="center-align mgn-top-20 gs_reveal">
                 <button type="button" class="btn btn-view-all">View All</button>
             </div>
@@ -1572,8 +1879,8 @@
     <!------------------------------------------------------------------Coming Soon------------------------------------------------------------->
     <section class="coming-soon ">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-7 col-lg-7">
+            <div class="row g-4">
+                <div class="col-xl-7 col-lg-12">
                     <div class="coming-soon-card gs_reveal">
                         <div class="content">
                             <h3>COMING SOON</h3>
@@ -1589,24 +1896,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-5">
+                <div class="col-xl-5 col-lg-12">
                     <div class="slider-content gs_reveal">
-                        <div class="slider">
-                            <div class="imgs">
-                                <div class="img" style="left: 0;">
-
-                                </div>
-                                <div class="img">
-
-                                </div>
-                                <div class="img">
-
-                                </div>
-                                <div class="img">
-
+                        <div class="owl-carousel owl-ad-single border-radius overflow-hidden">
+                            <div class="item ">
+                                <div class="equal-16-9 bg-primary-light border-radius">
+                                    <img src="assets/images/demo_1.jpg">
                                 </div>
                             </div>
-                            <div class="dots"></div>
+                            <div class="item ">
+                                <div class="equal-16-9 bg-primary-light border-radius">
+                                    <img src="assets/images/demo_2.jpg">
+                                </div>
+                            </div>
+                            <div class="item ">
+                                <div class="equal-16-9 bg-primary-light border-radius">
+                                    <img src="assets/images/demo_3.jpg">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1614,13 +1921,14 @@
         </div>
     </section>
     <!------------------------------------------------------------------Testimonials------------------------------------------------------------->
-    <section class="testimonials slider-wrapper">
+    <section class="testimonials">
         <div class="container">
-            <div class="hs__header ">
-                <h2 class="hs__headline common-h2 gs_reveal">What others <span>say about Beheco</span>
+            <div class="d-flex justify-content-between">
+                <h2 class="mb-4 mb-lg-5 common-h2 fs-mob-30 fs-md-36 fs-lg-48 gs_reveal">What others <span>say about
+                        Beheco</span>
                 </h2>
-                <div class="navigation-btns hs__arrows gs_reveal">
-                    <button type="button" class="btn btn-secondary arrow disabled arrow-prev mgn-rgt-20">
+                <div class="d-flex gap-1 gs_reveal">
+                    <button type="button" class=" arrow disabled arrow-prev mgn-rgt-20">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.6 18.3"
                             style="enable-background:new 0 0 31.6 18.3;" xml:space="preserve" width="30px">
@@ -1629,7 +1937,7 @@
                                 d="M22.5,0.7l-1.4,1.4l6.1,6.1H0.5v1.9h26.7l-6.1,6.1l1.4,1.4l8.4-8.4L22.5,0.7z" />
                         </svg>
                     </button>
-                    <button htype="button" class="btn btn-primary arrow arrow-next" aria-label="Next">
+                    <button htype="button" class=" arrow arrow-next" aria-label="Next">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31.6 18.3"
                             style="enable-background:new 0 0 31.6 18.3;" xml:space="preserve" width="30px">
@@ -1640,137 +1948,119 @@
                     </button>
                 </div>
             </div>
-            <div class="hs__wrapper gs_reveal">
-                <ul class="hs">
-                    <li class="hs__item">
-                        <div class="testimonial-card">
-                            <div class="quote-icon">
-                                <img src="assets/images/svg/quote.svg" class="quote-icon">
+            <div class="owl-carousel owl-testimonials">
+                <div class="item p-1">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <img src="assets/images/svg/quote.svg" class="quote-icon">
+                        </div>
+                        <div class="auther-img">
+                            <img src="https://i.pinimg.com/236x/77/fc/a9/77fca9754a11fbd15aee50d44bd317e9--doctor-of-dental-surgery-dental-services.jpg"
+                                class="auther-dp">
+                        </div>
+                        <div class="txt-section">
+                            <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <div class="right-align">
+                                <h5>Sam Issac</h5>
+                                <p>Sr.Consultant, EY</p>
                             </div>
-                            <div class="auther-img">
-                                <img src="https://i.pinimg.com/236x/77/fc/a9/77fca9754a11fbd15aee50d44bd317e9--doctor-of-dental-surgery-dental-services.jpg"
-                                    class="auther-dp">
+                        </div>
+                    </div>
+                </div>
+                <div class="item p-1">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <img src="assets/images/svg/quote.svg" class="quote-icon">
+                        </div>
+                        <div class="auther-img">
+                            <img src="https://i.pinimg.com/236x/77/fc/a9/77fca9754a11fbd15aee50d44bd317e9--doctor-of-dental-surgery-dental-services.jpg"
+                                class="auther-dp">
+                        </div>
+                        <div class="txt-section">
+                            <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <div class="right-align">
+                                <h5>Sam Issac</h5>
+                                <p>Sr.Consultant, EY</p>
                             </div>
-                            <div class="txt-section">
-                                <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div class="right-align">
-                                    <h5>Sam Issac</h5>
-                                    <p>Sr.Consultant, EY</p>
-                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item p-1">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <img src="assets/images/svg/quote.svg" class="quote-icon">
+                        </div>
+                        <div class="auther-img">
+                            <img src="https://i.pinimg.com/236x/77/fc/a9/77fca9754a11fbd15aee50d44bd317e9--doctor-of-dental-surgery-dental-services.jpg"
+                                class="auther-dp">
+                        </div>
+                        <div class="txt-section">
+                            <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <div class="right-align">
+                                <h5>Sam Issac</h5>
+                                <p>Sr.Consultant, EY</p>
                             </div>
-                    </li>
-                    <li class="hs__item">
-                        <div class="testimonial-card">
-                            <div class="quote-icon">
-                                <img src="assets/images/svg/quote.svg" class="quote-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="item p-1">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <img src="assets/images/svg/quote.svg" class="quote-icon">
+                        </div>
+                        <div class="auther-img">
+                            <img src="https://i.pinimg.com/236x/77/fc/a9/77fca9754a11fbd15aee50d44bd317e9--doctor-of-dental-surgery-dental-services.jpg"
+                                class="auther-dp">
+                        </div>
+                        <div class="txt-section">
+                            <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <div class="right-align">
+                                <h5>Sam Issac</h5>
+                                <p>Sr.Consultant, EY</p>
                             </div>
-                            <div class="auther-img">
-                                <img src="https://i.pinimg.com/236x/77/fc/a9/77fca9754a11fbd15aee50d44bd317e9--doctor-of-dental-surgery-dental-services.jpg"
-                                    class="auther-dp">
+                        </div>
+                    </div>
+                </div>
+                <div class="item p-1">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">
+                            <img src="assets/images/svg/quote.svg" class="quote-icon">
+                        </div>
+                        <div class="auther-img">
+                            <img src="https://i.pinimg.com/236x/77/fc/a9/77fca9754a11fbd15aee50d44bd317e9--doctor-of-dental-surgery-dental-services.jpg"
+                                class="auther-dp">
+                        </div>
+                        <div class="txt-section">
+                            <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <div class="right-align">
+                                <h5>Sam Issac</h5>
+                                <p>Sr.Consultant, EY</p>
                             </div>
-                            <div class="txt-section">
-                                <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div class="right-align">
-                                    <h5>Sam Issac</h5>
-                                    <p>Sr.Consultant, EY</p>
-                                </div>
-                            </div>
-                    </li>
-                    <li class="hs__item">
-                        <div class="testimonial-card">
-                            <div class="quote-icon">
-                                <img src="assets/images/svg/quote.svg" class="quote-icon">
-                            </div>
-                            <div class="auther-img">
-                                <img src="https://i.pinimg.com/236x/77/fc/a9/77fca9754a11fbd15aee50d44bd317e9--doctor-of-dental-surgery-dental-services.jpg"
-                                    class="auther-dp">
-                            </div>
-                            <div class="txt-section">
-                                <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div class="right-align">
-                                    <h5>Sam Issac</h5>
-                                    <p>Sr.Consultant, EY</p>
-                                </div>
-                            </div>
-                    </li>
-                    <li class="hs__item">
-                        <div class="testimonial-card">
-                            <div class="quote-icon">
-                                <img src="assets/images/svg/quote.svg" class="quote-icon">
-                            </div>
-                            <div class="auther-img">
-                                <img src="https://i.pinimg.com/236x/77/fc/a9/77fca9754a11fbd15aee50d44bd317e9--doctor-of-dental-surgery-dental-services.jpg"
-                                    class="auther-dp">
-                            </div>
-                            <div class="txt-section">
-                                <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div class="right-align">
-                                    <h5>Sam Issac</h5>
-                                    <p>Sr.Consultant, EY</p>
-                                </div>
-                            </div>
-                    </li>
-                    <li class="hs__item">
-                        <div class="testimonial-card">
-                            <div class="quote-icon">
-                                <img src="assets/images/svg/quote.svg" class="quote-icon">
-                            </div>
-                            <div class="auther-img">
-                                <img src="https://i.pinimg.com/236x/77/fc/a9/77fca9754a11fbd15aee50d44bd317e9--doctor-of-dental-surgery-dental-services.jpg"
-                                    class="auther-dp">
-                            </div>
-                            <div class="txt-section">
-                                <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div class="right-align">
-                                    <h5>Sam Issac</h5>
-                                    <p>Sr.Consultant, EY</p>
-                                </div>
-                            </div>
-                    </li>
-                    <li class="hs__item">
-                        <div class="testimonial-card">
-                            <div class="quote-icon">
-                                <img src="assets/images/svg/quote.svg" class="quote-icon">
-                            </div>
-                            <div class="auther-img">
-                                <img src="https://i.pinimg.com/236x/77/fc/a9/77fca9754a11fbd15aee50d44bd317e9--doctor-of-dental-surgery-dental-services.jpg"
-                                    class="auther-dp">
-                            </div>
-                            <div class="txt-section">
-                                <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div class="right-align">
-                                    <h5>Sam Issac</h5>
-                                    <p>Sr.Consultant, EY</p>
-                                </div>
-                            </div>
-                    </li>
-
-                </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!------------------------------------------------------------------Contact Form------------------------------------------------------------->
     <section class="contact-form">
         <div class="container">
-            <h2 class="common-h2 gs_reveal">Personalised <span>Suggestions</span></h2>
+            <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48 gs_reveal">Personalised <span>Suggestions</span></h2>
             <div class="row">
                 <div class="col-xl-7">
                     <div class="form-section gs_reveal">
@@ -2001,217 +2291,11 @@
             </div>
         </div>
     </section>
-    <!-----------------------------------------------------------------Add New Listing Modal --------------------------------------------------------->
-    <div class="modal fade" id="newListing" tabindex="-1" aria-labelledby="addNewListing" aria-hidden="true">
-        <div class="modal-dialog add-new-listing-modal">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="content">
-                        <div class="flex-heading">
-                            <h3 class="custom-h">Select the<span> Type of Listing</span></h3>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="input-wrapper">
-                            <div class="block-btn-wrapper">
-                                <div class="mb-3 d-grid">
-                                    <input type="radio" class="btn-check" name="options" id="option1"
-                                        autocomplete="off">
-                                    <label class="btn btn-outline-primary" onclick="location.href = 'new-business.html'"
-                                        for="option1">Business</label>
-                                </div>
-                                <div class="mb-3 d-grid">
-                                    <input type="radio" class="btn-check" name="options" id="option2"
-                                        autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="option2">Freelancer</label>
-                                </div>
-                                <div class=" d-grid">
-                                    <input type="radio" class="btn-check" name="options" id="option4"
-                                        autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="option4">Place</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!------------------------------------------------------------------Sign In Modal------------------------------------------------------------->
-    <!-- Modal -->
-    <div class="modal fade" id="SignIn" tabindex="-1" aria-labelledby="SignInLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="right-align">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="logo">
-                        <img src="assets/images/logo.png" alt="logo">
-                    </div>
-                    <div class="content">
-                        <h2 class="common-h2"><span>Sign In</span> and Explore More</h2>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email Address">
-                        </div>
-                        <div class="mb-3">
-                            <input type="password" class="form-control" placeholder="Password">
-                        </div>
-                        <div class="block-btn-wrapper">
-                            <button type="button" class="btn btn-primary btn-view-all"
-                                onclick="location.href = 'profile.html'">Sign In</button>
-                        </div>
-                        <hr>
-                        <p>Don't have a Beheco Account? <a class=" text-primary fw-bold a-animate text-primary-hover"
-                                data-bs-toggle="modal" data-bs-target="#SignUp" data-bs-dismiss="modal">Register
-                                Here!</a></p>
-                        <hr>
-                        <p class="text-center mb-0">OR</p>
-                        <div class="d-flex justify-content-center gap-2">
-                            <a href="" class="btn-round bg-google">
-                                <i class="fab fa-google"></i>
-                            </a>
-                            <a href="" class="btn-round bg-facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!------------------------------------------------------------------Sign Up Modal------------------------------------------------------------->
-    <!-- Modal -->
-    <div class="modal fade" id="SignUp" tabindex="-1" aria-labelledby="SignUpLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="right-align">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="logo">
-                        <img src="assets/images/logo.png" alt="logo">
-                    </div>
-                    <div class="content">
-                        <h2 class="common-h2"><span>Sign Up</span></h2>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="First Name">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Last Name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-
-                                <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Email Address">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <input type="number" class="form-control" placeholder="Phone Number">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <input type="password" class="form-control" placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <input type="password" class="form-control" placeholder="Confirm Password">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="block-btn-wrapper">
-                            <button type="button" class="btn btn-primary btn-view-all">Sign Up</button>
-                        </div>
-                        <hr>
-                        <p>Already have a Beheco Account? <a href=""
-                                class="text-primary fw-bold a-animate text-primary-hover" data-bs-toggle="modal"
-                                data-bs-target="#SignIn" data-bs-dismiss="modal">Sign In
-                                Here!</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!------------------------------------------------------------------Advertise Here------------------------------------------------------------->
-    <!-- Modal -->
-    <div class="modal fade" id="advertise" tabindex="-1" aria-labelledby="advertiseLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <div class="content text-left">
-                        <div class="flex-heading">
-                            <h2 class="common-h2"><span>Advertise with</span> Beheco</h2>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <p class="description-text">Please fill up this form, Our executives will contact you
-                            soon.</p>
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="mb-3">
-                                    <label class="form-label">Your Full Name</label>
-                                    <input type="text" class="form-control" placeholder="Eg: John Smith">
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="mb-3">
-                                    <label class="form-label">Business Name</label>
-                                    <input type="text" class="form-control" placeholder="Eg: ABC Pvt Ltd">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="mb-3">
-                                    <label class="form-label">Email Address</label>
-                                    <input type="email" class="form-control" placeholder="Eg: name@example.com">
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="mb-3">
-                                    <label class="form-label">Contact Number</label>
-                                    <input type="text" class="form-control" placeholder="Eg: +919876543211">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="block-btn-wrapper">
-                            <button type="button" class="btn btn-view-all">Contact Me</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!------------------------------------------------------------------Move to Top------------------------------------------------------------->
     <button onclick="topFunction()" id="myBtn" title="Go to top" class="move-to-top">
         <div class="btn-content">
-            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12 7"
-                style="enable-background:new 0 0 12 7;" xml:space="preserve" width="12px" height="7px">
-                <style type="text/css">
-                    .top {
-                        fill: #FFFFFF;
-                    }
-                </style>
-                <path class="top" d="M6,1.9L1.3,6.8C1,7.1,0.5,7.1,0.2,6.8c-0.3-0.3-0.3-0.8,0-1.1l5.2-5.4C5.6,0.1,5.8,0,6,0s0.4,0.1,0.6,0.2
-       l5.2,5.4c0.3,0.3,0.3,0.8,0,1.1c-0.3,0.3-0.8,0.3-1.1,0L6,1.9z" />
-            </svg>
+            <i class="fas fa-chevron-up text-white"></i>
         </div>
-
     </button>
     <!-- -----------------------------------------------------------------External Javascript------------------------------------------------------------->
     <script src='assets/js/GsapScrollTrigger.js'></script>
@@ -2222,6 +2306,94 @@
     <script src='assets/js/select2-min.js'></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/selectbox.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-single').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: true,
+            items: 1,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+        }),
+            $('.owl-multiple').owlCarousel({
+                loop: true,
+                margin: 15,
+                nav: false,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    768: {
+                        items: 3
+                    },
+                    992: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 4
+                    },
+                    1600: {
+                        items: 5
+                    }
+                }
+            }),
+            $('.owl-ad-single').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: false,
+                dots: true,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+            }),
+            $('.owl-testimonials').owlCarousel({
+                loop: true,
+                margin: 15,
+                nav: false,
+                dots: false,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 4
+                    }
+                }
+            })
+
+    </script>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel();
+        // Go to the next item
+        $('.arrow-next').click(function () {
+            owl.trigger('next.owl.carousel');
+        })
+        // Go to the previous item
+        $('.arrow-prev').click(function () {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            owl.trigger('prev.owl.carousel', [300]);
+        })
+    </script>
 </body>
 
 </html>

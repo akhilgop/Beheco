@@ -30,11 +30,10 @@
     .nav-link {
         border-radius: $b-rds;
         padding: 10px 20px;
-        margin-right: 10px;
         overflow: hidden;
     }
-    .listing-card .image-wrapper {
-        height: 220px;
+    .nav-item .nav-link:hover::after {
+        display: none !important;
     }
 }
 .business-list {
@@ -165,6 +164,12 @@
 .vertical-tabs-container .vertical-tab-accordion-heading:hover {
     color: $primary !important;
 }
+.savd-content {
+    .listing-wrapper {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+
 @media screen and (max-width: 575px) {
     .btn-b-list {
         height: auto;

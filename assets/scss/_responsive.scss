@@ -56,17 +56,21 @@
     .categories {
         padding-top: 0 !important;
     }
+
     .category-wrapper {
         margin-top: 30px !important;
+
         .category-row {
             width: 100% !important;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem !important;
             .category {
-                padding: 17px !important;
+                padding: 0 !important;
                 .icon {
                     width: 60px !important;
                     height: 60px !important;
+                    min-width: 60px !important;
                     margin: auto;
                     img {
                         width: 50% !important;
@@ -74,6 +78,7 @@
                 }
                 .heading p {
                     line-height: normal !important;
+                    font-size: 14px !important;
                 }
             }
             .c15 {
@@ -117,15 +122,7 @@
     .featured {
         padding-bottom: 30px !important;
     }
-    .testimonials {
-        padding-bottom: 0px !important;
-        .hs__item {
-            min-width: 90% !important;
-            &:last-child {
-                margin-right: 0 !important;
-            }
-        }
-    }
+
     .contact-form {
         padding-top: 0 !important;
         .form-section {
@@ -321,6 +318,13 @@
             max-height: 200px !important;
         }
     }
+    .flex-mob-wrap {
+        flex-wrap: wrap !important;
+        gap: 1rem !important;
+    }
+    .w-mob-100 {
+        width: 100% !important;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -381,13 +385,14 @@
         margin-top: 30px !important;
         .category-row {
             width: 100% !important;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr);
             .category {
                 padding: 17px !important;
                 .icon {
                     width: 60px !important;
                     height: 60px !important;
+                    min-width: 60px !important;
                     margin: auto;
                     img {
                         width: 50% !important;
@@ -438,15 +443,7 @@
     .featured {
         padding-bottom: 30px !important;
     }
-    .testimonials {
-        padding-bottom: 0px !important;
-        .hs__item {
-            min-width: 90% !important;
-            &:last-child {
-                margin-right: 0 !important;
-            }
-        }
-    }
+
     .contact-form {
         padding-top: 0 !important;
         .form-section {
@@ -566,7 +563,7 @@
     .top-pick-card {
         margin-bottom: 20px !important;
     }
-    
+
     .coming-soon {
         .slider-content {
             margin-top: 20px;
@@ -627,6 +624,7 @@
     }
     .banner {
         background-position: bottom !important;
+        height: 50vh !important;
         .search-bar-container {
             padding: 20px !important;
             width: 100% !important;
@@ -648,13 +646,14 @@
         margin-top: 30px !important;
         .category-row {
             width: 100% !important;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid !important;
+            grid-template-columns: repeat(6, 1fr);
             .category {
                 padding: 17px !important;
                 .icon {
                     width: 60px !important;
                     height: 60px !important;
+                    min-width: 60px !important;
                     margin: auto;
                     img {
                         width: 50% !important;
@@ -739,11 +738,7 @@
             right: 10px !important;
         }
     }
-    .testimonials {
-        .hs__item {
-            flex: 1 0 calc(45% - 10px * 2) !important;
-        }
-    }
+
     .faq {
         padding: 20px !important;
         margin: 50px 0 !important;
@@ -765,6 +760,15 @@
             span {
                 font-size: 24px !important;
             }
+        }
+        .btn-primary {
+            padding: 5px 30px !important;
+            border-top-right-radius: 15px !important;
+            border-bottom-right-radius: 15px !important;
+        }
+        .newletter-input input {
+            border-top-left-radius: 15px !important;
+            border-bottom-left-radius: 15px !important;
         }
     }
     .footer {
@@ -800,6 +804,9 @@
             }
         }
     }
+    .navbar-collapse {
+        margin-top: 30px !important;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -818,6 +825,8 @@
             width: 70% !important;
         }
         .btn-user {
+            margin-right: 20px !important;
+            padding: 0 !important;
             span {
                 display: none !important;
             }
@@ -874,14 +883,7 @@
             font-size: 42px !important;
         }
     }
-    .testimonials {
-        .hs__wrapper {
-            margin-bottom: 0 !important;
-        }
-        .hs {
-            padding: 0 !important;
-        }
-    }
+
     section {
         padding: 50px 0 !important;
     }
@@ -1025,5 +1027,10 @@
 @media screen and (min-width: 1700px) {
     .container {
         max-width: 1620px !important;
+    }
+}
+@media screen and (max-width: 1399px) {
+    .btn {
+        padding: 5px 15px !important;
     }
 }

@@ -1,0 +1,231 @@
+.cover-image {
+    margin-bottom: 50px;
+    /*croppie*/
+    #img-crop-cover {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    #img-crop-cover .block {
+        border-radius: 1em;
+        background-color: #eff3f6;
+        border-radius: $b-rds-md;
+        box-shadow: $box-shadow;
+    }
+    #img-crop-cover .block .stage {
+        width: 960px;
+        height: 200px;
+        position: relative;
+        border-radius: $b-rds-md;
+    }
+    #img-crop-cover #upload-cover label#filedrag-cover {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("../images/svg/ImageUpload.svg") 50% 50% no-repeat;
+        background-size: 6% auto;
+        transition: background 0.3s ease;
+        cursor: pointer;
+        border-radius: $b-rds-md;
+        box-shadow: $box-shadow;
+        border: 10px solid $white;
+    }
+    #img-crop-cover #upload-cover label#filedrag-cover.hover {
+        background-image: url("//img.icons8.com/ios/96/c8cccf/upload-2-filled.png");
+    }
+    #img-crop-cover #upload-cover input[type="file"] {
+        display: none;
+    }
+    #img-crop-cover #crop-cover {
+        display: none;
+        /******** Range Input ********/
+    }
+
+    #croppie-cover {
+        border-radius: $b-rds-md;
+        box-shadow: $box-shadow;
+        border: 10px solid $white;
+    }
+    .cr-boundary {
+        border-radius: $b-rds;
+        overflow: hidden;
+    }
+    .btn-wrapper {
+        margin: 30px 0;
+        display: flex;
+    }
+    .btn-crop {
+        padding: 0px 20px;
+        @include buttn-outline($trans, $primary, $primary);
+        border-radius: $b-rds;
+        height: 40px !important;
+        width: 50%;
+    }
+    #img-crop-cover #crop-cover .cr-boundary {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    #img-crop-cover #crop-cover .cr-boundary .cr-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: 0 0;
+        z-index: -1;
+        max-width: none;
+    }
+    #img-crop-cover #crop-cover .cr-boundary .cr-viewport {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        box-shadow: 0 0 0 900px #d9d9d9;
+        z-index: 0;
+    }
+    #img-crop-cover #crop-cover .cr-boundary .cr-overlay {
+        position: absolute;
+        z-index: 2;
+        cursor: move;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap {
+        width: 100%;
+        height: 2em;
+        position: absolute;
+        top: 90%;
+        left: 0;
+        transform: translateY(100%);
+        z-index: 99;
+        display: flex;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider {
+        width: 75%;
+        background-color: transparent;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider {
+        -webkit-appearance: none;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 4px;
+        background-color: #c8cccf;
+        border: 0;
+        border-radius: 1em;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 16px;
+        height: 16px;
+        margin-top: -6px;
+        background-color: $primary;
+        border-radius: 50%;
+        border: none;
+        transform: scale(1);
+        -webkit-transition: transform 0.3s;
+        transition: transform 0.3s;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider:hover::-webkit-slider-thumb {
+        transform: scale(1.25);
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider:focus {
+        outline: none;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider:focus::-webkit-slider-thumb {
+        background-color: #425389;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-moz-range-track {
+        width: 100%;
+        height: 4px;
+        background-color: #c8cccf;
+        border: 0;
+        border-radius: 1em;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-moz-range-thumb {
+        height: 16px;
+        width: 16px;
+        margin-top: -6px;
+        background-color: $primary;
+        border-radius: 50%;
+        border: none;
+        transform: scale(1);
+        -moz-transition: transform 0.3s;
+        transition: transform 0.3s;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider:hover::-moz-range-thumb {
+        transform: scale(1.25);
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider:-moz-focusring {
+        outline: 1px solid white;
+        outline-offset: -1px;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider:-moz-focusring::-moz-range-thumb {
+        background-color: #425389;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-ms-track {
+        width: 300px;
+        height: 4px;
+        background: transparent;
+        border-color: transparent;
+        border-width: 6px 0;
+        color: transparent;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-ms-fill-lower,
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-ms-fill-upper {
+        background: #c8cccf;
+        border-radius: 10px;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap .cr-slider::-ms-thumb {
+        border: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background-color: $primary;
+    }
+    #img-crop-cover #crop-cover .cr-slider-wrap #cr-rotate {
+        color: $primary;
+        text-align: right;
+        background-color: transparent;
+        flex: 1;
+    }
+    #img-crop-cover #result-cover {
+        display: none;
+    }
+    #img-crop-cover #result-cover #close {
+        width: 50px;
+        height: 50px;
+        background: url("//img.icons8.com/material/48/c8cccf/multiply.png") 50% 50% no-repeat;
+        background-size: 80%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        cursor: pointer;
+    }
+    #img-crop-cover #result-cover #close:hover {
+        background-image: url("//img.icons8.com/material/48/8193a2/multiply.png");
+    }
+    #img-crop-cover #result-cover img {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    #upload-cover {
+        border-radius: $b-rds-md;
+    }
+    #cr-rotate {
+        @include buttn-outline($trans, $primary, $primary);
+        border-radius: $b-rds;
+        color: $primary !important;
+        &:hover,
+        &:active,
+        &:focus {
+            box-shadow: none;
+            outline: 0;
+            text-decoration: none;
+            color: $white !important;
+            background-color: $primary !important;
+            padding: 0 5px;
+        }
+    }
+}

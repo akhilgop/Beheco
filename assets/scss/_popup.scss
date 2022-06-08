@@ -8,6 +8,10 @@
     .modal-body {
         padding: 0;
     }
+    .modal-header {
+        padding: 0 !important;
+    }
+
     .common-h2 {
         font-size: 25px !important;
         text-align: center;
@@ -93,4 +97,41 @@
     .modal-body {
         margin: 30px 0 !important;
     }
+}
+.modal {
+    z-index: 2000 !important;
+}
+.modal-header,
+.modal-body,
+.modal-footer {
+    border: none !important;
+}
+.modal-header {
+    display: flex;
+    margin-bottom: 30px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: center;
+        width: 100%;
+        font-family: $primary-font;
+
+        span {
+            font-weight: 600;
+            font-family: $primary-font;
+            color: $primary;
+        }
+    }
+}
+.modal-body {
+    .form-label {
+        text-align: start !important;
+        display: block !important;
+    }
+}
+.modal-footer {
+    padding: 10px 0 0 0;
 }
