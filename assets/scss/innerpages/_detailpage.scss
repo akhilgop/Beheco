@@ -123,7 +123,7 @@
     }
     .highlighted-content {
         padding: 30px;
-        background-color: rgba($color: $primary, $alpha: 0.1);
+        background-color: rgba($color: $primary, $alpha: 0.05);
         border-radius: 15px;
         height: 100%;
         .timing {
@@ -607,8 +607,8 @@
     }
     .offer-description {
         padding-top: 30px;
-        max-height: 300px;
-        overflow: auto;
+        // max-height: 300px;
+        // overflow: auto;
         text-align: left;
     }
 }
@@ -721,6 +721,7 @@
         flex-wrap: wrap;
         .btn {
             margin-bottom: 20px;
+            width: 100%;
         }
         .radio-button {
             width: 45%;
@@ -769,6 +770,17 @@
             }
             .dp {
                 margin: auto;
+            }
+            .auther-info {
+                flex-wrap: wrap;
+                gap: 1rem;
+                .separating-p {
+                    display: none;
+                }
+                * {
+                    width: 100%;
+                    margin: 0 !important;
+                }
             }
         }
         .content {

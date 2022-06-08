@@ -18367,7 +18367,6 @@ textarea.form-control,
   position: fixed;
   bottom: 20px;
   right: 30px;
-  z-index: 1099;
   border: none;
   outline: none;
   cursor: pointer;

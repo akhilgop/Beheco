@@ -969,7 +969,7 @@
 
 .profile .highlighted-content {
   padding: 30px;
-  background-color: rgba(5, 151, 98, 0.1);
+  background-color: rgba(5, 151, 98, 0.05);
   border-radius: 15px;
   height: 100%;
 }
@@ -1642,8 +1642,6 @@
 
 .offer-modal .offer-description {
   padding-top: 30px;
-  max-height: 300px;
-  overflow: auto;
   text-align: left;
 }
 
@@ -1761,6 +1759,7 @@
   }
   .filters .btn {
     margin-bottom: 20px;
+    width: 100%;
   }
   .filters .radio-button {
     width: 45%;
@@ -1813,6 +1812,21 @@
   .feedbacks .feedback-card .dp,
   #allReviews .feedback-card .dp {
     margin: auto;
+  }
+  .feedbacks .feedback-card .auther-info,
+  #allReviews .feedback-card .auther-info {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .feedbacks .feedback-card .auther-info .separating-p,
+  #allReviews .feedback-card .auther-info .separating-p {
+    display: none;
+  }
+  .feedbacks .feedback-card .auther-info *,
+  #allReviews .feedback-card .auther-info * {
+    width: 100%;
+    margin: 0 !important;
   }
   .feedbacks .content,
   #allReviews .content {
