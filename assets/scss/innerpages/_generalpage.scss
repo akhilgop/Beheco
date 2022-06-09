@@ -1,7 +1,7 @@
 // ----------------------------------------------------Banner------------------------------------------------//
 .general-banner {
     width: 100vw;
-    height: 35vh;
+    min-height: 35vh;
     margin-top: 128px;
     padding-top: 50px;
     background-image: url("../../images/general-banner.jpg");
@@ -73,13 +73,13 @@
             margin-bottom: 50px;
         }
         p {
-            @include text(16px, 30px, 400, $black9);
+            @include text(16px, 1.7, 400, $black9);
         }
     }
 }
 .common-section {
     p {
-        @include text(16px, 30px, 400, $black9);
+        @include text(16px, 1.7, 400, $black9);
     }
     h2 {
         margin-bottom: 50px;
@@ -140,19 +140,6 @@
         }
     }
 }
-.drop-cv-modal {
-    max-width: 800px;
-    overflow: hidden;
-    .modal-body {
-        text-align: left;
-        .common-h2 {
-            font-size: 40px !important;
-        }
-    }
-}
-.modal {
-    overflow: hidden;
-}
 .general-banner.align-v-center {
     padding: 100px 0;
 }
@@ -185,7 +172,7 @@
         margin-bottom: 0;
         li {
             p {
-                @include text(16px, 25px, 400, $black9);
+                @include text(16px, 1.5, 400, $black9);
                 margin-left: 10px;
             }
         }
@@ -193,7 +180,7 @@
 }
 // ----------------------------------------------------Common Classes-----------------------------------------------//
 p {
-    @include text(16px, 30px, 400, $black9);
+    @include text(16px, 1.8, 400, $black9);
 }
 .common-h2 {
     margin-bottom: 50px;
@@ -232,7 +219,7 @@ p {
         font-weight: 600 !important;
     }
     p {
-        @include text(16px, 30px, 400, $black9);
+        @include text(16px, 1.8, 400, $black9);
         margin-bottom: 20px;
     }
     .group {

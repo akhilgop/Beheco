@@ -3021,7 +3021,8 @@ a {
     font-size: 24px !important;
   }
   .faq p {
-    font-size: 16px !important;
+    font-size: 14px !important;
+    margin: 20px 0 !important;
   }
   .subscribe {
     overflow: visible !important;
@@ -3818,6 +3819,55 @@ a {
 @media screen and (max-width: 1399px) {
   .btn {
     padding: 5px 15px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slide-item {
+    padding: 10px 0 !important;
+  }
+  .slide-item .list-item {
+    padding: 10px !important;
+  }
+  .slide-item .list-item h5 {
+    font-size: 18px !important;
+  }
+  a {
+    font-size: 14px;
+  }
+  .freelancer-info p,
+  .freelancer-info a,
+  .freelancer-info span {
+    font-size: 14px !important;
+  }
+  .event-card {
+    padding: 10px !important;
+    margin: 0 !important;
+  }
+  .event-card .text-section h5 {
+    line-height: 1.2 !important;
+  }
+  p,
+  a,
+  .form-label {
+    font-size: 14px !important;
+  }
+  .custom-hdng .separator {
+    margin: 15px 0 !important;
+  }
+  .card-default h3,
+  .answer-card h5 {
+    margin-bottom: 15px !important;
+  }
+  .answer-card .auther-info h6,
+  .feedback-card .main-content .auther-info h6 {
+    font-size: 14px !important;
+  }
+  .common-h2.mb-0 {
+    margin-bottom: 0 !important;
+  }
+  .profile .highlighted-content {
+    padding: 15px !important;
   }
 }
 
@@ -4748,6 +4798,8 @@ a {
   background: url("../images/banner.png");
   background-repeat: no-repeat;
   background-size: contain;
+  overflow: visible !important;
+  z-index: 11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4840,6 +4892,9 @@ h2 {
   position: absolute;
   top: 50px;
   width: 100%;
+  z-index: 1111;
+  max-height: 250px;
+  overflow-y: auto;
 }
 
 .search-results-container .sr-content {
@@ -5321,7 +5376,7 @@ h2 {
 
 .faq .content p {
   font-size: 18px;
-  line-height: 36px;
+  line-height: 1.5;
   font-weight: 400;
   color: #666;
   margin: 20px 0 40px 0;
@@ -11967,7 +12022,7 @@ h2 {
   .top-pick-card .card-description {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 20px !important;
+    padding: 15px !important;
   }
   .event-card {
     -ms-flex-wrap: wrap;
@@ -12385,6 +12440,10 @@ h2 {
 
 .modal-footer {
   padding: 10px 0 0 0;
+}
+
+.modal-dialog-scrollable .modal-body {
+  overflow-x: hidden !important;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {

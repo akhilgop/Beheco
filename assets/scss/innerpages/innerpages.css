@@ -1173,14 +1173,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 1.5rem;
 }
 
 .review-rating .filters .radio-button {
-  margin-right: 20px;
-}
-
-.review-rating .filters .radio-button:last-child {
-  margin-right: 20px;
+  margin: 0 !important;
 }
 
 .review-rating .current-overall-rating {
@@ -1546,25 +1543,6 @@
   margin-bottom: 30px;
 }
 
-#galleryViewMore {
-  overflow-y: auto !important;
-}
-
-#galleryViewMore .modal-dialog {
-  display: block !important;
-  min-width: 93%;
-  height: auto !important;
-}
-
-.big-modal {
-  overflow: auto !important;
-}
-
-.big-modal .modal-dialog {
-  display: block !important;
-  height: auto !important;
-}
-
 #allReviews .modal-dialog {
   max-width: 1000px;
 }
@@ -1756,16 +1734,13 @@
   .filters {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 1rem !important;
   }
   .filters .btn {
-    margin-bottom: 20px;
     width: 100%;
   }
   .filters .radio-button {
-    width: 45%;
-  }
-  .filters .radio-button:nth-child(2), .filters .radio-button:last-child {
-    margin-right: 0 !important;
+    width: 47%;
   }
   .current-overall-rating {
     margin: 20px 0 !important;
@@ -1834,13 +1809,6 @@
   }
   .similar-result {
     margin-top: 0 !important;
-  }
-  .drop-cv-modal {
-    overflow-y: auto !important;
-    margin: 20px auto !important;
-  }
-  .drop-cv-modal .modal-content {
-    padding: 50px 20px !important;
   }
   .offer-slider {
     margin-top: 0px !important;
@@ -1950,7 +1918,7 @@
 
 .general-banner {
   width: 100vw;
-  height: 35vh;
+  min-height: 35vh;
   margin-top: 128px;
   padding-top: 50px;
   background-image: url("../../images/general-banner.jpg");
@@ -2049,14 +2017,14 @@
 
 .life .life-content p {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.7;
   font-weight: 400;
   color: #666;
 }
 
 .common-section p {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.7;
   font-weight: 400;
   color: #666;
 }
@@ -2129,23 +2097,6 @@
   border: 1px solid #059762;
 }
 
-.drop-cv-modal {
-  max-width: 800px;
-  overflow: hidden;
-}
-
-.drop-cv-modal .modal-body {
-  text-align: left;
-}
-
-.drop-cv-modal .modal-body .common-h2 {
-  font-size: 40px !important;
-}
-
-.modal {
-  overflow: hidden;
-}
-
 .general-banner.align-v-center {
   padding: 100px 0;
 }
@@ -2181,7 +2132,7 @@
 
 .terms ul li p {
   font-size: 16px;
-  line-height: 25px;
+  line-height: 1.5;
   font-weight: 400;
   color: #666;
   margin-left: 10px;
@@ -2189,7 +2140,7 @@
 
 p {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
   font-weight: 400;
   color: #666;
 }
@@ -2242,7 +2193,7 @@ p {
 
 .card-general p {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
   font-weight: 400;
   color: #666;
   margin-bottom: 20px;

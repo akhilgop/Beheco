@@ -140,7 +140,8 @@
             font-size: 24px !important;
         }
         p {
-            font-size: 16px !important;
+            font-size: 14px !important;
+            margin: 20px 0 !important;
         }
     }
     .subscribe {
@@ -1032,5 +1033,57 @@
 @media screen and (max-width: 1399px) {
     .btn {
         padding: 5px 15px !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .slide-item {
+        padding: 10px 0 !important;
+        .list-item {
+            padding: 10px !important;
+            h5 {
+                font-size: 18px !important;
+            }
+        }
+    }
+    a {
+        font-size: 14px;
+    }
+    .freelancer-info {
+        p,
+        a,
+        span {
+            font-size: 14px !important;
+        }
+    }
+    .event-card {
+        padding: 10px !important;
+        margin: 0 !important;
+        .text-section {
+            h5 {
+                line-height: 1.2 !important;
+            }
+        }
+    }
+    p,
+    a,
+    .form-label {
+        font-size: 14px !important;
+    }
+    .custom-hdng .separator {
+        margin: 15px 0 !important;
+    }
+    .card-default h3,
+    .answer-card h5 {
+        margin-bottom: 15px !important;
+    }
+    .answer-card .auther-info h6,
+    .feedback-card .main-content .auther-info h6 {
+        font-size: 14px !important;
+    }
+    .common-h2.mb-0 {
+        margin-bottom: 0 !important;
+    }
+    .profile .highlighted-content {
+        padding: 15px !important;
     }
 }

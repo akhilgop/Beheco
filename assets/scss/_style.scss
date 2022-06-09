@@ -194,6 +194,8 @@
     background: url("../images/banner.png");
     background-repeat: no-repeat;
     background-size: contain;
+    overflow: visible !important;
+    z-index: 11;
     @include flex-hv-cntr;
     .search-bar-container {
         padding: 50px 50px 20px 50px;
@@ -253,6 +255,9 @@ h2 {
     position: absolute;
     top: 50px;
     width: 100%;
+    z-index: 1111;
+    max-height: 250px;
+    overflow-y: auto;
     .sr-content {
         padding: 10px;
         width: 100%;
@@ -593,7 +598,7 @@ h2 {
             font-family: $primary-font;
         }
         p {
-            @include text(18px, 36px, 400, $black6);
+            @include text(18px, 1.5, 400, $black6);
             margin: 20px 0 40px 0;
         }
     }
