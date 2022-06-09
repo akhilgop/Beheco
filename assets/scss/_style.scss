@@ -87,7 +87,7 @@
         .common-links {
             display: flex;
             a {
-                @include text(14px, 20px, 400, $body-color);
+                @include text(14px, 1, 400, $body-color);
             }
             .separator {
                 width: 1px;
@@ -258,6 +258,7 @@ h2 {
     z-index: 1111;
     max-height: 250px;
     overflow-y: auto;
+    display: none;
     .sr-content {
         padding: 10px;
         width: 100%;
@@ -311,6 +312,8 @@ h2 {
             color: $body-color;
             p {
                 margin: 0;
+                font-weight: 600;
+                color: $black;
             }
         }
         &:hover {
@@ -379,7 +382,6 @@ h2 {
         overflow: hidden;
         display: flex;
         align-items: flex-end;
-        margin-bottom: 30px;
         .card-description {
             padding: 30px;
             display: flex;
@@ -491,7 +493,6 @@ h2 {
     border-radius: 20px;
     overflow: hidden;
     display: flex;
-    margin-bottom: 30px;
     flex-wrap: nowrap;
     box-shadow: $box-shadow;
     transition: 0.2s all ease-out;
@@ -519,7 +520,7 @@ h2 {
             @include text(25px, 30px, 600, $body-color);
         }
         p {
-            @include text(16px, 30px, 400, $black6);
+            @include text(16px, 1.8, 400, $black6);
         }
         .icon-text-container {
             display: flex;
@@ -535,7 +536,6 @@ h2 {
             }
         }
         .description-content {
-            height: 60px;
             overflow: hidden;
             text-overflow: ellipsis;
         }
@@ -598,7 +598,7 @@ h2 {
             font-family: $primary-font;
         }
         p {
-            @include text(18px, 1.5, 400, $black6);
+            @include text(18px, 1.8, 400, $black6);
             margin: 20px 0 40px 0;
         }
     }
@@ -638,7 +638,7 @@ h2 {
                 text-align: center;
                 width: 100%;
                 white-space: normal;
-                @include text(16px, 28px, 400, $black1);
+                @include text(16px, 1.8, 400, $black1);
             }
             .right-align {
                 flex-wrap: wrap;
@@ -730,7 +730,7 @@ h2 {
         margin-bottom: 30px;
     }
     p {
-        @include text(16px, 32px, 400, $black6);
+        @include text(16px, 1.8, 400, $black6);
         margin-bottom: 50px;
     }
 }
@@ -867,4 +867,16 @@ h2 {
 .navbar-toggler:active .navbar-toggler-icon,
 .navbar-toggler:focus .navbar-toggler-icon {
     background: none !important;
+}
+.unbreak {
+    span {
+        display: inline !important;
+    }
+}
+.hover-visible {
+    &:hover {
+        .search-results-container {
+            display: block;
+        }
+    }
 }

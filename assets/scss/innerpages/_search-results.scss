@@ -69,99 +69,14 @@
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
-.listing-card {
-    background-color: $white;
-    padding: 15px;
-    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1) !important;
-    border-radius: 20px;
-    transition: 0.2s all ease-out;
-    &:hover {
-        .image-wrapper {
-            img {
-                width: 110% !important;
-            }
-        }
-    }
-    .txt-section {
-        h5 {
-            width: 80%;
-            font-size: 20px;
-            line-height: 25px;
-            margin-bottom: 5px;
-            overflow: hidden;
-        }
-        p {
-            margin: 7px 0;
-        }
-        .right-align {
-            width: 20%;
-            align-items: flex-start;
-            i {
-                color: $bdr;
-                font-size: 23px;
-            }
-        }
-        .btn-warpper {
-            width: 60%;
-        }
 
-        .bottom-section {
-            flex-wrap: nowrap !important;
-        }
-    }
-    .overall-rating {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 40%;
-        p {
-            margin: 0 0 0 10px;
-            @include text(16px, 16px, 400, $body-color);
-        }
-        i {
-            color: $primary;
-        }
-    }
-    p {
-        @include text(15px, 15px, 400, rgba($color: $body-color, $alpha: 0.5));
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin: 10px 0 20px 0;
-    }
-    h5 {
-        @include text(25px, 35px, 600, $body-color);
-    }
-    .image-wrapper {
-        border-radius: 10px;
-        overflow: hidden;
-        transition: 0.2s all ease-out;
-        img {
-            width: 100%;
-            transition: 0.2s all ease-out;
-        }
-    }
-    .btn-save {
-        padding: 0;
-        z-index: 1111;
-        position: relative;
-        &:hover,
-        &:active,
-        &:focus {
-            i {
-                color: $primary;
-                transition: 0.2s all ease-out;
-            }
-        }
-    }
-}
 .pagination-wrapper {
     margin: 30px 0 0 0;
 }
 .related-search {
     padding-bottom: 50px;
     h3 {
-        @include text(25px, 28px, 600, $body-color);
+        @include text(25px, 1.2, 600, $body-color);
         margin: 30px 0 20px 0;
         span {
             color: $primary;
@@ -231,16 +146,7 @@
     #content-section-wrapper {
         padding: 0 !important;
         // margin-left: -50px;
-        .listing-card {
-            padding: 10px !important;
-
-            .top-section {
-                h5 {
-                    font-size: 18px !important;
-                    line-height: 20px !important;
-                }
-            }
-        }
+        
         .listing-wrapper {
             grid-template-columns: repeat(2, 1fr) !important;
             width: 100% !important;
@@ -282,17 +188,7 @@
         #content-section-wrapper {
             width: 93vw !important;
         }
-        .listing-card {
-            .bottom-section {
-                flex-wrap: wrap !important;
-                .btn-warpper,
-                .overall-rating {
-                    width: 100% !important;
-                    justify-content: left !important;
-                    margin-bottom: 5px;
-                }
-            }
-        }
+        
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -309,9 +205,7 @@
         .listing-wrapper {
             grid-template-columns: repeat(3, 1fr) !important;
             width: 100% !important;
-            .listing-card {
-                padding: 15px !important;
-            }
+            
         }
     }
     .results-content {

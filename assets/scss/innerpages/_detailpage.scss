@@ -86,7 +86,7 @@
             align-items: center;
             margin-bottom: 15px;
             h2 {
-                @include text(25px, 35px, 600, $body-color);
+                @include text(25px, 1.5, 600, $body-color);
                 margin-bottom: 0px;
                 i {
                     color: $primary;
@@ -164,19 +164,13 @@
                 font-size: 15px;
             }
 
-            .icon-section {
-                display: flex;
-                justify-content: flex-end;
-                width: 10%;
-            }
             .text-section {
-                width: 90%;
                 a {
                     text-align: right;
                 }
                 p {
                     text-align: right;
-                    @include text(15px, 21px, 400, $black9);
+                    @include text(15px, 1.5, 400, $black9);
                 }
             }
         }
@@ -208,24 +202,13 @@
         text-align: right;
     }
     p {
-        @include text(16px, 30px, 400, $black9);
+        @include text(16px, 1.8, 400, $black9);
         &:last-child {
             margin-bottom: 0;
         }
     }
-    ul {
-        list-style-image: url("../../images/svg/card-list-style-image.svg");
-        padding-left: 30px;
-        margin-bottom: 0;
-        li {
-            p {
-                @include text(16px, 40px, 400, $black9);
-                margin-left: 10px;
-            }
-        }
-    }
     .view-more-link {
-        @include text(16px, 18px, 600, $primary);
+        @include text(16px, 1, 600, $primary);
         &:hover,
         &:active,
         &:focus {
@@ -239,7 +222,7 @@
         padding: 0;
         border: none;
         p {
-            @include text(16px, 30px, 400, $black9);
+            @include text(16px, 1.8, 400, $black9);
         }
     }
 }
@@ -302,7 +285,7 @@
     .rating-text-wrpper {
         p {
             margin-bottom: 0;
-            @include text(16px, 20px, 400, $black9);
+            @include text(16px, 1, 400, $black9);
         }
     }
 
@@ -334,7 +317,7 @@
             margin-left: 5px;
         }
         p {
-            @include text(14px, 17px, 400, $black9);
+            @include text(14px, 1.2, 400, $black9);
             margin-bottom: 0px;
         }
     }
@@ -350,7 +333,7 @@
     }
     .star-count {
         p {
-            @include text(14px, 17px, 400, $black9);
+            @include text(14px, 1.2, 400, $black9);
             margin-bottom: 0px;
         }
     }
@@ -388,7 +371,7 @@
         width: 80%;
         margin-left: 20px;
         p {
-            @include text(16px, 30px, 400, $black9);
+            @include text(16px, 1.8, 400, $black9);
             margin-bottom: 0px;
         }
         .auther-info {
@@ -770,7 +753,7 @@
     .similar-result {
         margin-top: 0 !important;
     }
-    
+
     .offer-slider {
         margin-top: 0px !important;
     }

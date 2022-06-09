@@ -41,7 +41,7 @@
         margin: 25px 0 10px 0;
     }
     p {
-        @include text(16px, 32px, 400, $black6);
+        @include text(16px, 1.8, 400, $black6);
     }
     .full-wdth-btn {
         .btn {

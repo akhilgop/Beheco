@@ -17,7 +17,7 @@
             justify-content: center;
         }
         h2 {
-            @include text(30px, 35px, 600, $body-color);
+            @include text(30px, 1.2, 600, $body-color);
         }
         .social-media {
             @include flex-h-cntr;

@@ -45,7 +45,7 @@
         background: $white;
         color: $body-color;
         box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
-        transition: all 0.6s cubic-bezier(0.945, 0.02, 0.27, 0.665);
+        transition: all 0.6s ease-out;
         transform-origin: bottom left;
     }
 
@@ -96,7 +96,7 @@
     #sidebarCollapse {
         width: 40px;
         height: 40px;
-        background: #f5f5f5;
+        background: transparent;
     }
 
     #sidebarCollapse span {
@@ -104,7 +104,7 @@
         height: 2px;
         margin: 0 auto;
         display: block;
-        background: #555;
+        background: $primary;
         transition: all 0.8s cubic-bezier(0.81, -0.33, 0.345, 1.375);
         transition-delay: 0.2s;
     }
