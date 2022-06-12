@@ -168,9 +168,17 @@
     background-color: $bg;
     @include flex-hv-cntr;
 }
+@mixin square($unit) {
+    width: $unit !important;
+    height: $unit !important;
+    min-width: $unit !important;
+    border-radius: $b-rds;
+    @include flex-hv-cntr;
+}
 @mixin circle-only($unit) {
-    width: $unit;
-    height: $unit;
+    width: $unit !important;
+    height: $unit !important;
+    min-width: $unit !important;
     border-radius: 50%;
     @include flex-hv-cntr;
 }
@@ -328,4 +336,7 @@
     &:hover::before {
         height: 0%;
     }
+}
+@mixin transition {
+    transition: all 0.5s ease-out;
 }

@@ -32,7 +32,53 @@ $(document).ready(function () {
         $(this).toggleClass("active");
     });
 });
-
+// ----------------------------------------------------Image Uploader-----------------------------------------------------//
+function CustomUpload(element) {
+    let ref = this;
+    this.imageFileArray = [];
+    this.element = $(element);
+    this.element.on('change', async function (e) {
+        let arrayImage = e.target.files;
+        let start = ref.imageFileArray.length;
+        let validExt = ['image/jpg', 'image/jpeg', 'image/png'];
+        $.each(arrayImage, (index, item) => {
+            if ($.inArray(item.type, validExt) != -1) {
+                item.index = start + index;
+                ref.imageFileArray.push(item);
+                let fr = new FileReader();
+                let imageItem = '';
+                fr.onload = function (event) {
+                    imageItem += `
+<div class="custom-file-preview-item"
+style="background: url('${event.target.result}')">
+<span data-key="${item.index}" class="custom-file-preview-del"><i
+class="fa fa-times"></i></span>
+</div>
+`;
+                    $('.custom-file-preview').append(imageItem);
+                }
+                fr.readAsDataURL(item);
+            } else {
+                alert('This is not an image');
+            }
+            //Array images
+            console.log(ref.imageFileArray);
+        });
+    });
+    this.element.parent().on('click', '.custom-file-preview-del', function (e) {
+        e.preventDefault();
+        let del = $(this);
+        let id = del.data('key');
+        let index = ref.imageFileArray.findIndex(item => {
+            return item.index == id;
+        });
+        ref.imageFileArray.splice(index, 1);
+        del.parent().remove();
+        //Array after deleted
+        console.log(ref.imageFileArray);
+    });
+}
+const upload = new CustomUpload('#fileImage');
 
 // ----------------------------------------------------------------Move To Top-------------------------------------------------------------------
 
@@ -234,3 +280,47 @@ $(function () {
     });
 });
 
+// ----------------------------------------------------------------Nested Dropdown-------------------------------------------------------------
+(function ($bs) {
+    const CLASS_NAME = 'has-child-dropdown-show';
+    $bs.Dropdown.prototype.toggle = function (_orginal) {
+        return function () {
+            document.querySelectorAll('.' + CLASS_NAME).forEach(function (e) {
+                e.classList.remove(CLASS_NAME);
+            });
+            let dd = this._element.closest('.dropdown').parentNode.closest('.dropdown');
+            for (; dd && dd !== document; dd = dd.parentNode.closest('.dropdown')) {
+                dd.classList.add(CLASS_NAME);
+            }
+            return _orginal.call(this);
+        }
+    }($bs.Dropdown.prototype.toggle);
+
+    document.querySelectorAll('.dropdown').forEach(function (dd) {
+        dd.addEventListener('hide.bs.dropdown', function (e) {
+            if (this.classList.contains(CLASS_NAME)) {
+                this.classList.remove(CLASS_NAME);
+                e.preventDefault();
+            }
+            e.stopPropagation(); // do not need pop in multi level mode
+        });
+    });
+
+    // for hover
+    document.querySelectorAll('.dropdown-hover, .dropdown-hover-all .dropdown').forEach(function (dd) {
+        dd.addEventListener('mouseenter', function (e) {
+            let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+            if (!toggle.classList.contains('show')) {
+                $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+                dd.classList.add(CLASS_NAME);
+                $bs.Dropdown.clearMenus();
+            }
+        });
+        dd.addEventListener('mouseleave', function (e) {
+            let toggle = e.target.querySelector(':scope>[data-bs-toggle="dropdown"]');
+            if (toggle.classList.contains('show')) {
+                $bs.Dropdown.getOrCreateInstance(toggle).toggle();
+            }
+        });
+    });
+})(bootstrap);

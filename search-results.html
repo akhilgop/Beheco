@@ -80,7 +80,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><i class="fas fa-bars text-primary"></i></span>
+                <span class="navbar-toggler-icon"><img src="assets/images/svg/menu_icon.svg" alt=""></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -97,32 +97,41 @@
                     </div>
                 </div>
                 <div class="d-flex">
-                    <div class="signin-box">
+                    <div class="signin-box dropdown-hover-all">
                         <div class="dropdown">
-                            <button class="btn btn-user dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <div class="img-wrapper">
-                                    <img src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                                        alt="user-icon">
+                            <button class="btn btn-user dropdown-toggle" id="hover-dropdown" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <div class="img-wrapper equal-1-1">
+                                    <span
+                                        style="background: url('assets/images/user.jpg'); background-size: cover;"></span>
                                 </div>
                                 <span>Hello Jack</span>
                                 <span>
                                     <p class="badge bg-primary">New</p>
                                 </span>
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                <li><a class="dropdown-item flx-v-cntr" href="#">
-                                        <div class="content-count">
-                                            <span>Notifications</span>
-                                            <span>
-                                                <h6 class="badge bg-primary">1</h6>
-                                            </span>
-                                        </div>
-                                    </a></li>
-                                <li><a class="dropdown-item" href="#">Saved Items</a></li>
-                                <li><a class="dropdown-item" href="#">Sign Out</a></li>
-                            </ul>
+                            <div class="dropdown-menu" aria-labelledby="hover-dropdown">
+                                <a class="dropdown-item" href="#">Profile</a>
+                                <a class="dropdown-item flx-v-cntr" href="#">
+                                    <div class="content-count">
+                                        <span>Notifications</span>
+                                        <span>
+                                            <h6 class="badge bg-primary">1</h6>
+                                        </span>
+                                    </div>
+                                </a>
+                                <div class="dropdown dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My
+                                        Listings</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                        <a class="dropdown-item" href="#">Business 1</a>
+                                        <a class="dropdown-item" href="#">Business 2</a>
+                                    </div>
+                                </div>
+                                <a class="dropdown-item" href="#">Saved Items</a>
+                                <a class="dropdown-item" href="#">Sign Out</a>
+                            </div>
                         </div>
                     </div>
                     <button class="btn btn-black"><img src="assets/images/svg/plus-icon.svg" alt="plus-icon"><span>Add

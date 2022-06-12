@@ -7802,7 +7802,7 @@ section.bg-secondary,
 .bg-black label,
 .bg-black span,
 .bg-black i {
-  color: #fff;
+  color: #fff !important;
 }
 
 .inverted .breadcrumb-item+.breadcrumb-item::before,

@@ -21,26 +21,50 @@
             width: 100%;
         }
     }
-    .profile-pic {
-        width: 200px;
-        height: 200px;
-        border: 5px solid $white;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-        margin-top: -100px;
-        margin-bottom: 50px;
-        img {
-            width: 100%;
+}
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border: 5px solid $white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    margin-top: -100px;
+    margin-bottom: 50px;
+    img {
+        width: 100%;
+    }
+}
+.quick-action-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 0 50px 0;
+    .quick-action-link {
+        @include circle(50px, $primary);
+        margin-right: 20px;
+        color: $white;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+            box-shadow: none;
+            outline: 0;
+            background-color: $secondary;
+            border-color: $secondary;
+            text-decoration: none;
         }
     }
-    .quick-action-wrapper {
+}
+.social-media {
+    .social-links {
         display: flex;
-        justify-content: flex-end;
-        margin: 30px 0 50px 0;
-        a {
-            @include circle(50px, $primary);
-            margin-right: 20px;
+        align-items: center;
+        margin: 20px 0 10px 0;
+        .icon {
+            @include circle(30px, $tertiary);
+            margin-right: 15px;
             color: $white;
             &:last-child {
                 margin-right: 0;
@@ -56,130 +80,117 @@
             }
         }
     }
-    .social-media {
-        .social-links {
-            display: flex;
-            align-items: center;
-            margin: 20px 0 10px 0;
-            .icon {
-                @include circle(30px, $tertiary);
-                margin-right: 15px;
-                color: $white;
-                &:last-child {
-                    margin-right: 0;
-                }
-                &:hover,
-                &:active,
-                &:focus {
-                    box-shadow: none;
-                    outline: 0;
-                    background-color: $secondary;
-                    border-color: $secondary;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-    .general-info {
-        .title {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-            h2 {
-                @include text(25px, 1.5, 600, $body-color);
-                margin-bottom: 0px;
-                i {
-                    color: $primary;
-                    margin-left: 5px;
-                    font-size: 16px;
-                }
-            }
-
-            img {
-                margin-left: 10px;
-                color: $primary;
-            }
-        }
-        p {
-            @include text(15px, 15px, 400, $black9);
-            margin-bottom: 15px;
-        }
-        .overall-rating {
-            display: flex;
-            align-items: center;
+}
+.general-info {
+    .title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        h2 {
+            @include text(25px, 1.5, 600, $body-color);
+            margin-bottom: 0px;
             i {
+                color: $primary;
+                margin-left: 5px;
                 font-size: 16px;
-                margin-right: 10px;
-                color: $primary;
             }
-            h6 {
-                @include text(15px, 15px, 600, $black9);
-                margin: 0;
-                span {
-                    font-weight: 400;
-                }
-            }
+        }
+
+        img {
+            margin-left: 10px;
+            color: $primary;
         }
     }
-    .highlighted-content {
-        padding: 30px;
-        background-color: rgba($color: $primary, $alpha: 0.05);
-        border-radius: 15px;
-        height: 100%;
-        .timing {
-            p {
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
+    p {
+        @include text(15px, 15px, 400, $black9);
+        margin-bottom: 15px;
+    }
+    .overall-rating {
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 16px;
+            margin-right: 10px;
+            color: $primary;
         }
-        .align-right {
-            p {
-                text-align: right;
+        h6 {
+            @include text(15px, 15px, 600, $black9);
+            margin: 0;
+            span {
+                font-weight: 400;
             }
-        }
-        p {
-            @include text(15px, 15px, 400, $black9);
-        }
-        .inner-link {
-            display: flex;
-            margin-bottom: 15px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-            a {
-                display: block;
-                @include text(15px, 15px, 400, $black9);
-                &:hover,
-                &:active,
-                &:focus {
-                    box-shadow: none;
-                    outline: 0;
-                    text-decoration: none;
-                    color: $primary;
-                }
-            }
-            i {
-                color: $primary;
-                font-size: 15px;
-            }
-
-            .text-section {
-                a {
-                    text-align: right;
-                }
-                p {
-                    text-align: right;
-                    @include text(15px, 1.5, 400, $black9);
-                }
-            }
-        }
-        .location-icn {
-            margin-top: 5px;
         }
     }
 }
+.highlighted-content {
+    padding: 30px;
+    background-color: rgba($color: $primary, $alpha: 0.05);
+    border-radius: 15px;
+    height: 100%;
+    .timing {
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .align-right {
+        p {
+            text-align: right;
+        }
+    }
+    p {
+        @include text(15px, 15px, 400, $black9);
+    }
+    .inner-link {
+        display: flex;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            display: block;
+            @include text(15px, 15px, 400, $black9);
+            &:hover,
+            &:active,
+            &:focus {
+                box-shadow: none;
+                outline: 0;
+                text-decoration: none;
+                color: $primary;
+            }
+        }
+        i {
+            color: $primary;
+            font-size: 15px;
+        }
 
+        .text-section {
+            a {
+                text-align: right;
+            }
+            p {
+                text-align: right;
+                @include text(15px, 1.5, 400, $black9);
+            }
+        }
+    }
+    .location-icn {
+        margin-top: 5px;
+    }
+}
+.dotted-card {
+    border: 3px dashed $bdr;
+    border-radius: $b-rds-md;
+    overflow: hidden;
+}
+.change-pic {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 11;
+    background: rgba($color: $primary, $alpha: 0.5);
+}
 // ----------------------------------------------------Card Default-----------------------------------------------------//
 .card-default {
     width: 100%;
@@ -346,14 +357,18 @@
         color: $primary;
     }
 }
-
+.feedbacks {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .feedback-card {
     padding: 20px;
     border: 1px solid $bdr;
     border-radius: 15px;
-    margin-bottom: 20px;
     display: flex;
     flex-wrap: nowrap;
+    gap: 1rem;
     .dp {
         @include circle(60px, rgba($color: $primary, $alpha: 0.2));
         min-width: 60px;
@@ -368,8 +383,10 @@
         }
     }
     .main-content {
-        width: 80%;
-        margin-left: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         p {
             @include text(16px, 1.8, 400, $black9);
             margin-bottom: 0px;
@@ -377,7 +394,6 @@
         .auther-info {
             display: flex;
             align-items: center;
-            margin-top: 10px;
             p {
                 @include text(12px, 12px, 400, $black9);
                 margin-left: 10px;
@@ -401,40 +417,53 @@
                 @include text(20px, 20px, 600, $primary);
             }
         }
-        .likes-wrapper {
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-end;
-            .like {
-                display: flex;
-                align-items: center;
-                margin-right: 15px;
-                i {
-                    font-size: 12px;
-                    color: $black9;
-                }
-                p {
-                    @include text(12px, 12px, 400, $black9);
-                    margin-left: 10px;
-                    margin-bottom: 0;
-                }
-                &:hover,
-                &:active,
-                &:focus {
-                    box-shadow: none;
-                    outline: 0;
-                    text-decoration: none;
-                    i,
-                    p {
-                        color: $primary;
-                    }
-                }
-            }
-            .dislike {
-                @extend .like;
-                margin-right: 0;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 700;
+        color: #059762;
+        text-transform: uppercase;
+    }
+    .reply-btn {
+        text-align: left !important;
+    }
+}
+.attached-media {
+    @include square(80px);
+}
+.likes-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    .like {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        i {
+            font-size: 12px;
+            color: $black9;
+        }
+        p {
+            @include text(12px, 12px, 400, $black9);
+            margin-left: 10px;
+            margin-bottom: 0;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+            box-shadow: none;
+            outline: 0;
+            text-decoration: none;
+            i,
+            p {
+                color: $primary;
             }
         }
+    }
+    .dislike {
+        @extend .like;
+        margin-right: 0;
     }
 }
 .review-rating,
@@ -715,7 +744,6 @@
             flex-wrap: wrap;
             .main-content {
                 width: 100% !important;
-                margin: 20px 0 !important;
             }
 
             .right-portion {

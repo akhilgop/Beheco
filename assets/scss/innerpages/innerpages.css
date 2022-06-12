@@ -666,7 +666,7 @@
   width: 100%;
 }
 
-.profile .profile-pic {
+.profile-pic {
   width: 200px;
   height: 200px;
   border: 5px solid #fff;
@@ -678,11 +678,11 @@
   margin-bottom: 50px;
 }
 
-.profile .profile-pic img {
+.profile-pic img {
   width: 100%;
 }
 
-.profile .quick-action-wrapper {
+.quick-action-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,7 +692,7 @@
   margin: 30px 0 50px 0;
 }
 
-.profile .quick-action-wrapper a {
+.quick-action-wrapper .quick-action-link {
   width: 50px !important;
   height: 50px !important;
   min-width: 50px !important;
@@ -711,11 +711,11 @@
   color: #fff;
 }
 
-.profile .quick-action-wrapper a:last-child {
+.quick-action-wrapper .quick-action-link:last-child {
   margin-right: 0;
 }
 
-.profile .quick-action-wrapper a:hover, .profile .quick-action-wrapper a:active, .profile .quick-action-wrapper a:focus {
+.quick-action-wrapper .quick-action-link:hover, .quick-action-wrapper .quick-action-link:active, .quick-action-wrapper .quick-action-link:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: 0;
@@ -724,7 +724,7 @@
   text-decoration: none;
 }
 
-.profile .social-media .social-links {
+.social-media .social-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -734,7 +734,7 @@
   margin: 20px 0 10px 0;
 }
 
-.profile .social-media .social-links .icon {
+.social-media .social-links .icon {
   width: 30px !important;
   height: 30px !important;
   min-width: 30px !important;
@@ -753,11 +753,11 @@
   color: #fff;
 }
 
-.profile .social-media .social-links .icon:last-child {
+.social-media .social-links .icon:last-child {
   margin-right: 0;
 }
 
-.profile .social-media .social-links .icon:hover, .profile .social-media .social-links .icon:active, .profile .social-media .social-links .icon:focus {
+.social-media .social-links .icon:hover, .social-media .social-links .icon:active, .social-media .social-links .icon:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: 0;
@@ -766,7 +766,7 @@
   text-decoration: none;
 }
 
-.profile .general-info .title {
+.general-info .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -776,7 +776,7 @@
   margin-bottom: 15px;
 }
 
-.profile .general-info .title h2 {
+.general-info .title h2 {
   font-size: 25px;
   line-height: 1.5;
   font-weight: 600;
@@ -784,18 +784,18 @@
   margin-bottom: 0px;
 }
 
-.profile .general-info .title h2 i {
+.general-info .title h2 i {
   color: #059762;
   margin-left: 5px;
   font-size: 16px;
 }
 
-.profile .general-info .title img {
+.general-info .title img {
   margin-left: 10px;
   color: #059762;
 }
 
-.profile .general-info p {
+.general-info p {
   font-size: 15px;
   line-height: 15px;
   font-weight: 400;
@@ -803,7 +803,7 @@
   margin-bottom: 15px;
 }
 
-.profile .general-info .overall-rating {
+.general-info .overall-rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -812,13 +812,13 @@
           align-items: center;
 }
 
-.profile .general-info .overall-rating i {
+.general-info .overall-rating i {
   font-size: 16px;
   margin-right: 10px;
   color: #059762;
 }
 
-.profile .general-info .overall-rating h6 {
+.general-info .overall-rating h6 {
   font-size: 15px;
   line-height: 15px;
   font-weight: 600;
@@ -826,44 +826,44 @@
   margin: 0;
 }
 
-.profile .general-info .overall-rating h6 span {
+.general-info .overall-rating h6 span {
   font-weight: 400;
 }
 
-.profile .highlighted-content {
+.highlighted-content {
   padding: 30px;
   background-color: rgba(5, 151, 98, 0.05);
   border-radius: 15px;
   height: 100%;
 }
 
-.profile .highlighted-content .timing p:last-child {
+.highlighted-content .timing p:last-child {
   margin-bottom: 0;
 }
 
-.profile .highlighted-content .align-right p {
+.highlighted-content .align-right p {
   text-align: right;
 }
 
-.profile .highlighted-content p {
+.highlighted-content p {
   font-size: 15px;
   line-height: 15px;
   font-weight: 400;
   color: #666;
 }
 
-.profile .highlighted-content .inner-link {
+.highlighted-content .inner-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 15px;
 }
 
-.profile .highlighted-content .inner-link:last-child {
+.highlighted-content .inner-link:last-child {
   margin-bottom: 0;
 }
 
-.profile .highlighted-content .inner-link a {
+.highlighted-content .inner-link a {
   display: block;
   font-size: 15px;
   line-height: 15px;
@@ -871,7 +871,7 @@
   color: #666;
 }
 
-.profile .highlighted-content .inner-link a:hover, .profile .highlighted-content .inner-link a:active, .profile .highlighted-content .inner-link a:focus {
+.highlighted-content .inner-link a:hover, .highlighted-content .inner-link a:active, .highlighted-content .inner-link a:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: 0;
@@ -879,16 +879,16 @@
   color: #059762;
 }
 
-.profile .highlighted-content .inner-link i {
+.highlighted-content .inner-link i {
   color: #059762;
   font-size: 15px;
 }
 
-.profile .highlighted-content .inner-link .text-section a {
+.highlighted-content .inner-link .text-section a {
   text-align: right;
 }
 
-.profile .highlighted-content .inner-link .text-section p {
+.highlighted-content .inner-link .text-section p {
   text-align: right;
   font-size: 15px;
   line-height: 1.5;
@@ -896,8 +896,22 @@
   color: #666;
 }
 
-.profile .highlighted-content .location-icn {
+.highlighted-content .location-icn {
   margin-top: 5px;
+}
+
+.dotted-card {
+  border: 3px dashed #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.change-pic {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 11;
+  background: rgba(5, 151, 98, 0.5);
 }
 
 .card-default {
@@ -1129,16 +1143,27 @@
   color: #059762;
 }
 
+.feedbacks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
 .feedback-card {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 15px;
-  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  gap: 1rem;
 }
 
 .feedback-card .dp {
@@ -1174,8 +1199,15 @@
 }
 
 .feedback-card .main-content {
-  width: 80%;
-  margin-left: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
 }
 
 .feedback-card .main-content p {
@@ -1193,7 +1225,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 10px;
 }
 
 .feedback-card .main-content .auther-info p {
@@ -1235,7 +1266,35 @@
   color: #059762;
 }
 
-.feedback-card .right-portion .likes-wrapper {
+.feedback-card h3 {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 700;
+  color: #059762;
+  text-transform: uppercase;
+}
+
+.feedback-card .reply-btn {
+  text-align: left !important;
+}
+
+.attached-media {
+  width: 80px !important;
+  height: 80px !important;
+  min-width: 80px !important;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.likes-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1247,7 +1306,7 @@
           justify-content: flex-end;
 }
 
-.feedback-card .right-portion .likes-wrapper .like, .feedback-card .right-portion .likes-wrapper .dislike {
+.likes-wrapper .like, .likes-wrapper .dislike {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1257,12 +1316,12 @@
   margin-right: 15px;
 }
 
-.feedback-card .right-portion .likes-wrapper .like i, .feedback-card .right-portion .likes-wrapper .dislike i {
+.likes-wrapper .like i, .likes-wrapper .dislike i {
   font-size: 12px;
   color: #666;
 }
 
-.feedback-card .right-portion .likes-wrapper .like p, .feedback-card .right-portion .likes-wrapper .dislike p {
+.likes-wrapper .like p, .likes-wrapper .dislike p {
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
@@ -1271,24 +1330,24 @@
   margin-bottom: 0;
 }
 
-.feedback-card .right-portion .likes-wrapper .like:hover, .feedback-card .right-portion .likes-wrapper .dislike:hover, .feedback-card .right-portion .likes-wrapper .like:active, .feedback-card .right-portion .likes-wrapper .dislike:active, .feedback-card .right-portion .likes-wrapper .like:focus, .feedback-card .right-portion .likes-wrapper .dislike:focus {
+.likes-wrapper .like:hover, .likes-wrapper .dislike:hover, .likes-wrapper .like:active, .likes-wrapper .dislike:active, .likes-wrapper .like:focus, .likes-wrapper .dislike:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: 0;
   text-decoration: none;
 }
 
-.feedback-card .right-portion .likes-wrapper .like:hover i, .feedback-card .right-portion .likes-wrapper .dislike:hover i,
-.feedback-card .right-portion .likes-wrapper .like:hover p,
-.feedback-card .right-portion .likes-wrapper .dislike:hover p, .feedback-card .right-portion .likes-wrapper .like:active i, .feedback-card .right-portion .likes-wrapper .dislike:active i,
-.feedback-card .right-portion .likes-wrapper .like:active p,
-.feedback-card .right-portion .likes-wrapper .dislike:active p, .feedback-card .right-portion .likes-wrapper .like:focus i, .feedback-card .right-portion .likes-wrapper .dislike:focus i,
-.feedback-card .right-portion .likes-wrapper .like:focus p,
-.feedback-card .right-portion .likes-wrapper .dislike:focus p {
+.likes-wrapper .like:hover i, .likes-wrapper .dislike:hover i,
+.likes-wrapper .like:hover p,
+.likes-wrapper .dislike:hover p, .likes-wrapper .like:active i, .likes-wrapper .dislike:active i,
+.likes-wrapper .like:active p,
+.likes-wrapper .dislike:active p, .likes-wrapper .like:focus i, .likes-wrapper .dislike:focus i,
+.likes-wrapper .like:focus p,
+.likes-wrapper .dislike:focus p {
   color: #059762;
 }
 
-.feedback-card .right-portion .likes-wrapper .dislike {
+.likes-wrapper .dislike {
   margin-right: 0;
 }
 
@@ -1600,7 +1659,6 @@
   .feedbacks .feedback-card .main-content,
   #allReviews .feedback-card .main-content {
     width: 100% !important;
-    margin: 20px 0 !important;
   }
   .feedbacks .feedback-card .right-portion,
   #allReviews .feedback-card .right-portion {

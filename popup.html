@@ -20,14 +20,13 @@
     <section>
         <div class="container">
             <!------------------------------------------------------------------Sign Up------------------------------------------------------------->
-            <div class="d-flex gap-3 flex-mob-wrap m-0">
+            <div class="d-flex gap-3 flex-wrap m-0">
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SignUp">
                     Sign Up
                 </button>
-
                 <!-- Modal -->
-                <div class="modal fade" id="SignUp" tabindex="-1" aria-labelledby="SignUpLabel" aria-hidden="true">
+                <div class="modal fade" id="SignIn" tabindex="-1" aria-labelledby="SignInLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="right-align">
@@ -39,27 +38,106 @@
                                     <img src="assets/images/logo.png" alt="logo">
                                 </div>
                                 <div class="content">
-                                    <h2 class="common-h2"><span>Sign Up</span> and Explore More</h2>
-                                    <div class="d-grid gap-3">
-                                        <button class="btn btn-google m-0" type="button">
-                                            <div class="icon">
-                                                <i class="fab fa-google"></i>
-                                            </div>
-                                            <span>Sign in with Google</span>
-                                        </button>
-                                        <button class="btn btn-facebook" type="button">
-                                            <div class="icon">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </div>
-                                            <span>Sign in with Facebook</span>
-                                        </button>
+                                    <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48"><span>Sign In</span> and Explore
+                                        More</h2>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Email Address">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="password" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="block-btn-wrapper">
+                                        <button type="button" class="btn btn-primary btn-view-all"
+                                            onclick="location.href = 'profile.html'">Sign In</button>
+                                    </div>
+                                    <hr>
+                                    <p>Don't have a Beheco Account? <a
+                                            class=" text-primary fw-bold a-animate text-primary-hover"
+                                            data-bs-toggle="modal" data-bs-target="#SignUp"
+                                            data-bs-dismiss="modal">Register
+                                            Here!</a></p>
+                                    <hr>
+                                    <p class="text-center mb-0">OR</p>
+                                    <div class="d-flex justify-content-center gap-2">
+                                        <a href="" class="btn-round bg-google">
+                                            <i class="fab fa-google"></i>
+                                        </a>
+                                        <a href="" class="btn-round bg-facebook">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Modal -->
+                <div class="modal fade" id="SignUp" tabindex="-1" aria-labelledby="SignUpLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="right-align">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="logo">
+                                    <img src="assets/images/logo.png" alt="logo">
+                                </div>
+                                <div class="content">
+                                    <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48"><span>Sign Up</span></h2>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" placeholder="First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" placeholder="Last Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
 
+                                            <div class="mb-3">
+                                                <input type="email" class="form-control" placeholder="Email Address">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <input type="number" class="form-control" placeholder="Phone Number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <input type="password" class="form-control" placeholder="Password">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <input type="password" class="form-control"
+                                                    placeholder="Confirm Password">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-btn-wrapper">
+                                        <button type="button" class="btn btn-primary btn-view-all">Sign Up</button>
+                                    </div>
+                                    <hr>
+                                    <p>Already have a Beheco Account? <a href=""
+                                            class="text-primary fw-bold a-animate text-primary-hover"
+                                            data-bs-toggle="modal" data-bs-target="#SignIn" data-bs-dismiss="modal">Sign
+                                            In
+                                            Here!</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!------------------------------------------------------------------Success------------------------------------------------------------->
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Success">
@@ -90,8 +168,7 @@
                         </div>
                     </div>
                 </div>
-
-                <!------------------------------------------------------------------Error------------------------------------------------------------->
+                <!-----------------------------------------------------------------Error------------------------------------------------------------->
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Error">
                     Error
@@ -121,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-                <!------------------------------------------------------------------Requuirement------------------------------------------------------------->
+                <!------------------------------------------------------------------Requirement------------------------------------------------------------->
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-tertiary" data-bs-toggle="modal" data-bs-target="#requirement">
                     What are you looking for
@@ -190,12 +267,11 @@
                         </div>
                     </div>
                 </div>
-                <!------------------------------------------------------------------Requuirement------------------------------------------------------------->
+                <!------------------------------------------------------------------Warning Action------------------------------------------------------------->
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#warningAction">
                     Warning
                 </button>
-
                 <!-- Modal -->
                 <div class="modal fade" id="warningAction" tabindex="-1" aria-labelledby="requirementLabel"
                     aria-hidden="true">
@@ -218,6 +294,1431 @@
                                             Option</button>
                                         <button type="button" class="btn btn-primary">Primary Option</button>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------Advertise Here------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#advertiseHere">
+                    Advertise Here
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="advertiseHere" tabindex="-1" aria-labelledby="advertiseHereLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="content text-left">
+                                    <div class="flex-heading">
+                                        <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48"><span>Advertise with</span>
+                                            Beheco
+                                        </h2>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <p class="description-text text-center">Please fill up this form, Our executives
+                                        will
+                                        contact you
+                                        soon.</p>
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Your Full Name</label>
+                                                <input type="text" class="form-control" placeholder="Eg: John Smith">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Business Name</label>
+                                                <input type="text" class="form-control" placeholder="Eg: ABC Pvt Ltd">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Email Address</label>
+                                                <input type="email" class="form-control"
+                                                    placeholder="Eg: name@example.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Contact Number</label>
+                                                <input type="text" class="form-control" placeholder="Eg: +919876543211">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block-btn-wrapper">
+                                        <button type="button" class="btn btn-view-all">Contact Us</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------Categories------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#categoryModal">
+                    Categories
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+                        <div class="modal-content p-0">
+                            <div class="flex-heading p-mob-3 p-md-5">
+                                <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48 mb-0">All <span>Categories</span></h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-mob-3 pt-mob-0 p-md-5 pt-md-0">
+                                <div class="text-left">
+                                    <div class="content">
+                                        <div class="row">
+                                            <div class="col-xl-4">
+                                                <div class="column">
+                                                    <a href="#">Emergency
+                                                        Services</a>
+                                                    <a href="#">Food &amp;
+                                                        Beverages</a>
+                                                    <a href="#">Rooms &amp;
+                                                        Rentals</a>
+                                                    <a href="#">Professionals</a>
+                                                    <a href="#">Experts</a>
+                                                    <a href="#">Healthcare</a>
+                                                    <a href="#">Public
+                                                        Places</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="column">
+                                                    <a href="#">Home &amp;
+                                                        Office</a>
+                                                    <a href="#">Automobile</a>
+                                                    <a href="#">Educational
+                                                        Institutions</a>
+                                                    <a href="#">Financial
+                                                        institutions</a>
+                                                    <a href="#">Dress &amp;
+                                                        Accessories</a>
+                                                    <a href="#">Travel &amp;
+                                                        Tourism</a>
+                                                    <a href="#">Wedding &amp;
+                                                        Events</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4">
+                                                <div class="column">
+                                                    <a href="#">Electronics</a>
+                                                    <a href="#">Retail &amp;
+                                                        Wholesale</a>
+                                                    <a href="#">Media &amp;
+                                                        Entertainment</a>
+                                                    <a href="#">Telecom</a>
+                                                    <a href="#">Construction</a>
+                                                    <a href="#">Sports</a>
+                                                    <a href="#">Health &amp;
+                                                        Fitness</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------Drop CV------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dropCv">
+                    Drop CV
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="dropCv" tabindex="-1" aria-labelledby="dropCvLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg drop-cv-modal modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content p-0">
+                            <div class="flex-heading p-mob-3 p-md-5">
+                                <h3 class="custom-h unbreak text-center mb-0">Drop <span>CV</span></h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body px-mob-3 px-md-5">
+                                <div class="content">
+                                    <div class="input-wrapper">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">First
+                                                        Name</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="Eg: John">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Last
+                                                        Name</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="Eg: Smith">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Contact
+                                                        Number</label>
+                                                    <input type="number" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="+919876543210">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Email
+                                                        Address</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="abc@email.com">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Your
+                                                        Location</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="Eg: Cochin">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Highest
+                                                        Qualification</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="Eg: MBA">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Total
+                                                        Experience(Years)</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="Eg: 14">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="" class="form-label">Attach CV</label>
+                                                    <div class="input-group file-upload">
+                                                        <input type="text" class="form-control file-input"
+                                                            placeholder="Choose file(s) ..." readonly="readonly"
+                                                            data-action="display" />
+                                                        <input type="file" class="hidden-xs-up" name="file">
+                                                        <button class="btn btn-primary-outline" type="button"
+                                                            data-action="browse">Browse</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer p-mob-3 p-md-5">
+                                <div class="d-grid gap-2 w-100">
+                                    <button class="btn btn-view-all" type="button">
+                                        <span>Hire Me</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------Apply Now------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyNow">
+                    Apply Now
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="applyNow" tabindex="-1" aria-labelledby="applyNowLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg drop-cv-modal  modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content p-0">
+                            <div class="flex-heading  p-mob-3 p-md-5">
+                                <h3 class="custom-h text-center mb-0">Apply <span>Now</span></h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body  px-mob-3 px-md-5">
+                                <div class="content">
+                                    <div class="input-wrapper">
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Applying
+                                                        For</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1"
+                                                        value="Digital Marketing Strategist"
+                                                        aria-label="Disabled input example" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">First
+                                                        Name</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="Eg: John">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Last
+                                                        Name</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="Eg: Smith">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Contact
+                                                        Number</label>
+                                                    <input type="number" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="+919876543210">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Email
+                                                        Address</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="abc@email.com">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Your
+                                                        Location</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="Eg: Cochin">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Highest
+                                                        Qualification</label>
+                                                    <input type="text" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="Eg: MBA">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">Total
+                                                        Experience(Years)</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="Eg: 14">
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="mb-3">
+                                                    <label for="" class="form-label">Attach CV</label>
+                                                    <div class="input-group file-upload">
+                                                        <input type="text" class="form-control file-input"
+                                                            placeholder="Chose file(s) ..." readonly="readonly"
+                                                            data-action="display" />
+                                                        <input type="file" class="hidden-xs-up" name="file">
+                                                        <button class="btn btn-primary-outline" type="button"
+                                                            data-action="browse">Browse</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer p-mob-3 p-md-5">
+                                <div class="d-grid gap-2 w-100">
+                                    <button class="btn btn-view-all" type="button">
+                                        <span>Hire Me</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------Image Gallery------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#galleryViewMore">
+                    Image Gallery
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="galleryViewMore" tabindex="-1" aria-labelledby="galleryViewMoreLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
+                        <div class="modal-content p-0">
+                            <div class="flex-heading p-mob-3 p-md-5">
+                                <h2 class="common-h2 mb-0"><span>Image</span> Gallery</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body px-mob-3 px-md-5">
+                                <div class="added-photos">
+                                    <div class="demo-gallery">
+                                        <ul id="lightgallery1" class="row m-0">
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/13-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/13-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/13.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-13.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/4-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/4-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/4.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/13-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/13-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/13.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-13.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/4-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/4-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/4.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/13-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/13-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/13.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-13.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/4-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/4-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/4.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img
+                                                            src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer p-mob-3 p-md-5">
+                                <div class="flex-h-center pagination-wrapper w-100 m-0">
+                                    <div class="pagination">
+                                        <a class="prev page-numbers " href="javascript:;"><i
+                                                class="fas fa-angle-double-left"></i>
+                                            <span>Prev</span></a>
+                                        <span aria-current="page" class="page-numbers current">1</span>
+                                        <a class="page-numbers" href="javascript:;">2</a>
+                                        <a class="page-numbers" href="javascript:;">3</a>
+                                        <a class="page-numbers" href="javascript:;">4</a>
+                                        <a class="page-numbers" href="javascript:;">5</a>
+                                        <a class="page-numbers" href="javascript:;">6</a>
+                                        <a class="page-numbers" href="javascript:;">7</a>
+                                        <a class="page-numbers" href="javascript:;">8</a>
+                                        <a class="page-numbers" href="javascript:;">9</a>
+                                        <a class="page-numbers" href="javascript:;">10</a>
+                                        <a class="next page-numbers" href="javascript:;"><span>Next</span> <i
+                                                class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------Image Gallery------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#offerModal">
+                    Offer Details
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="offerModal" tabindex="-1" aria-labelledby="offerModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog offer-modal modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content p-0">
+                            <div class="flex-heading p-mob-3 p-md-5">
+                                <h3 class="custom-h mb-0">Offer Details</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body px-mob-3 px-md-5">
+                                <div class="overflow-hidden border-radius">
+                                    <img src="https://k60.kn3.net/taringa/F/C/6/8/4/5/VCLR/3E9.jpg">
+                                </div>
+                                <div class="offer-description">
+                                    <h3 class="custom-h">Flat <span>60% OFF</span> On Food Orders</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat
+                                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                        laborum.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in
+                                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        occaecat
+                                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                        laborum.</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer px-mob-3 px-md-5 py-3">
+                                <div class="d-flex justify-content-center gap-3 w-100 m-0">
+                                    <button type="button" class="btn btn-submit-outline m-0"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-submit-primary m-0">Grab Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------All Reviews------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#allReviews">
+                    All Reviews
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="allReviews" tabindex="-1" aria-labelledby="allReviews" aria-hidden="true">
+                    <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content p-0">
+                            <div class="flex-heading p-mob-3 pb-mob-0 p-md-5 pb-md-0">
+                                <h3 class="custom-h unbreak mb-0">All <span>Reviews</span></h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-mob-3 p-md-5">
+
+                                <div class="content">
+                                    <div class="feedback-card">
+                                        <div class="dp">
+                                            <img src="https://images.pexels.com/photos/7693105/pexels-photo-7693105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="user-img">
+                                        </div>
+                                        <div class="main-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            </p>
+                                            <div class="auther-info">
+                                                <h6 class="text-black fw-600">Alex George</h6>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">Kochi, Kerala</p>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">12-May-2022</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="right-portion">
+                                            <div class="flex-container">
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <h3>4.0</h3>
+                                            </div>
+                                            <div class="likes-wrapper">
+                                                <a href="" class="like">
+                                                    <i class="fas fa-thumbs-up"></i>
+                                                    <p>122</p>
+                                                </a>
+                                                <a href="" class="dislike">
+                                                    <i class="fas fa-thumbs-down"></i>
+                                                    <p>122</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-card">
+                                        <div class="dp">
+                                            <img src="https://images.pexels.com/photos/7693105/pexels-photo-7693105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="user-img">
+                                        </div>
+                                        <div class="main-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            </p>
+                                            <div class="auther-info">
+                                                <h6 class="text-black fw-600">Alex George</h6>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">Kochi, Kerala</p>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">12-May-2022</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="right-portion">
+                                            <div class="flex-container">
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <h3>4.0</h3>
+                                            </div>
+                                            <div class="likes-wrapper">
+                                                <a href="" class="like">
+                                                    <i class="fas fa-thumbs-up"></i>
+                                                    <p>122</p>
+                                                </a>
+                                                <a href="" class="dislike">
+                                                    <i class="fas fa-thumbs-down"></i>
+                                                    <p>122</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-card">
+                                        <div class="dp">
+                                            <img src="https://images.pexels.com/photos/7693105/pexels-photo-7693105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="user-img">
+                                        </div>
+                                        <div class="main-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            </p>
+                                            <div class="auther-info">
+                                                <h6 class="text-black fw-600">Alex George</h6>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">Kochi, Kerala</p>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">12-May-2022</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="right-portion">
+                                            <div class="flex-container">
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <h3>4.0</h3>
+                                            </div>
+                                            <div class="likes-wrapper">
+                                                <a href="" class="like">
+                                                    <i class="fas fa-thumbs-up"></i>
+                                                    <p>122</p>
+                                                </a>
+                                                <a href="" class="dislike">
+                                                    <i class="fas fa-thumbs-down"></i>
+                                                    <p>122</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-card">
+                                        <div class="dp">
+                                            <img src="https://images.pexels.com/photos/7693105/pexels-photo-7693105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="user-img">
+                                        </div>
+                                        <div class="main-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            </p>
+                                            <div class="auther-info">
+                                                <h6 class="text-black fw-600">Alex George</h6>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">Kochi, Kerala</p>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">12-May-2022</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="right-portion">
+                                            <div class="flex-container">
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <h3>4.0</h3>
+                                            </div>
+                                            <div class="likes-wrapper">
+                                                <a href="" class="like">
+                                                    <i class="fas fa-thumbs-up"></i>
+                                                    <p>122</p>
+                                                </a>
+                                                <a href="" class="dislike">
+                                                    <i class="fas fa-thumbs-down"></i>
+                                                    <p>122</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-card">
+                                        <div class="dp">
+                                            <img src="https://images.pexels.com/photos/7693105/pexels-photo-7693105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="user-img">
+                                        </div>
+                                        <div class="main-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            </p>
+                                            <div class="auther-info">
+                                                <h6 class="text-black fw-600">Alex George</h6>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">Kochi, Kerala</p>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">12-May-2022</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="right-portion">
+                                            <div class="flex-container">
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <h3>4.0</h3>
+                                            </div>
+                                            <div class="likes-wrapper">
+                                                <a href="" class="like">
+                                                    <i class="fas fa-thumbs-up"></i>
+                                                    <p>122</p>
+                                                </a>
+                                                <a href="" class="dislike">
+                                                    <i class="fas fa-thumbs-down"></i>
+                                                    <p>122</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-card">
+                                        <div class="dp">
+                                            <img src="https://images.pexels.com/photos/7693105/pexels-photo-7693105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="user-img">
+                                        </div>
+                                        <div class="main-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            </p>
+                                            <div class="auther-info">
+                                                <h6 class="text-black fw-600">Alex George</h6>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">Kochi, Kerala</p>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">12-May-2022</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="right-portion">
+                                            <div class="flex-container">
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <h3>4.0</h3>
+                                            </div>
+                                            <div class="likes-wrapper">
+                                                <a href="" class="like">
+                                                    <i class="fas fa-thumbs-up"></i>
+                                                    <p>122</p>
+                                                </a>
+                                                <a href="" class="dislike">
+                                                    <i class="fas fa-thumbs-down"></i>
+                                                    <p>122</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-card">
+                                        <div class="dp">
+                                            <img src="https://images.pexels.com/photos/7693105/pexels-photo-7693105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="user-img">
+                                        </div>
+                                        <div class="main-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            </p>
+                                            <div class="auther-info">
+                                                <h6 class="text-black fw-600">Alex George</h6>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">Kochi, Kerala</p>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">12-May-2022</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="right-portion">
+                                            <div class="flex-container">
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <h3>4.0</h3>
+                                            </div>
+                                            <div class="likes-wrapper">
+                                                <a href="" class="like">
+                                                    <i class="fas fa-thumbs-up"></i>
+                                                    <p>122</p>
+                                                </a>
+                                                <a href="" class="dislike">
+                                                    <i class="fas fa-thumbs-down"></i>
+                                                    <p>122</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-card">
+                                        <div class="dp">
+                                            <img src="https://images.pexels.com/photos/7693105/pexels-photo-7693105.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                                alt="user-img">
+                                        </div>
+                                        <div class="main-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            </p>
+                                            <div class="auther-info">
+                                                <h6 class="text-black fw-600">Alex George</h6>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">Kochi, Kerala</p>
+                                                <p class="separating-p"> | </p>
+                                                <p class="location">12-May-2022</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="right-portion">
+                                            <div class="flex-container">
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <h3>4.0</h3>
+                                            </div>
+                                            <div class="likes-wrapper">
+                                                <a href="" class="like">
+                                                    <i class="fas fa-thumbs-up"></i>
+                                                    <p>122</p>
+                                                </a>
+                                                <a href="" class="dislike">
+                                                    <i class="fas fa-thumbs-down"></i>
+                                                    <p>122</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <div class="flex-h-cntr pagination-wrapper">
+                                    <div class="pagination">
+                                        <a class="prev page-numbers " href="javascript:;"><i
+                                                class="fas fa-angle-double-left"></i>
+                                            <span>Prev</span></a>
+                                        <span aria-current="page" class="page-numbers current">1</span>
+                                        <a class="page-numbers" href="javascript:;">2</a>
+                                        <a class="page-numbers" href="javascript:;">3</a>
+                                        <a class="page-numbers" href="javascript:;">4</a>
+                                        <a class="page-numbers" href="javascript:;">5</a>
+                                        <a class="page-numbers" href="javascript:;">6</a>
+                                        <a class="page-numbers" href="javascript:;">7</a>
+                                        <a class="page-numbers" href="javascript:;">8</a>
+                                        <a class="page-numbers" href="javascript:;">9</a>
+                                        <a class="page-numbers" href="javascript:;">10</a>
+                                        <a class="next page-numbers" href="javascript:;"><span>Next</span> <i
+                                                class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------All Questions------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#allQuestions">
+                    All Questions
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="allQuestions" tabindex="-1" aria-labelledby="allQuestions"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content p-0">
+                            <div class="flex-heading p-mob-3 pb-mob-0 p-md-5 pb-md-0">
+                                <h3 class="custom-h mb-1">All <span>Questions & Answers</span></h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body  p-mob-3 p-md-5">
+                                <div class="content">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="answer-card">
+                                                <div class="main-content">
+                                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod
+                                                        tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam, </p>
+                                                    <div class="auther-info">
+                                                        <h6 class="text-black fw-600">Alex George</h6>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="answer-card">
+                                                <div class="main-content">
+                                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod
+                                                        tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam, Lorem
+                                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam, </p>
+                                                    <div class="auther-info">
+                                                        <h6 class="text-black fw-600">Alex George</h6>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="answer-card">
+                                                <div class="main-content">
+                                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod
+                                                        tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam, Lorem
+                                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam, </p>
+                                                    <div class="auther-info">
+                                                        <h6 class="text-black fw-600">Alex George</h6>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="answer-card">
+                                                <div class="main-content">
+                                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod
+                                                        tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam, Lorem
+                                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam, </p>
+                                                    <div class="auther-info">
+                                                        <h6 class="text-black fw-600">Alex George</h6>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="answer-card">
+                                                <div class="main-content">
+                                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod
+                                                        tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam, Lorem
+                                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam, </p>
+                                                    <div class="auther-info">
+                                                        <h6 class="text-black fw-600">Alex George</h6>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="answer-card">
+                                                <div class="main-content">
+                                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod
+                                                        tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam, Lorem
+                                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam, </p>
+                                                    <div class="auther-info">
+                                                        <h6 class="text-black fw-600">Alex George</h6>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="answer-card">
+                                                <div class="main-content">
+                                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod
+                                                        tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam, Lorem
+                                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam,</p>
+                                                    <div class="auther-info">
+                                                        <h6 class="text-black fw-600">Alex George</h6>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="answer-card">
+                                                <div class="main-content">
+                                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                                    <p>Lorem ipsum dolor sit amet, </p>
+                                                    <div class="auther-info">
+                                                        <h6 class="text-black fw-600">Alex George</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="answer-card">
+                                                <div class="main-content">
+                                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod
+                                                        tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam, Lorem
+                                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam,</p>
+                                                    <div class="auther-info">
+                                                        <h6 class="text-black fw-600">Alex George</h6>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="answer-card">
+                                                <div class="main-content">
+                                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                                    <p>Lorem ipsum dolor sit amet, </p>
+                                                    <div class="auther-info">
+                                                        <h6 class="text-black fw-600">Alex George</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="answer-card">
+                                                <div class="main-content">
+                                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod
+                                                        tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam, Lorem
+                                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam,</p>
+                                                    <div class="auther-info">
+                                                        <h6 class="text-black fw-600">Alex George</h6>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="answer-card">
+                                                <div class="main-content">
+                                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                                    <p>Lorem ipsum dolor sit amet, </p>
+                                                    <div class="auther-info">
+                                                        <h6 class="text-black fw-600">Alex George</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="answer-card">
+                                                <div class="main-content">
+                                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod
+                                                        tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam, Lorem
+                                                        ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                        eiusmod tempor
+                                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                        veniam,</p>
+                                                    <div class="auther-info">
+                                                        <h6 class="text-black fw-600">Alex George</h6>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="answer-card">
+                                                <div class="main-content">
+                                                    <h5>1. Lorem ipsum dolor sit amet?</h5>
+                                                    <p>Lorem ipsum dolor sit amet, </p>
+                                                    <div class="auther-info">
+                                                        <h6 class="text-black fw-600">Alex George</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <div class="flex-h-cntr pagination-wrapper">
+                                    <div class="pagination">
+                                        <a class="prev page-numbers " href="javascript:;"><i
+                                                class="fas fa-angle-double-left"></i>
+                                            <span>Prev</span></a>
+                                        <span aria-current="page" class="page-numbers current">1</span>
+                                        <a class="page-numbers" href="javascript:;">2</a>
+                                        <a class="page-numbers" href="javascript:;">3</a>
+                                        <a class="page-numbers" href="javascript:;">4</a>
+                                        <a class="page-numbers" href="javascript:;">5</a>
+                                        <a class="page-numbers" href="javascript:;">6</a>
+                                        <a class="page-numbers" href="javascript:;">7</a>
+                                        <a class="page-numbers" href="javascript:;">8</a>
+                                        <a class="page-numbers" href="javascript:;">9</a>
+                                        <a class="page-numbers" href="javascript:;">10</a>
+                                        <a class="next page-numbers" href="javascript:;"><span>Next</span> <i
+                                                class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------Reply Questions------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#replyQn">
+                    Reply Question
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="replyQn" tabindex="-1" aria-labelledby="replyQnLabel" aria-hidden="true">
+                    <div class="modal-dialog offer-modal modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body text-left">
+                                <div class="flex-heading">
+                                    <h3 class="custom-h unbreak text-center">Reply <span>Question</span></h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="mb-3">
+                                            <label class="form-label fw-500">Question:</label>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor
+                                                incididunt ut labore et dolore magna aliqua?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="mb-3">
+                                            <label class="form-label fw-500">Reply:</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="btn-wrapper">
+                                            <button type="button" class="btn btn-submit-outline">Discard</button>
+                                            <button type="button" class="btn btn-submit-primary">Reply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------Profile Pic Change------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cropImagePop">
+                    Profile Pic Change
+                </button>
+                <div class="modal fade" id="cropImagePop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header flex-heading nopad">
+                                <h3 class="custom-h text-center"><span>Crop</span>Profile Picture</h3>
+                                <button type="button" class="close btn-close btn" data-bs-dismiss="modal"
+                                    aria-label="Close"><span aria-hidden="true"></span></button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <div id="upload-demo" class="center-block center-block"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="btn-wrapper mgn-top-20 flex-h-cntr">
+                                            <button type="button" class="btn btn-submit-outline"
+                                                data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-submit-primary"
+                                                id="cropImageBtn">Crop</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------Change Password------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#changePassword">
+                    Change Password
+                </button>
+                <div class="modal fade" id="changePassword" tabindex="-1" aria-labelledby="changePasswordLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center">Change <span>Password</span></h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <label class="form-label">Current Password</label>
+                                    <input type="password" class="form-control" placeholder="Enter current password">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">New Password</label>
+                                    <input type="password" class="form-control" placeholder="Choose new password">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" placeholder="Confirm new password">
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="d-grid w-100">
+                                    <button type="button" class="btn btn-primary m-0">Change Password</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------Delete Account------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteAccount">
+                    Delete Account
+                </button>
+                <div class="modal fade" id="deleteAccount" tabindex="-1" aria-labelledby="deleteAccountLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-center">Delete <span>Account?</span></h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <div class="mb-1">
+                                    <label class="form-label fw-500">Enter Password to confirm deletion</label>
+                                    <input type="password" class="form-control" placeholder="Enter password">
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="d-grid gap-3 w-100">
+                                    <button type="button" class="btn btn-primary-light m-0">Cancel Deletion</button>
+                                    <button type="button" class="btn btn-danger m-0">Delete Account</button>
                                 </div>
                             </div>
                         </div>

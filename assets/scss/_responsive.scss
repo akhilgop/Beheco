@@ -807,6 +807,21 @@
     .navbar-collapse {
         margin-top: 30px !important;
     }
+    .saved-items-wrapper {
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-column-gap: 15px !important;
+        grid-row-gap: 15px !important;
+    }
+    .preview-dropdown-options {
+        position: absolute !important;
+        .dropdown-menu {
+            transform: none !important;
+        }
+        .btn-circle {
+            margin-left: auto;
+            text-align: center;
+        }
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -920,6 +935,20 @@
     #myBtn {
         bottom: 100px !important;
     }
+    .listing-preview {
+        div.profile-pic {
+            margin-top: -50px !important;
+            width: 120px !important;
+            min-width: 120px !important;
+            height: 120px !important;
+            border-radius: 15px !important;
+        }
+    }
+    .saved-items-wrapper {
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-column-gap: 15px !important;
+        grid-row-gap: 15px !important;
+    }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1365px) {
@@ -975,6 +1004,9 @@
             width: 60vw !important;
         }
     }
+    .saved-items-wrapper {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
 }
 
 @media screen and (min-width: 1366px) and (max-width: 1700px) {
@@ -1016,6 +1048,9 @@
                 width: 70% !important;
             }
         }
+    }
+    .saved-items-wrapper {
+        grid-template-columns: repeat(4, 1fr) !important;
     }
 }
 
@@ -1071,7 +1106,6 @@
     .custom-hdng .separator {
         margin: 15px 0 !important;
     }
-    .card-default h3,
     .answer-card h5 {
         margin-bottom: 15px !important;
     }
@@ -1097,9 +1131,99 @@
             padding: 5px 8px !important;
         }
     }
+
+    .quick-action-wrapper {
+        justify-content: center !important;
+        width: 100%;
+        .quick-action-link {
+            width: 45px !important;
+            height: 45px !important;
+            min-width: 45px !important;
+            border-radius: 45px !important;
+        }
+    }
+    .likes-wrapper {
+        flex-wrap: wrap;
+        .like {
+            margin: 0 !important;
+        }
+    }
+    .reply-card-wrapper {
+        .likes-wrapper {
+            justify-content: flex-start !important;
+            margin-top: 10px;
+        }
+    }
+    .user-profile {
+        padding: 50px 0 !important;
+        div.profile-pic {
+            width: 120px !important;
+            min-width: 120px !important;
+            height: 120px !important;
+            border-radius: 15px !important;
+            margin-top: 0 !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        .general-info {
+            width: 100% !important;
+        }
+    }
+    .listing-preview {
+        div.profile-pic {
+            margin-top: -50px !important;
+            width: 120px !important;
+            min-width: 120px !important;
+            height: 120px !important;
+            border-radius: 15px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        .general-info {
+            width: 100% !important;
+            text-align: center;
+        }
+        .preview-dropdown-options {
+            position: static !important;
+            .dropdown-menu {
+                transform: none !important;
+            }
+            .btn-circle {
+                margin: auto;
+                text-align: center;
+            }
+        }
+    }
+    .saved-items-wrapper {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-column-gap: 15px !important;
+        grid-row-gap: 15px !important;
+    }
 }
 @media screen and (max-width: 991px) {
     .dropdown-menu {
         position: static !important;
+    }
+    .listing-card .txt-section .bottom-section {
+        flex-wrap: wrap !important;
+        gap: 1rem !important;
+    }
+    .listing-card .txt-section .btn-warpper {
+        width: 100% !important;
+    }
+    .listing-card {
+        .overall-rating {
+            justify-content: flex-start !important;
+        }
+    }
+    .listing-card .btn-save {
+        padding: 0 !important;
+    }
+    .listing-type-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        .category {
+            padding: 20px !important;
+        }
     }
 }

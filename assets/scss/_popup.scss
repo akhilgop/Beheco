@@ -4,9 +4,11 @@
 .modal-content {
     border-radius: 20px;
     border: none;
-    text-align: center;
     .modal-body {
         padding: 0;
+    }
+    p {
+        text-align: center;
     }
     .modal-header {
         padding: 0 !important;
@@ -139,8 +141,14 @@
 .modal-dialog-scrollable .modal-body {
     overflow-x: hidden !important;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .modal-dialog {
-        margin: 0px 30px;
-    }
+.flex-heading {
+    text-align: center;
+}
+// @media screen and (min-width: 768px) and (max-width: 991px) {
+//     .modal-dialog {
+//         margin: 0px 30px;
+//     }
+// }
+.modal-backdrop {
+    z-index: 1500;
 }

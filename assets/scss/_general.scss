@@ -92,3 +92,35 @@ hr {
     background-color: $facebook;
     color: $white !important;
 }
+.dotted-circle {
+    @include round(30px);
+    border: 1px dashed $primary;
+}
+.bg-faded {
+    background-color: $bdr;
+}
+.show-on-hover {
+    display: none;
+    @include transition;
+}
+.main-ul {
+    li .nav-link {
+        height: 100% !important;
+    }
+}
+.show-on-click {
+    display: none !important;
+}
+.hover-portion {
+    @include transition;
+    &:hover {
+        .show-on-hover {
+            display: block !important;
+            @include transition;
+        }
+        .hide-on-hover {
+            display: none !important;
+            @include transition;
+        }
+    }
+}

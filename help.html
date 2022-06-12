@@ -49,7 +49,7 @@
                                     <div class="separator  "></div>
                                     <a href="career.html" class="name-link animate-primary">Careers</a>
                                     <div class="separator name-link  "></div>
-                                    <a href="demo/theme.html" class="name-link  animate-primary">Help</a>
+                                    <a href="sitemap.html" class="name-link  animate-primary">Help</a>
                                     <div class="separator name-link  "></div>
                                     <a href="popup.html" class="name-link animate-primary">Download App</a>
                                     <div class="separator name-link  "></div>
@@ -124,7 +124,7 @@
         </nav>
         <!-----------------------------------------------------------------Add New Listing Modal --------------------------------------------------------->
         <div class="modal fade" id="newListing" tabindex="-1" aria-labelledby="addNewListing" aria-hidden="true">
-            <div class="modal-dialog add-new-listing-modal modal-dialog-centered">
+            <div class="modal-dialog add-new-listing-modal modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="content">
@@ -133,13 +133,39 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="d-grid gap-3">
-                                <button type="button" class="btn btn-primary-light"
-                                    onclick="location.href = 'new-business.html'">Business</button>
-                                <button type="button" class="btn btn-primary-light"
-                                    onclick="location.href = 'new-business.html'">Freelancer</button>
-                                <button type="button" class="btn btn-primary-light"
-                                    onclick="location.href = 'new-business.html'">Place</button>
+                            <div class="listing-type-wrapper">
+                                <a href="new-business.html" class="category c1">
+                                    <div class="icon">
+                                        <img src="assets/images/svg/categories/retail.svg" alt="Business">
+                                    </div>
+                                    <div class="heading">
+                                        <p>Business</p>
+                                    </div>
+                                </a>
+                                <a href="" class="category c1">
+                                    <div class="icon">
+                                        <img src="assets/images/svg/categories/professionals.svg" alt="Freelancers">
+                                    </div>
+                                    <div class="heading">
+                                        <p>Freelancers</p>
+                                    </div>
+                                </a>
+                                <a href="" class="category c1">
+                                    <div class="icon">
+                                        <img src="assets/images/svg/categories/publicplaces.svg" alt="Places">
+                                    </div>
+                                    <div class="heading">
+                                        <p>Places</p>
+                                    </div>
+                                </a>
+                                <a href="" class="category c1">
+                                    <div class="icon">
+                                        <img src="assets/images/svg/categories/event.svg" alt="Event">
+                                    </div>
+                                    <div class="heading">
+                                        <p>Events</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
@@ -313,15 +339,14 @@
         <!-- Modal -->
         <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="content text-left">
-                            <div class="flex-heading">
-                                <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48">All <span>Categories</span></h2>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
+            <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+                <div class="modal-content p-0">
+                    <div class="flex-heading p-mob-3 p-md-5">
+                        <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48 mb-0">All <span>Categories</span></h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-mob-3 pt-mob-0 p-md-5 pt-md-0">
+                        <div class="text-left">
                             <div class="content">
                                 <div class="row">
                                     <div class="col-xl-4">

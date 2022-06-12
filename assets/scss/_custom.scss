@@ -1033,112 +1033,111 @@
     }
 }
 // ------------------------------------------------------------Business Photo Uploader--------------------------------------------//
-.add-photos-section {
-    margin-top: 50px;
-    @mixin flex-direction($value) {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: reverse;
-        -ms-flex-direction: $value;
-        flex-direction: $value;
+
+@mixin flex-direction($value) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: $value;
+    flex-direction: $value;
+}
+
+@mixin align-items($value) {
+    -webkit-box-align: $value;
+    -ms-flex-align: $value;
+    -ms-grid-row-align: $value;
+    align-items: $value;
+}
+
+@mixin display-flex($value) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: $value;
+}
+
+@mixin justify-content-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+@mixin flex-wrap($value) {
+    -ms-flex-wrap: $value;
+    flex-wrap: $value;
+}
+.custom-file-preview-item {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.panel {
+    background-color: #fff;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    height: 100%;
+}
+.custom-file-image {
+    &-input {
+        display: none;
     }
 
-    @mixin align-items($value) {
-        -webkit-box-align: $value;
-        -ms-flex-align: $value;
-        -ms-grid-row-align: $value;
-        align-items: $value;
-    }
-
-    @mixin display-flex($value) {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: $value;
-    }
-
-    @mixin justify-content-center {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
+    .custom-file-preview {
+        @include display-flex(flex);
+        @include flex-wrap(wrap);
         justify-content: center;
-    }
-    @mixin flex-wrap($value) {
-        -ms-flex-wrap: $value;
-        flex-wrap: $value;
-    }
-    .custom-file-preview-item {
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-    }
-    .panel {
-        background-color: #fff;
-        border-radius: 0.75rem;
-        padding: 0.75rem;
-        height: 100%;
-    }
-    .custom-file-image {
-        &-input {
-            display: none;
-        }
 
-        .custom-file-preview {
+        &-list {
             @include display-flex(flex);
             @include flex-wrap(wrap);
-            justify-content: center;
+        }
 
-            &-list {
-                @include display-flex(flex);
-                @include flex-wrap(wrap);
-            }
+        &-add {
+            position: relative;
+            @include display-flex(flex);
+            @include justify-content-center;
+            @include align-items(center);
+            @include flex-direction(column);
+            width: 200px;
+            height: 200px;
+            margin-right: 0.75rem;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            box-shadow: $box-shadow;
+            border-radius: $b-rds-md;
+            border: 10px solid $white;
+            background-color: #eff3f6 !important;
+            background: url("../images/svg/ImageUpload.svg") 50% 50% no-repeat;
+        }
 
-            &-add {
-                position: relative;
-                @include display-flex(flex);
-                @include justify-content-center;
-                @include align-items(center);
-                @include flex-direction(column);
-                width: 200px;
-                height: 200px;
-                margin-right: 0.75rem;
-                margin-bottom: 0.75rem;
-                cursor: pointer;
-                box-shadow: $box-shadow;
-                border-radius: $b-rds-md;
-                border: 10px solid $white;
-                background-color: #eff3f6 !important;
-                background: url("../images/svg/ImageUpload.svg") 50% 50% no-repeat;
-            }
-
-            &-item {
-                position: relative;
-                background-repeat: no-repeat;
-                border-radius: 6px;
-                width: 200px;
-                height: 200px;
-                margin-right: 0.75rem;
-                margin-bottom: 0.75rem;
-                box-shadow: $box-shadow;
-                border-radius: $b-rds-md;
-                border: 10px solid $white;
-            }
-            &-del {
-                right: -5px;
-                background: $primary;
-                color: $white;
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                @include flex-hv-cntr;
-                text-align: center;
-                margin-top: -6px;
-                cursor: pointer;
-                box-shadow: $box-shadow;
-                i {
-                    font-size: 10px;
-                }
+        &-item {
+            position: relative;
+            background-repeat: no-repeat;
+            border-radius: 6px;
+            width: 200px;
+            height: 200px;
+            margin-right: 0.75rem;
+            margin-bottom: 0.75rem;
+            box-shadow: $box-shadow;
+            border-radius: $b-rds-md;
+            border: 10px solid $white;
+        }
+        &-del {
+            right: -5px;
+            background: $primary;
+            color: $white;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            @include flex-hv-cntr;
+            text-align: center;
+            margin-top: -6px;
+            cursor: pointer;
+            box-shadow: $box-shadow;
+            i {
+                font-size: 10px;
             }
         }
     }
 }
+
 // ------------------------------------------------------------------------Menu with Loader----------------------------------------------------------
 .gs_reveal {
     opacity: 0;
@@ -1466,4 +1465,9 @@ a {
             transform: rotate(0deg);
         }
     }
+}
+// -------------------------------------------------------------------Nested Dropdown------------------------------------------------
+.dropdown-hover-all .dropdown-menu,
+.dropdown-hover > .dropdown-menu.dropend {
+    margin-left: -1px !important;
 }
