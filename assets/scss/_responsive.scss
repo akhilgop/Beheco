@@ -66,7 +66,7 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 1.5rem !important;
             .category {
-                padding: 0 !important;
+                padding: 0px !important;
                 .icon {
                     width: 60px !important;
                     height: 60px !important;
@@ -79,6 +79,11 @@
                 .heading p {
                     line-height: normal !important;
                     font-size: 14px !important;
+                }
+                &:hover,
+                &:active,
+                &:focus {
+                    box-shadow: none !important;
                 }
             }
             .c15 {
@@ -202,43 +207,7 @@
             }
         }
     }
-    .freelancers {
-        .content-box {
-            .cover-image {
-                height: 70px !important;
-            }
-            .profile-image {
-                margin-top: -30px !important;
-                img {
-                    width: 80px !important;
-                    height: 80px !important;
-                }
-            }
-            .freelancer-info {
-                .info-content {
-                    margin-top: 15px !important;
-                    h5 {
-                        font-size: 18px !important;
-                    }
-                    p {
-                        line-height: normal !important;
-                    }
-                    .overall-rating {
-                        margin: 10px 0 !important;
-                    }
-                }
-            }
-            .btn-warpper {
-                .btn {
-                    width: 100% !important;
-                }
-            }
-        }
-        .save-btn {
-            bottom: 80px !important;
-            right: 10px !important;
-        }
-    }
+
     .near-you,
     .freelancers,
     .testimonials {
@@ -313,14 +282,10 @@
             font-size: 14px !important;
         }
     }
-    .event-card {
-        .img-section {
-            max-height: 200px !important;
-        }
-    }
+
     .flex-mob-wrap {
         flex-wrap: wrap !important;
-        gap: 1rem !important;
+        gap: 0.5rem !important;
     }
     .w-mob-100 {
         width: 100% !important;
@@ -522,43 +487,6 @@
             }
         }
     }
-    .freelancers {
-        .content-box {
-            .cover-image {
-                height: 70px !important;
-            }
-            .profile-image {
-                margin-top: -30px !important;
-                img {
-                    width: 80px !important;
-                    height: 80px !important;
-                }
-            }
-            .freelancer-info {
-                .info-content {
-                    margin-top: 15px !important;
-                    h5 {
-                        font-size: 18px !important;
-                    }
-                    p {
-                        line-height: normal !important;
-                    }
-                    .overall-rating {
-                        margin: 10px 0 !important;
-                    }
-                }
-            }
-            .btn-warpper {
-                .btn {
-                    width: 100% !important;
-                }
-            }
-        }
-        .save-btn {
-            bottom: 80px !important;
-            right: 10px !important;
-        }
-    }
 
     .top-pick-card {
         margin-bottom: 20px !important;
@@ -578,11 +506,6 @@
     .btn-google .icon,
     .btn-facebook .icon {
         top: 8px !important;
-    }
-    .event-card {
-        .img-section {
-            max-height: 200px !important;
-        }
     }
 }
 
@@ -713,20 +636,7 @@
                     height: 80px !important;
                 }
             }
-            .freelancer-info {
-                .info-content {
-                    margin-top: 15px !important;
-                    h5 {
-                        font-size: 18px !important;
-                    }
-                    p {
-                        line-height: normal !important;
-                    }
-                    .overall-rating {
-                        margin: 10px 0 !important;
-                    }
-                }
-            }
+
             .btn-warpper {
                 .btn {
                     width: 100% !important;
@@ -1082,22 +992,7 @@
     a {
         font-size: 14px;
     }
-    .freelancer-info {
-        p,
-        a,
-        span {
-            font-size: 14px !important;
-        }
-    }
-    .event-card {
-        padding: 10px !important;
-        margin: 0 !important;
-        .text-section {
-            h5 {
-                line-height: 1.2 !important;
-            }
-        }
-    }
+
     p,
     a,
     .form-label {
@@ -1199,6 +1094,39 @@
         grid-column-gap: 15px !important;
         grid-row-gap: 15px !important;
     }
+    .general-info .title {
+        justify-content: center;
+    }
+    .general-info {
+        div.profile-pic {
+            margin-bottom: 30px !important;
+        }
+    }
+    .freelancer-card {
+        .fl-profile-pic {
+            width: 90px !important;
+            margin-top: -50px !important;
+        }
+    }
+    .d-mob-block {
+        display: block !important;
+    }
+    .ticket-rate {
+        width: 100% !important;
+    }
+    .profile-options-dropdown {
+        margin: auto !important;
+        transform: none !important;
+        width: 50%;
+    }
+    .profile-options {
+        flex-wrap: wrap !important;
+    }
+    .div-split {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 991px) {
     .dropdown-menu {
@@ -1206,7 +1134,7 @@
     }
     .listing-card .txt-section .bottom-section {
         flex-wrap: wrap !important;
-        gap: 1rem !important;
+        gap: 0.5rem !important;
     }
     .listing-card .txt-section .btn-warpper {
         width: 100% !important;

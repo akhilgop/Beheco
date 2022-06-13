@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/images/favicon/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <title>Beheco | My Profile</title>
+    <title>Beheco | My Business</title>
 </head>
 
 <body>
@@ -97,7 +97,7 @@
                                 Here</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Featured</a>
+                            <a class="nav-link" aria-current="page" href="sitemap.html">Featured</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="offers.html">Offers</a>
@@ -428,7 +428,8 @@
                     <div class="general-info gs_reveal">
                         <div class="title gs_reveal">
                             <span class="fs-24 text-black fw-600">Al-Shahla Multi Speciality Hospital
-                                <i class="fas fa-badge-check fs-22 text-primary"></i>
+                                <i class="fas fa-badge-check fs-22 text-border cursor-pointer" data-bs-toggle="modal"
+                                    data-bs-target="#getVerified"></i>
                             </span>
                         </div>
                         <p>Hospitals</p>
@@ -477,6 +478,21 @@
                                     </a>
                                 </div>
                             </div>
+                        </div>
+                        <p class="my-3 fw-600">Keywords</p>
+                        <div class="keyword-wrapper d-flex flex--wrap gap-2">
+                            <span class="badge btn-primary-light d-flex align-items-center gap-2 keyword-badge">Hospital
+                                <a href=""><i class="far fa-times"></i></a></span>
+                            <span class="badge btn-primary-light d-flex align-items-center gap-2 keyword-badge">Health
+                                Care
+                                <a href=""><i class="far fa-times"></i></a></span>
+                            <span class="badge btn-primary-light d-flex align-items-center gap-2 keyword-badge">Medical
+                                <a href=""><i class="far fa-times"></i></a></span>
+                            <a href="" class="d-inline-block" data-bs-toggle="modal" data-bs-target="#addKeyword">
+                                <div class="dotted-circle">
+                                    <i class="far fa-plus"></i>
+                                </div>
+                            </a>
                         </div>
                         <button type="button" class="btn btn-outline-primary mt-4 gs_reveal">Edit Details</button>
                     </div>
@@ -1004,7 +1020,7 @@
         <div class="tab-content px-0 py-5 py-md-7" id="myTabContent">
             <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
                 <div class="container">
-                    <div class="row">
+                    <div class="row g-3 g-md-4 eq-height">
                         <div class="col-xl-7 col-lg-7">
                             <div class="about-card card-default gs_reveal">
                                 <div class="d-flex justify-content-between">
@@ -1109,8 +1125,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row eq-height g-3 g-md-4">
                         <div class="col-xl-6 col-lg-6">
                             <div class="card-default specialities-card gs_reveal">
                                 <div class="d-flex justify-content-between">
@@ -1627,10 +1641,10 @@
                                                                 <p class="location">12-May-2022</p>
                                                             </div>
                                                             <div class="reply-form">
-                                                                <div class="row g-3">
+                                                                <div class="row g-3 align-items-center">
                                                                     <div class="col-sm-8">
                                                                         <input type="text"
-                                                                            class="form-control form-control-sm border-radius-xs mt-2"
+                                                                            class="form-control form-control-sm border-radius-xs mt-0"
                                                                             placeholder="Type your reply">
                                                                     </div>
                                                                     <div class="col-sm-4">
@@ -2019,7 +2033,6 @@
                                                 data-bs-target="#allReviews">View All
                                                 Reviews and comments</a>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -2967,7 +2980,6 @@
                         <h3 class="custom-h unbreak text-center">Reply <span>Question</span></h3>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="mb-3">
@@ -2993,6 +3005,216 @@
                                 <button type="button" class="btn btn-submit-primary">Reply</button>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------------Verification Modal---------------------------------------------------------------->
+    <!-- Modal -->
+    <div class="modal fade" id="getVerified" tabindex="-1" aria-labelledby="replyQnLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content p-0">
+                <div class="flex-heading p-mob-3 p-md-5">
+                    <h3 class="custom-h unbreak text-start mb-0"><span>Get Verified</span> by Beheco</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-mob-3 px-md-5">
+                    <p class="text-start mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut
+                        labore
+                        et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <h6 class="custom-h mb-3"><span>Advantages</span> of Verification</h6>
+                    <div class="custom-ul mt-0">
+                        <div class="d-flex gap-3 mb-2">
+                            <i class="fas fa-check-circle text-primary mt-2"></i>
+                            <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="d-flex gap-3 mb-2">
+                            <i class="fas fa-check-circle text-primary mt-2"></i>
+                            <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="d-flex gap-3 mb-2">
+                            <i class="fas fa-check-circle text-primary mt-2"></i>
+                            <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="d-flex gap-3 mb-2">
+                            <i class="fas fa-check-circle text-primary mt-2"></i>
+                            <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="d-flex gap-3 mb-2">
+                            <i class="fas fa-check-circle text-primary mt-2"></i>
+                            <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <i class="fas fa-check-circle text-primary mt-2"></i>
+                            <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer p-mob-3 p-md-5">
+                    <div class="d-grid w-100">
+                        <button type="button" class="btn btn-submit-primary" data-bs-toggle="modal"
+                            data-bs-target="#verificationRequestSuccess" data-bs-dismiss="modal">Request
+                            Verification</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade show" id="verificationRequestSuccess" tabindex="-1" aria-labelledby="SuccessLabel"
+        aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-body">
+                    <div class="right-align">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="icon-wrapper mb-3 mb-mob-2">
+                        <i class="fas fa-badge-check fs-100 fs-mob-64 text-secondary"></i>
+                    </div>
+                    <div class="content">
+                        <h2 class="text-primary fs-30 fs-mob-28">Success</h2>
+                        <p>Your request for verification sent successfully, we'll notify you once you got verified.</p>
+                        <div class="d-grid gap-3">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Go Bank</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------------Add Keyword Modal---------------------------------------------------------------->
+    <!-- Modal -->
+    <div class="modal fade" id="addKeyword" tabindex="-1" aria-labelledby="addKeywordLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content p-0">
+                <div class="flex-heading p-mob-3 p-md-5">
+                    <h3 class="custom-h unbreak text-start mb-0">Add <span>Keyword</span></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-mob-3 px-md-5">
+                    <div class="keyword-wrapper">
+                        <div class="search-bar mgn-btm-20">
+                            <div class="position-relative hover-visible">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Search Keyword">
+                                    <button class="btn btn-primary btn-search" type="button" id="button-addon2"><i
+                                            class="fas fa-search"></i><span>Search</span></button>
+                                </div>
+                                <div class="search-results-container bg-white border-radius p-3 box-shadow">
+                                    <a href="" class="sr-content">
+                                        This is a result
+                                    </a>
+                                    <a href="" class="sr-content">
+                                        This is a result
+                                    </a>
+                                    <a href="" class="sr-content">
+                                        This is a result
+                                    </a>
+                                    <a href="" class="sr-content">
+                                        This is a result
+                                    </a>
+                                    <a href="" class="sr-content">
+                                        This is a result
+                                    </a>
+                                    <a href="" class="sr-content">
+                                        This is a result
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="keywords">
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined1" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined1">Sample
+                                    Keyword</label>
+                            </div>
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined111" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined111">Sample
+                                    Keyword</label>
+                            </div>
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined2" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined2">Sample
+                                    Keyword</label>
+                            </div>
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined3" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined3">Sample
+                                    Keyword</label>
+                            </div>
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined4" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined4">Sample
+                                    Keyword</label>
+                            </div>
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined5" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined5">Sample
+                                    Keyword</label>
+                            </div>
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined6" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined6">Sample
+                                    Keyword</label>
+                            </div>
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined7" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined7">Sample
+                                    Keyword</label>
+                            </div>
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined8" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined8">Sample
+                                    Keyword</label>
+                            </div>
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined9" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined9">Sample
+                                    Keyword</label>
+                            </div>
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined10" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined10">Sample
+                                    Keyword</label>
+                            </div>
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined11" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined11">Sample
+                                    Keyword</label>
+                            </div>
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined12" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined12">Sample
+                                    Keyword</label>
+                            </div>
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined13" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined13">Sample
+                                    Keyword</label>
+                            </div>
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined14" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined14">Sample
+                                    Keyword</label>
+                            </div>
+                            <div class="keyword">
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined15" autocomplete="off">
+                                <label class="btn btn-outline-primary btn-sm" for="btn-check-outlined15">Sample
+                                    Keyword</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer p-mob-3 p-md-5">
+                    <div class="d-grid w-100">
+                        <button type="button" class="btn btn-submit-primary" data-bs-toggle="modal"
+                            data-bs-target="#verificationRequestSuccess" data-bs-dismiss="modal">Add Keyword</button>
                     </div>
                 </div>
             </div>
@@ -3087,14 +3309,10 @@
     <script>
         var owl = $('.owl-carousel');
         owl.owlCarousel();
-        // Go to the next item
         $('.arrow-next').click(function () {
             owl.trigger('next.owl.carousel');
         })
-        // Go to the previous item
         $('.arrow-prev').click(function () {
-            // With optional speed parameter
-            // Parameters has to be in square bracket '[]'
             owl.trigger('prev.owl.carousel', [300]);
         })
     </script>

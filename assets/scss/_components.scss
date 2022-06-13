@@ -937,10 +937,8 @@ input[type="range"]::-ms-fill-lower {
     border-radius: 20px;
     transition: 0.2s all ease-out;
     &:hover {
-        .image-wrapper {
-            img {
-                width: 110% !important;
-            }
+        .img-animate {
+            transform: scale(1.04);
         }
     }
     .txt-section {
@@ -953,6 +951,7 @@ input[type="range"]::-ms-fill-lower {
         }
         p {
             margin: 7px 0;
+            word-wrap: break-word;
         }
         .right-align {
             width: 20%;
@@ -985,9 +984,9 @@ input[type="range"]::-ms-fill-lower {
     }
     p {
         @include text(15px, 15px, 400, rgba($color: $body-color, $alpha: 0.5));
-        white-space: nowrap;
+        // white-space: nowrap;
         // overflow: hidden;
-        text-overflow: ellipsis;
+        // text-overflow: ellipsis;
         margin: 10px 0 20px 0;
     }
     h5 {
@@ -1030,10 +1029,9 @@ input[type="range"]::-ms-fill-lower {
     .listing-card {
         .bottom-section {
             flex-wrap: wrap !important;
-            .btn-warpper,
-            .overall-rating {
+            gap: 0.5rem !important;
+            .btn-warpper {
                 width: 100% !important;
-                justify-content: left !important;
                 margin-bottom: 5px;
             }
         }

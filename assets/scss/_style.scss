@@ -377,7 +377,6 @@ h2 {
 // -----------------------------------------------------------------Full Screen Ad-------------------------------------------------------------
 .full-screen-ad {
     padding: 0 !important;
-    height: 400px;
 }
 // ------------------------------------------------------------------Top Picks-----------------------------------------------------------------
 .top-picks {
@@ -416,7 +415,7 @@ h2 {
             }
         }
     }
-    svg {
+    .slide-item svg {
         width: 0;
         height: 0;
         margin: 0;
@@ -460,93 +459,19 @@ h2 {
         right: 20px;
         z-index: 111;
     }
-    .freelancer-info {
-        .info-content {
-            margin-top: 25px;
-            display: flex;
-            justify-content: center;
-            p,
-            h5 {
-                text-align: center;
-                color: $body-color;
-            }
-            p {
-                color: rgba(17, 17, 17, 0.5);
-                margin: 10px 0;
-            }
-            .overall-rating {
-                justify-content: center;
-                margin: 20px 0;
-                p {
-                    margin: 0 0 0 10px;
-                    @include text(18px, 18px, 400, rgba(17, 17, 17, 0.5));
-                }
-                i {
-                    color: $primary;
-                }
-            }
-        }
-    }
 }
-// ------------------------------------------------------------------Upcoming Events-----------------------------------------------------------------
-// .upcoming-events{
 
-// }
+// ------------------------------------------------------------------Upcoming Events-----------------------------------------------------------------
 .event-container {
     margin-top: 50px;
     padding: 5px;
 }
-.event-card {
-    padding: 20px;
-    background-color: $white9;
-    border-radius: 20px;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: nowrap;
-    box-shadow: $box-shadow;
-    transition: 0.2s all ease-out;
-    height: 253px;
-    &:hover {
-        background-color: $secondary-light;
-        overflow: hidden;
-        transition: 0.2s all ease-out;
-    }
-    .img-section {
-        border-radius: 10px;
-        overflow: hidden;
-        width: 30%;
-        display: block !important;
-        transition: 0.2s all ease-out;
-        img {
-            width: 100%;
-        }
-    }
-
-    .text-section {
-        width: 70%;
-        padding-left: 20px;
-        h5 {
-            @include text(25px, 30px, 600, $body-color);
-        }
-        p {
-            @include text(16px, 1.8, 400, $black6);
-        }
-        .icon-text-container {
-            display: flex;
-            flex-wrap: nowrap;
-            align-items: center;
-            margin-bottom: 10px;
-            p {
-                margin-left: 10px;
-                margin-bottom: 0;
-            }
-            img {
-                width: auto !important;
-            }
-        }
-        .description-content {
-            overflow: hidden;
-            text-overflow: ellipsis;
+.slide-item {
+    height: 100%;
+    .listing-card {
+        height: 100%;
+        p.datentime {
+            line-height: 1.5 !important;
         }
     }
 }
@@ -628,7 +553,7 @@ h2 {
         max-width: 500px;
         .quote-icon {
             position: absolute;
-            top: -27px;
+            top: -50px;
             left: 10px;
         }
         .auther-img {
@@ -636,10 +561,11 @@ h2 {
             height: 90px;
             border-radius: 50%;
             overflow: hidden;
-            border: 2px solid $tertiary;
+            border: 3px solid $tertiary;
             img {
                 width: 100%;
             }
+            margin-bottom: 20px;
         }
         .txt-section {
             .quote {
@@ -918,7 +844,76 @@ h2 {
         padding-top: 25%;
     }
 }
+.equal-4-2 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: auto !important;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    &::before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 50%;
+    }
+}
 .equal-4-1 > * {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.equal-4-2 > * {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.wide-ad {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: auto !important;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    &::before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 25%;
+    }
+}
+.wide-ad > * {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.u-wide-ad {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: auto !important;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    &::before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: 15%;
+    }
+}
+.u-wide-ad > * {
     position: absolute;
     top: 0;
     right: 0;
@@ -939,5 +934,47 @@ h2 {
     &:focus {
         opacity: 1;
         filter: none;
+    }
+}
+
+.fav-button {
+    position: absolute !important;
+    top: 10px;
+    right: 10px;
+    z-index: 11;
+    background: rgba($color: $primary, $alpha: 0.5);
+    box-shadow: $box-shadow;
+    i {
+        color: $bdr;
+    }
+}
+.freelancer-card {
+    .fl-profile-pic {
+        width: 120px;
+        border-radius: $b-rds;
+        border: 5px solid $white;
+        box-shadow: $box-shadow;
+        margin-top: -80px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+.keyword-badge {
+    &:hover,
+    &:active,
+    &:focus {
+        a {
+            color: $white !important;
+        }
+    }
+}
+.freelancer-card {
+    .general-info {
+        .title {
+            text-align: center;
+            span {
+                margin: auto !important;
+            }
+        }
     }
 }

@@ -80,7 +80,9 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><img src="assets/images/svg/menu_icon.svg" alt=""></span>
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars text-black"></i>
+                </span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -193,11 +195,11 @@
         <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
-                <div class="sidebar-header">
+                <div class="sidebar-header m-0">
                     <div class="accordion no-bdr" id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item">
+                        <div class="accordion-item border-radius-0 no-bdr">
                             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button border-radius-0" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                                     aria-controls="panelsStayOpen-collapseOne">
                                     Select City
@@ -436,7 +438,7 @@
             <!-- Page Content Holder -->
             <div class="container">
                 <div id="content-section-wrapper">
-                    <nav class="navbar navbar-default">
+                    <nav class="navbar navbar-default mt-0">
                         <div class="navbar-header">
                             <button type="button" id="sidebarCollapse" class="navbar-btn">
                                 <span></span>
@@ -466,291 +468,341 @@
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="listing-wrapper">
-                                    <a href="detailpage.html" class="listing-card">
-                                        <div class="content">
-                                            <div class="image-wrapper">
-                                                <div class="border-radius media equal-1-1 mb-3">
+                                    <a href="detailpage.html">
+                                        <div class="listing-card content">
+                                            <div class="image-wrapper position-relative">
+                                                <button class="btn-circle circle-xs fav-button">
+                                                    <i class="far fa-heart text-white"></i>
+                                                </button>
+                                                <div class="border-radius media equal-1-1 mb-3 abs-button-container">
                                                     <span class="img-animate"
-                                                        style="background-image: url('assets/images/helathcare.jpg');"></span>
+                                                        style="background-image: url('assets/images/helathcare.jpg');">
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div class="txt-section">
                                                 <div class="flex-container top-section">
-                                                    <h5>This is a heading This is a heading</h5>
-                                                    <div class="right-align">
-                                                        <button class="btn btn-save p-0 h-auto"><i
-                                                                class="fas fa-heart"></i></button>
-                                                    </div>
+                                                    <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
                                                 </div>
-                                                <div class="flex-container bottom-section">
-                                                    <div class="btn-warpper">
-                                                        <p>Hospital</p>
+                                                <div class="flex-container bottom-section flex-column">
+                                                    <div class="d-flex flex-column w-100">
+                                                        <p class="mb-0">Hospital</p>
                                                         <p>Kochi, Kerala</p>
                                                     </div>
-                                                    <div class="overall-rating">
-                                                        <i class="fas fa-star-half-alt"></i>
-                                                        <p>4.6</p>
+                                                    <div class="d-flex">
+                                                        <div class="btn-warpper">
+                                                            <p class="m-0 text-primary">10.6 KMS</p>
+                                                        </div>
+                                                        <div class="overall-rating justify-content-mob-end">
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                            <p>4.6</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="detailpage.html" class="listing-card">
-                                        <div class="content">
-                                            <div class="image-wrapper">
-                                                <div class="border-radius media equal-1-1 mb-3">
+                                    <a href="detailpage.html">
+                                        <div class="listing-card content">
+                                            <div class="image-wrapper position-relative">
+                                                <button class="btn-circle circle-xs fav-button">
+                                                    <i class="fas fa-heart text-white"></i>
+                                                </button>
+                                                <div class="border-radius media equal-1-1 mb-3 abs-button-container">
                                                     <span class="img-animate"
-                                                        style="background-image: url('assets/images/helathcare.jpg');"></span>
+                                                        style="background-image: url('assets/images/helathcare.jpg');">
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div class="txt-section">
                                                 <div class="flex-container top-section">
-                                                    <h5>This is a heading This is a heading</h5>
-                                                    <div class="right-align">
-                                                        <button class="btn btn-save p-0 h-auto"><i
-                                                                class="fas fa-heart"></i></button>
-                                                    </div>
+                                                    <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
                                                 </div>
-                                                <div class="flex-container bottom-section">
-                                                    <div class="btn-warpper">
-                                                        <p>Hospital</p>
+                                                <div class="flex-container bottom-section flex-column">
+                                                    <div class="d-flex flex-column w-100">
+                                                        <p class="mb-0">Hospital</p>
                                                         <p>Kochi, Kerala</p>
                                                     </div>
-                                                    <div class="overall-rating">
-                                                        <i class="fas fa-star-half-alt"></i>
-                                                        <p>4.6</p>
+                                                    <div class="d-flex">
+                                                        <div class="btn-warpper">
+                                                            <p class="m-0 text-primary">10.6 KMS</p>
+                                                        </div>
+                                                        <div class="overall-rating justify-content-mob-end">
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                            <p>4.6</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="detailpage.html" class="listing-card">
-                                        <div class="content">
-                                            <div class="image-wrapper">
-                                                <div class="border-radius media equal-1-1 mb-3">
+                                    <a href="detailpage.html">
+                                        <div class="listing-card content">
+                                            <div class="image-wrapper position-relative">
+                                                <button class="btn-circle circle-xs fav-button">
+                                                    <i class="far fa-heart text-white"></i>
+                                                </button>
+                                                <div class="border-radius media equal-1-1 mb-3 abs-button-container">
                                                     <span class="img-animate"
-                                                        style="background-image: url('assets/images/helathcare.jpg');"></span>
+                                                        style="background-image: url('assets/images/helathcare.jpg');">
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div class="txt-section">
                                                 <div class="flex-container top-section">
-                                                    <h5>This is a heading This is a heading</h5>
-                                                    <div class="right-align">
-                                                        <button class="btn btn-save p-0 h-auto"><i
-                                                                class="fas fa-heart"></i></button>
-                                                    </div>
+                                                    <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
                                                 </div>
-                                                <div class="flex-container bottom-section">
-                                                    <div class="btn-warpper">
-                                                        <p>Hospital</p>
+                                                <div class="flex-container bottom-section flex-column">
+                                                    <div class="d-flex flex-column w-100">
+                                                        <p class="mb-0">Hospital</p>
                                                         <p>Kochi, Kerala</p>
                                                     </div>
-                                                    <div class="overall-rating">
-                                                        <i class="fas fa-star-half-alt"></i>
-                                                        <p>4.6</p>
+                                                    <div class="d-flex">
+                                                        <div class="btn-warpper">
+                                                            <p class="m-0 text-primary">10.6 KMS</p>
+                                                        </div>
+                                                        <div class="overall-rating justify-content-mob-end">
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                            <p>4.6</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="detailpage.html" class="listing-card">
-                                        <div class="content">
-                                            <div class="image-wrapper">
-                                                <div class="border-radius media equal-1-1 mb-3">
+                                    <a href="detailpage.html">
+                                        <div class="listing-card content">
+                                            <div class="image-wrapper position-relative">
+                                                <button class="btn-circle circle-xs fav-button">
+                                                    <i class="far fa-heart text-white"></i>
+                                                </button>
+                                                <div class="border-radius media equal-1-1 mb-3 abs-button-container">
                                                     <span class="img-animate"
-                                                        style="background-image: url('assets/images/helathcare.jpg');"></span>
+                                                        style="background-image: url('assets/images/helathcare.jpg');">
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div class="txt-section">
                                                 <div class="flex-container top-section">
-                                                    <h5>This is a heading This is a heading</h5>
-                                                    <div class="right-align">
-                                                        <button class="btn btn-save p-0 h-auto"><i
-                                                                class="fas fa-heart"></i></button>
-                                                    </div>
+                                                    <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
                                                 </div>
-                                                <div class="flex-container bottom-section">
-                                                    <div class="btn-warpper">
-                                                        <p>Hospital</p>
+                                                <div class="flex-container bottom-section flex-column">
+                                                    <div class="d-flex flex-column w-100">
+                                                        <p class="mb-0">Hospital</p>
                                                         <p>Kochi, Kerala</p>
                                                     </div>
-                                                    <div class="overall-rating">
-                                                        <i class="fas fa-star-half-alt"></i>
-                                                        <p>4.6</p>
+                                                    <div class="d-flex">
+                                                        <div class="btn-warpper">
+                                                            <p class="m-0 text-primary">10.6 KMS</p>
+                                                        </div>
+                                                        <div class="overall-rating justify-content-mob-end">
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                            <p>4.6</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="detailpage.html" class="listing-card">
-                                        <div class="content">
-                                            <div class="image-wrapper">
-                                                <div class="border-radius media equal-1-1 mb-3">
+                                    <a href="detailpage.html">
+                                        <div class="listing-card content">
+                                            <div class="image-wrapper position-relative">
+                                                <button class="btn-circle circle-xs fav-button">
+                                                    <i class="far fa-heart text-white"></i>
+                                                </button>
+                                                <div class="border-radius media equal-1-1 mb-3 abs-button-container">
                                                     <span class="img-animate"
-                                                        style="background-image: url('assets/images/helathcare.jpg');"></span>
+                                                        style="background-image: url('assets/images/helathcare.jpg');">
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div class="txt-section">
                                                 <div class="flex-container top-section">
-                                                    <h5>This is a heading This is a heading</h5>
-                                                    <div class="right-align">
-                                                        <button class="btn btn-save p-0 h-auto"><i
-                                                                class="fas fa-heart"></i></button>
-                                                    </div>
+                                                    <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
                                                 </div>
-                                                <div class="flex-container bottom-section">
-                                                    <div class="btn-warpper">
-                                                        <p>Hospital</p>
+                                                <div class="flex-container bottom-section flex-column">
+                                                    <div class="d-flex flex-column w-100">
+                                                        <p class="mb-0">Hospital</p>
                                                         <p>Kochi, Kerala</p>
                                                     </div>
-                                                    <div class="overall-rating">
-                                                        <i class="fas fa-star-half-alt"></i>
-                                                        <p>4.6</p>
+                                                    <div class="d-flex">
+                                                        <div class="btn-warpper">
+                                                            <p class="m-0 text-primary">10.6 KMS</p>
+                                                        </div>
+                                                        <div class="overall-rating justify-content-mob-end">
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                            <p>4.6</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="detailpage.html" class="listing-card">
-                                        <div class="content">
-                                            <div class="image-wrapper">
-                                                <div class="border-radius media equal-1-1 mb-3">
+                                    <a href="detailpage.html">
+                                        <div class="listing-card content">
+                                            <div class="image-wrapper position-relative">
+                                                <button class="btn-circle circle-xs fav-button">
+                                                    <i class="far fa-heart text-white"></i>
+                                                </button>
+                                                <div class="border-radius media equal-1-1 mb-3 abs-button-container">
                                                     <span class="img-animate"
-                                                        style="background-image: url('assets/images/helathcare.jpg');"></span>
+                                                        style="background-image: url('assets/images/helathcare.jpg');">
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div class="txt-section">
                                                 <div class="flex-container top-section">
-                                                    <h5>This is a heading This is a heading</h5>
-                                                    <div class="right-align">
-                                                        <button class="btn btn-save p-0 h-auto"><i
-                                                                class="fas fa-heart"></i></button>
-                                                    </div>
+                                                    <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
                                                 </div>
-                                                <div class="flex-container bottom-section">
-                                                    <div class="btn-warpper">
-                                                        <p>Hospital</p>
+                                                <div class="flex-container bottom-section flex-column">
+                                                    <div class="d-flex flex-column w-100">
+                                                        <p class="mb-0">Hospital</p>
                                                         <p>Kochi, Kerala</p>
                                                     </div>
-                                                    <div class="overall-rating">
-                                                        <i class="fas fa-star-half-alt"></i>
-                                                        <p>4.6</p>
+                                                    <div class="d-flex">
+                                                        <div class="btn-warpper">
+                                                            <p class="m-0 text-primary">10.6 KMS</p>
+                                                        </div>
+                                                        <div class="overall-rating justify-content-mob-end">
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                            <p>4.6</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="detailpage.html" class="listing-card">
-                                        <div class="content">
-                                            <div class="image-wrapper">
-                                                <div class="border-radius media equal-1-1 mb-3">
+                                    <a href="detailpage.html">
+                                        <div class="listing-card content">
+                                            <div class="image-wrapper position-relative">
+                                                <button class="btn-circle circle-xs fav-button">
+                                                    <i class="far fa-heart text-white"></i>
+                                                </button>
+                                                <div class="border-radius media equal-1-1 mb-3 abs-button-container">
                                                     <span class="img-animate"
-                                                        style="background-image: url('assets/images/helathcare.jpg');"></span>
+                                                        style="background-image: url('assets/images/helathcare.jpg');">
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div class="txt-section">
                                                 <div class="flex-container top-section">
-                                                    <h5>This is a heading This is a heading</h5>
-                                                    <div class="right-align">
-                                                        <button class="btn btn-save p-0 h-auto"><i
-                                                                class="fas fa-heart"></i></button>
-                                                    </div>
+                                                    <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
                                                 </div>
-                                                <div class="flex-container bottom-section">
-                                                    <div class="btn-warpper">
-                                                        <p>Hospital</p>
+                                                <div class="flex-container bottom-section flex-column">
+                                                    <div class="d-flex flex-column w-100">
+                                                        <p class="mb-0">Hospital</p>
                                                         <p>Kochi, Kerala</p>
                                                     </div>
-                                                    <div class="overall-rating">
-                                                        <i class="fas fa-star-half-alt"></i>
-                                                        <p>4.6</p>
+                                                    <div class="d-flex">
+                                                        <div class="btn-warpper">
+                                                            <p class="m-0 text-primary">10.6 KMS</p>
+                                                        </div>
+                                                        <div class="overall-rating justify-content-mob-end">
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                            <p>4.6</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="detailpage.html" class="listing-card">
-                                        <div class="content">
-                                            <div class="image-wrapper">
-                                                <div class="border-radius media equal-1-1 mb-3">
+                                    <a href="detailpage.html">
+                                        <div class="listing-card content">
+                                            <div class="image-wrapper position-relative">
+                                                <button class="btn-circle circle-xs fav-button">
+                                                    <i class="far fa-heart text-white"></i>
+                                                </button>
+                                                <div class="border-radius media equal-1-1 mb-3 abs-button-container">
                                                     <span class="img-animate"
-                                                        style="background-image: url('assets/images/helathcare.jpg');"></span>
+                                                        style="background-image: url('assets/images/helathcare.jpg');">
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div class="txt-section">
                                                 <div class="flex-container top-section">
-                                                    <h5>This is a heading This is a heading</h5>
-                                                    <div class="right-align">
-                                                        <button class="btn btn-save p-0 h-auto"><i
-                                                                class="fas fa-heart"></i></button>
-                                                    </div>
+                                                    <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
                                                 </div>
-                                                <div class="flex-container bottom-section">
-                                                    <div class="btn-warpper">
-                                                        <p>Hospital</p>
+                                                <div class="flex-container bottom-section flex-column">
+                                                    <div class="d-flex flex-column w-100">
+                                                        <p class="mb-0">Hospital</p>
                                                         <p>Kochi, Kerala</p>
                                                     </div>
-                                                    <div class="overall-rating">
-                                                        <i class="fas fa-star-half-alt"></i>
-                                                        <p>4.6</p>
+                                                    <div class="d-flex">
+                                                        <div class="btn-warpper">
+                                                            <p class="m-0 text-primary">10.6 KMS</p>
+                                                        </div>
+                                                        <div class="overall-rating justify-content-mob-end">
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                            <p>4.6</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="detailpage.html" class="listing-card">
-                                        <div class="content">
-                                            <div class="image-wrapper">
-                                                <div class="border-radius media equal-1-1 mb-3">
+                                    <a href="detailpage.html">
+                                        <div class="listing-card content">
+                                            <div class="image-wrapper position-relative">
+                                                <button class="btn-circle circle-xs fav-button">
+                                                    <i class="far fa-heart text-white"></i>
+                                                </button>
+                                                <div class="border-radius media equal-1-1 mb-3 abs-button-container">
                                                     <span class="img-animate"
-                                                        style="background-image: url('assets/images/helathcare.jpg');"></span>
+                                                        style="background-image: url('assets/images/helathcare.jpg');">
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div class="txt-section">
                                                 <div class="flex-container top-section">
-                                                    <h5>This is a heading This is a heading</h5>
-                                                    <div class="right-align">
-                                                        <button class="btn btn-save p-0 h-auto"><i
-                                                                class="fas fa-heart"></i></button>
-                                                    </div>
+                                                    <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
                                                 </div>
-                                                <div class="flex-container bottom-section">
-                                                    <div class="btn-warpper">
-                                                        <p>Hospital</p>
+                                                <div class="flex-container bottom-section flex-column">
+                                                    <div class="d-flex flex-column w-100">
+                                                        <p class="mb-0">Hospital</p>
                                                         <p>Kochi, Kerala</p>
                                                     </div>
-                                                    <div class="overall-rating">
-                                                        <i class="fas fa-star-half-alt"></i>
-                                                        <p>4.6</p>
+                                                    <div class="d-flex">
+                                                        <div class="btn-warpper">
+                                                            <p class="m-0 text-primary">10.6 KMS</p>
+                                                        </div>
+                                                        <div class="overall-rating justify-content-mob-end">
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                            <p>4.6</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
-                                    <a href="detailpage.html" class="listing-card">
-                                        <div class="content">
-                                            <div class="image-wrapper">
-                                                <div class="border-radius media equal-1-1 mb-3">
+                                    <a href="detailpage.html">
+                                        <div class="listing-card content">
+                                            <div class="image-wrapper position-relative">
+                                                <button class="btn-circle circle-xs fav-button">
+                                                    <i class="far fa-heart text-white"></i>
+                                                </button>
+                                                <div class="border-radius media equal-1-1 mb-3 abs-button-container">
                                                     <span class="img-animate"
-                                                        style="background-image: url('assets/images/helathcare.jpg');"></span>
+                                                        style="background-image: url('assets/images/helathcare.jpg');">
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div class="txt-section">
                                                 <div class="flex-container top-section">
-                                                    <h5>This is a heading This is a heading</h5>
-                                                    <div class="right-align">
-                                                        <button class="btn btn-save p-0 h-auto"><i
-                                                                class="fas fa-heart"></i></button>
-                                                    </div>
+                                                    <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
                                                 </div>
-                                                <div class="flex-container bottom-section">
-                                                    <div class="btn-warpper">
-                                                        <p>Hospital</p>
+                                                <div class="flex-container bottom-section flex-column">
+                                                    <div class="d-flex flex-column w-100">
+                                                        <p class="mb-0">Hospital</p>
                                                         <p>Kochi, Kerala</p>
                                                     </div>
-                                                    <div class="overall-rating">
-                                                        <i class="fas fa-star-half-alt"></i>
-                                                        <p>4.6</p>
+                                                    <div class="d-flex">
+                                                        <div class="btn-warpper">
+                                                            <p class="m-0 text-primary">10.6 KMS</p>
+                                                        </div>
+                                                        <div class="overall-rating justify-content-mob-end">
+                                                            <i class="fas fa-star-half-alt"></i>
+                                                            <p>4.6</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

@@ -1076,8 +1076,9 @@ input[type="range"]::-ms-fill-lower {
   transition: 0.2s all ease-out;
 }
 
-.listing-card:hover .image-wrapper img {
-  width: 110% !important;
+.listing-card:hover .img-animate {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .listing-card .txt-section h5 {
@@ -1090,6 +1091,7 @@ input[type="range"]::-ms-fill-lower {
 
 .listing-card .txt-section p {
   margin: 7px 0;
+  word-wrap: break-word;
 }
 
 .listing-card .txt-section .right-align {
@@ -1143,8 +1145,6 @@ input[type="range"]::-ms-fill-lower {
   line-height: 15px;
   font-weight: 400;
   color: rgba(17, 17, 17, 0.5);
-  white-space: nowrap;
-  text-overflow: ellipsis;
   margin: 10px 0 20px 0;
 }
 
@@ -1191,13 +1191,10 @@ input[type="range"]::-ms-fill-lower {
   .listing-card .bottom-section {
     -ms-flex-wrap: wrap !important;
         flex-wrap: wrap !important;
+    gap: 0.5rem !important;
   }
-  .listing-card .bottom-section .btn-warpper,
-  .listing-card .bottom-section .overall-rating {
+  .listing-card .bottom-section .btn-warpper {
     width: 100% !important;
-    -webkit-box-pack: left !important;
-        -ms-flex-pack: left !important;
-            justify-content: left !important;
     margin-bottom: 5px;
   }
 }
@@ -3097,7 +3094,7 @@ a {
     gap: 1.5rem !important;
   }
   .category-wrapper .category-row .category {
-    padding: 0 !important;
+    padding: 0px !important;
   }
   .category-wrapper .category-row .category .icon {
     width: 60px !important;
@@ -3111,6 +3108,10 @@ a {
   .category-wrapper .category-row .category .heading p {
     line-height: normal !important;
     font-size: 14px !important;
+  }
+  .category-wrapper .category-row .category:hover, .category-wrapper .category-row .category:active, .category-wrapper .category-row .category:focus {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
   }
   .category-wrapper .category-row .c15 .icon img {
     height: 50% !important;
@@ -3220,35 +3221,6 @@ a {
             justify-content: center !important;
     margin-top: 20px;
   }
-  .freelancers .content-box .cover-image {
-    height: 70px !important;
-  }
-  .freelancers .content-box .profile-image {
-    margin-top: -30px !important;
-  }
-  .freelancers .content-box .profile-image img {
-    width: 80px !important;
-    height: 80px !important;
-  }
-  .freelancers .content-box .freelancer-info .info-content {
-    margin-top: 15px !important;
-  }
-  .freelancers .content-box .freelancer-info .info-content h5 {
-    font-size: 18px !important;
-  }
-  .freelancers .content-box .freelancer-info .info-content p {
-    line-height: normal !important;
-  }
-  .freelancers .content-box .freelancer-info .info-content .overall-rating {
-    margin: 10px 0 !important;
-  }
-  .freelancers .content-box .btn-warpper .btn {
-    width: 100% !important;
-  }
-  .freelancers .save-btn {
-    bottom: 80px !important;
-    right: 10px !important;
-  }
   .near-you .common-h2 span,
   .freelancers .common-h2 span,
   .testimonials .common-h2 span {
@@ -3312,13 +3284,10 @@ a {
   .signin-box span {
     font-size: 14px !important;
   }
-  .event-card .img-section {
-    max-height: 200px !important;
-  }
   .flex-mob-wrap {
     -ms-flex-wrap: wrap !important;
         flex-wrap: wrap !important;
-    gap: 1rem !important;
+    gap: 0.5rem !important;
   }
   .w-mob-100 {
     width: 100% !important;
@@ -3511,35 +3480,6 @@ a {
             justify-content: center !important;
     margin-top: 20px;
   }
-  .freelancers .content-box .cover-image {
-    height: 70px !important;
-  }
-  .freelancers .content-box .profile-image {
-    margin-top: -30px !important;
-  }
-  .freelancers .content-box .profile-image img {
-    width: 80px !important;
-    height: 80px !important;
-  }
-  .freelancers .content-box .freelancer-info .info-content {
-    margin-top: 15px !important;
-  }
-  .freelancers .content-box .freelancer-info .info-content h5 {
-    font-size: 18px !important;
-  }
-  .freelancers .content-box .freelancer-info .info-content p {
-    line-height: normal !important;
-  }
-  .freelancers .content-box .freelancer-info .info-content .overall-rating {
-    margin: 10px 0 !important;
-  }
-  .freelancers .content-box .btn-warpper .btn {
-    width: 100% !important;
-  }
-  .freelancers .save-btn {
-    bottom: 80px !important;
-    right: 10px !important;
-  }
   .top-pick-card {
     margin-bottom: 20px !important;
   }
@@ -3555,9 +3495,6 @@ a {
   .btn-google .icon, .btn-facebook .icon,
   .btn-facebook .icon {
     top: 8px !important;
-  }
-  .event-card .img-section {
-    max-height: 200px !important;
   }
 }
 
@@ -3678,18 +3615,6 @@ a {
   .freelancers .content-box .profile-image img {
     width: 80px !important;
     height: 80px !important;
-  }
-  .freelancers .content-box .freelancer-info .info-content {
-    margin-top: 15px !important;
-  }
-  .freelancers .content-box .freelancer-info .info-content h5 {
-    font-size: 18px !important;
-  }
-  .freelancers .content-box .freelancer-info .info-content p {
-    line-height: normal !important;
-  }
-  .freelancers .content-box .freelancer-info .info-content .overall-rating {
-    margin: 10px 0 !important;
   }
   .freelancers .content-box .btn-warpper .btn {
     width: 100% !important;
@@ -4012,18 +3937,6 @@ a {
   a {
     font-size: 14px;
   }
-  .freelancer-info p,
-  .freelancer-info a,
-  .freelancer-info span {
-    font-size: 14px !important;
-  }
-  .event-card {
-    padding: 10px !important;
-    margin: 0 !important;
-  }
-  .event-card .text-section h5 {
-    line-height: 1.2 !important;
-  }
   p,
   a,
   .form-label {
@@ -4127,6 +4040,39 @@ a {
     grid-column-gap: 15px !important;
     grid-row-gap: 15px !important;
   }
+  .general-info .title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .general-info div.profile-pic {
+    margin-bottom: 30px !important;
+  }
+  .freelancer-card .fl-profile-pic {
+    width: 90px !important;
+    margin-top: -50px !important;
+  }
+  .d-mob-block {
+    display: block !important;
+  }
+  .ticket-rate {
+    width: 100% !important;
+  }
+  .profile-options-dropdown {
+    margin: auto !important;
+    -webkit-transform: none !important;
+            transform: none !important;
+    width: 50%;
+  }
+  .profile-options {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .div-split {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -4136,7 +4082,7 @@ a {
   .listing-card .txt-section .bottom-section {
     -ms-flex-wrap: wrap !important;
         flex-wrap: wrap !important;
-    gap: 1rem !important;
+    gap: 0.5rem !important;
   }
   .listing-card .txt-section .btn-warpper {
     width: 100% !important;
@@ -5346,7 +5292,6 @@ h2 {
 
 .full-screen-ad {
   padding: 0 !important;
-  height: 400px;
 }
 
 .top-picks .top-pick-card {
@@ -5401,7 +5346,7 @@ h2 {
           align-items: center;
 }
 
-.top-picks svg {
+.top-picks .slide-item svg {
   width: 0;
   height: 0;
   margin: 0;
@@ -5462,131 +5407,21 @@ h2 {
   z-index: 111;
 }
 
-.freelancers .freelancer-info .info-content {
-  margin-top: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.freelancers .freelancer-info .info-content p,
-.freelancers .freelancer-info .info-content h5 {
-  text-align: center;
-  color: #111;
-}
-
-.freelancers .freelancer-info .info-content p {
-  color: rgba(17, 17, 17, 0.5);
-  margin: 10px 0;
-}
-
-.freelancers .freelancer-info .info-content .overall-rating {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 20px 0;
-}
-
-.freelancers .freelancer-info .info-content .overall-rating p {
-  margin: 0 0 0 10px;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 400;
-  color: rgba(17, 17, 17, 0.5);
-}
-
-.freelancers .freelancer-info .info-content .overall-rating i {
-  color: #059762;
-}
-
 .event-container {
   margin-top: 50px;
   padding: 5px;
 }
 
-.event-card {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 20px;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
-  -webkit-transition: 0.2s all ease-out;
-  transition: 0.2s all ease-out;
-  height: 253px;
+.slide-item {
+  height: 100%;
 }
 
-.event-card:hover {
-  background-color: rgba(143, 208, 61, 0.1) !important;
-  overflow: hidden;
-  -webkit-transition: 0.2s all ease-out;
-  transition: 0.2s all ease-out;
+.slide-item .listing-card {
+  height: 100%;
 }
 
-.event-card .img-section {
-  border-radius: 10px;
-  overflow: hidden;
-  width: 30%;
-  display: block !important;
-  -webkit-transition: 0.2s all ease-out;
-  transition: 0.2s all ease-out;
-}
-
-.event-card .img-section img {
-  width: 100%;
-}
-
-.event-card .text-section {
-  width: 70%;
-  padding-left: 20px;
-}
-
-.event-card .text-section h5 {
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: 600;
-  color: #111;
-}
-
-.event-card .text-section p {
-  font-size: 16px;
-  line-height: 1.8;
-  font-weight: 400;
-  color: #666;
-}
-
-.event-card .text-section .icon-text-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 10px;
-}
-
-.event-card .text-section .icon-text-container p {
-  margin-left: 10px;
-  margin-bottom: 0;
-}
-
-.event-card .text-section .icon-text-container img {
-  width: auto !important;
-}
-
-.event-card .text-section .description-content {
-  overflow: hidden;
-  text-overflow: ellipsis;
+.slide-item .listing-card p.datentime {
+  line-height: 1.5 !important;
 }
 
 .coming-soon {
@@ -5711,7 +5546,7 @@ h2 {
 
 .testimonials .testimonial-card .quote-icon {
   position: absolute;
-  top: -27px;
+  top: -50px;
   left: 10px;
 }
 
@@ -5720,7 +5555,8 @@ h2 {
   height: 90px;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid #33aa55;
+  border: 3px solid #33aa55;
+  margin-bottom: 20px;
 }
 
 .testimonials .testimonial-card .auther-img img {
@@ -6082,7 +5918,85 @@ h2 {
   padding-top: 25%;
 }
 
+.equal-4-2 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: auto !important;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.equal-4-2::before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 50%;
+}
+
 .equal-4-1 > * {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.equal-4-2 > * {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.wide-ad {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: auto !important;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.wide-ad::before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 25%;
+}
+
+.wide-ad > * {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.u-wide-ad {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: auto !important;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.u-wide-ad::before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 15%;
+}
+
+.u-wide-ad > * {
   position: absolute;
   top: 0;
   right: 0;
@@ -6105,6 +6019,43 @@ h2 {
   opacity: 1;
   -webkit-filter: none;
           filter: none;
+}
+
+.fav-button {
+  position: absolute !important;
+  top: 10px;
+  right: 10px;
+  z-index: 11;
+  background: rgba(5, 151, 98, 0.5);
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fav-button i {
+  color: #ddd;
+}
+
+.freelancer-card .fl-profile-pic {
+  width: 120px;
+  border-radius: 10px;
+  border: 5px solid #fff;
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  margin-top: -80px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.keyword-badge:hover a, .keyword-badge:active a, .keyword-badge:focus a {
+  color: #fff !important;
+}
+
+.freelancer-card .general-info .title {
+  text-align: center;
+}
+
+.freelancer-card .general-info .title span {
+  margin: auto !important;
 }
 
 .mgn-top-5 {
@@ -12313,6 +12264,10 @@ h2 {
   border-color: #ddd !important;
 }
 
+.w-40 {
+  width: 40%;
+}
+
 @media screen and (max-width: 991px) {
   .nb .nav-item .nav-link {
     padding: 7px 0px !important;
@@ -12402,26 +12357,6 @@ h2 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 15px !important;
-  }
-  .event-card {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: auto !important;
-    margin-bottom: 20px !important;
-  }
-  .event-card .img-section {
-    width: 100%;
-  }
-  .event-card .text-section {
-    width: 100% !important;
-    padding-left: 0 !important;
-    padding-top: 20px;
-  }
-  .event-card .text-section h5 {
-    font-size: 18px !important;
-  }
-  .event-card .text-section p {
-    font-size: calc(16px - 2px) !important;
   }
   .coming-soon-card {
     padding: 20px !important;
@@ -12572,26 +12507,6 @@ h2 {
     font-size: calc(0.66 * 47px) !important;
     line-height: normal;
   }
-  .event-card {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: auto !important;
-    margin-bottom: 20px !important;
-  }
-  .event-card .img-section {
-    width: 100%;
-  }
-  .event-card .text-section {
-    width: 100% !important;
-    padding-left: 0 !important;
-    padding-top: 20px;
-  }
-  .event-card .text-section h5 {
-    font-size: 18px !important;
-  }
-  .event-card .text-section p {
-    font-size: calc(16px - 2px) !important;
-  }
   .top-pick-card {
     height: 330px !important;
   }
@@ -12635,9 +12550,6 @@ h2 {
 }
 
 @media screen and (max-width: 1199px) {
-  .event-card:hover .img-section img {
-    width: 100% !important;
-  }
   .slider-wrapper .content-box:hover .image-wrapper img {
     height: 100% !important;
   }
