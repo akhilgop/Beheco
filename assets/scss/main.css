@@ -3233,9 +3233,6 @@ a {
     margin-bottom: 20px !important;
     height: 300px !important;
   }
-  .modal-content {
-    padding: 20px !important;
-  }
   .modal-content .custom-h {
     font-size: 24px !important;
   }
@@ -3821,6 +3818,10 @@ a {
     grid-column-gap: 15px !important;
     grid-row-gap: 15px !important;
   }
+  .category-mini {
+    -ms-grid-columns: (1fr)[6] !important;
+        grid-template-columns: repeat(6, 1fr) !important;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1365px) {
@@ -3871,6 +3872,10 @@ a {
   .saved-items-wrapper {
     -ms-grid-columns: (1fr)[4] !important;
         grid-template-columns: repeat(4, 1fr) !important;
+  }
+  .category-mini {
+    -ms-grid-columns: (1fr)[8] !important;
+        grid-template-columns: repeat(8, 1fr) !important;
   }
 }
 
@@ -4072,6 +4077,12 @@ a {
     width: 100%;
     margin: auto;
     text-align: center;
+  }
+  .border-radius-md.wide-ad {
+    border-radius: 15px !important;
+  }
+  .border-radius-md.wide-ad::before {
+    padding-top: 40% !important;
   }
 }
 
@@ -5429,7 +5440,7 @@ h2 {
 }
 
 .coming-soon-card {
-  background-color: rgba(205, 255, 161, 0.5);
+  background-color: rgba(143, 208, 61, 0.4);
   background-image: url("../images/svg/coming-soon.svg");
   background-repeat: no-repeat;
   background-position-x: right;
@@ -5548,6 +5559,7 @@ h2 {
   position: absolute;
   top: -50px;
   left: 10px;
+  z-index: 111;
 }
 
 .testimonials .testimonial-card .auther-img {
@@ -6037,11 +6049,11 @@ h2 {
 
 .freelancer-card .fl-profile-pic {
   width: 120px;
-  border-radius: 10px;
+  border-radius: 100%;
   border: 5px solid #fff;
   -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
-  margin-top: -80px;
+  margin-top: -60px;
   margin-left: auto !important;
   margin-right: auto !important;
 }
@@ -6056,6 +6068,42 @@ h2 {
 
 .freelancer-card .general-info .title span {
   margin: auto !important;
+}
+
+.category-mini {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[9];
+      grid-template-columns: repeat(9, 1fr);
+}
+
+.category-mini .category {
+  margin: 0 !important;
+  padding: 20px;
+  border-radius: 12px !important;
+}
+
+.category-mini .category .icon {
+  width: 50px !important;
+  min-width: 50px !important;
+  height: 50px !important;
+  margin: auto !important;
+}
+
+.category-mini .category .icon img {
+  max-width: 50% !important;
+}
+
+.category-mini .category p {
+  line-height: 1.3 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.category-mini .c5 .icon img,
+.category-mini .c9 .icon img,
+.category-mini .c15 .icon img {
+  max-width: 35% !important;
 }
 
 .mgn-top-5 {

@@ -480,7 +480,7 @@ h2 {
     padding: 0 !important;
 }
 .coming-soon-card {
-    background-color: rgba($color: $color3, $alpha: 0.5);
+    background-color: rgba($color: $secondary, $alpha: 0.4);
     background-image: url("../images/svg/coming-soon.svg");
     background-repeat: no-repeat;
     background-position-x: right;
@@ -555,6 +555,7 @@ h2 {
             position: absolute;
             top: -50px;
             left: 10px;
+            z-index: 111;
         }
         .auther-img {
             width: 90px;
@@ -951,10 +952,10 @@ h2 {
 .freelancer-card {
     .fl-profile-pic {
         width: 120px;
-        border-radius: $b-rds;
+        border-radius: 100%;
         border: 5px solid $white;
         box-shadow: $box-shadow;
-        margin-top: -80px;
+        margin-top: -60px;
         margin-left: auto !important;
         margin-right: auto !important;
     }
@@ -974,6 +975,38 @@ h2 {
             text-align: center;
             span {
                 margin: auto !important;
+            }
+        }
+    }
+}
+.category-mini {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    .category {
+        margin: 0 !important;
+        padding: 20px;
+        border-radius: 12px !important;
+        .icon {
+            width: 50px !important;
+            min-width: 50px !important;
+            height: 50px !important;
+            margin: auto !important;
+            img {
+                max-width: 50% !important;
+            }
+        }
+        p {
+            line-height: 1.3 !important;
+            font-size: 14px !important;
+            font-weight: 500 !important;
+        }
+    }
+    .c5,
+    .c9,
+    .c15 {
+        .icon {
+            img {
+                max-width: 35% !important;
             }
         }
     }
