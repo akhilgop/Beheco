@@ -20,8 +20,11 @@
 <body>
     <section>
         <div class="container">
-            <!------------------------------------------------------------------Sign Up------------------------------------------------------------->
+            <!------------------------------------------------------------------Content------------------------------------------------------------->
             <div class="d-flex gap-3 flex-wrap m-0">
+                <a href="index.html" type="button" class="btn btn-primary">
+                    Go to Home
+                </a>
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SignUp">
                     Sign Up
@@ -39,7 +42,8 @@
                                     <img src="assets/images/logo.png" alt="logo">
                                 </div>
                                 <div class="content">
-                                    <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48"><span>Sign In</span> and Explore
+                                    <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48 mb-4"><span>Sign In</span> and
+                                        Explore
                                         More</h2>
                                     <div class="mb-3">
                                         <input type="email" class="form-control" placeholder="Email Address">
@@ -52,11 +56,15 @@
                                             onclick="location.href = 'profile.html'">Sign In</button>
                                     </div>
                                     <hr>
-                                    <p>Don't have a Beheco Account? <a
+                                    <p class="mb-2">Don't have a Beheco Account? <a
                                             class=" text-primary fw-bold a-animate text-primary-hover"
                                             data-bs-toggle="modal" data-bs-target="#SignUp"
                                             data-bs-dismiss="modal">Register
                                             Here!</a></p>
+                                    <p>Forgot your Password? <a
+                                            class=" text-primary fw-bold a-animate text-primary-hover"
+                                            data-bs-toggle="modal" data-bs-target="#SignUp"
+                                            data-bs-dismiss="modal">Reset here</a></p>
                                     <hr>
                                     <p class="text-center mb-0">OR</p>
                                     <div class="d-flex justify-content-center gap-2">
@@ -85,7 +93,7 @@
                                     <img src="assets/images/logo.png" alt="logo">
                                 </div>
                                 <div class="content">
-                                    <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48"><span>Sign Up</span></h2>
+                                    <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48 mb-4"><span>Sign Up</span></h2>
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="mb-3">
@@ -139,6 +147,71 @@
                         </div>
                     </div>
                 </div>
+                <!---------------------------------------------------------------Forgot Password------------------------------------------------------>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#forgotPassword">
+                    Forgot Password
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="forgotPassword" tabindex="-1" aria-labelledby="forgotPasswordLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="flex-heading">
+                                    <h3 class="custom-h unbreak text-center">Forgot <span>Password?</span></h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <div class="modal-body text-left">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. </p>
+                                <div class="mb-0">
+                                    <label class="form-label">Email address</label>
+                                    <input type="email" class="form-control" placeholder="name@example.com">
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="d-flex flex-column gap-2 w-100">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#forgotPassword2" data-bs-dismiss="modal">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="forgotPassword2" tabindex="-1" aria-labelledby="forgotPassword2Label"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="flex-heading">
+                                    <h3 class="custom-h unbreak text-center">Enter <span>OTP?</span></h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <div class="modal-body text-left">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. </p>
+                                <div class="mb-0">
+                                    <label class="form-label">Email address</label>
+                                    <input type="number" class="form-control" placeholder="Eg: 111111">
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <div class="d-flex flex-column gap-2 w-100">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#Success" data-bs-dismiss="modal">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!------------------------------------------------------------------Success------------------------------------------------------------->
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Success">
@@ -161,8 +234,9 @@
                                     <h2 class="text-primary fs-30 fs-mob-28">Success</h2>
                                     <p>Now you can Explore Everything</p>
                                     <div class="d-grid gap-3">
-                                        <button type="button" class="btn btn-primary-outline m-0">Explore now</button>
-                                        <button type="button" class="btn btn-primary">View your profile</button>
+                                        <button type="button" class="btn btn-primary-outline m-0">Secondary
+                                            Option</button>
+                                        <button type="button" class="btn btn-primary">Primary Option</button>
                                     </div>
                                 </div>
                             </div>
@@ -208,17 +282,17 @@
                 <!-- Modal -->
                 <div class="modal fade" id="requirement" tabindex="-1" aria-labelledby="requirementLabel"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                         <div class="modal-content">
-                            <div class="flex-heading">
-                                <h3 class="custom-h unbreak text-center">Hey<span> Wait!</span></h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                            <div class="modal-header">
+                                <div class="flex-heading">
+                                    <h3 class="custom-h unbreak text-center">Hey<span> Wait!</span></h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
                             </div>
                             <div class="modal-body">
-
                                 <div class="content">
-
                                     <div class="row">
                                         <div class="col-xl-12">
                                             <div class="mb-3">
@@ -256,13 +330,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div class="block-btn-wrapper">
-                                                <button type="button" class="btn btn-submit-primary">Submit</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="block-btn-wrapper">
+                                    <button type="button" class="btn btn-submit-primary">Submit</button>
                                 </div>
                             </div>
                         </div>
@@ -308,7 +380,7 @@
                 <!-- Modal -->
                 <div class="modal fade" id="advertiseHere" tabindex="-1" aria-labelledby="advertiseHereLabel"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-body">
                                 <div class="content text-left">
@@ -323,34 +395,21 @@
                                         will
                                         contact you
                                         soon.</p>
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">Your Full Name</label>
-                                                <input type="text" class="form-control" placeholder="Eg: John Smith">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">Business Name</label>
-                                                <input type="text" class="form-control" placeholder="Eg: ABC Pvt Ltd">
-                                            </div>
-                                        </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Your Full Name</label>
+                                        <input type="text" class="form-control" placeholder="Eg: John Smith">
                                     </div>
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">Email Address</label>
-                                                <input type="email" class="form-control"
-                                                    placeholder="Eg: name@example.com">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="mb-3">
-                                                <label class="form-label">Contact Number</label>
-                                                <input type="text" class="form-control" placeholder="Eg: +919876543211">
-                                            </div>
-                                        </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Business Name</label>
+                                        <input type="text" class="form-control" placeholder="Eg: ABC Pvt Ltd">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" placeholder="Eg: name@example.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Contact Number</label>
+                                        <input type="text" class="form-control" placeholder="Eg: +919876543211">
                                     </div>
                                     <div class="block-btn-wrapper">
                                         <button type="button" class="btn btn-view-all">Contact Us</button>
@@ -369,56 +428,57 @@
                 <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
-                        <div class="modal-content p-0">
-                            <div class="flex-heading p-mob-3 p-md-5">
-                                <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48 mb-0">All <span>Categories</span></h2>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body p-mob-3 pt-mob-0 p-md-5 pt-md-0">
-                                <div class="category-wrapper">
-                                    <div class="row">
-                                        <div class="col-xl-2">
-                                        </div>
-                                        <div class="col-xl-8">
-                                            <div class="position-relative hover-visible">
-                                                <div class="input-group mb-3">
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Search Category">
-                                                    <button class="btn btn-primary btn-search gap-2" type="button"
-                                                        id="button-addon2"><i class="fas fa-search">
-                                                        </i>
-                                                        <span class="fw-600">Search
-                                                        </span>
-                                                    </button>
-                                                </div>
-                                                <div
-                                                    class="search-results-container bg-white border-radius p-3 box-shadow">
-                                                    <a href="" class="sr-content">
-                                                        This is a result
-                                                    </a>
-                                                    <a href="" class="sr-content">
-                                                        This is a result
-                                                    </a>
-                                                    <a href="" class="sr-content">
-                                                        This is a result
-                                                    </a>
-                                                    <a href="" class="sr-content">
-                                                        This is a result
-                                                    </a>
-                                                    <a href="" class="sr-content">
-                                                        This is a result
-                                                    </a>
-                                                    <a href="" class="sr-content">
-                                                        This is a result
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-xl-2">
-                                        </div>
+                        <div class="modal-content">
+                            <div class="modal-header flex-column">
+                                <div class="flex-heading w-100">
+                                    <h2 class="common-h2 fs-mob-30 fs-md-36 fs-lg-48 mb-0">All <span>Categories</span>
+                                    </h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="row my-3 w-100">
+                                    <div class="col-xl-2">
                                     </div>
+                                    <div class="col-xl-8">
+                                        <div class="position-relative hover-visible">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Search Category">
+                                                <button class="btn btn-primary btn-search p-0" type="button"
+                                                    id="button-addon2"><i class="fas fa-search">
+                                                    </i>
+                                                    <span class="fw-600">
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <div class="search-results-container bg-white border-radius p-3 box-shadow">
+                                                <a href="" class="sr-content">
+                                                    This is a result
+                                                </a>
+                                                <a href="" class="sr-content">
+                                                    This is a result
+                                                </a>
+                                                <a href="" class="sr-content">
+                                                    This is a result
+                                                </a>
+                                                <a href="" class="sr-content">
+                                                    This is a result
+                                                </a>
+                                                <a href="" class="sr-content">
+                                                    This is a result
+                                                </a>
+                                                <a href="" class="sr-content">
+                                                    This is a result
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body pt-0">
+                                <div class="category-wrapper m-0">
                                     <div class="category-row category-mini">
                                         <a href="" class="category c1 ">
                                             <div class="icon">
@@ -688,13 +748,15 @@
                 <!-- Modal -->
                 <div class="modal fade" id="dropCv" tabindex="-1" aria-labelledby="dropCvLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg drop-cv-modal modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content p-0">
-                            <div class="flex-heading p-mob-3 p-md-5">
-                                <h3 class="custom-h unbreak text-center mb-0">Drop <span>CV</span></h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="flex-heading">
+                                    <h3 class="custom-h unbreak text-center mb-0">Drop <span>CV</span></h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
                             </div>
-                            <div class="modal-body px-mob-3 px-md-5">
+                            <div class="modal-body">
                                 <div class="content">
                                     <div class="input-wrapper">
                                         <div class="row">
@@ -761,7 +823,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-xl-6">
-                                                <div class="mb-3">
+                                                <div class="mb-0">
                                                     <label for="" class="form-label">Attach CV</label>
                                                     <div class="input-group file-upload">
                                                         <input type="text" class="form-control file-input"
@@ -779,7 +841,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer p-mob-3 p-md-5">
+                            <div class="modal-footer">
                                 <div class="d-grid gap-2 w-100">
                                     <button class="btn btn-view-all" type="button">
                                         <span>Hire Me</span>
@@ -797,13 +859,15 @@
                 <!-- Modal -->
                 <div class="modal fade" id="applyNow" tabindex="-1" aria-labelledby="applyNowLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg drop-cv-modal  modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content p-0">
-                            <div class="flex-heading  p-mob-3 p-md-5">
-                                <h3 class="custom-h text-center mb-0">Apply <span>Now</span></h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="flex-heading">
+                                    <h3 class="custom-h text-center mb-0">Apply <span>Now</span></h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
                             </div>
-                            <div class="modal-body  px-mob-3 px-md-5">
+                            <div class="modal-body">
                                 <div class="content">
                                     <div class="input-wrapper">
                                         <div class="row">
@@ -882,7 +946,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-xl-6">
-                                                <div class="mb-3">
+                                                <div class="mb-0">
                                                     <label for="" class="form-label">Attach CV</label>
                                                     <div class="input-group file-upload">
                                                         <input type="text" class="form-control file-input"
@@ -895,12 +959,10 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer p-mob-3 p-md-5">
+                            <div class="modal-footer">
                                 <div class="d-grid gap-2 w-100">
                                     <button class="btn btn-view-all" type="button">
                                         <span>Hire Me</span>
@@ -919,13 +981,15 @@
                 <div class="modal fade" id="galleryViewMore" tabindex="-1" aria-labelledby="galleryViewMoreLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen">
-                        <div class="modal-content p-0">
-                            <div class="flex-heading p-mob-3 p-md-5">
-                                <h2 class="common-h2 mb-0"><span>Image</span> Gallery</h2>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="flex-heading">
+                                    <h2 class="common-h2 mb-0"><span>Image</span> Gallery</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
                             </div>
-                            <div class="modal-body px-mob-3 px-md-5">
+                            <div class="modal-body">
                                 <div class="added-photos">
                                     <div class="demo-gallery">
                                         <ul id="lightgallery1" class="row my-0">
@@ -1149,8 +1213,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer p-mob-3 p-md-5">
-                                <div class="flex-h-center pagination-wrapper w-100 m-0">
+                            <div class="modal-footer">
+                                <div class="flex-h-center pagination-wrapper w-100 m-0 pt-3">
                                     <div class="pagination">
                                         <a class="prev page-numbers " href="javascript:;"><i
                                                 class="fas fa-angle-double-left"></i>
@@ -1182,20 +1246,22 @@
                 <div class="modal fade" id="offerModal" tabindex="-1" aria-labelledby="offerModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog offer-modal modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content p-0">
-                            <div class="flex-heading p-mob-3 p-md-5">
-                                <h3 class="custom-h mb-0 unbreak text-center"><span>Offer </span>Details</h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="flex-heading">
+                                    <h3 class="custom-h mb-0 unbreak text-center"><span>Offer </span>Details</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
                             </div>
-                            <div class="modal-body px-mob-3 px-md-5">
+                            <div class="modal-body pb-0">
                                 <div class="overflow-hidden border-radius">
                                     <img src="https://k60.kn3.net/taringa/F/C/6/8/4/5/VCLR/3E9.jpg">
                                 </div>
                                 <div class="offer-description text-start">
-                                    <h3 class="custom-h unbreak text-center">Flat <span>60% OFF </span> On Food Orders
+                                    <h3 class="custom-h unbreak text-start">Flat <span>60% OFF </span> On Food Orders
                                     </h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                         do eiusmod tempor
                                         incididunt ut
                                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -1206,7 +1272,7 @@
                                         occaecat
                                         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
                                         laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    <p class="text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                         do eiusmod tempor
                                         incididunt ut
                                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -1219,7 +1285,7 @@
                                         laborum.</p>
                                 </div>
                             </div>
-                            <div class="modal-footer px-mob-3 px-md-5 py-3">
+                            <div class="modal-footer mt-3">
                                 <div class="d-flex justify-content-center gap-3 w-100 m-0">
                                     <button type="button" class="btn btn-submit-outline m-0"
                                         data-bs-dismiss="modal">Close</button>
@@ -1237,14 +1303,13 @@
                 <!-- Modal -->
                 <div class="modal fade" id="allReviews" tabindex="-1" aria-labelledby="allReviews" aria-hidden="true">
                     <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable modal-xl">
-                        <div class="modal-content p-0">
+                        <div class="modal-content">
                             <div class="flex-heading p-mob-3 pb-mob-0 p-md-5 pb-md-0">
                                 <h3 class="custom-h unbreak mb-0">All <span>Reviews</span></h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="modal-body p-mob-3 p-md-5">
-
+                            <div class="modal-body">
                                 <div class="content feedback-card-wrapper d-flex flex-column gap-3">
                                     <div class="feedback-card">
                                         <div class="d-flex gap-3 gap-md-4 align-items-start flex-mob-wrap">
@@ -1745,7 +1810,7 @@
                 <div class="modal fade" id="allQuestions" tabindex="-1" aria-labelledby="allQuestions"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content p-0">
+                        <div class="modal-content">
                             <div class="flex-heading p-mob-3 pb-mob-0 p-md-5 pb-md-0">
                                 <h3 class="custom-h mb-1">All <span>Questions & Answers</span></h3>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -2005,15 +2070,16 @@
                 </button>
                 <!-- Modal -->
                 <div class="modal fade" id="replyQn" tabindex="-1" aria-labelledby="replyQnLabel" aria-hidden="true">
-                    <div class="modal-dialog offer-modal modal-dialog-centered">
+                    <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
-                            <div class="modal-body text-left">
+                            <div class="modal-header">
                                 <div class="flex-heading">
                                     <h3 class="custom-h unbreak text-center">Reply <span>Question</span></h3>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
-
+                            </div>
+                            <div class="modal-body text-left">
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="mb-3">
@@ -2055,10 +2121,12 @@
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
-                            <div class="flex-heading">
-                                <h3 class="custom-h unbreak text-center">Change <span>Profile Picture</span></h3>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+                            <div class="modal-header">
+                                <div class="flex-heading">
+                                    <h3 class="custom-h unbreak text-center">Change <span>Profile Picture</span></h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
                             </div>
                             <div class="modal-body">
                                 <div class="custom-file-image">
@@ -2102,7 +2170,7 @@
                                     <label class="form-label">New Password</label>
                                     <input type="password" class="form-control" placeholder="Choose new password">
                                 </div>
-                                <div class="mb-3">
+                                <div class="mb-0">
                                     <label class="form-label">Confirm Password</label>
                                     <input type="password" class="form-control" placeholder="Confirm new password">
                                 </div>
@@ -2137,7 +2205,7 @@
                                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                     ullamco
                                     laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                <div class="mb-1">
+                                <div class="mb-0">
                                     <label class="form-label fw-500">Enter Password to confirm deletion</label>
                                     <input type="password" class="form-control" placeholder="Enter password">
                                 </div>
@@ -2147,6 +2215,98 @@
                                 <div class="d-grid gap-3 w-100">
                                     <button type="button" class="btn btn-primary-light m-0">Cancel Deletion</button>
                                     <button type="button" class="btn btn-danger m-0">Delete Account</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------Verification Modal---------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#getVerified">
+                    Verification
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="getVerified" tabindex="-1" aria-labelledby="replyQnLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="flex-heading">
+                                    <h3 class="custom-h unbreak text-start mb-0"><span>Get Verified</span> by Beheco
+                                    </h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-start mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod
+                                    tempor
+                                    incididunt ut
+                                    labore
+                                    et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi
+                                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                    voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.</p>
+                                <h6 class="custom-h mb-3"><span>Advantages</span> of Verification</h6>
+                                <div class="custom-ul mt-3">
+                                    <div class="d-flex gap-3 mb-2">
+                                        <i class="fas fa-check-circle text-primary mt-2"></i>
+                                        <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                    </div>
+                                    <div class="d-flex gap-3 mb-2">
+                                        <i class="fas fa-check-circle text-primary mt-2"></i>
+                                        <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                    </div>
+                                    <div class="d-flex gap-3 mb-2">
+                                        <i class="fas fa-check-circle text-primary mt-2"></i>
+                                        <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                    </div>
+                                    <div class="d-flex gap-3 mb-2">
+                                        <i class="fas fa-check-circle text-primary mt-2"></i>
+                                        <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                    </div>
+                                    <div class="d-flex gap-3 mb-2">
+                                        <i class="fas fa-check-circle text-primary mt-2"></i>
+                                        <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <i class="fas fa-check-circle text-primary mt-2"></i>
+                                        <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="d-grid w-100">
+                                    <button type="button" class="btn btn-submit-primary" data-bs-toggle="modal"
+                                        data-bs-target="#verificationRequestSuccess" data-bs-dismiss="modal">Request
+                                        Verification</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade show" id="verificationRequestSuccess" tabindex="-1"
+                    aria-labelledby="SuccessLabel" aria-modal="true" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content text-center">
+                            <div class="modal-body">
+                                <div class="right-align">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="icon-wrapper mb-3 mb-mob-2">
+                                    <i class="fas fa-badge-check fs-100 fs-mob-64 text-secondary"></i>
+                                </div>
+                                <div class="content">
+                                    <h2 class="text-primary fs-30 fs-mob-28">Success</h2>
+                                    <p>Your request for verification sent successfully, we'll notify you once you got
+                                        verified.</p>
+                                    <div class="d-grid gap-3">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Go
+                                            Back</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

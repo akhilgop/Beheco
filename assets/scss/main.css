@@ -345,16 +345,6 @@ textarea.form-control {
   text-decoration: none;
 }
 
-.modal-content {
-  border-radius: 20px;
-  border: none;
-  padding: 50px;
-}
-
-.modal-body {
-  padding: 0;
-}
-
 .carousel-item {
   height: 400px;
   overflow: hidden;
@@ -3704,6 +3694,10 @@ a {
     margin-left: auto;
     text-align: center;
   }
+  .category-mini {
+    -ms-grid-columns: (1fr)[4] !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3873,9 +3867,12 @@ a {
     -ms-grid-columns: (1fr)[4] !important;
         grid-template-columns: repeat(4, 1fr) !important;
   }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
   .category-mini {
-    -ms-grid-columns: (1fr)[8] !important;
-        grid-template-columns: repeat(8, 1fr) !important;
+    -ms-grid-columns: (1fr)[6] !important;
+        grid-template-columns: repeat(6, 1fr) !important;
   }
 }
 
@@ -5557,7 +5554,7 @@ h2 {
 
 .testimonials .testimonial-card .quote-icon {
   position: absolute;
-  top: -50px;
+  top: -30px;
   left: 10px;
   z-index: 111;
 }
@@ -6104,6 +6101,10 @@ h2 {
 .category-mini .c9 .icon img,
 .category-mini .c15 .icon img {
   max-width: 35% !important;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 .mgn-top-5 {
@@ -12606,11 +12607,8 @@ h2 {
 .modal-content {
   border-radius: 20px;
   border: none;
-  padding: 50px;
-}
-
-.modal-content .modal-body {
-  padding: 0;
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
 }
 
 .modal-content p {
@@ -12618,13 +12616,39 @@ h2 {
 }
 
 .modal-content .modal-header {
-  padding: 0 !important;
+  padding: 50px 50px 0 50px !important;
+}
+
+.modal-content .modal-header .btn-close {
+  margin: 0 !important;
+  padding: 3px !important;
+}
+
+.modal-content .modal-body {
+  padding: 30px 50px;
+}
+
+.modal-content .modal-footer {
+  padding: 0 50px 50px 50px !important;
+}
+
+.modal-content .modal-footer .btn {
+  margin: 0 !important;
+}
+
+.modal-content .modal-footer .d-grid,
+.modal-content .modal-footer .d-flex {
+  margin: 0 !important;
 }
 
 .modal-content .common-h2 {
   font-size: 25px !important;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+}
+
+.modal-content .custom-h {
+  margin-bottom: 0 !important;
 }
 
 .modal-content .logo {
@@ -12683,6 +12707,11 @@ h2 {
 
 .modal-content .full-wdth-btn .btn:first-child {
   margin-bottom: 10px;
+}
+
+.modal-content .right-align .btn-close {
+  margin-top: 50px;
+  margin-right: 50px;
 }
 
 #requirement .modal-body {
@@ -12746,11 +12775,10 @@ h2 {
   border: none !important;
 }
 
-.modal-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 30px;
+.modal-header .right-align .btn-close,
+.modal-body .right-align .btn-close,
+.modal-footer .right-align .btn-close {
+  margin: 0 !important;
 }
 
 .modal-header h1,
@@ -12780,20 +12808,67 @@ h2 {
   display: block !important;
 }
 
-.modal-footer {
-  padding: 10px 0 0 0;
-}
-
 .modal-dialog-scrollable .modal-body {
   overflow-x: hidden !important;
 }
 
 .flex-heading {
   text-align: center;
+  width: 100%;
 }
 
 .modal-backdrop {
   z-index: 1500;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-xxxl {
+    min-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-xxxl {
+    min-width: 1000px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .modal-xxxl {
+    min-width: 1400px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .modal-content .modal-header {
+    padding: 20px 20px 0 20px !important;
+  }
+  .modal-content .modal-body {
+    padding: 20px;
+  }
+  .modal-content .modal-footer {
+    padding: 0 20px 20px 20px !important;
+  }
+  .modal-content .right-align .btn-close {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .modal-content .modal-header {
+    padding: 30px 30px 0 30px !important;
+  }
+  .modal-content .modal-body {
+    padding: 30px;
+  }
+  .modal-content .modal-footer {
+    padding: 0 30px 30px 30px !important;
+  }
+  .modal-content .right-align .btn-close {
+    margin-top: 30px;
+    margin-right: 30px;
+  }
 }
 
 div.bg-primary {

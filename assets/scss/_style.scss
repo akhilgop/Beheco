@@ -553,7 +553,7 @@ h2 {
         max-width: 500px;
         .quote-icon {
             position: absolute;
-            top: -50px;
+            top: -30px;
             left: 10px;
             z-index: 111;
         }
@@ -1010,4 +1010,7 @@ h2 {
             }
         }
     }
+}
+p:last-child {
+    margin-bottom: 0;
 }

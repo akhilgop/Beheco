@@ -4,22 +4,39 @@
 .modal-content {
     border-radius: 20px;
     border: none;
-    .modal-body {
-        padding: 0;
-    }
+    box-shadow: $box-shadow;
+
     p {
         text-align: center;
     }
     .modal-header {
-        padding: 0 !important;
+        padding: 50px 50px 0 50px !important;
+        .btn-close {
+            margin: 0 !important;
+            padding: 3px !important;
+        }
     }
-
+    .modal-body {
+        padding: 30px 50px;
+    }
+    .modal-footer {
+        padding: 0 50px 50px 50px !important;
+        .btn {
+            margin: 0 !important;
+        }
+        .d-grid,
+        .d-flex {
+            margin: 0 !important;
+        }
+    }
     .common-h2 {
         font-size: 25px !important;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
-    padding: 50px;
+    .custom-h {
+        margin-bottom: 0 !important;
+    }
     .logo {
         display: flex;
         justify-content: center;
@@ -53,6 +70,12 @@
             &:first-child {
                 margin-bottom: 10px;
             }
+        }
+    }
+    .right-align {
+        .btn-close {
+            margin-top: 50px;
+            margin-right: 50px;
         }
     }
 }
@@ -108,10 +131,13 @@
 .modal-body,
 .modal-footer {
     border: none !important;
+    .right-align {
+        .btn-close {
+            margin: 0 !important;
+        }
+    }
 }
 .modal-header {
-    display: flex;
-    margin-bottom: 30px;
     h1,
     h2,
     h3,
@@ -135,20 +161,68 @@
         display: block !important;
     }
 }
-.modal-footer {
-    padding: 10px 0 0 0;
-}
+
 .modal-dialog-scrollable .modal-body {
     overflow-x: hidden !important;
 }
 .flex-heading {
     text-align: center;
+    width: 100%;
 }
-// @media screen and (min-width: 768px) and (max-width: 991px) {
-//     .modal-dialog {
-//         margin: 0px 30px;
-//     }
-// }
 .modal-backdrop {
     z-index: 1500;
+}
+@media screen and (min-width: 768px) {
+    .modal-xxxl {
+        min-width: 600px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .modal-xxxl {
+        min-width: 1000px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .modal-xxxl {
+        min-width: 1400px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .modal-content {
+        .modal-header {
+            padding: 20px 20px 0 20px !important;
+        }
+        .modal-body {
+            padding: 20px;
+        }
+        .modal-footer {
+            padding: 0 20px 20px 20px !important;
+        }
+        .right-align {
+            .btn-close {
+                margin-top: 20px;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .modal-content {
+        .modal-header {
+            padding: 30px 30px 0 30px !important;
+        }
+        .modal-body {
+            padding: 30px;
+        }
+        .modal-footer {
+            padding: 0 30px 30px 30px !important;
+        }
+        .right-align {
+            .btn-close {
+                margin-top: 30px;
+                margin-right: 30px;
+            }
+        }
+    }
 }
