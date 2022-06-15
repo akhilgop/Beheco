@@ -2312,6 +2312,292 @@
                         </div>
                     </div>
                 </div>
+                <!------------------------------------------------------------------Add Media Modal---------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addMedia">
+                    Add Media
+                </button>
+                <div class="modal fade" id="addMedia" tabindex="-1" aria-labelledby="addMediaLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="flex-heading">
+                                    <h2 class="common-h2 mb-0">Add <span>Media</span></h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="custom-file-image">
+                                    <input type="file" id="fileImage" name="fileImage" class="custom-file-image-input"
+                                        accept="image/*" multiple="multiple">
+                                    <div class="custom-file-preview">
+                                        <label class="custom-file-preview-add" for="fileImage">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="d-flex gap-3 justify-content-center w-100">
+                                    <button type="button" class="btn btn-outline-primary">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Add Media</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------Delete Media Modal---------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteMedia">
+                    Delete Media
+                </button>
+                <div class="modal fade" id="deleteMedia" tabindex="-1" aria-labelledby="galleryViewMoreLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xxxl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="flex-heading">
+                                    <h2 class="common-h2 mb-0"><span>Image</span> Gallery</h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="added-photos">
+                                    <div class="demo-gallery my-0">
+                                        <ul id="lightgallery2" class="row my-0">
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/13-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/13-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/13.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-13.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/4-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/4-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/4.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/13-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/13-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/13.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-13.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/4-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/4-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/4.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/13-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/13-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/13.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-13.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/4-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/4-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/4.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="col-xl-2 col-md-4 col-sm-4 col-6"
+                                                data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800"
+                                                data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg">
+                                                <a href="">
+                                                    <img class="img-responsive"
+                                                        src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
+                                                    <div class="demo-gallery-poster">
+                                                        <img src="assets/images/svg/trash-alt-solid.svg" width="20px">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div
+                                    class="d-flex justify-content-md-between justify-content-center align-items-center pagination-wrapper w-100 mt-0 flex-wrap flex-md-nowrap gap-3">
+                                    <div class="pagination order-2 order-md-1">
+                                        <a class="prev page-numbers " href="javascript:;"><i
+                                                class="fas fa-angle-double-left"></i>
+                                            <span>Prev</span></a>
+                                        <span aria-current="page" class="page-numbers current">1</span>
+                                        <a class="page-numbers" href="javascript:;">2</a>
+                                        <a class="page-numbers" href="javascript:;">3</a>
+                                        <a class="page-numbers" href="javascript:;">4</a>
+                                        <a class="page-numbers" href="javascript:;">5</a>
+                                        <a class="page-numbers" href="javascript:;">6</a>
+                                        <a class="page-numbers" href="javascript:;">7</a>
+                                        <a class="page-numbers" href="javascript:;">8</a>
+                                        <a class="page-numbers" href="javascript:;">9</a>
+                                        <a class="page-numbers" href="javascript:;">10</a>
+                                        <a class="next page-numbers" href="javascript:;"><span>Next</span> <i
+                                                class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                    <div class="d-flex gap-3 order-1 order-md-2 w-mob-100">
+                                        <button type="button" class="btn btn-outline-primary w-mob-100">Delete All
+                                            Media</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
