@@ -930,6 +930,7 @@ h2 {
 .listing-disabled {
     opacity: 0.5;
     filter: grayscale(100%);
+    pointer-events: none;
     &:hover,
     &:active,
     &:focus {
