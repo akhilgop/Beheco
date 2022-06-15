@@ -863,6 +863,20 @@ input[type="range"]::-ms-fill-lower {
   background: #059762 !important;
 }
 
+.dropdown-menu {
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px !important;
+}
+
+.dropdown-item {
+  border-left: 3px solid #fff;
+}
+
+.dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus {
+  border-left: 3px solid #059762;
+}
+
 .country-dropdown a {
   padding: 7px 20px !important;
   height: auto !important;

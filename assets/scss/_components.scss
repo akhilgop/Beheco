@@ -766,6 +766,18 @@ input[type="range"]::-ms-fill-lower {
 .datepicker table tr td span.active.disabled:hover[disabled] {
     background: $primary !important;
 }
+.dropdown-menu {
+    box-shadow: $box-shadow;
+    border-radius: 5px !important;
+}
+.dropdown-item {
+    border-left: 3px solid $white;
+    &:hover,
+    &:active,
+    &:focus {
+        border-left: 3px solid $primary;
+    }
+}
 // --------------------------------------------------------------------Country Selector-----------------------------------------------------------------//
 .country-dropdown a {
     padding: 7px 20px !important;
