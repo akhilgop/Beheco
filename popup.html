@@ -22,7 +22,7 @@
         <div class="container">
             <!------------------------------------------------------------------Content------------------------------------------------------------->
             <div class="d-flex gap-3 flex-wrap m-0">
-                <a href="index.html" type="button" class="btn btn-primary">
+                <a href="index.html" type="button" class="btn btn-black">
                     Go to Home
                 </a>
                 <!-- Button trigger modal -->
@@ -63,7 +63,7 @@
                                             Here!</a></p>
                                     <p>Forgot your Password? <a
                                             class=" text-primary fw-bold a-animate text-primary-hover"
-                                            data-bs-toggle="modal" data-bs-target="#SignUp"
+                                            data-bs-toggle="modal" data-bs-target="#forgotPassword"
                                             data-bs-dismiss="modal">Reset here</a></p>
                                     <hr>
                                     <p class="text-center mb-0">OR</p>
@@ -198,7 +198,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. </p>
                                 <div class="mb-0">
-                                    <label class="form-label">Email address</label>
+                                    <label class="form-label">OTP</label>
                                     <input type="number" class="form-control" placeholder="Eg: 111111">
                                 </div>
 
@@ -2348,7 +2348,7 @@
                 </div>
                 <!------------------------------------------------------------------Delete Media Modal---------------------------------------------------------------->
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteMedia">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteMedia">
                     Delete Media
                 </button>
                 <div class="modal fade" id="deleteMedia" tabindex="-1" aria-labelledby="galleryViewMoreLabel"
@@ -2362,7 +2362,7 @@
                                         aria-label="Close"></button>
                                 </div>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body pb-0">
                                 <div class="added-photos">
                                     <div class="demo-gallery my-0">
                                         <ul id="lightgallery2" class="row my-0">
@@ -2569,7 +2569,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer">
+                            <div class="modal-footer mt-4">
                                 <div
                                     class="d-flex justify-content-md-between justify-content-center align-items-center pagination-wrapper w-100 mt-0 flex-wrap flex-md-nowrap gap-3">
                                     <div class="pagination order-2 order-md-1">
@@ -2593,6 +2593,88 @@
                                         <button type="button" class="btn btn-outline-primary w-mob-100">Delete All
                                             Media</button>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------Add Fields Modal---------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addFields">
+                    Add Fields
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="addFields" tabindex="-1" aria-labelledby="addFieldsLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="flex-heading">
+                                    <h2 class="common-h2 mb-0">Add <span>Fields</span></h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <div class="modal-body pb-3 pb-md-5">
+                                <div class="d-grid gap-3">
+                                    <button type="button" class="btn btn-primary-light">Description Field</button>
+                                    <button type="button" class="btn btn-primary-light">Points Field</button>
+                                    <button type="button" class="btn btn-primary-light">Image Field</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------------Edit Profile Details---------------------------------------------------------------->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#editProfileDetails">
+                    Edit Profile
+                </button>
+                <div class="modal fade" id="editProfileDetails" tabindex="-1" role="dialog"
+                    aria-labelledby="editProfileDetailsLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="flex-heading">
+                                    <h3 class="custom-h unbreak text-center">Edit <span>Details</span></h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <div class="modal-body pb-0">
+                                <div class="d-flex flex-column gap-3">
+                                    <div>
+                                        <label class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" placeholder="Eg: John Smith">
+                                    </div>
+                                    <div>
+                                        <label class="form-label">Contact Number</label>
+                                        <input type="number" class="form-control" placeholder="Eg: John Smith">
+                                    </div>
+                                    <div>
+                                        <label class="form-label">Date of Birth</label>
+                                        <div class="pos-rel">
+                                            <input class="form-control text-start" type="date"
+                                                placeholder="DD-MM-YYYY" />
+                                            <i class="far fa-calendar-alt form-control-icon bg-white p-1"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="form-label">Gender</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Choose Gender</option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Transgender</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer mt-4">
+                                <div class="d-grid gap-2 w-100">
+                                    <button type="button" class="btn btn-submit-outline m-0 w-100">Cancel</button>
+                                    <button type="button" class="btn btn-submit-primary m-0 w-100">Save Details</button>
                                 </div>
                             </div>
                         </div>

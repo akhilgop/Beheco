@@ -108,6 +108,9 @@
         border-radius: $b-rds-md;
     }
 }
+.results-content .accordion-item:first-child .accordion-button {
+    border-bottom: 1px solid $bdr !important;
+}
 @media screen and (max-width: 470px) {
     .offers {
         #content-section-wrapper {

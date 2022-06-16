@@ -160,6 +160,10 @@
   border-radius: 20px;
 }
 
+.results-content .accordion-item:first-child .accordion-button {
+  border-bottom: 1px solid #ddd !important;
+}
+
 @media screen and (max-width: 470px) {
   .offers #content-section-wrapper {
     width: 100% !important;
