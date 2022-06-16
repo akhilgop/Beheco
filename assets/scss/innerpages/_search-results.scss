@@ -99,6 +99,13 @@
         display: flex;
     }
 }
+.results-content {
+    .accordion-item:first-child {
+        .collapse.show {
+            border-bottom: 1px solid $bdr;
+        }
+    }
+}
 // --------------------------------------------------------------Offer Ad Content Slider-------------------------------------------------------//
 .offer-ad-content {
     margin: 30px 0;

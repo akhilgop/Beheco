@@ -150,6 +150,10 @@
   display: flex;
 }
 
+.results-content .accordion-item:first-child .collapse.show {
+  border-bottom: 1px solid #ddd;
+}
+
 .offer-ad-content {
   margin: 30px 0;
 }

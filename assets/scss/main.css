@@ -5410,6 +5410,7 @@ h2 {
   display: flex;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 
 .top-picks .top-pick-card .card-description .text-portion {
@@ -6211,6 +6212,22 @@ p:last-child {
 
 .ticket-rate {
   color: #059762;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.text-line-through {
+  text-decoration: line-through !important;
+}
+
+.no-bdr-top {
+  border-top: 0 !important;
 }
 
 .mgn-top-5 {

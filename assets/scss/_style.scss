@@ -395,6 +395,7 @@ h2 {
             display: flex;
             width: 100%;
             background: rgba($color: $black, $alpha: 0.4);
+            overflow: hidden;
             .text-portion {
                 color: $white;
                 width: 70%;
@@ -1028,4 +1029,17 @@ p:last-child {
 }
 .ticket-rate {
     color: $primary;
+}
+.eyebrow {
+    text-transform: uppercase;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.text-line-through {
+    text-decoration: line-through !important;
+}
+.no-bdr-top {
+    border-top: 0 !important;
 }
