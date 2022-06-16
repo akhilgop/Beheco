@@ -1,0 +1,104 @@
+.notification-card {
+    padding: 20px;
+    border: 1px solid $bdr;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    .dp {
+        @include circle(60px, rgba($color: $primary, $alpha: 0.2));
+        min-width: 60px;
+        min-height: 60px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+        p {
+            @include text(20px, 20px, 600, $primary);
+            margin: 0;
+        }
+        i {
+            color: $primary;
+            font-size: 20px;
+        }
+    }
+    .main-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        p {
+            @include text(16px, 1.8, 400, $black9);
+            margin-bottom: 0px;
+        }
+        .auther-info {
+            display: flex;
+            align-items: center;
+            p {
+                @include text(12px, 12px, 400, $black9);
+                margin-left: 10px;
+            }
+            h6 {
+                @include text(16px, 16px, 600, $black);
+                margin: 0;
+                text-align: left !important;
+            }
+        }
+    }
+    .right-portion {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        .flex-container {
+            i {
+                color: $primary;
+                margin-right: 10px;
+            }
+            h3 {
+                @include text(20px, 20px, 600, $primary);
+            }
+        }
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 700;
+        color: #059762;
+        text-transform: uppercase;
+    }
+    .reply-btn {
+        text-align: left !important;
+    }
+}
+.resp-tab-active {
+    .notification-card {
+        background-color: rgba($color: $primary, $alpha: 0.1);
+        border-color: $trans;
+    }
+}
+
+.resp-accordion.resp-tab-active {
+    .notification-card {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .notification-card {
+        padding: 10px !important;
+        .dp {
+            width: 40px !important;
+            min-width: 40px !important;
+            height: 40px !important;
+            min-height: 40px !important;
+            border-radius: 40px !important;
+            i {
+                font-size: 16px !important;
+            }
+        }
+        .main-content {
+            h6 {
+                font-size: 16px !important;
+            }
+        }
+    }
+}

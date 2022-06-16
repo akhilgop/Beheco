@@ -735,6 +735,9 @@
     .category-mini {
         grid-template-columns: repeat(4, 1fr) !important;
     }
+    .profile-pic {
+        margin-top: -213px !important;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1142,6 +1145,52 @@
         &::before {
             padding-top: 40% !important;
         }
+    }
+    .equal-mob-4-1 {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        height: auto !important;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        &::before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: 25% !important;
+        }
+    }
+    .equal-mob-4-2 {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        height: auto !important;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        &::before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: 50% !important;
+        }
+    }
+    .equal-mob-4-1 > * {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .equal-mob-4-2 > * {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
     }
 }
 @media screen and (max-width: 991px) {

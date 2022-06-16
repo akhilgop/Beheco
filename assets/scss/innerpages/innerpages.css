@@ -2580,35 +2580,6 @@ p {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.notification-card .main-content {
-  width: 85%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.notification-card .main-content p {
-  margin-bottom: 0;
-}
-
-.notification-card .right-portion {
-  width: 10%;
-}
-
-.notification-card .right-portion i,
-.notification-card .right-portion p {
-  font-size: 12px;
-  text-align: right;
-}
-
-.notification-card .dp i {
-  color: #059762;
-  font-size: 20px;
-}
-
 .vertical-tabs-container .vertical-tab-accordion-heading:focus,
 .vertical-tabs-container .vertical-tab-accordion-heading:hover {
   color: #059762 !important;
@@ -2660,28 +2631,6 @@ p {
   }
   .vertical-tab-content {
     padding: 15px !important;
-  }
-  .notification-card {
-    padding: 15px !important;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border: 1px solid #ddd;
-  }
-  .notification-card .main-content {
-    width: 100% !important;
-    margin: 20px 0 !important;
-  }
-  .notification-card .main-content p {
-    text-align: center;
-  }
-  .notification-card .right-portion {
-    width: 100% !important;
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
   }
   #tab5 {
     background-color: rgba(5, 151, 98, 0.1);
@@ -2843,5 +2792,163 @@ p {
   color: #059762;
   font-size: 16px;
   margin-right: 20px;
+}
+
+.notification-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.notification-card .dp {
+  width: 60px !important;
+  height: 60px !important;
+  min-width: 60px !important;
+  border-radius: 50%;
+  background-color: rgba(5, 151, 98, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 60px;
+  min-height: 60px;
+  overflow: hidden;
+}
+
+.notification-card .dp img {
+  width: 100%;
+}
+
+.notification-card .dp p {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #059762;
+  margin: 0;
+}
+
+.notification-card .dp i {
+  color: #059762;
+  font-size: 20px;
+}
+
+.notification-card .main-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.notification-card .main-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 0px;
+}
+
+.notification-card .main-content .auther-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notification-card .main-content .auther-info p {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #666;
+  margin-left: 10px;
+}
+
+.notification-card .main-content .auther-info h6 {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+  text-align: left !important;
+}
+
+.notification-card .right-portion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.notification-card .right-portion .flex-container i {
+  color: #059762;
+  margin-right: 10px;
+}
+
+.notification-card .right-portion .flex-container h3 {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #059762;
+}
+
+.notification-card h3 {
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 700;
+  color: #059762;
+  text-transform: uppercase;
+}
+
+.notification-card .reply-btn {
+  text-align: left !important;
+}
+
+.resp-tab-active .notification-card {
+  background-color: rgba(5, 151, 98, 0.1);
+  border-color: transparent;
+}
+
+.resp-accordion.resp-tab-active .notification-card {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .notification-card {
+    padding: 10px !important;
+  }
+  .notification-card .dp {
+    width: 40px !important;
+    min-width: 40px !important;
+    height: 40px !important;
+    min-height: 40px !important;
+    border-radius: 40px !important;
+  }
+  .notification-card .dp i {
+    font-size: 16px !important;
+  }
+  .notification-card .main-content h6 {
+    font-size: 16px !important;
+  }
 }
 /*# sourceMappingURL=innerpages.css.map */

@@ -928,17 +928,27 @@ h2 {
     }
 }
 .listing-disabled {
+    .cover-img,
+    .general-info {
+        * {
+            opacity: 0.5;
+            filter: grayscale(100%);
+            pointer-events: none;
+        }
+    }
+    .profile-pic {
+        background-color: $white !important;
+        span {
+            opacity: 0.5;
+            filter: grayscale(100%);
+        }
+    }
+}
+.disabled-item {
     opacity: 0.5;
     filter: grayscale(100%);
     pointer-events: none;
-    &:hover,
-    &:active,
-    &:focus {
-        opacity: 1;
-        filter: none;
-    }
 }
-
 .fav-button {
     position: absolute !important;
     top: 10px;
@@ -951,6 +961,7 @@ h2 {
     }
 }
 .freelancer-card {
+    height: 100%;
     .fl-profile-pic {
         width: 120px;
         border-radius: 100%;
@@ -1014,4 +1025,7 @@ h2 {
 }
 p:last-child {
     margin-bottom: 0;
+}
+.ticket-rate {
+    color: $primary;
 }

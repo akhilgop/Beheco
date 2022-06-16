@@ -1471,3 +1471,15 @@ a {
 .dropdown-hover > .dropdown-menu.dropend {
     margin-left: -1px !important;
 }
+
+// ----------------------------------------------------------------Notification Tab Accordion----------------------------------------
+#container {
+    width: 940px;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+    #container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
