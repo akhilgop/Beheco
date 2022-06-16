@@ -1192,6 +1192,12 @@
         bottom: 0;
         left: 0;
     }
+    .results-content .content-section {
+        width: 93vw !important;
+    }
+    .justify-content-mob-center {
+        justify-content: center !important;
+    }
 }
 @media screen and (max-width: 991px) {
     .dropdown-menu {
