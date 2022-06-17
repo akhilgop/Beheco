@@ -735,9 +735,9 @@
     .category-mini {
         grid-template-columns: repeat(4, 1fr) !important;
     }
-    .profile-pic {
-        margin-top: -213px !important;
-    }
+    // .profile-pic {
+    //     margin-top: -213px !important;
+    // }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1197,6 +1197,12 @@
     }
     .justify-content-mob-center {
         justify-content: center !important;
+    }
+    .price-wrapper {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        margin-bottom: -8px;
     }
 }
 @media screen and (max-width: 991px) {

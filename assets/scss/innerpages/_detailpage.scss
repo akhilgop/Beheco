@@ -15,7 +15,7 @@
     padding-top: 128px;
     padding-bottom: 0;
     .cover-bg {
-        height: 300px;
+        // height: 300px;
         overflow: hidden;
         img {
             width: 100%;
@@ -662,9 +662,9 @@
         }
     }
     .profile {
-        .cover-bg {
-            height: 150px !important;
-        }
+        // .cover-bg {
+        //     height: 150px !important;
+        // }
         .profile-pic {
             width: 150px !important;
             height: 150px !important;
@@ -811,7 +811,7 @@
     }
     .quick-action-wrapper {
         justify-content: left !important;
-        margin: auto;
+        margin: 30px 0;
     }
     .card-default {
         height: auto !important;
@@ -829,7 +829,7 @@
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .quick-action-wrapper {
         justify-content: left !important;
-        margin: auto;
+        margin: 30px 0;
     }
     .inner-nb {
         padding-bottom: 10px !important;

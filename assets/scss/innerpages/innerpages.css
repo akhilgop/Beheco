@@ -662,7 +662,6 @@
 }
 
 .profile .cover-bg {
-  height: 300px;
   overflow: hidden;
 }
 
@@ -1571,9 +1570,6 @@
   .search-bar .btn {
     height: 100%;
   }
-  .profile .cover-bg {
-    height: 150px !important;
-  }
   .profile .profile-pic {
     width: 150px !important;
     height: 150px !important;
@@ -1738,7 +1734,7 @@
     -webkit-box-pack: left !important;
         -ms-flex-pack: left !important;
             justify-content: left !important;
-    margin: auto;
+    margin: 30px 0;
   }
   .card-default {
     height: auto !important;
@@ -1757,7 +1753,7 @@
     -webkit-box-pack: left !important;
         -ms-flex-pack: left !important;
             justify-content: left !important;
-    margin: auto;
+    margin: 30px 0;
   }
   .inner-nb {
     padding-bottom: 10px !important;

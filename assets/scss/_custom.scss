@@ -453,6 +453,8 @@
         transform: scale3d(1, 1, 1);
         height: 100%;
         width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
     }
 
     .demo-gallery > ul > li a:hover > img {
@@ -474,6 +476,8 @@
         -webkit-transition: background-color 0.15s ease 0s;
         -o-transition: background-color 0.15s ease 0s;
         transition: background-color 0.15s ease 0s;
+        overflow: hidden;
+        border-radius: 10px;
     }
 
     .demo-gallery > ul > li a .demo-gallery-poster > img {

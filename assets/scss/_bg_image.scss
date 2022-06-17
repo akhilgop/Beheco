@@ -27,11 +27,13 @@
     background: url("../images/wed.jpg") no-repeat #000;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 .tc1 {
     background: url("../images/wed.jpg") no-repeat #000;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 .tpc1::before {
     content: "";
@@ -46,6 +48,7 @@
     height: 110%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 // -----------------------------------------------------tpc2---------------------------------------------------------//
 .tpc2 {
@@ -54,17 +57,20 @@
     -khtml-border-radius: 20px;
     overflow: hidden;
     z-index: 1;
+    overflow: hidden;
 }
 
 .tpc2::before {
     background: url("../images/health.jpg") no-repeat #000;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 .tc2 {
     background: url("../images/health.jpg") no-repeat #000;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 .tpc2::before {
     content: "";
@@ -79,6 +85,7 @@
     height: 110%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 // -----------------------------------------------------tpc3---------------------------------------------------------//
 .tpc3 {
@@ -87,17 +94,20 @@
     -khtml-border-radius: 20px;
     overflow: hidden;
     z-index: 1;
+    overflow: hidden;
 }
 
 .tpc3::before {
     background: url("../images/travel.jpg") no-repeat #000;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 .tc3 {
     background: url("../images/travel.jpg") no-repeat #000;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 .tpc3::before {
     content: "";
@@ -112,6 +122,7 @@
     height: 110%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 // -----------------------------------------------------tpc4---------------------------------------------------------//
 .tpc4 {
@@ -120,17 +131,20 @@
     -khtml-border-radius: 20px;
     overflow: hidden;
     z-index: 1;
+    overflow: hidden;
 }
 
 .tpc4::before {
     background: url("../images/food.jpg") no-repeat #000;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 .tc4 {
     background: url("../images/food.jpg") no-repeat #000;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 .tpc4::before {
     content: "";
@@ -145,6 +159,7 @@
     height: 110%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 // -----------------------------------------------------tpc5---------------------------------------------------------//
 .tpc5 {
@@ -178,6 +193,7 @@
     height: 110%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 // -----------------------------------------------------tpc6---------------------------------------------------------//
 .tpc6 {
@@ -211,6 +227,7 @@
     height: 110%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 // ----------------------------------------------------Upcoming Events-----------------------------------------------------//
 // .event1 {
