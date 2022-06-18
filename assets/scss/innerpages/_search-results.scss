@@ -118,6 +118,12 @@
 .results-content .accordion-item:first-child .accordion-button {
     border-bottom: 1px solid $bdr !important;
 }
+.results-content {
+    .accordion-item:last-of-type .accordion-button.collapsed,
+    .accordion-item:last-of-type {
+        border-radius: 0 !important;
+    }
+}
 @media screen and (max-width: 470px) {
     .offers {
         #content-section-wrapper {

@@ -167,10 +167,10 @@
 
         .text-section {
             a {
-                text-align: right;
+                text-align: start;
             }
             p {
-                text-align: right;
+                text-align: start;
                 @include text(15px, 1.5, 400, $black9);
             }
         }
@@ -641,8 +641,6 @@
     .slider-content .slider .img {
         background-size: cover !important;
     }
-}
-@media screen and (max-width: 767px) {
     .inner-nb {
         padding-bottom: 10px !important;
         .search-bar {
@@ -655,7 +653,8 @@
             }
         }
     }
-
+}
+@media screen and (max-width: 767px) {
     .search-bar {
         .btn {
             height: 100%;
@@ -749,9 +748,9 @@
                     }
                 }
             }
-            .dp {
-                margin: auto;
-            }
+            // .dp {
+            //     margin: auto;
+            // }
             .auther-info {
                 flex-wrap: wrap;
                 gap: 1rem;
@@ -780,6 +779,9 @@
             margin-right: -20px !important;
         }
     }
+    .inner-nb {
+        padding-bottom: 10px !important;
+    }
 }
 @media screen and (min-width: 576px) and (max-width: 991px) {
     .offer-slider {
@@ -796,7 +798,6 @@
     }
     .slider-content {
         margin-top: 0 !important;
-        margin-bottom: 80px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -825,6 +826,9 @@
             width: 100% !important;
         }
     }
+    .profile {
+        padding-top: 104px !important;
+    }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .quick-action-wrapper {
@@ -838,9 +842,9 @@
         }
     }
     .btn-black {
-        span {
-            display: none !important;
-        }
+        // span {
+        //     display: none !important;
+        // }
         img {
             margin-right: 0 !important;
         }

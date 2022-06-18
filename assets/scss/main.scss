@@ -27,6 +27,10 @@ body {
     @include body;
     font-family: $primary-font, sans-serif;
 }
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ddd #fff;
+}
 p,
 a,
 span,

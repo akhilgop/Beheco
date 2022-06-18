@@ -275,7 +275,7 @@ body {
 
         background-color: var(--colour-primary);
         border-radius: 50%;
-        box-shadow: 0 3px 3px var(--send-btn-box-shadow-colour);
+        // box-shadow: 0 3px 3px var(--send-btn-box-shadow-colour);
         border: none;
         outline: none;
 
@@ -395,7 +395,9 @@ body {
         grid-area: name;
         color: var(--colour-text-darker);
         margin-top: auto;
-
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
         @include small-text-rfs;
     }
     &__message {
@@ -559,7 +561,7 @@ body {
         &__avatar {
             position: relative;
             width: 3.5rem;
-
+            border-radius: 3.5rem;
             & img {
                 border-radius: 50%;
                 width: 100%;

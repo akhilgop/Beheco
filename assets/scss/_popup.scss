@@ -172,9 +172,15 @@
 .modal-backdrop {
     z-index: 1500;
 }
+
 @media screen and (min-width: 768px) {
     .modal-xxxl {
         min-width: 600px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .modal-xxxl {
+        min-width: 90%;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -234,6 +240,14 @@
         }
         .modal-footer {
             margin-top: 20px;
+        }
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .delete-media,
+    .media-gallery-modal {
+        .modal-footer {
+            margin-top: 1.5rem !important;
         }
     }
 }

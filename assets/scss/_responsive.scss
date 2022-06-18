@@ -5,6 +5,9 @@
     .media-hide {
         display: none;
     }
+    .results-content .content-section {
+        width: 93vw !important;
+    }
     .nb {
         width: 100vw !important;
         .top-menu {
@@ -507,6 +510,23 @@
     .btn-facebook .icon {
         top: 8px !important;
     }
+    div.listing-card .overall-rating,
+    .ticket-rate {
+        justify-content: flex-end !important;
+    }
+    .testimonials {
+        margin-top: 0 !important;
+    }
+    .listing-card .bottom-section .btn-warpper {
+        width: 60% !important;
+        margin: 0 !important;
+    }
+    div.listing-card .txt-section .bottom-section {
+        flex-wrap: nowrap !important;
+    }
+    .profile-details {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -695,7 +715,7 @@
             margin-top: 30px !important;
 
             .social-links {
-                justify-content: center !important;
+                justify-content: flex-end !important;
             }
         }
     }
@@ -738,6 +758,44 @@
     // .profile-pic {
     //     margin-top: -213px !important;
     // }
+    .equal-md-4-2 {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        height: auto !important;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        &::before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: 25% !important;
+        }
+    }
+
+    .equal-md-4-2 > * {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .ticket-rate {
+        width: 100% !important;
+        margin-top: 8px;
+    }
+
+    .user-profile {
+        min-height: 20vh !important;
+        .profile-pic {
+            width: 120px !important;
+        }
+    }
+    .general-banner {
+        margin-top: 104px !important;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -849,7 +907,7 @@
         padding-bottom: 0 !important;
     }
     #myBtn {
-        bottom: 100px !important;
+        bottom: 70px !important;
     }
     .listing-preview {
         div.profile-pic {
@@ -868,11 +926,30 @@
     .category-mini {
         grid-template-columns: repeat(6, 1fr) !important;
     }
+    .equal-md-4-2 {
+        &::before {
+            padding-top: 25% !important;
+        }
+    }
+    .pos-sticky {
+        top: 100px !important;
+    }
+    .modal .reply-form-button {
+        margin-top: 24px !important;
+    }
+    .add-new-wrapper {
+        .accordion-item:first-child {
+            .accordion-collapse.collapse.show {
+                border-bottom: 1px solid $bdr !important;
+                border-radius: 0 !important;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1365px) {
     #myBtn {
-        bottom: 100px !important;
+        bottom: 70px !important;
     }
     .counter {
         background-image: none !important;
@@ -926,6 +1003,31 @@
     .saved-items-wrapper {
         grid-template-columns: repeat(4, 1fr) !important;
     }
+    .pos-sticky {
+        top: 150px !important;
+    }
+    .equal-4-1::before {
+        padding-top: 25% !important;
+    }
+    h1.subscribe-heading {
+        font-size: 72px !important;
+        margin-top: 100px;
+    }
+    .sub-plans .pricing-item {
+        flex: 0 1 300px !important;
+        .custom-ul p {
+            text-align: start;
+        }
+    }
+    .likes-wrapper {
+        flex-wrap: wrap;
+        .like,
+        .dislike {
+            width: 100%;
+            justify-content: flex-end;
+            margin: 0 !important;
+        }
+    }
 }
 @media screen and (min-width: 1200px) and (max-width: 1599px) {
     .category-mini {
@@ -974,6 +1076,35 @@
     }
     .saved-items-wrapper {
         grid-template-columns: repeat(4, 1fr) !important;
+    }
+    .equal-4-1::before {
+        padding-top: 25% !important;
+    }
+    .likes-wrapper {
+        flex-wrap: wrap;
+        .like,
+        .dislike {
+            width: 100%;
+            justify-content: flex-end;
+            margin: 0 !important;
+        }
+    }
+    .highlighted-content {
+        padding: 20px !important;
+        a {
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+    }
+    h1.subscribe-heading {
+        font-size: 84px !important;
+        margin-top: 100px;
+    }
+    .sub-plans .pricing-item {
+        flex: 0 1 350px !important;
+        .custom-ul p {
+            text-align: start;
+        }
     }
 }
 
@@ -1192,9 +1323,7 @@
         bottom: 0;
         left: 0;
     }
-    .results-content .content-section {
-        width: 93vw !important;
-    }
+
     .justify-content-mob-center {
         justify-content: center !important;
     }
@@ -1203,6 +1332,21 @@
         gap: 0.5rem;
         align-items: center;
         margin-bottom: -8px;
+    }
+    .dload-app.fw-600 {
+        width: 50% !important;
+        line-height: 1.8 !important;
+    }
+    .add-new-wrapper {
+        .accordion-item:first-child {
+            .accordion-collapse.collapse.show {
+                // border-bottom: 1px solid $bdr !important;
+                border-radius: 0 !important;
+            }
+        }
+        accordion-item:nth-child(2) {
+            margin-top: -1px !important;
+        }
     }
 }
 @media screen and (max-width: 991px) {
@@ -1229,6 +1373,24 @@
         grid-template-columns: repeat(2, 1fr) !important;
         .category {
             padding: 20px !important;
+        }
+    }
+}
+@media screen and (max-height: 767px) {
+    .banner {
+        background-size: cover !important;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1699px) {
+    div.content-splitter {
+        flex-wrap: wrap !important;
+        .btn-warper {
+            width: 100% !important;
+        }
+        .ticket-rate {
+            width: 100% !important;
+            justify-content: flex-start !important;
+            margin-top: 8px;
         }
     }
 }
