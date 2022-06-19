@@ -2,9 +2,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="assets/css/coming-soon.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/scss/main.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/theme.css" type="text/css" rel="stylesheet">
+    <link href="assets/scss/innerpages/innerpages.css" type="text/css" rel="stylesheet">
     <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
@@ -15,19 +17,176 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="pivot">
+    <section class="banner">
+        <div class="container">
+            <div class="d-flex align-items-center min-vh-75">
+                <div class="row w-100">
+                    <div class="col-lg-8">
+                        <img src="assets/images/logo.png">
+                        <h1 class="custom-h fs-100 fs-mob-48 fs-md-56 fs-lg-72 subscribe-heading">We're<span>
+                                Coming Soon
+                            </span>
+                        </h1>
+                        <button type="button" class="btn btn-tertiary btn-lg" onclick="location.href = '#knowMore'">Know
+                            More</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="handle">
-        </div>
-        <div class="circle">
-            <p>Coming Soon</p>
-        </div>
-        <p class="wait">We will go live soon, just a bit more...<span id="pink">Pinky Promise</span> :)</p>
-        <p class="wait design">Designed and Developed by <a href="https://www.facebook.com/itskhaledmohammad"
-                target="_blank" class="link">Khaled Mohammad</a></p>
-    </div>`
+    </section>
+    <div class="sub-plans py-mob-5 py-7" id="knowMore">
+        <div class="header gs_reveal">
+            <div class="container">
+                <div class="inner-header h-auto flex">
+                    <section>
+                        <div class="row justify-content-center">
+                            <div class="col-xl-8">
+                                <h2 class="text-white fs-mob-30 fs-md-36 fs-lg-48 mb-4 gs_reveal text-start">Why we are
+                                    different</h2>
+                                <p class="text-white mb-md-7 text-start gs_reveal">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipiscing elit,
+                                    sed
+                                    do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="card-default">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="custom-ul text-start">
+                                                <div class="d-flex gap-3 mb-2">
+                                                    <i class="fas fa-check-circle text-primary mt-2"></i>
+                                                    <p class="mb-0">10 Days Money back guarentee if you not happy with
+                                                        your
+                                                        purchase.</p>
+                                                </div>
+                                                <div class="d-flex gap-3 mb-2">
+                                                    <i class="fas fa-check-circle text-primary mt-2"></i>
+                                                    <p class="mb-0">100% Secure Payments</p>
+                                                </div>
+                                                <div class="d-flex gap-3 mb-2">
+                                                    <i class="fas fa-check-circle text-primary mt-2"></i>
+                                                    <p class="mb-0">100% Useful features offered</p>
+                                                </div>
+                                                <div class="d-flex gap-3 mb-2">
+                                                    <i class="fas fa-check-circle text-primary mt-2"></i>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                        elit
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex gap-3 mb-2">
+                                                    <i class="fas fa-check-circle text-primary mt-2"></i>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                        elit
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex gap-3">
+                                                    <i class="fas fa-check-circle text-primary mt-2"></i>
+                                                    <p class="mb-0">Sed do eiusmod tempor incididunt ut labore et dolore
+                                                        magna
+                                                        aliqua</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="custom-ul text-start">
+                                                <div class="d-flex gap-3 mb-2">
+                                                    <i class="fas fa-check-circle text-primary mt-2"></i>
+                                                    <p class="mb-0">10 Days Money back guarentee if you not happy with
+                                                        your
+                                                        purchase.</p>
+                                                </div>
+                                                <div class="d-flex gap-3 mb-2">
+                                                    <i class="fas fa-check-circle text-primary mt-2"></i>
+                                                    <p class="mb-0">100% Secure Payments</p>
+                                                </div>
+                                                <div class="d-flex gap-3 mb-2">
+                                                    <i class="fas fa-check-circle text-primary mt-2"></i>
+                                                    <p class="mb-0">100% Useful features offered</p>
+                                                </div>
+                                                <div class="d-flex gap-3 mb-2">
+                                                    <i class="fas fa-check-circle text-primary mt-2"></i>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                        elit
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex gap-3 mb-2">
+                                                    <i class="fas fa-check-circle text-primary mt-2"></i>
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                        elit
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex gap-3">
+                                                    <i class="fas fa-check-circle text-primary mt-2"></i>
+                                                    <p class="mb-0">Sed do eiusmod tempor incididunt ut labore et dolore
+                                                        magna
+                                                        aliqua</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave"
+                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <section class="subscribe bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="img-container gs_reveal">
+                        <img src="assets/images/svg/subscribe.svg" alt="subs-image">
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="input-wrapper">
+                        <h5 class="custom-h gs_reveal">We'll notify you when we are <span>Launched!</span></h5>
+                        <div class="newletter-input gs_reveal">
+                            <input type="email" class="form-control border" placeholder="Enter your email address">
+                            <button type="button" class="btn btn-primary"><span class="media-hide">Notify</span><span
+                                    class="media-show"><i class="fas fa-paper-plane"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------------------------Move to Top------------------------------------------------------------->
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="move-to-top">
+        <div class="btn-content">
+            <i class="fas fa-chevron-up text-white"></i>
+        </div>
+    </button>
+    <!-- -----------------------------------------------------------------External Javascript------------------------------------------------------------->
+    <script src='assets/js/GsapScrollTrigger.js'></script>
+    <script src='assets/js/gsap-min.js'></script>
+    <script src="assets/js/jquery-3-5-1-min.js"></script>
+    <script src="assets/js/popper-min.js"></script>
+    <script src="assets/js/bootstrap-min.js"></script>
+    <script src='assets/js/select2-min.js'></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/selectbox.js"></script>
 </body>
 
 </html>

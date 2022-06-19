@@ -1348,6 +1348,9 @@
             margin-top: -1px !important;
         }
     }
+    ul.message-options {
+        position: absolute !important;
+    }
 }
 @media screen and (max-width: 991px) {
     .dropdown-menu {

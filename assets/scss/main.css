@@ -4321,6 +4321,9 @@ a {
   .add-new-wrapper accordion-item:nth-child(2) {
     margin-top: -1px !important;
   }
+  ul.message-options {
+    position: absolute !important;
+  }
 }
 
 @media screen and (max-width: 991px) {
