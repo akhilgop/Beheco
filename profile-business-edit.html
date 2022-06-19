@@ -77,8 +77,16 @@
                 </div>
             </div>
             <div class="container">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand m-0" href="index.html">
                     <img src="assets/images/logo.png" alt="logo">
+                </a>
+                <a href="" class="position-relative d-block d-lg-none">
+                    <div class="circle-xs btn-white"><i class="fas fa-comment"></i></div>
+                    <div class="unread-mob"></div>
+                </a>
+                <a href="" class="position-relative d-block d-lg-none">
+                    <div class="circle-xs btn-white"><i class="fas fa-bell"></i></div>
+                    <div class="unread-mob"></div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -103,27 +111,59 @@
                             <a class="nav-link" href="offers.html">Offers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Events</a>
+                            <div class="dropdown">
+                                <a class="nav-link" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false">More</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
-                    <div class="d-flex">
-                        <div class="signin-box">
-                            <div class="dropdown">
-                                <button class="btn btn-user" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#SignIn">
-                                    <div class="img-wrapper">
-                                        <img src="assets/images/svg/user.svg" alt="user-icon">
+                    <div class="d-flex gap-lg-3">
+                        <a href="messaging.html" class="position-relative d-none d-lg-block">
+                            <div class="circle-sm btn-primary-light"><i class="fas fa-comment"></i></div>
+                            <div class="unread"></div>
+                        </a>
+                        <a href="notifications.html" class="position-relative d-none d-lg-block">
+                            <div class="circle-sm btn-primary-light"><i class="fas fa-bell"></i></div>
+                            <div class="unread"></div>
+                        </a>
+                        <div class="signin-box ">
+                            <div class="signin-box dropdown-hover-all m-0">
+                                <div class="dropdown">
+                                    <button class="btn btn-user dropdown-toggle m-0" id="hover-dropdown"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="img-wrapper equal-1-1 m-0">
+                                            <span
+                                                style="background: url('assets/images/user.jpg'); background-size: cover;"></span>
+                                        </div>
+                                        <span class="ms-3 d-block d-lg-none">Hello Jack</span>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="hover-dropdown">
+                                        <a class="dropdown-item" href="#">Profile</a>
+                                        <div class="dropdown dropend">
+                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
+                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My
+                                                Listings</a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                                <a class="dropdown-item" href="#">Business 1</a>
+                                                <a class="dropdown-item" href="#">Business 2</a>
+                                            </div>
+                                        </div>
+                                        <a class="dropdown-item" href="#">Saved Items</a>
+                                        <a class="dropdown-item" href="#">Sign Out</a>
                                     </div>
-                                    <span class="animate-primary">Signin / Register</span>
-                                </button>
+                                </div>
                             </div>
                         </div>
-                        <button class="btn btn-black" data-bs-toggle="modal" data-bs-target="#newListing"><img
-                                src="assets/images/svg/plus-icon.svg" alt="plus-icon"><span>Add
-                                Free Listing</span></button>
+                        <button class="btn btn-black" data-bs-toggle="modal" data-bs-target="#newListing">
+                            <img src="assets/images/svg/plus-icon.svg" alt="plus-icon">
+                            <span>Free Listing</span></button>
                     </div>
                 </div>
-            </div>
         </nav>
         <!-----------------------------------------------------------------Add New Listing Modal --------------------------------------------------------->
         <div class="modal fade" id="newListing" tabindex="-1" aria-labelledby="addNewListing" aria-hidden="true">
@@ -899,7 +939,12 @@
                                     <div class="col-12">
                                         <div class="choose-schedule">
                                             <label class="form-label">Schedule</label>
-                                            <input type="name" class="form-control" value="10AM - 8PM">
+                                            <div class="input-group">
+                                                <input type="number" class="form-control"
+                                                    placeholder="Eg: 10 AM to 6 PM">
+                                                <button class="btn btn-plus bg-white" type="button"
+                                                    id="button-addon2"><i class="fas fa-plus"></i></button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-12">

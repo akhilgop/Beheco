@@ -1043,3 +1043,35 @@ p:last-child {
 .no-bdr-top {
     border-top: 0 !important;
 }
+.unread {
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+    border-radius: 10px;
+    background-color: $secondary;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.unread-mob {
+    width: 7px;
+    height: 7px;
+    min-width: 7px;
+    border-radius: 7px;
+    background-color: $secondary;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.view-more-collapse {
+    border: none !important;
+    &::before {
+        display: none !important;
+    }
+}
+.collapse-view-more {
+    border: 0 !important;
+}
+a {
+    pointer-events: all;
+}

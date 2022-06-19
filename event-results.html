@@ -98,31 +98,28 @@
                         <button type="button" class="btn btn-primary"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
-                <div class="d-flex">
-                    <div class="signin-box">
-                        <div class="signin-box dropdown-hover-all">
+                <div class="d-flex gap-lg-3">
+                    <a href="messaging.html" class="position-relative d-none d-lg-block">
+                        <div class="circle-sm btn-primary-light"><i class="fas fa-comment"></i></div>
+                        <div class="unread"></div>
+                    </a>
+                    <a href="notifications.html" class="position-relative d-none d-lg-block">
+                        <div class="circle-sm btn-primary-light"><i class="fas fa-bell"></i></div>
+                        <div class="unread"></div>
+                    </a>
+                    <div class="signin-box ">
+                        <div class="signin-box dropdown-hover-all m-0">
                             <div class="dropdown">
-                                <button class="btn btn-user dropdown-toggle" id="hover-dropdown"
+                                <button class="btn btn-user dropdown-toggle m-0" id="hover-dropdown"
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <div class="img-wrapper equal-1-1">
+                                    <div class="img-wrapper equal-1-1 m-0">
                                         <span
                                             style="background: url('assets/images/user.jpg'); background-size: cover;"></span>
                                     </div>
-                                    <span>Hello Jack</span>
-                                    <span>
-                                        <p class="badge bg-primary">New</p>
-                                    </span>
+                                    <span class="ms-3 d-block d-lg-none">Hello Jack</span>
                                 </button>
-                                <div class="dropdown-menu" aria-labelledby="hover-dropdown">
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="hover-dropdown">
                                     <a class="dropdown-item" href="#">Profile</a>
-                                    <a class="dropdown-item flx-v-cntr" href="notifications.html">
-                                        <div class="content-count">
-                                            <span>Notifications</span>
-                                            <span>
-                                                <h6 class="badge bg-primary">1</h6>
-                                            </span>
-                                        </div>
-                                    </a>
                                     <div class="dropdown dropend">
                                         <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts"
                                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My
@@ -138,9 +135,9 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-black" data-bs-toggle="modal" data-bs-target="#newListing"><img
-                            src="assets/images/svg/plus-icon.svg" alt="plus-icon"><span>Add
-                            Free Listing</span></button>
+                    <button class="btn btn-black" data-bs-toggle="modal" data-bs-target="#newListing">
+                        <img src="assets/images/svg/plus-icon.svg" alt="plus-icon">
+                        <span>Free Listing</span></button>
                 </div>
             </div>
             <div class="search-bar responsive-search-bar media-show">
@@ -152,7 +149,7 @@
                         <option value="3">Three</option>
                     </select>
                     <input type="text" class="form-control" placeholder="Search Something" value="Searched Keyword">
-                    <button type="button" class="btn btn-primary" onclick="location.href = 'event-details.html'"><i
+                    <button type="button" class="btn btn-primary" onclick="location.href = 'detailpage.html'"><i
                             class="fas fa-search"></i></button>
                 </div>
             </div>
@@ -412,7 +409,7 @@
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
                                     aria-controls="panelsStayOpen-collapseFour">
-                                    Sort By
+                                    Free/Paid
                                 </button>
                             </h2>
                             <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show"
@@ -422,18 +419,242 @@
                                         <input class="form-check-input" type="radio" name="flexRadioDefault"
                                             id="flexRadioDefault10">
                                         <label class="form-check-label " for="flexRadioDefault10">
-                                            Popularity
+                                            Free
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault"
                                             id="flexRadioDefault11" checked>
                                         <label class="form-check-label" for="flexRadioDefault11">
-                                            Latest
+                                            Paid
                                         </label>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseEight">
+                                    Price Range
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingEight">
+                                <div class="accordion-body">
+                                    <div class="clearfix">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault11">
+                                            <label class="form-check-label" for="flexCheckDefault11">
+                                                0-500
+                                            </label>
+                                        </div>
+                                        <div class="count">
+                                            <p>(15559)</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault11">
+                                            <label class="form-check-label" for="flexCheckDefault11">
+                                                500-1000
+                                            </label>
+                                        </div>
+                                        <div class="count">
+                                            <p>(15559)</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault11">
+                                            <label class="form-check-label" for="flexCheckDefault11">
+                                                1000-1500
+                                            </label>
+                                        </div>
+                                        <div class="count">
+                                            <p>(15559)</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault11">
+                                            <label class="form-check-label" for="flexCheckDefault11">
+                                                2000+
+                                            </label>
+                                        </div>
+                                        <div class="count">
+                                            <p>(15559)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseFive">
+                                    Mode of Payment
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingFive">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                            id="flexRadioDefault13">
+                                        <label class="form-check-label " for="flexRadioDefault13">
+                                            Online
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                            id="flexRadioDefault14" checked>
+                                        <label class="form-check-label" for="flexRadioDefault14">
+                                            Offline
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                            id="flexRadioDefault15" checked>
+                                        <label class="form-check-label" for="flexRadioDefault15">
+                                            Both
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseSix">
+                                    Sort By
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingSix">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                            id="flexRadioDefault16">
+                                        <label class="form-check-label " for="flexRadioDefault16">
+                                            Today
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                            id="flexRadioDefault17">
+                                        <label class="form-check-label" for="flexRadioDefault17">
+                                            This Week
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                            id="flexRadioDefault18">
+                                        <label class="form-check-label" for="flexRadioDefault18">
+                                            This Month
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                            id="flexRadioDefault19">
+                                        <label class="form-check-label" for="flexRadioDefault19">
+                                            This Year
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                            id="flexRadioDefault20">
+                                        <label class="form-check-label" for="flexRadioDefault20">
+                                            All
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseSeven">
+                                    Languages
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingSeven">
+                                <div class="accordion-body">
+                                    <div class="clearfix">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault11">
+                                            <label class="form-check-label" for="flexCheckDefault11">
+                                                Malayalam
+                                            </label>
+                                        </div>
+                                        <div class="count">
+                                            <p>(15559)</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault11">
+                                            <label class="form-check-label" for="flexCheckDefault11">
+                                                English
+                                            </label>
+                                        </div>
+                                        <div class="count">
+                                            <p>(15559)</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault11">
+                                            <label class="form-check-label" for="flexCheckDefault11">
+                                                Tamil
+                                            </label>
+                                        </div>
+                                        <div class="count">
+                                            <p>(15559)</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault11">
+                                            <label class="form-check-label" for="flexCheckDefault11">
+                                                Telugu
+                                            </label>
+                                        </div>
+                                        <div class="count">
+                                            <p>(15559)</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault11">
+                                            <label class="form-check-label" for="flexCheckDefault11">
+                                                Hindi
+                                            </label>
+                                        </div>
+                                        <div class="count">
+                                            <p>(15559)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
             </nav>
@@ -441,7 +662,7 @@
             <!-- Page Content Holder -->
             <div class="container">
                 <div id="content-section-wrapper">
-                    <nav class="navbar navbar-default mt-0">
+                    <nav class="navbar navbar-default mt-0 d-flex flex-nowrap gap-3">
                         <div class="navbar-header">
                             <button type="button" id="sidebarCollapse" class="navbar-btn">
                                 <span></span>
@@ -449,23 +670,10 @@
                                 <span></span>
                             </button>
                         </div>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Library</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">
-                                    <span>Data</span>
-                                </li>
-                            </ol>
-                        </nav>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Page</a></li>
-                                <li><a href="#">Page</a></li>
-                                <li><a href="#">Page</a></li>
-                                <li><a href="#">Page</a></li>
-                            </ul>
-                        </div>
+                        <h6 class="mb-0 fs-16 lh-base">Events in Kochi
+                            <span class="text-body fs-14 d-mob-block">(<strong>123456</strong> Results
+                                Found)</span>
+                        </h6>
                     </nav>
                     <div class="content-section">
                         <div class="row">

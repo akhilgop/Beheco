@@ -101,25 +101,32 @@
                             <a class="nav-link" href="offers.html">Offers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Events</a>
+                            <div class="dropdown">
+                                <a class="nav-link" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false">More</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
-                    <div class="d-flex">
+                    <div class="d-flex gap-4">
                         <div class="signin-box">
                             <div class="dropdown">
-                                <button class="btn btn-user" type="button" data-bs-toggle="modal"
+                                <button class="btn btn-user m-0" type="button" data-bs-toggle="modal"
                                     data-bs-target="#SignIn">
-                                    <div class="img-wrapper">
-                                        <img src="assets/images/svg/user.svg" alt="user-icon">
+                                    <div class="img-wrapper equal-1-1  m-0">
+                                        <span
+                                            style="background: url('assets/images/svg/user.svg'); background-size: cover; background-position: center;"></span>
                                     </div>
-                                    <span class="animate-primary">Signin / Register</span>
                                 </button>
                             </div>
                         </div>
                         <button class="btn btn-black" data-bs-toggle="modal" data-bs-target="#newListing">
                             <img src="assets/images/svg/plus-icon.svg" alt="plus-icon">
-                            <span>Add
-                                Free Listing</span></button>
+                            <span>Free Listing</span></button>
                     </div>
                 </div>
             </div>

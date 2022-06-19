@@ -137,7 +137,7 @@
 }
 
 .mini-banner {
-  padding: 128px 0 0 0;
+  padding: 118px 0 0 0;
 }
 
 .mini-banner .img-thumbnail {
@@ -637,11 +637,6 @@
   border-left-color: transparent;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
-
-.container-fluid {
-  padding-left: 20px;
-  padding-right: 40px;
 }
 
 .clearfix:last-child .form-check {

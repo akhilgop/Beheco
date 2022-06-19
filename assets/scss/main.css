@@ -3076,7 +3076,7 @@ a {
   }
   .nb .d-flex .signin-box {
     width: 100%;
-    margin-bottom: 20px !important;
+    margin-bottom: 10px !important;
   }
   .nb .d-flex .signin-box .btn-user {
     padding: 0 !important;
@@ -4385,6 +4385,7 @@ a {
   margin-bottom: 30px !important;
   position: relative;
   width: 100% !important;
+  z-index: 1113;
 }
 
 .select2-container .select2-selection--single {
@@ -6406,6 +6407,44 @@ p:last-child {
 
 .no-bdr-top {
   border-top: 0 !important;
+}
+
+.unread {
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  border-radius: 10px;
+  background-color: #8fd03d;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.unread-mob {
+  width: 7px;
+  height: 7px;
+  min-width: 7px;
+  border-radius: 7px;
+  background-color: #8fd03d;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.view-more-collapse {
+  border: none !important;
+}
+
+.view-more-collapse::before {
+  display: none !important;
+}
+
+.collapse-view-more {
+  border: 0 !important;
+}
+
+a {
+  pointer-events: all;
 }
 
 .mgn-top-5 {
