@@ -134,7 +134,7 @@
 
 @media screen and (max-width: 767px) {
     .offer-banner {
-        padding-top: 80px !important;
+        padding-top: 135px !important;
         padding-bottom: 0 !important;
     }
     .mini-banner {
@@ -194,15 +194,15 @@
             width: 100% !important;
         }
     }
-    .offers {
-        .content-section {
-            width: 93vw !important;
-        }
+    // .offers {
+    //     .content-section {
+    //         width: 93vw !important;
+    //     }
 
-        #content-section-wrapper {
-            width: 93vw !important;
-        }
-    }
+    //     #content-section-wrapper {
+    //         width: 93vw !important;
+    //     }
+    // }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .mini-banner {
@@ -237,10 +237,16 @@
     .results-content #sidebarCollapse {
         display: block !important;
     }
+    .offer-banner {
+        padding-top: 165px !important;
+    }
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .offer-banner {
+        padding-top: 100px !important;
+    }
     .mini-banner {
-        padding-top: 128px !important;
+        padding-top: 115px !important;
         padding-bottom: 0 !important;
     }
     .results-content #sidebar {
@@ -273,6 +279,16 @@
     }
     .results-content {
         padding-bottom: 0 !important;
+    }
+    .nb {
+        .btn-black {
+            span {
+                display: none !important;
+            }
+            img {
+                max-width: inherit !important;
+            }
+        }
     }
 }
 @media screen and (min-width: 1200px) and (max-width: 1345px) {

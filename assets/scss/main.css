@@ -3125,7 +3125,6 @@ a {
     width: 60px !important;
     height: 60px !important;
     min-width: 60px !important;
-    margin: auto;
   }
   .category-wrapper .category-row .category .icon img {
     width: 50% !important;
@@ -3255,7 +3254,6 @@ a {
     margin-top: 20px !important;
   }
   .top-pick-card {
-    margin-bottom: 20px !important;
     height: 300px !important;
   }
   .modal-content .custom-h {
@@ -3314,9 +3312,15 @@ a {
   .w-mob-100 {
     width: 100% !important;
   }
+  .tp-wrapper h6 {
+    font-size: 16px !important;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
+  .w-sm-100 {
+    width: 100% !important;
+  }
   .media-show {
     display: block !important;
   }
@@ -3502,9 +3506,6 @@ a {
             justify-content: center !important;
     margin-top: 20px;
   }
-  .top-pick-card {
-    margin-bottom: 20px !important;
-  }
   .coming-soon .slider-content {
     margin-top: 20px;
   }
@@ -3542,6 +3543,9 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .w-md-100 {
+    width: 100% !important;
+  }
   .name-link {
     display: none;
   }
@@ -3920,6 +3924,9 @@ a {
   .add-new-wrapper .accordion-item:first-child .accordion-collapse.collapse.show {
     border-bottom: 1px solid #ddd !important;
     border-radius: 0 !important;
+  }
+  .general-banner {
+    margin-top: 100px !important;
   }
 }
 
@@ -4323,6 +4330,14 @@ a {
   }
   ul.message-options {
     position: absolute !important;
+  }
+  div.quick-action-wrapper .quick-action-link {
+    width: 40px !important;
+    min-width: 40px !important;
+    height: 40px !important;
+  }
+  div.quick-action-wrapper .quick-action-link img {
+    width: 18px !important;
   }
 }
 
@@ -5463,7 +5478,6 @@ h2 {
 .category {
   padding: 40px;
   border-radius: 20px;
-  margin: auto;
   text-align: center;
 }
 
@@ -6448,6 +6462,16 @@ p:last-child {
 
 a {
   pointer-events: all;
+}
+
+.offer-listing-wrapper .listing-card p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.tp-wrapper {
+  top: auto !important;
+  bottom: 0 !important;
 }
 
 .mgn-top-5 {
@@ -15935,11 +15959,6 @@ body {
   font-family: "Circular", sans-serif;
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #ddd #fff;
-}
-
 p,
 a,
 span,
@@ -15967,6 +15986,26 @@ h5,
 h6 {
   font-family: "Inter", sans-serif;
   font-weight: 600;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ddd;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 20px;
 }
 
 @font-face {

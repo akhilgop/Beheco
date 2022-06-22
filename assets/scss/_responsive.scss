@@ -74,7 +74,7 @@
                     width: 60px !important;
                     height: 60px !important;
                     min-width: 60px !important;
-                    margin: auto;
+                    // margin: auto;
                     img {
                         width: 50% !important;
                     }
@@ -224,7 +224,6 @@
         margin-top: 20px !important;
     }
     .top-pick-card {
-        margin-bottom: 20px !important;
         height: 300px !important;
     }
 
@@ -293,9 +292,17 @@
     .w-mob-100 {
         width: 100% !important;
     }
+    .tp-wrapper {
+        h6 {
+            font-size: 16px !important;
+        }
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
+    .w-sm-100 {
+        width: 100% !important;
+    }
     .media-show {
         display: block !important;
     }
@@ -490,11 +497,6 @@
             }
         }
     }
-
-    .top-pick-card {
-        margin-bottom: 20px !important;
-    }
-
     .coming-soon {
         .slider-content {
             margin-top: 20px;
@@ -530,6 +532,9 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .w-md-100 {
+        width: 100% !important;
+    }
     .name-link {
         display: none;
     }
@@ -945,6 +950,9 @@
             }
         }
     }
+    .general-banner {
+        margin-top: 100px !important;
+    }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1365px) {
@@ -1350,6 +1358,14 @@
     }
     ul.message-options {
         position: absolute !important;
+    }
+    div.quick-action-wrapper .quick-action-link {
+        width: 40px !important;
+        min-width: 40px !important;
+        height: 40px !important;
+        img {
+            width: 18px !important;
+        }
     }
 }
 @media screen and (max-width: 991px) {

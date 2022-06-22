@@ -74,17 +74,28 @@
             </div>
         </div>
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <i class="fas fa-bars text-black"></i>
-                </span>
-            </button>
-
+            <div class="d-flex flex-row gap-2 flex-nowrap justify-content-between w-mob-100 w-sm-100 w-md-100">
+                <a class="navbar-brand m-0" href="index.html">
+                    <img src="assets/images/logo.png" alt="logo">
+                </a>
+                <div class="d-flex flex-row gap-2 flex-nowrap">
+                    <a href="messaging.html" class="position-relative d-block d-lg-none">
+                        <div class="circle-xs btn-white"><i class="fas fa-comment"></i></div>
+                        <div class="unread-mob"></div>
+                    </a>
+                    <a href="notifications.html" class="position-relative d-block d-lg-none">
+                        <div class="circle-xs btn-white"><i class="fas fa-bell"></i></div>
+                        <div class="unread-mob"></div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                            <i class="fas fa-bars text-black"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="search-bar ms-auto me-auto media-hide">
                     <div class="content">
@@ -98,7 +109,7 @@
                         <button type="button" class="btn btn-primary"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
-                <div class="d-flex gap-lg-3">
+                <div class="d-flex gap-lg-3 ms-lg-3">
                     <a href="messaging.html" class="position-relative d-none d-lg-block">
                         <div class="circle-sm btn-primary-light"><i class="fas fa-comment"></i></div>
                         <div class="unread"></div>
@@ -114,7 +125,7 @@
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <div class="img-wrapper equal-1-1 m-0">
                                         <span
-                                            style="background: url('assets/images/user.jpg'); background-size: cover;"></span>
+                                            style="background: url('assets/images/user.jpg'); background-size: cover; display:block !important"></span>
                                     </div>
                                     <span class="ms-3 d-block d-lg-none">Hello Jack</span>
                                 </button>

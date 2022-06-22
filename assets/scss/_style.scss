@@ -303,7 +303,7 @@ h2 {
 .category {
     padding: 40px;
     border-radius: 20px;
-    margin: auto;
+    // margin: auto;
     text-align: center;
     .icon {
         @include circle(100px, rgba($color: $primary, $alpha: 0.1));
@@ -1074,4 +1074,16 @@ p:last-child {
 }
 a {
     pointer-events: all;
+}
+.offer-listing-wrapper {
+    .listing-card {
+        p {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+    }
+}
+.tp-wrapper {
+    top: auto !important;
+    bottom: 0 !important;
 }
