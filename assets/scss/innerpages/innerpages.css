@@ -37,7 +37,7 @@
 }
 
 .offer-banner {
-  padding-top: 128px !important;
+  padding-top: 118px !important;
   padding-bottom: 0 !important;
 }
 
@@ -212,6 +212,28 @@
     grid-column-gap: 15px;
     grid-row-gap: 15px;
   }
+  .offer-listing-wrapper {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    width: 100% !important;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+  .offer-listing-wrapper .dotted-card {
+    padding: 20px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .offer-listing-wrapper .dotted-card * {
+    text-align: center;
+  }
   .results-content #sidebarCollapse {
     display: block !important;
   }
@@ -333,6 +355,9 @@
   }
   #content-section-wrapper .listing-wrapper .listing-card {
     padding: 15px !important;
+  }
+  .offer-banner {
+    padding-top: 104px !important;
   }
 }
 
@@ -1806,7 +1831,7 @@
 .general-banner {
   width: 100vw;
   min-height: 35vh;
-  margin-top: 128px;
+  margin-top: 118px;
   padding-top: 50px;
   background-image: url("../../images/general-banner.jpg");
   background-repeat: no-repeat;
@@ -2333,6 +2358,12 @@ p {
   }
   .contact-card {
     margin-top: 30px;
+  }
+  .custom-file-image .custom-file-preview-item {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 10px !important;
+    border: 5px solid #fff !important;
   }
 }
 

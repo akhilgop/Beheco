@@ -30,7 +30,7 @@
     }
 }
 .offer-banner {
-    padding-top: 128px !important;
+    padding-top: 118px !important;
     padding-bottom: 0 !important;
 }
 // --------------------------------------------------------------Results Content-------------------------------------------------------------//
@@ -168,6 +168,21 @@
             grid-row-gap: 15px;
         }
     }
+    .offer-listing-wrapper {
+        grid-template-columns: repeat(2, 1fr) !important;
+        width: 100% !important;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        .dotted-card {
+            padding: 20px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            * {
+                text-align: center;
+            }
+        }
+    }
     .results-content #sidebarCollapse {
         display: block !important;
     }
@@ -301,6 +316,9 @@
                 padding: 15px !important;
             }
         }
+    }
+    .offer-banner {
+        padding-top: 104px !important;
     }
 }
 @media screen and (min-width: 1346px) and (max-width: 1800px) {
