@@ -1087,3 +1087,53 @@ a {
     top: auto !important;
     bottom: 0 !important;
 }
+.breadcrumb {
+    align-items: center;
+    line-height: 1.5;
+    li {
+        line-height: 1 !important;
+    }
+}
+.step-card {
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: rgba($color: $primary, $alpha: 1) !important;
+        h6 {
+            color: $white !important;
+        }
+        .circle-xs {
+            background-color: $white !important;
+            i {
+                color: $primary !important;
+            }
+        }
+    }
+}
+.upload-custom {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/svg/ImageUpload.svg") 50% 50% no-repeat;
+    background-size: auto;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    border: 10px solid #fff;
+    background-color: $light-bg;
+    input {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 111;
+        height: 100%;
+        width: 100%;
+    }
+}
+.abs-button-container {
+    z-index: 1;
+    .fav-button {
+        z-index: 111 !important;
+    }
+}

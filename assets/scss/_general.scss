@@ -113,7 +113,8 @@ hr {
 }
 .hover-portion {
     @include transition;
-    &:hover {
+    &:hover,
+    &:focus {
         .show-on-hover {
             display: block !important;
             @include transition;

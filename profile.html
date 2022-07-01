@@ -74,28 +74,29 @@
                     </div>
                 </div>
             </div>
-            <div class="container flex-nowrap">
-                <a class="navbar-brand m-0" href="index.html">
-                    <img src="assets/images/logo.png" alt="logo">
-                </a>
-                <div class="d-flex flex-row gap-2 flex-nowrap">
-                    <a href="messaging.html" class="position-relative d-block d-lg-none">
-                        <div class="circle-xs btn-white"><i class="fas fa-comment"></i></div>
-                        <div class="unread-mob"></div>
+            <div class="container">
+                <div class="d-flex flex-row gap-2 flex-nowrap justify-content-between w-mob-100 w-sm-100 w-md-100">
+                    <a class="navbar-brand m-0" href="index.html">
+                        <img src="assets/images/logo.png" alt="logo">
                     </a>
-                    <a href="notifications.html" class="position-relative d-block d-lg-none">
-                        <div class="circle-xs btn-white"><i class="fas fa-bell"></i></div>
-                        <div class="unread-mob"></div>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">
-                            <i class="fas fa-bars text-black"></i>
-                        </span>
-                    </button>
+                    <div class="d-flex flex-row gap-2 flex-nowrap">
+                        <a href="messaging.html" class="position-relative d-block d-lg-none">
+                            <div class="circle-xs btn-white"><i class="fas fa-comment fs-20"></i></div>
+                            <div class="unread-mob"></div>
+                        </a>
+                        <a href="notifications.html" class="position-relative d-block d-lg-none">
+                            <div class="circle-xs btn-white"><i class="fas fa-bell fs-20"></i></div>
+                            <div class="unread-mob"></div>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <i class="fas fa-bars text-black"></i>
+                            </span>
+                        </button>
+                    </div>
                 </div>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -150,8 +151,9 @@
                                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My
                                                 Listings</a>
                                             <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                                <a class="dropdown-item" href="#">Business 1</a>
-                                                <a class="dropdown-item" href="#">Business 2</a>
+                                                <a class="dropdown-item" href="profile-business.html">Business 1</a>
+                                                <a class="dropdown-item" href="profile-business-edit.html">Business
+                                                    2</a>
                                             </div>
                                         </div>
                                         <a class="dropdown-item" href="#">Saved Items</a>
@@ -164,8 +166,8 @@
                             <img src="assets/images/svg/plus-icon.svg" alt="plus-icon">
                             <span>Free Listing</span></button>
                     </div>
-
                 </div>
+            </div>
         </nav>
         <!-----------------------------------------------------------------Add New Listing Modal --------------------------------------------------------->
         <div class="modal fade" id="newListing" tabindex="-1" aria-labelledby="addNewListing" aria-hidden="true">

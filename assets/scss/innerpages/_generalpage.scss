@@ -361,7 +361,12 @@ p {
         }
     }
 }
-
+.sidebar-header {
+    .accordion-body {
+        max-height: 300px;
+        overflow-y: auto;
+    }
+}
 @media screen and (max-width: 767px) {
     .general-banner {
         margin-top: 74px;
@@ -455,11 +460,13 @@ p {
     .contact-card {
         margin-top: 30px;
     }
-    .custom-file-image .custom-file-preview-item {
-        width: 100px !important;
-        height: 100px !important;
-        border-radius: 10px !important;
-        border: 5px solid $white !important;
+    .custom-file-image {
+        .custom-file-preview-item {
+            width: 100px !important;
+            height: 100px !important;
+            border-radius: 10px !important;
+            border: 5px solid $white !important;
+        }
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {

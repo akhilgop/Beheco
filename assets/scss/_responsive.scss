@@ -23,9 +23,9 @@
         }
         .d-flex {
             flex-wrap: wrap;
+            gap: 0.75rem !important;
             .signin-box {
                 width: 100%;
-                margin-bottom: 10px !important;
                 .btn-user {
                     padding: 0 !important;
                     margin: auto;
@@ -268,7 +268,7 @@
     }
     .demo-gallery > ul > li {
         list-style: outside none none;
-        margin-bottom: 20px !important;
+        // margin-bottom: 20px !important;
     }
     .btn-google .icon,
     .btn-facebook .icon {
@@ -1366,7 +1366,6 @@
     .add-new-wrapper {
         .accordion-item:first-child {
             .accordion-collapse.collapse.show {
-                // border-bottom: 1px solid $bdr !important;
                 border-radius: 0 !important;
             }
         }
@@ -1384,6 +1383,9 @@
         img {
             width: 18px !important;
         }
+    }
+    .profile .overall-rating.justify-content-start {
+        justify-content: flex-start !important;
     }
 }
 @media screen and (max-width: 991px) {

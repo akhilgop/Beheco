@@ -552,7 +552,7 @@
     -webkit-transform: none;
             transform: none;
     opacity: 1;
-    margin: 5px auto;
+    margin: 5px 0;
   }
   .results-content #sidebarCollapse.active span {
     margin: 0 auto;
@@ -2273,6 +2273,11 @@ p {
 .keyword-wrapper .keywords .keyword {
   margin-bottom: 10px;
   margin-right: 10px;
+}
+
+.sidebar-header .accordion-body {
+  max-height: 300px;
+  overflow-y: auto;
 }
 
 @media screen and (max-width: 767px) {

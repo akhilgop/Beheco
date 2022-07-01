@@ -81,11 +81,11 @@
                     <img src="assets/images/logo.png" alt="logo">
                 </a>
                 <a href="messaging.html" class="position-relative d-block d-lg-none">
-                    <div class="circle-xs btn-white"><i class="fas fa-comment"></i></div>
+                    <div class="circle-xs btn-white"><i class="fas fa-comment fs-20"></i></div>
                     <div class="unread-mob"></div>
                 </a>
                 <a href="notifications.html" class="position-relative d-block d-lg-none">
-                    <div class="circle-xs btn-white"><i class="fas fa-bell"></i></div>
+                    <div class="circle-xs btn-white"><i class="fas fa-bell fs-20"></i></div>
                     <div class="unread-mob"></div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -838,7 +838,7 @@
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
                                 <div class="hover-portion d-inline-flex align-items-center gap-2">
-                                    <a href="" class="d-inline-block">
+                                    <a class="d-inline-block">
                                         <div class="dotted-circle">
                                             <i class="far fa-plus"></i>
                                         </div>
@@ -1044,7 +1044,7 @@
             </div>
             <div class="added-photos">
                 <div class="demo-gallery gs_reveal">
-                    <ul id="lightgallery" class="row">
+                    <ul id="lightgallery" class="row g-3">
                         <li class="col-xl-2 col-md-4 col-sm-4 col-6"
                             data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
                             data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
@@ -1112,7 +1112,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="collapse-container d-flex justify-content-center">
+                    <div class="collapse-container d-flex justify-content-center mt-3">
                         <div class="d-flex gap-3 flex-mob-wrap">
                             <button class="btn btn-view-more w-mob-100 m-mob-0" type="button" data-bs-toggle="modal"
                                 data-bs-target="#galleryViewMore">
@@ -1144,7 +1144,7 @@
                         <div class="modal-body">
                             <div class="added-photos">
                                 <div class="demo-gallery">
-                                    <ul id="lightgallery1" class="row my-0">
+                                    <ul id="lightgallery1" class="row my-0 g-3">
                                         <li class="col-xl-2 col-md-4 col-sm-4 col-6"
                                             data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800"
                                             data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg">
@@ -1994,87 +1994,100 @@
                 <div class="container">
                     <div class="card-default">
                         <h3>Services Offered</h3>
-                        <div class="row g-3">
-                            <div class="col-lg-4 col-xl-3 col-md-6">
-                                <a data-bs-toggle="modal" data-bs-target="#addService">
-                                    <div class="dotted-card p-mob-10 flex-center h-100">
-                                        <div class="d-flex flex-column gap-2 align-items-center ">
-                                            <i class="far fa-plus-circle text-border fs-2"></i>
-                                            <span class="fs-mob-24 fs-30 text-body">Add Service</span>
-                                        </div>
+                        <div class="listing-wrapper services-wrapper">
+                            <a data-bs-toggle="modal" data-bs-target="#addService">
+                                <div class="dotted-card p-mob-10 flex-center h-100">
+                                    <div class="d-flex flex-column gap-2 align-items-center ">
+                                        <i class="far fa-plus-circle text-border fs-2"></i>
+                                        <span class="fs-mob-24 fs-30 text-body">Add Service</span>
                                     </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-4 col-xl-3 col-md-6">
-                                <div class="listing-card content">
-                                    <div class="image-wrapper position-relative">
-                                        <div class="border-radius media equal-1-1 mb-3 abs-button-container">
-                                            <span class="img-animate"
-                                                style="background-image: url('assets/images/helathcare.jpg');">
-                                            </span>
-                                        </div>
+                                </div>
+                            </a>
+                            <div class="listing-card content">
+                                <div class="image-wrapper position-relative">
+                                    <div class="border-radius media equal-1-1 mb-3 abs-button-container">
+                                        <span class="img-animate"
+                                            style="background-image: url('assets/images/helathcare.jpg');">
+                                        </span>
                                     </div>
-                                    <div class="txt-section">
-                                        <div class="flex-container top-section">
-                                            <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
-                                        </div>
-                                        <div class="flex-container bottom-section flex-column gap-2">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            <button type="button" class="btn btn-primary-light btn-sm"
-                                                data-bs-toggle="modal" data-bs-target="#servicesViewMore">View
-                                                More</button>
-                                        </div>
+                                </div>
+                                <div class="txt-section">
+                                    <div class="flex-container top-section">
+                                        <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
+                                    </div>
+                                    <div class="flex-container bottom-section flex-column gap-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <button type="button" class="btn btn-primary-light btn-sm"
+                                            data-bs-toggle="modal" data-bs-target="#servicesViewMore">View
+                                            More</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-xl-3 col-md-6">
-                                <div class="listing-card content">
-                                    <div class="image-wrapper position-relative">
-                                        <div class="border-radius media equal-1-1 mb-3 abs-button-container">
-                                            <span class="img-animate"
-                                                style="background-image: url('assets/images/helathcare.jpg');">
-                                            </span>
-                                        </div>
+                            <div class="listing-card content">
+                                <div class="image-wrapper position-relative">
+                                    <div class="border-radius media equal-1-1 mb-3 abs-button-container">
+                                        <span class="img-animate"
+                                            style="background-image: url('assets/images/helathcare.jpg');">
+                                        </span>
                                     </div>
-                                    <div class="txt-section">
-                                        <div class="flex-container top-section">
-                                            <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
-                                        </div>
-                                        <div class="flex-container bottom-section flex-column gap-2">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            <button type="button" class="btn btn-primary-light btn-sm"
-                                                data-bs-toggle="modal" data-bs-target="#servicesViewMore">View
-                                                More</button>
-                                        </div>
+                                </div>
+                                <div class="txt-section">
+                                    <div class="flex-container top-section">
+                                        <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
+                                    </div>
+                                    <div class="flex-container bottom-section flex-column gap-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <button type="button" class="btn btn-primary-light btn-sm"
+                                            data-bs-toggle="modal" data-bs-target="#servicesViewMore">View
+                                            More</button>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-lg-4 col-xl-3 col-md-6">
-                                <div class="listing-card content">
-                                    <div class="image-wrapper position-relative">
-                                        <div class="border-radius media equal-1-1 mb-3 abs-button-container">
-                                            <span class="img-animate"
-                                                style="background-image: url('assets/images/helathcare.jpg');">
-                                            </span>
-                                        </div>
+                            <div class="listing-card content">
+                                <div class="image-wrapper position-relative">
+                                    <div class="border-radius media equal-1-1 mb-3 abs-button-container">
+                                        <span class="img-animate"
+                                            style="background-image: url('assets/images/helathcare.jpg');">
+                                        </span>
                                     </div>
-                                    <div class="txt-section">
-                                        <div class="flex-container top-section">
-                                            <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
-                                        </div>
-                                        <div class="flex-container bottom-section flex-column gap-2">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                eiusmod
-                                                tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            <button type="button" class="btn btn-primary-light btn-sm"
-                                                data-bs-toggle="modal" data-bs-target="#servicesViewMore">View
-                                                More</button>
-                                        </div>
+                                </div>
+                                <div class="txt-section">
+                                    <div class="flex-container top-section">
+                                        <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
+                                    </div>
+                                    <div class="flex-container bottom-section flex-column gap-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <button type="button" class="btn btn-primary-light btn-sm"
+                                            data-bs-toggle="modal" data-bs-target="#servicesViewMore">View
+                                            More</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listing-card content">
+                                <div class="image-wrapper position-relative">
+                                    <div class="border-radius media equal-1-1 mb-3 abs-button-container">
+                                        <span class="img-animate"
+                                            style="background-image: url('assets/images/helathcare.jpg');">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="txt-section">
+                                    <div class="flex-container top-section">
+                                        <h5 class="w-100">Lorem ipsum dolor sit amet</h5>
+                                    </div>
+                                    <div class="flex-container bottom-section flex-column gap-2">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                            eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <button type="button" class="btn btn-primary-light btn-sm"
+                                            data-bs-toggle="modal" data-bs-target="#servicesViewMore">View
+                                            More</button>
                                     </div>
                                 </div>
                             </div>
@@ -2592,19 +2605,13 @@
                                                                 <p class="location">12-May-2022</p>
                                                             </div>
                                                             <div class="reply-form">
-                                                                <div class="row g-3 align-items-center">
-                                                                    <div class="col-lg-8 reply-form-control">
-                                                                        <input type="text"
-                                                                            class="form-control form-control-sm border-radius-xs mt-0"
-                                                                            placeholder="Type your reply">
-                                                                    </div>
-                                                                    <div class="col-lg-4 reply-form-button">
-                                                                        <div class="d-flex gap-2">
-                                                                            <button type="button"
-                                                                                class="btn btn-primary btn-sm">Reply</button>
-                                                                            <button type="button"
-                                                                                class="btn btn-outline-primary btn-sm">Cancel</button>
-                                                                        </div>
+                                                                <div class="d-flex flex-column gap-2 mt-3">
+                                                                    <textarea class="form-control" rows="2"></textarea>
+                                                                    <div class="d-flex gap-2">
+                                                                        <button type="button"
+                                                                            class="btn btn-primary btn-sm">Reply</button>
+                                                                        <button type="button"
+                                                                            class="btn btn-outline-primary btn-sm">Cancel</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -3258,19 +3265,13 @@
                                                 <p class="location">12-May-2022</p>
                                             </div>
                                             <div class="reply-form">
-                                                <div class="row g-3 align-items-end">
-                                                    <div class="col-lg-8 reply-form-control">
-                                                        <input type="text"
-                                                            class="form-control form-control-sm border-radius-xs mt-2"
-                                                            placeholder="Type your reply">
-                                                    </div>
-                                                    <div class="col-lg-4 reply-form-button">
-                                                        <div class="d-flex gap-2">
-                                                            <button type="button"
-                                                                class="btn btn-primary btn-sm">Reply</button>
-                                                            <button type="button"
-                                                                class="btn btn-outline-primary btn-sm">Cancel</button>
-                                                        </div>
+                                                <div class="d-flex flex-column gap-2 mt-3">
+                                                    <textarea class="form-control" rows="2"></textarea>
+                                                    <div class="d-flex gap-2">
+                                                        <button type="button"
+                                                            class="btn btn-primary btn-sm">Reply</button>
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary btn-sm">Cancel</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -4269,13 +4270,35 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                 </div>
-                <div class="modal-body pb-3 pb-md-5">
+                <div class="modal-body pb-3 pb-md-5 text-start">
+                    <p>Completed your Profile to get more reach, more detailes and more calls.</p>
+                    <label class="fw-600">Complete Verification Process</label>
+                    <div class="d-flex align-items-center gap-3 w-100 mb-3">
+                        <div class="progress w-100 m-0">
+                            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>75%</p>
+                    </div>
                     <div class="d-grid gap-3">
-                        <button type="button" class="btn btn-primary-light">About</button>
-                        <button type="button" class="btn btn-primary-light">Departments</button>
-                        <button type="button" class="btn btn-primary-light">Amenities</button>
-                        <button type="button" class="btn btn-primary-light">Facilities</button>
-                        <button type="button" class="btn btn-primary-light">Add Media</button>
+                        <a href="">
+                            <div class="step-card bg-primary-light flex-v-center gap-3 border-radius p-3">
+                                <div class="circle-xs bg-primary"><i class="far fa-info-circle"></i></div>
+                                <h6 class="mb-0">Add About</h6>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="step-card bg-primary-light flex-v-center gap-3 border-radius p-3">
+                                <div class="circle-xs bg-primary"><i class="far fa-info-circle"></i></div>
+                                <h6 class="mb-0">Add Departments</h6>
+                            </div>
+                        </a>
+                        <a href="" class="disabled-item">
+                            <div class="step-card bg-primary-light flex-v-center gap-3 border-radius p-3">
+                                <div class="circle-xs bg-primary"><i class="fas fa-check"></i></div>
+                                <h6 class="mb-0">Add Departments</h6>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
