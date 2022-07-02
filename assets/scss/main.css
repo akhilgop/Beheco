@@ -2894,8 +2894,8 @@ a {
     font-size: 16px !important;
   }
   .services-wrapper {
-    -ms-grid-columns: (1fr)[1] !important;
-        grid-template-columns: repeat(1, 1fr) !important;
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
@@ -4010,7 +4010,7 @@ a {
   margin-bottom: 30px !important;
   position: relative;
   width: 100% !important;
-  z-index: 1113;
+  z-index: 1111;
 }
 
 .select2-container .select2-selection--single {
