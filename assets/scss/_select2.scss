@@ -98,6 +98,9 @@
     border-bottom-right-radius: 10px;
     overflow: hidden;
 }
+.select2-container--open {
+    z-index: 1112 !important;
+}
 .select2-search--dropdown {
     display: block;
     padding: 4px;
@@ -564,4 +567,9 @@
 }
 .select2-container--classic.select2-container--open .select2-dropdown {
     border-color: $primary;
+}
+@media screen and (max-width: 767px) {
+    .select2.select2-container {
+        margin-bottom: 20px !important;
+    }
 }
